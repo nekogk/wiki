@@ -10,6 +10,14 @@
   font-display: swap;
 }
 
+@font-face {
+    font-family: 'RusimezSerif';
+    src: url('RusimezSerif.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* ---------- 공통 토큰 (home.css와 동일하게 유지) ---------- */
 :root {
   --bg: #101010;
@@ -30,7 +38,7 @@
 
   --sans-font: 'Pretendard Variable', 'Pretendard', 'Pretendard JP Variable', 'Pretendard JP',
                -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-  --serif-font: 'Noto Serif KR', 'Noto Serif JP', 'AppleMyungjo', 'Batang', serif;
+  --serif-font: 'RusimezSerif', 'Noto Serif KR', 'Noto Serif JP', 'AppleMyungjo', 'Batang', serif;
   --heading-font: 'HsSantoki20', 'LXGW Marker Gothic', var(--sans-font);
   --mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
 
@@ -158,8 +166,7 @@ body *::-webkit-scrollbar-track { background: var(--panel); }
 .article-body h5,
 .article-body h6 {
   line-height: 1.4;
-  margin: 2.4em 0 0.7em;
-  scroll-margin-top: 1.5rem;
+  margin: 1.4em 0 0.7em;
 }
 
 .article-body h2 { font-size: 1.75rem; }
@@ -223,16 +230,13 @@ body *::-webkit-scrollbar-track { background: var(--panel); }
   margin: 2em auto;
 }
 
-/* ![[map:...]] 지도 */
 .article-body .map-embed {
   display: block;
   width: 100%;
   max-width: 100%;
   aspect-ratio: 16 / 10;
-  margin: 1.5em 0;
-  border: 1px solid var(--glass-border);
-  border-radius: 1rem;
-  background: var(--bg);
+  margin: 2em auto;
+  border: 0;
 }
 
 .article-body td .map-embed,
@@ -241,7 +245,7 @@ body *::-webkit-scrollbar-track { background: var(--panel); }
 .article-body hr {
   border: 0;
   border-top: 1px solid var(--line);
-  margin: 3em 0;
+  margin: 1em 0;
 }
 
 .article-body blockquote {

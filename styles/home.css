@@ -10,6 +10,13 @@
   font-display: swap;
 }
 
+@font-face {
+    font-family: 'RusimezSerif';
+    src: url('RusimezSerif.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* ---------- 공통 토큰 (article.css와 동일하게 유지) ---------- */
 :root {
   --bg: #101010;
@@ -28,7 +35,7 @@
 
   --sans-font: 'Pretendard Variable', 'Pretendard', 'Pretendard JP Variable', 'Pretendard JP',
                -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-  --serif-font: 'Noto Serif KR', 'Noto Serif JP', 'AppleMyungjo', 'Batang', serif;
+  --serif-font: 'RusimezSerif', 'Noto Serif KR', 'Noto Serif JP', 'AppleMyungjo', 'Batang', serif;
   --heading-font: 'HsSantoki20', 'LXGW Marker Gothic', var(--sans-font);
 
   color-scheme: dark;
