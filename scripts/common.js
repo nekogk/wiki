@@ -3,7 +3,6 @@
 import { renderMarkdown, fixRelativePaths } from '/scripts/article.js';
 
 export const WIKI_DIR = '/w/';
-export const PREVIEW_CHARS = 96;
 
 export function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -44,10 +43,11 @@ export async function loadDocs() {
 }
 
 // ---------- 미리보기 ----------
-// "# 1. 개요" 아래부터 다음 제목 전까지를 마크다운으로 렌더링해 앞부분만 보여준다.
+// "# 개요"(또는 "# 1. 개요") 아래부터 다음 # 제목 전까지를 마크다운으로 렌더링해 보여준다.
+// 글자 수로 자르지 않는다. 화면에서는 CSS가 3줄까지만 보여주고 넘치면 …으로 줄인다.
 // (개요 위에는 표가 있으므로 건너뜀. 개요 제목이 없으면 프론트매터만 떼고 처음부터)
 
-const OVERVIEW = /^#{1,6}[ \t]+1\.[ \t]*개요[ \t]*$/m;
+const OVERVIEW = /^#{1,6}[ \t]+(?:\d+\.[ \t]*)?개요[ \t]*$/m;
 const NEXT_HEADING = /^#{1,6}[ \t]/m;
 const KATEX_CSS = 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css';
 const ICON_MAX_REM = 1.5;   // 이 높이(rem) 이하로 지정한 이미지는 아이콘으로 보고 미리보기에 남긴다
@@ -61,30 +61,6 @@ export function previewSource(src) {
     if (next) body = body.slice(0, next.index);
   }
   return body.trim();
-}
-
-// HTML 구조를 유지하면서 글자 수 기준으로 자른다. 수식과 아이콘은 쪼개지 않는다
-function truncateHtml(root, limit) {
-  let left = limit, cut = false;
-  const walk = node => {
-    for (const child of [...node.childNodes]) {
-      if (cut) { child.remove(); continue; }
-      if (child.nodeType === 3) {                                   // 글자
-        child.data = child.data.replace(/\s+/g, ' ');
-        const chars = Array.from(child.data);
-        if (chars.length > left) { child.data = chars.slice(0, left).join(''); cut = true; }
-        else left -= chars.length;
-      } else if (child.nodeType === 1) {
-        const atomic = child.tagName === 'IMG' || child.classList.contains('katex');
-        if (!atomic) { walk(child); continue; }
-        const tex = child.querySelector?.('annotation')?.textContent ?? '';
-        const cost = child.tagName === 'IMG' ? 1 : Math.min(Math.max(Array.from(tex).length, 1), 8);
-        if (cost > left) { child.remove(); cut = true; } else left -= cost;
-      }
-    }
-  };
-  walk(root);
-  if (cut) root.append('…');
 }
 
 export function renderPreview(src, docs, slug) {
@@ -114,7 +90,6 @@ export function renderPreview(src, docs, slug) {
     if (out.childNodes.length) out.append(' ');
     out.append(...p.childNodes);
   }
-  truncateHtml(out, PREVIEW_CHARS);
   // 앞뒤 공백 정리 (이미지를 뺀 자리 등)
   out.normalize();
   if (out.firstChild?.nodeType === 3) out.firstChild.data = out.firstChild.data.trimStart();
