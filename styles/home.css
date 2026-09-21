@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-jp-dynamic-subset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=LXGW+Marker+Gothic&display=swap');
+
+@font-face {
+  font-family: 'HsSantoki20';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2405@1.0/HSSanTokki20-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
+/* ---------- 공통 토큰 (article.css와 동일하게 유지) ---------- */
+:root {
+  --bg: #101010;
+  --panel: #202020;
+  --text: #e6e6e6;
+  --text-strong: #ffffff;
+  --muted: #9a9a9a;
+  --line: #505050;
+  --beige: #eabf8c;
+  --pink: #f3a6c0;
+
+  --glass: rgba(255, 255, 255, 0.08);
+  --glass-hover: rgba(255, 255, 255, 0.16);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-shadow: 0 4px 20px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+  --sans-font: 'Pretendard Variable', 'Pretendard', 'Pretendard JP Variable', 'Pretendard JP',
+               -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  --serif-font: 'Noto Serif KR', 'Noto Serif JP', 'AppleMyungjo', 'Batang', serif;
+  --heading-font: 'HsSantoki20', 'LXGW Marker Gothic', var(--sans-font);
+
+  color-scheme: dark;
+  scrollbar-color: #303030 var(--bg);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  background: var(--bg);
+  scrollbar-gutter: stable;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.6;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+.container {
+  max-width: 48rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 0 1rem;
+  background: var(--panel);
+  scrollbar-color: #303030 var(--panel);
+  font-family: var(--serif-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  font-weight: normal;
+  color: var(--beige);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--beige);
+  outline-offset: 3px;
+}
+
+/* ---------- 스크롤바 (원래 사이트와 동일) ---------- */
+::-webkit-scrollbar { width: 0.5rem; height: 0.5rem; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #303030; border-radius: 0.5rem; }
+::-webkit-scrollbar-thumb:hover { background: #404040; }
+
+/* body 안의 스크롤 영역(코드 블록, 긴 수식, 표 등)은 패널 색 */
+body { scrollbar-color: #303030 var(--panel); }
+body *::-webkit-scrollbar-track { background: var(--panel); }
+
+/* ---------- 사이트 로고 ---------- */
+.site-header {
+  display: flex;              /* 부모 글자 크기·줄 간격에 영향받지 않게 */
+  align-items: center;
+  padding: 2rem 2.5rem 0;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.site-logo {
+  font-family: var(--sans-font);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--text-strong);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.site-logo img {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+
+/* ---------- 글 목록 ---------- */
+.post-list {
+  padding: 3rem 2.5rem 5rem;
+}
+
+/* 카테고리 페이지 제목 */
+.page-title {
+  margin: 0 0 2rem;
+  font-size: 2.375rem;
+  line-height: 1.3;
+}
+
+/* 초성 묶음 사이 간격 */
+.post-section + .post-section { margin-top: 2.25rem; }
+
+.section-label {
+  margin: 0 0 1rem;
+  font-family: var(--sans-font);   /* 카테고리와 같은 Pretendard */
+  color: var(--muted);             /* 카테고리와 같은 회색 */
+  padding-left: 1.5rem;            /* 카드 안쪽 글자와 같은 선에 맞춤 */
+  font-size: 1rem;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+.post-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+/* 원래 사이트의 .details 유리 카드 */
+.post-card {
+  display: block;
+  padding: 1.15rem 1.5rem 1.3rem;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 2rem;
+  box-shadow: var(--glass-shadow);
+  color: var(--text-strong);
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.post-card:hover { background: var(--glass-hover); }
+
+.post-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1.25rem;
+}
+
+.post-title {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+
+.post-category {
+  flex-shrink: 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  font-family: var(--sans-font);
+}
+
+/* 본문 미리보기: 명조, 넘치면 3줄에서 자름 */
+.post-preview {
+  margin: 0.5rem 0 0;
+  font-family: var(--serif-font);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+.post-preview:empty { display: none; }
+
+/* 미리보기 안의 마크다운 */
+.post-preview strong { font-weight: 700; color: var(--text-strong); }
+.post-preview .preview-link { color: var(--pink); }
+.post-preview .wikilink-unresolved { color: var(--muted); }
+.post-preview mark {
+  background: rgba(234, 191, 140, 0.3);
+  color: var(--text-strong);
+  padding: 0 0.15em;
+  border-radius: 0.2em;
+}
+.post-preview code {
+  font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+  font-size: 0.86em;
+  background: var(--glass);
+  padding: 0.1em 0.35em;
+  border-radius: 0.35em;
+}
+.post-preview .katex { font-size: 1.05em; }
+.post-preview img { vertical-align: middle; }
+
+.list-message {
+  margin: 0;
+  color: var(--muted);
+}
+
+footer {
+  text-align: center;
+  color: #606060;
+  font-family: var(--serif-font);
+}
+
+/* ---------- 모바일 ---------- */
+@media (max-width: 560px) {
+  body { background: var(--panel); }
+  .site-header { padding: 1rem 1.25rem; }
+  .post-list { padding: 1.5rem 1.25rem 4rem; }
+  .section-label { padding-left: 1.2rem; }
+  .page-title { font-size: 1.875rem; margin-bottom: 1.5rem; }
+  .post-card {
+    padding: 1rem 1.2rem 1.1rem;
+    border-radius: 1.5rem;
+  }
+  .post-title { font-size: 1.3rem; }
+  .post-preview { font-size: 0.9375rem; }
+}
+ 
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
