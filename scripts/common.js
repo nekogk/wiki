@@ -63,6 +63,16 @@ export function previewSource(src) {
   return body.trim();
 }
 
+// 마크다운 기호는 이미 렌더링으로 사라졌고, 남은 꾸밈(링크, 볼드, 기울임, 하이라이트, 코드,
+// 취소선, 직접 쓴 HTML 등)의 태그를 벗겨 평범한 글자로 만든다. 수식과 아이콘만 남긴다
+function unwrapFormatting(node) {
+  for (const child of [...node.children]) {
+    if (child.tagName === 'IMG' || child.classList.contains('katex')) continue;
+    unwrapFormatting(child);
+    child.replaceWith(...child.childNodes);
+  }
+}
+
 export function renderPreview(src, docs, slug) {
   const base = docUrl(slug);   // 문서 폴더의 이미지도 찾을 수 있게
   const tmp = document.createElement('div');
@@ -79,13 +89,7 @@ export function renderPreview(src, docs, slug) {
       if (!(h.endsWith('rem') && parseFloat(h) <= ICON_MAX_REM)) img.replaceWith(' ');
     });
     p.querySelectorAll('br').forEach(el => el.replaceWith(' '));
-    // 카드 전체가 이미 링크라 링크 안에 링크를 둘 수 없다 → 링크 모양의 글자로
-    p.querySelectorAll('a').forEach(a => {
-      const span = document.createElement('span');
-      span.className = 'preview-link';
-      span.append(...a.childNodes);
-      a.replaceWith(span);
-    });
+    unwrapFormatting(p);   // 링크·볼드·하이라이트 등은 꾸밈 없이 글자만
     if (!p.textContent.trim() && !p.querySelector('img, .katex')) continue;
     if (out.childNodes.length) out.append(' ');
     out.append(...p.childNodes);

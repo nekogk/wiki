@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Noto+Serif+SC:wght@400;700&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-jp-dynamic-subset.min.css');
 @import url('https://fonts.googleapis.com/css2?family=LXGW+Marker+Gothic&display=swap');
 
 @font-face {
@@ -26,16 +25,14 @@
   --muted: #9a9a9a;
   --line: #505050;
   --beige: #eabf8c;
-  --pink: #f3a6c0;
 
   --glass: rgba(255, 255, 255, 0.08);
   --glass-hover: rgba(255, 255, 255, 0.16);
   --glass-border: rgba(255, 255, 255, 0.18);
   --glass-shadow: 0 4px 20px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 
-  --sans-font: 'Pretendard Variable', 'Pretendard', 'Pretendard JP Variable', 'Pretendard JP',
-               -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-  --serif-font: 'RusimezSerif', 'Noto Serif KR', 'Noto Serif JP', 'AppleMyungjo', 'Batang', serif;
+  --sans-font: 'Pretendard Variable', 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  --serif-font: 'RusimezSerif', 'Noto Serif KR', 'Noto Serif SC', 'AppleMyungjo', 'Batang', serif;
   --heading-font: 'HsSantoki20', 'LXGW Marker Gothic', var(--sans-font);
 
   color-scheme: dark;
@@ -204,23 +201,6 @@ body *::-webkit-scrollbar-track { background: var(--panel); }
 
 .post-preview:empty { display: none; }
 
-/* 미리보기 안의 마크다운 */
-.post-preview strong { font-weight: 700; color: var(--text-strong); }
-.post-preview .preview-link { color: var(--pink); }
-.post-preview .wikilink-unresolved { color: var(--muted); }
-.post-preview mark {
-  background: rgba(234, 191, 140, 0.3);
-  color: var(--text-strong);
-  padding: 0 0.15em;
-  border-radius: 0.2em;
-}
-.post-preview code {
-  font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
-  font-size: 0.86em;
-  background: var(--glass);
-  padding: 0.1em 0.35em;
-  border-radius: 0.35em;
-}
 .post-preview .katex { font-size: 1.05em; }
 .post-preview img { vertical-align: middle; }
 
