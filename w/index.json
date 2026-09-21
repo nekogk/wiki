@@ -1,7 +1,14 @@
 {
+  "ceqime": { "title": "체키메", "category": ["인물"] },
   "daco": { "title": "다코", "category": ["인물"] },
+  "leghu": { "title": "레구", "category": ["천체"] },
+  "meriha": { "title": "메리하", "category": ["인물"] },
+  "miwha": { "title": "미화구", "category": ["슬루케추시의 구"] },
   "shishiceso": { "title": "시시체소구", "category": ["슬루케추시의 구"] },
   "sluqecu": { "title": "슬루케추시", "category": ["삼록문화권의 경", "루시코와의 도시"] },
+  "recadesae": { "title": "레차데사에구", "category": ["슬루케추시의 구"] },
+  "riris": { "title": "리리스시", "category": ["루시코와의 도시"] },
   "rushichi": { "title": "루시치", "category": ["인물"] },
-  "rushikowa": { "title": "루시코와", "category": ["레구의 국가"] }
+  "rushikowa": { "title": "루시코와", "category": ["레구의 국가"] },
+  "rushisewhu": { "title": "루시세후시", "category": ["삼록문화권의 경", "연본국의 도시"] }
 }

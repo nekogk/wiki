@@ -2,7 +2,7 @@
 
 import { loadDocs, cardsHtml, fillPreviews, pickOne } from '/scripts/common.js';
 
-const RANDOM_COUNT = 10;   // 홈에 보여줄 랜덤 글 최대 개수
+const RANDOM_COUNT = 96;   // 홈에 보여줄 랜덤 글 최대 개수
 
 const listEl = document.getElementById('post-list');
 
