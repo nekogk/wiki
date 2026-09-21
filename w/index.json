@@ -1,7 +1,7 @@
 {
-  "daco": { "title": "다코", "category": ["인물", "루시코와"] },
-  "shishiceso": { "title": "시시체소구", "category": ["슬루케추시의 구", "루시코와"] },
-  "sluqecu": { "title": "슬루케추시", "category": ["삼록문화권의 경", "루시코와"] },
+  "daco": { "title": "다코", "category": ["인물"] },
+  "shishiceso": { "title": "시시체소구", "category": ["슬루케추시의 구"] },
+  "sluqecu": { "title": "슬루케추시", "category": ["삼록문화권의 경", "루시코와의 도시"] },
   "rushichi": { "title": "루시치", "category": ["인물"] },
-  "rushikowa": { "title": "루시코와", "category": ["루시코와"] }
+  "rushikowa": { "title": "루시코와", "category": ["레구의 국가"] }
 }
