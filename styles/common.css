@@ -35,7 +35,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/NotoSansSC-Regular.otf) format('opentype');
+  src: url(/fonts/NotoSansSC-Regular.ttf) format('truetype');
   unicode-range: U+3400-4DBF, U+4E00-9FFF;
 }
 
@@ -44,13 +44,13 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/fonts/NotoSansSC-Bold.otf) format('opentype');
+  src: url(/fonts/NotoSansSC-Bold.ttf) format('truetype');
   unicode-range: U+3400-4DBF, U+4E00-9FFF;
 }
 
 @font-face {
     font-family: 'serifRm';
-    src: url('/fonts/RusimezSerif.otf') format('opentype');
+    src: url('/fonts/RusimezSerif.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -76,7 +76,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/NotoSerifSC-Regular.otf) format('opentype');
+  src: url(/fonts/NotoSerifSC-Regular.ttf) format('truetype');
   unicode-range: U+3400-4DBF, U+4E00-9FFF;
 }
 
@@ -85,7 +85,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/fonts/NotoSerifSC-Bold.otf) format('opentype');
+  src: url(/fonts/NotoSerifSC-Bold.ttf) format('truetype');
   unicode-range: U+3400-4DBF, U+4E00-9FFF;
 }
 
