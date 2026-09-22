@@ -1,0 +1,224 @@
+{
+  "main": {
+    "id": "7ad12438fe5506aa",
+    "type": "split",
+    "children": [
+      {
+        "id": "0e32bffc5d438acd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b43e604392a1c0b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sluqecu_metropolis.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "sluqecu_metropolis"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6215ba8c1661672a",
+    "type": "split",
+    "children": [
+      {
+        "id": "db11fc21c425efc2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2634e91c0529771e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "cb2a894e3ade2392",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "56183abec89bd6c2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f413a470d0cbdaa7",
+    "type": "split",
+    "children": [
+      {
+        "id": "b7cdd41f5444e3a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "80e1a1cfa7945f74",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "sluqecu_metropolis.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "백링크"
+            }
+          },
+          {
+            "id": "68f350f5f7f652dd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "sluqecu_metropolis.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "나가는 링크"
+            }
+          },
+          {
+            "id": "164fca8697c71c45",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "2a526229e559f6c0",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "모든 속성"
+            }
+          },
+          {
+            "id": "a1281f121f790956",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "sluqecu_metropolis.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false
+    }
+  },
+  "active": "b43e604392a1c0b0",
+  "lastOpenFiles": [
+    "haritome_city.md",
+    "sluqecu_metropolis.md",
+    "whopuwhili_mountain.md",
+    "sluqecu_bay.md",
+    "sezomure_ward.md",
+    "tobacec_ward.md",
+    "sluqecu_metropolis/emblem.png",
+    "sluqecu_metropolis/sluqecu.png",
+    "sluqecu_metropolis/flag.png",
+    "sluqecu_metropolis/대지 1.png",
+    "shitobu_ward.md",
+    "shibucheqa_streem.md",
+    "sechicaspe_ward.md",
+    "pijizu_ward.md",
+    "kozewhora_ward.md",
+    "ceqime.md",
+    "asrinyu_ward.md",
+    "coroji.md",
+    "creseme_metropolis.md",
+    "dabasha_ward.md",
+    "daco.md",
+    "whohercache_ward.md",
+    "whida.md",
+    "yujaseme_ward.md",
+    "sluseche_metropolis.md",
+    "serksosi_ward.md",
+    "rushichi.md",
+    "national_sluqecu_university.md",
+    "inanium.md",
+    "gheyesacher_ward.md"
+  ]
+}

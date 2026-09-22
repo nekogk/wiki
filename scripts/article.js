@@ -10,6 +10,7 @@ const KATEX_CSS = 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css
 const MATH_OPEN = '\uE000', MATH_CLOSE = '\uE001';
 const CODE_OPEN = '\uE002', CODE_CLOSE = '\uE003';
 const HTML_OPEN = '\uE004', HTML_CLOSE = '\uE005';
+const BLOCK_OPEN = '\uE006', BLOCK_CLOSE = '\uE007';   // {{틀 이름}} 삽입 (표 등 블록 요소라 <p> 안에 그냥 못 넣음)
 
 const md = markdownit({
   html: true,        // 내 글이니까 md 안의 HTML 허용
@@ -144,13 +145,23 @@ function attachFallback(img) {
   });
 }
 
-function transformText(text, base, maths, htmls) {
+function transformText(text, base, maths, htmls, blocks, templates) {
   const codes = [];
   // 만들어 낸 HTML은 자리표시자로 넣어서 마크다운 문단 처리를 방해하지 않게 한다
   const keep = h => { htmls.push(h); return HTML_OPEN + (htmls.length - 1) + HTML_CLOSE; };
 
   // %%주석%% 제거
   text = text.replace(/%%[\s\S]*?%%/g, '');
+
+  // 틀 삽입 {{이름}} — 줄 하나를 통째로 차지해야 하고, 앞뒤로 빈 줄이 있어야 한다(표 같은 블록 요소라서)
+  text = text.replace(/^[ \t]*\{\{\s*([^{}\n]+?)\s*\}\}[ \t]*$/gm, (whole, name) => {
+    const html = templates?.get(name);
+    if (html) {
+      blocks.push(html);
+      return BLOCK_OPEN + (blocks.length - 1) + BLOCK_CLOSE;
+    }
+    return keep(`<span class="wikilink-unresolved">틀 없음: ${escapeHtml(name)}</span>`);
+  });
 
   // 인라인 코드 보호
   text = text.replace(/(`+)([\s\S]*?[^`])\1(?!`)/g, m => {
@@ -209,7 +220,7 @@ function transformText(text, base, maths, htmls) {
 
 // ---------- 후처리 ----------
 
-function restorePlaceholders(html, maths, htmls) {
+function restorePlaceholders(html, maths, htmls, blocks) {
   html = html.replace(new RegExp(`${HTML_OPEN}(\\d+)${HTML_CLOSE}`, 'g'), (_, i) => htmls[+i]);
   const render = (i, forceDisplay) => {
     const { tex, display } = maths[+i];
@@ -221,7 +232,10 @@ function restorePlaceholders(html, maths, htmls) {
     (whole, ph, i) => (maths[+i].display ? ph : whole));
   // 한 문단 전체가 블록 수식이면 <p>를 벗겨낸다
   html = html.replace(new RegExp(`<p>${MATH_OPEN}(\\d+)${MATH_CLOSE}</p>`, 'g'), (_, i) => render(i));
-  return html.replace(new RegExp(`${MATH_OPEN}(\\d+)${MATH_CLOSE}`, 'g'), (_, i) => render(i));
+  html = html.replace(new RegExp(`${MATH_OPEN}(\\d+)${MATH_CLOSE}`, 'g'), (_, i) => render(i));
+  // 틀 삽입({{이름}})도 표 등 블록 요소이므로 <p>를 벗겨내고 그대로 끼워 넣는다
+  html = html.replace(new RegExp(`<p>${BLOCK_OPEN}(\\d+)${BLOCK_CLOSE}</p>`, 'g'), (_, i) => blocks[+i]);
+  return html.replace(new RegExp(`${BLOCK_OPEN}(\\d+)${BLOCK_CLOSE}`, 'g'), (_, i) => blocks[+i]);
 }
 
 // > [!note] 제목  /  > [!tip]- 접힌 콜아웃
@@ -345,8 +359,8 @@ export function fixRelativePaths(root, base = null) {
 }
 
 // ---------- 틀 ----------
-// index.json의 "template" 배열(순서대로 쌓임)에 적힌 이름마다 /t/이름.md를 불러와
-// 글 본문과 같은 방식(위키링크, 표, 이미지 등)으로 렌더링한다.
+// index.json의 "template" 배열(문서 위쪽에 순서대로 쌓임)이나 본문 안 {{이름}}(중간에 삽입)으로
+// 쓰인 틀마다 /t/이름.md를 불러와 글 본문과 같은 방식(위키링크, 표, 이미지 등)으로 렌더링한다.
 async function loadTemplate(name, docs) {
   try {
     const res = await fetch(`${TEMPLATE_DIR}${encodeURIComponent(name)}.md`);
@@ -355,24 +369,35 @@ async function loadTemplate(name, docs) {
     return `<div class="article-body wiki-template" data-template="${escapeHtml(name)}">${html}</div>`;
   } catch (err) {
     console.error(`틀을 불러오지 못했습니다: ${name}`, err);
-    return '';
+    return null;
   }
 }
 
-async function loadTemplates(names, docs) {
-  if (!names?.length) return '';
-  const htmls = await Promise.all(names.map(name => loadTemplate(name, docs)));
-  const joined = htmls.filter(Boolean).join('');
-  return joined ? `<div class="article-templates">${joined}</div>` : '';
+// 본문 안에서 {{이름}} 형태로 쓰인 틀 이름을 코드 펜스 바깥에서만 찾는다
+function extractInlineTemplateNames(src) {
+  const names = [];
+  mapOutsideFences(stripFrontmatter(src), block => {
+    for (const m of block.matchAll(/^[ \t]*\{\{\s*([^{}\n]+?)\s*\}\}[ \t]*$/gm)) names.push(m[1].trim());
+    return block;   // 내용은 바꾸지 않고, 이름만 훑어 모은다
+  });
+  return names;
+}
+
+// 헤더용 목록 + 본문 안 {{이름}} 목록을 합쳐 한 번씩만 불러와 이름 → HTML 지도로 만든다
+async function loadTemplateMap(names, docs) {
+  const uniq = [...new Set(names.filter(Boolean))];
+  const map = new Map();
+  await Promise.all(uniq.map(async name => map.set(name, await loadTemplate(name, docs))));
+  return map;
 }
 
 // ---------- 실행 ----------
 
-export function renderMarkdown(src, base, docs = null) {
+export function renderMarkdown(src, base, docs = null, templates = null) {
   knownDocs = docs;
-  const maths = [], htmls = [];
-  const pre = mapOutsideFences(stripFrontmatter(src), t => transformText(t, base, maths, htmls));
-  return restorePlaceholders(md.render(pre), maths, htmls);
+  const maths = [], htmls = [], blocks = [];
+  const pre = mapOutsideFences(stripFrontmatter(src), t => transformText(t, base, maths, htmls, blocks, templates));
+  return restorePlaceholders(md.render(pre), maths, htmls, blocks);
 }
 
 async function main() {
@@ -410,9 +435,17 @@ async function main() {
     }
 
     const docs = bySlug.size ? new Set(bySlug.keys()) : null;
-    const templatesHtml = await loadTemplates(info?.template, docs);
+    const mdText = await mdRes.text();
+    const headerTemplateNames = info?.template ?? [];
+    const inlineTemplateNames = extractInlineTemplateNames(mdText);
+    const templateMap = await loadTemplateMap([...headerTemplateNames, ...inlineTemplateNames], docs);
+
+    const templatesHtml = headerTemplateNames.length
+      ? `<div class="article-templates">${headerTemplateNames.map(n => templateMap.get(n)).filter(Boolean).join('')}</div>`
+      : '';
+
     root.innerHTML = header + templatesHtml
-      + `<div class="article-body">${renderMarkdown(await mdRes.text(), base, docs)}</div>`;
+      + `<div class="article-body">${renderMarkdown(mdText, base, docs, templateMap)}</div>`;
 
     // 틀도 본문과 같은 후처리(상대 경로, 칸 병합, 콜아웃, 표 감싸기)를 받는다
     fixRelativePaths(root, base);

@@ -77,6 +77,7 @@
   -webkit-line-clamp: 3;
   line-clamp: 3;
   overflow: hidden;
+  text-align: justify;
 }
 
 .post-preview:empty { display: none; }
