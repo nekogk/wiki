@@ -89,11 +89,17 @@ function resolveWikiTarget(target) {
 }
 
 // 이미지 크기: px 수 ÷ 36 = rem.  |36 → 높이 1rem,  |72 → 높이 2rem,  |360x72 → 너비 10rem·높이 2rem
+// 가로·세로를 둘 다 정한 경우, height를 직접 고정하면 화면이 좁아 너비만 줄어들 때 비율이 깨져 찌그러진다.
+// 그래서 height는 auto로 두고(.article-body img { height: auto }) aspect-ratio로 비율만 잡아, 너비가 줄면 높이도 같이 준다.
+// 세로만 정한 경우도 마찬가지로, height를 고정하면 이미지가 화면보다 넓어질 때(너비가 줄어야 하는데) 못 줄어서 찌그러진다.
+// max-height + width: auto로 두면 원본 이미지 비율 그대로 화면 폭 안에서 줄어든다.
 function sizeStyle(opt) {
   const m = (opt ?? '').trim().match(/^(\d+)(?:x(\d+))?$/);
   if (!m) return null;
   const rem = n => `${Number((Number(n) / 36).toFixed(4))}rem`;
-  return m[2] ? `width: ${rem(m[1])}; height: ${rem(m[2])};` : `height: ${rem(m[1])}; width: auto;`;
+  return m[2]
+    ? `width: ${rem(m[1])}; aspect-ratio: ${m[1]} / ${m[2]};`
+    : `max-height: ${rem(m[1])}; height: auto; width: auto; max-width: 100%;`;
 }
 
 // ---------- 지도 ----------
@@ -103,11 +109,17 @@ function sizeStyle(opt) {
 const MAP_URL = 'https://sluqecu.dacordia.com/';
 const MAP_EMBED = /!\[\[map:\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*(?:,\s*(-?[\d.]+)\s*)?(?:\\?\|\s*([^\]]*?)\s*)?\]\]/g;
 
+// 지도는 CSS(.map-embed)의 max-width: 100%와 기본 height: auto, aspect-ratio: 16/10 위에서 크기를 정한다.
+// 가로·세로 모두 지정: height를 직접 고정하지 않고 aspect-ratio로 비율만 잡아야, 화면이 좁을 때 찌그러지지 않는다.
+// 세로만 지정: height를 고정하면 지도가 화면보다 넓어질 때 못 줄어드니, max-height로 두고 너비도 auto로 풀어서
+// (기본 aspect-ratio: 16/10는 그대로 살아있음) 화면 폭에 맞춰 가로세로 같이 줄어들게 한다.
 function mapStyle(opt) {
   const m = (opt ?? '').match(/^(\d+)(?:x(\d+))?$/);
   if (!m) return '';
   const rem = n => `${Number((Number(n) / 36).toFixed(4))}rem`;
-  return m[2] ? ` style="width: ${rem(m[1])}; height: ${rem(m[2])};"` : ` style="height: ${rem(m[1])};"`;
+  return m[2]
+    ? ` style="width: ${rem(m[1])}; aspect-ratio: ${m[1]} / ${m[2]};"`
+    : ` style="max-height: ${rem(m[1])}; height: auto; width: auto; max-width: 100%;"`;
 }
 
 function mapIframe(lat, lng, zoom, opt) {
