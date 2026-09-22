@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'sansRm';
+  src: url('/fonts/RusimezSans.otf') format('opentype');
+  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sansRm';
+  src: url('/fonts/RusimezSansBold.otf') format('opentype');
+  font-weight: 700;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sansKr';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Pretendard-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'sansKr';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/Pretendard-Bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'sansSc';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/NotoSansSC-Regular.otf) format('opentype');
+  unicode-range: U+3400-4DBF, U+4E00-9FFF;
+}
+
+@font-face {
+  font-family: 'sansSc';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/NotoSansSC-Bold.otf) format('opentype');
+  unicode-range: U+3400-4DBF, U+4E00-9FFF;
+}
+
+@font-face {
+    font-family: 'serifRm';
+    src: url('/fonts/RusimezSerif.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'serifKr';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/NotoSerifCJKkr-Regular-subset.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'serifKr';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/NotoSerifCJKkr-Bold-subset.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'serifSc';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/NotoSerifSC-Regular.otf) format('opentype');
+  unicode-range: U+3400-4DBF, U+4E00-9FFF;
+}
+
+@font-face {
+  font-family: 'serifSc';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/NotoSerifSC-Bold.otf) format('opentype');
+  unicode-range: U+3400-4DBF, U+4E00-9FFF;
+}
+
+@font-face {
+  font-family: 'headKr';
+  src: url('/fonts/HSSanTokki2.0(2024).ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'headSc';
+  src: url('/fonts/LXGWMarkerGothic-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+  unicode-range: U+3400-4DBF, U+4E00-9FFF;
+}
+
+/* ---------- 공통 토큰 ---------- */
+:root {
+  --bg: #101010;
+  --panel: #202020;
+  --text: #e6e6e6;
+  --text-strong: #ffffff;
+  --muted: #9a9a9a;
+  --line: #505050;
+  --green: #61c26c;
+  --beige: #eabf8c;
+  --coral: #ed7457;
+  --pink: #f3a6c0;
+
+  --glass: rgba(255, 255, 255, 0.08);
+  --glass-hover: rgba(255, 255, 255, 0.16);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-shadow: 0 4px 20px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+  --sans-font: 'sansRm','sansSc', 'sansKr', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  --serif-font: 'serifRm','serifSc', 'serifKr', 'Noto Serif SC', 'AppleMyungjo', 'Batang', serif;
+  --heading-font: 'headSc', 'headKr', var(--sans-font);
+  --mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  color-scheme: dark;
+  scrollbar-color: #303030 var(--bg);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  background: var(--bg);
+  scrollbar-gutter: stable;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.6;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+.container {
+  max-width: 48rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 0 1rem;
+  background: var(--panel);
+  scrollbar-color: #303030 var(--panel);
+  font-family: var(--serif-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  font-weight: normal;
+  color: var(--beige);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--beige);
+  outline-offset: 3px;
+}
+
+/* ---------- 스크롤바 (원래 사이트와 동일) ---------- */
+::-webkit-scrollbar { width: 0.5rem; height: 0.5rem; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #303030; border-radius: 0.5rem; }
+::-webkit-scrollbar-thumb:hover { background: #404040; }
+
+/* body 안의 스크롤 영역(코드 블록, 긴 수식, 표 등)은 패널 색 */
+body { scrollbar-color: #303030 var(--panel); }
+body *::-webkit-scrollbar-track { background: var(--panel); }
+
+/* ---------- 사이트 로고 ---------- */
+.site-header {
+  display: flex;              /* 부모 글자 크기·줄 간격에 영향받지 않게 */
+  align-items: center;
+  padding: 2rem 2.5rem 0;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.site-logo {
+  font-family: var(--sans-font);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--text-strong);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.site-logo img {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  color: #606060;
+  font-family: var(--serif-font);
+}
+
+/* ---------- 모바일 공통 ---------- */
+@media (max-width: 560px) {
+  body { background: var(--panel); }
+  .site-header { padding: 1rem 1.25rem; }
+}

@@ -1,122 +1,4 @@
-@import url('https://cdn.rawgit.com/kattergil/NotoSerifKR-Web/76eb9ebf/stylesheet/NotoSerif-Web.css');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap');
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
-@import url('https://fonts.googleapis.com/css2?family=LXGW+Marker+Gothic&display=swap');
-
-@font-face {
-  font-family: 'HsSantoki20';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2405@1.0/HSSanTokki20-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-display: swap;
-}
-
-@font-face {
-    font-family: 'RusimezSerif';
-    src: url('RusimezSerif.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* ---------- 공통 토큰 (article.css와 동일하게 유지) ---------- */
-:root {
-  --bg: #101010;
-  --panel: #202020;
-  --text: #e6e6e6;
-  --text-strong: #ffffff;
-  --muted: #9a9a9a;
-  --line: #505050;
-  --beige: #eabf8c;
-
-  --glass: rgba(255, 255, 255, 0.08);
-  --glass-hover: rgba(255, 255, 255, 0.16);
-  --glass-border: rgba(255, 255, 255, 0.18);
-  --glass-shadow: 0 4px 20px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-
-  --sans-font: 'Pretendard Variable', 'Pretendard', 'Noto Sans SC', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-  --serif-font: 'RusimezSerif', 'Noto Serif KR', 'Noto Serif SC', 'AppleMyungjo', 'Batang', serif;
-  --heading-font: 'HsSantoki20', 'LXGW Marker Gothic', var(--sans-font);
-
-  color-scheme: dark;
-  scrollbar-color: #303030 var(--bg);
-}
-
-*, *::before, *::after { box-sizing: border-box; }
-
-html {
-  background: var(--bg);
-  scrollbar-gutter: stable;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-size: 1rem;
-  line-height: 1.6;
-  word-break: normal;
-  overflow-wrap: anywhere;
-}
-
-.container {
-  max-width: 48rem;
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 0 0 1rem;
-  background: var(--panel);
-  scrollbar-color: #303030 var(--panel);
-  font-family: var(--serif-font);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  font-weight: normal;
-  color: var(--beige);
-}
-
-a:focus-visible {
-  outline: 2px solid var(--beige);
-  outline-offset: 3px;
-}
-
-/* ---------- 스크롤바 (원래 사이트와 동일) ---------- */
-::-webkit-scrollbar { width: 0.5rem; height: 0.5rem; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: #303030; border-radius: 0.5rem; }
-::-webkit-scrollbar-thumb:hover { background: #404040; }
-
-/* body 안의 스크롤 영역(코드 블록, 긴 수식, 표 등)은 패널 색 */
-body { scrollbar-color: #303030 var(--panel); }
-body *::-webkit-scrollbar-track { background: var(--panel); }
-
-/* ---------- 사이트 로고 ---------- */
-.site-header {
-  display: flex;              /* 부모 글자 크기·줄 간격에 영향받지 않게 */
-  align-items: center;
-  padding: 2rem 2.5rem 0;
-  font-size: 1rem;
-  line-height: 1;
-}
-
-.site-logo {
-  font-family: var(--sans-font);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.65rem;
-  color: var(--text-strong);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.5rem;
-  letter-spacing: -0.01em;
-}
-
-.site-logo img {
-  width: 2rem;
-  height: 2rem;
-  display: block;
-}
+@import url('./common.css');
 
 /* ---------- 글 목록 ---------- */
 .post-list {
@@ -211,16 +93,8 @@ body *::-webkit-scrollbar-track { background: var(--panel); }
   color: var(--muted);
 }
 
-footer {
-  text-align: center;
-  color: #606060;
-  font-family: var(--serif-font);
-}
-
-/* ---------- 모바일 ---------- */
+/* ---------- 모바일 (home 전용) ---------- */
 @media (max-width: 560px) {
-  body { background: var(--panel); }
-  .site-header { padding: 1rem 1.25rem; }
   .post-list { padding: 1.5rem 1.25rem 4rem; }
   .section-label { padding-left: 1.2rem; }
   .page-title { font-size: 1.875rem; margin-bottom: 1.5rem; }
@@ -231,7 +105,7 @@ footer {
   .post-title { font-size: 1.3rem; }
   .post-preview { font-size: 0.9375rem; }
 }
- 
+
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
