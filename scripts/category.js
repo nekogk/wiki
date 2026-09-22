@@ -34,14 +34,14 @@ async function main() {
       return;
     }
 
-    // 카드 오른쪽: 이 분류를 뺀 나머지 분류 중 하나를 무작위로 (없으면 표시 안 함)
+    // 카드 오른쪽: 이 분류를 뺀 나머지 분류 중 하나를 무작위로, 한글 이름으로 (없으면 표시 안 함)
     const otherCategory = d => {
-      const others = d.categories.filter(c => c !== name);
-      return others.length ? pickOne(others) : '';
+      const others = d.categories.filter(c => c !== folder);
+      return others.length ? (cats[pickOne(others)] ?? '') : '';
     };
 
     const members = docs
-      .filter(d => d.categories.includes(name))
+      .filter(d => d.categories.includes(folder))
       .sort((a, b) => collator.compare(a.title, b.title));
 
     // 정렬 순서대로 묶되, '기타'는 맨 뒤로

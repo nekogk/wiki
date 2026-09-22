@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "bc025f3af9653ba1",
+    "id": "ebb21a7e80f26200",
     "type": "split",
     "children": [
       {
-        "id": "721e5064b6a10a8b",
+        "id": "5a82fc5abbeb3eb8",
         "type": "tabs",
         "children": [
           {
-            "id": "b1141435172389a5",
+            "id": "e2f81254f332acaa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "coroji.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "coroji"
+              "title": "새 탭"
             }
           }
         ]
@@ -27,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "50d43074b2c6ca7c",
+    "id": "8fcfeab4b3404292",
     "type": "split",
     "children": [
       {
-        "id": "02ac30cb4a121481",
+        "id": "42125a2520143016",
         "type": "tabs",
         "children": [
           {
-            "id": "9744e2e008456547",
+            "id": "f181455532f3d298",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -50,7 +46,7 @@
             }
           },
           {
-            "id": "cfb734e042e14107",
+            "id": "f6b1a0cf69744655",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -67,7 +63,7 @@
             }
           },
           {
-            "id": "40f7824d286021aa",
+            "id": "c9681fe8e67189d2",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -86,20 +82,19 @@
     "width": 300
   },
   "right": {
-    "id": "44c708ccb5fb61cd",
+    "id": "14d81e4984d24a3d",
     "type": "split",
     "children": [
       {
-        "id": "e11a671cfc07c2be",
+        "id": "072d990fcedaf3a8",
         "type": "tabs",
         "children": [
           {
-            "id": "abf477e22c5d03b7",
+            "id": "8c413a36c8a7b6e0",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "coroji.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,12 +108,11 @@
             }
           },
           {
-            "id": "249edcf9e8611167",
+            "id": "16afac23bac61984",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "rushichi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -127,7 +121,7 @@
             }
           },
           {
-            "id": "f46373b6b3e7e643",
+            "id": "365599afe6721d6b",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -142,7 +136,7 @@
             }
           },
           {
-            "id": "c335e6f410c34366",
+            "id": "d8dcdf3342992b73",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -156,12 +150,11 @@
             }
           },
           {
-            "id": "7a128c52ef13bd8a",
+            "id": "71eebabac3e3a916",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "rushichi.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,53 +181,18 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "b1141435172389a5",
+  "active": "f181455532f3d298",
   "lastOpenFiles": [
-    "coroji/index.html",
-    "coroji",
-    "riris_city - 복사본/index.html",
-    "riris_city - 복사본",
-    "creseme_metropolis.md",
-    "ceqime.md",
-    "rushisewhu_metropolis.md",
-    "yujaseme_ward.md",
-    "whohercache.md",
-    "tozeshita_ward.md",
-    "tobacec_ward.md",
-    "sluseche_metropolis.md",
-    "sezomure_ward.md",
-    "seshisefu_ward.md",
-    "serksosi_ward.md",
-    "sechicaspe_ward.md",
-    "sasgri_ward.md",
-    "sachiseme_ward.md",
-    "righeju_ward.md",
-    "resexwa_ward.md",
-    "rereas_ward.md",
-    "remasesha_ward.md",
-    "refabyuxiko_ward.md",
-    "rechefacu_metropolis.md",
-    "pejeseme_metropolis.md",
-    "mezuchisa_ward.md",
-    "merehanya_ward.md",
-    "kozewhora_ward.md",
-    "jeseceso_ward.md",
-    "ghashido_ward/index.html",
-    "ghashido_ward",
-    "shitobu_ward/index.html",
-    "shitobu_ward",
-    "gashido_ward/index.html",
-    "gashido_ward",
-    "gashido_ward - 복사본/index.html",
-    "rushichi/profile.png",
-    "rushichi/rushichi.png",
-    "icon.svg",
-    "sluqecu/profile.png",
-    "daco - 복사본/profile.png",
-    "daco/profile.png",
-    "daco/MiceqiShiin.png",
-    "assets/flag_rusikowa.png",
-    "assets/flag_uk.png",
-    "assets/flag_rusilo.png"
+    "ectenium_city/index.html",
+    "ectenium_city",
+    "rushikowa_city/index.html",
+    "rushikowa_city",
+    "leghu_nation/index.html",
+    "leghu_nation",
+    "celestial_body/index.html",
+    "celestial_body",
+    "coroji_metropolis/index.html",
+    "coroji_metropolis",
+    "sluqecu_ward/index.html"
   ]
 }

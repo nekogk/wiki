@@ -22,7 +22,7 @@ summary:focus-visible {
 .article-meta {
   margin: 0;
   font-family: var(--sans-font);    /* 카테고리는 Pretendard */
-  font-size: 0.9375rem;
+  font-size: 1rem;
   color: var(--muted);
 }
 
@@ -166,7 +166,7 @@ summary:focus-visible {
 
 .article-body table {
   border-collapse: collapse;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   width: auto;   /* 내용 크기에 맞춤. 본문보다 넓어지면 .table-wrap 안에서 가로 스크롤 */
 }
 

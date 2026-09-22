@@ -1,6 +1,6 @@
 // 홈: /w/index.json에서 문서를 무작위로 최대 10개 뽑아 카드로 보여준다.
 
-import { loadDocs, cardsHtml, fillPreviews, pickOne } from '/scripts/common.js';
+import { loadDocs, loadJson, cardsHtml, fillPreviews, pickOne } from '/scripts/common.js';
 
 const RANDOM_COUNT = 96;   // 홈에 보여줄 랜덤 글 최대 개수
 
@@ -18,16 +18,19 @@ function sample(arr, n) {
 
 async function main() {
   try {
-    const docs = await loadDocs();
+    const [docs, cats] = await Promise.all([loadDocs(), loadJson('/c/index.json')]);
     if (!docs.length) {
       listEl.innerHTML = '<p class="list-message">아직 올라온 글이 없습니다</p>';
       return;
     }
 
+    // 카드 오른쪽 뱃지: 분류 슬러그를 c/index.json에서 한글 이름으로 바꿔 보여준다
+    const catName = slug => cats[slug] ?? slug;
+
     listEl.innerHTML = `
       <section class="post-section">
         <h2 class="section-label">랜덤 글</h2>
-        ${cardsHtml(sample(docs, RANDOM_COUNT), d => (d.categories.length ? pickOne(d.categories) : ''))}
+        ${cardsHtml(sample(docs, RANDOM_COUNT), d => (d.categories.length ? catName(pickOne(d.categories)) : ''))}
       </section>`;
     fillPreviews(listEl, docs);
   } catch (err) {

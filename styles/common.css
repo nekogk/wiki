@@ -210,8 +210,9 @@ body *::-webkit-scrollbar-track { background: var(--panel); }
 
 footer {
   text-align: center;
-  color: #606060;
-  font-family: var(--serif-font);
+  color: var(--muted);
+  font-family: var(--sans-font);
+  font-size: 1rem;
 }
 
 /* ---------- 모바일 공통 ---------- */

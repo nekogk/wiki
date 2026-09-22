@@ -74,6 +74,7 @@ function escapeHtml(s) {
 const IMAGE_EXT = /\.(png|jpe?g|gif|webp|svg|avif|bmp)$/i;
 
 const WIKI_DIR = '/w/';
+const TEMPLATE_DIR = '/t/';
 let knownDocs = null;   // /w/index.json에 있는 문서 이름들. 없는 문서 링크를 회색으로 표시하는 데 쓴다
 
 // [[rushichi#제목|표시]] 의 대상 → /w/rushichi/#제목
@@ -307,14 +308,14 @@ function addHeadingIds(root) {
 }
 
 // category(없음, 문자열, 배열) → "분류: 뭐시기, 저시기" (분류가 없으면 줄 자체를 생략)
-// /c/index.json({ "폴더": "카테고리 이름" })에 있는 카테고리는 /c/폴더/ 링크가 된다
+// index.json에는 분류를 슬러그로 저장한다(예: ["character"]).
+// /c/index.json({ "슬러그": "한글 이름" })에서 화면에 보일 한글 이름을 찾고 /c/슬러그/ 로 링크한다
 function categoryLine(value, catDirs) {
-  const cats = (Array.isArray(value) ? value : [value]).filter(Boolean).map(String);
-  if (!cats.length) return '';
-  const folderOf = new Map(Object.entries(catDirs).map(([folder, name]) => [name, folder]));
-  const items = cats.map(c => {
-    const folder = folderOf.get(c);
-    return folder ? `<a href="/c/${encodeURIComponent(folder)}/">${escapeHtml(c)}</a>` : escapeHtml(c);
+  const slugs = (Array.isArray(value) ? value : [value]).filter(Boolean).map(String);
+  if (!slugs.length) return '';
+  const items = slugs.map(slug => {
+    const name = catDirs[slug];
+    return name ? `<a href="/c/${encodeURIComponent(slug)}/">${escapeHtml(name)}</a>` : escapeHtml(slug);
   });
   return `<p class="article-meta">분류: ${items.join(', ')}</p>`;
 }
@@ -341,6 +342,28 @@ export function fixRelativePaths(root, base = null) {
     const m = a.getAttribute('href').match(/^(?![a-z][a-z0-9+.-]*:|\/|#)([^#]+)\.md(#.*)?$/i);
     if (m) a.setAttribute('href', `${WIKI_DIR}${encodeURIComponent(decodeURIComponent(m[1]).split('/').pop())}/${m[2] ?? ''}`);
   }
+}
+
+// ---------- 틀 ----------
+// index.json의 "template" 배열(순서대로 쌓임)에 적힌 이름마다 /t/이름.md를 불러와
+// 글 본문과 같은 방식(위키링크, 표, 이미지 등)으로 렌더링한다.
+async function loadTemplate(name, docs) {
+  try {
+    const res = await fetch(`${TEMPLATE_DIR}${encodeURIComponent(name)}.md`);
+    if (!res.ok) throw new Error(`${res.status}`);
+    const html = renderMarkdown(await res.text(), TEMPLATE_DIR, docs);
+    return `<div class="article-body wiki-template" data-template="${escapeHtml(name)}">${html}</div>`;
+  } catch (err) {
+    console.error(`틀을 불러오지 못했습니다: ${name}`, err);
+    return '';
+  }
+}
+
+async function loadTemplates(names, docs) {
+  if (!names?.length) return '';
+  const htmls = await Promise.all(names.map(name => loadTemplate(name, docs)));
+  const joined = htmls.filter(Boolean).join('');
+  return joined ? `<div class="article-templates">${joined}</div>` : '';
 }
 
 // ---------- 실행 ----------
@@ -387,15 +410,18 @@ async function main() {
     }
 
     const docs = bySlug.size ? new Set(bySlug.keys()) : null;
-    root.innerHTML = header + `<div class="article-body">${renderMarkdown(await mdRes.text(), base, docs)}</div>`;
-    const bodyEl = root.querySelector('.article-body');
-    fixRelativePaths(bodyEl, base);
-    mergeTableCells(bodyEl);
-    buildCallouts(bodyEl);
-    addHeadingIds(bodyEl);
+    const templatesHtml = await loadTemplates(info?.template, docs);
+    root.innerHTML = header + templatesHtml
+      + `<div class="article-body">${renderMarkdown(await mdRes.text(), base, docs)}</div>`;
+
+    // 틀도 본문과 같은 후처리(상대 경로, 칸 병합, 콜아웃, 표 감싸기)를 받는다
+    fixRelativePaths(root, base);
+    mergeTableCells(root);
+    buildCallouts(root);
+    addHeadingIds(root.querySelector('.article-body'));
 
     // 표와 긴 수식이 화면 밖으로 넘치지 않게 감싼다
-    for (const t of bodyEl.querySelectorAll('table')) {
+    for (const t of root.querySelectorAll('table')) {
       const wrap = document.createElement('div');
       wrap.className = 'table-wrap';
       t.replaceWith(wrap);
