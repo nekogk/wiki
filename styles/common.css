@@ -145,7 +145,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.5;
   word-break: normal;
   overflow-wrap: anywhere;
 }
@@ -183,10 +183,8 @@ body *::-webkit-scrollbar-track { background: var(--panel); }
 
 /* ---------- 사이트 로고 ---------- */
 .site-header {
-  display: flex;              /* 부모 글자 크기·줄 간격에 영향받지 않게 */
   align-items: center;
   padding: 2rem 2.5rem 0;
-  font-size: 1rem;
   line-height: 1;
 }
 
@@ -194,12 +192,11 @@ body *::-webkit-scrollbar-track { background: var(--panel); }
   font-family: var(--sans-font);
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.5rem;
   color: var(--text-strong);
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1.5rem;
-  letter-spacing: -0.01em;
+  font-weight: 700;
+  font-size: 1.3rem;
 }
 
 .site-logo img {
@@ -212,7 +209,6 @@ footer {
   text-align: center;
   color: var(--muted);
   font-family: var(--sans-font);
-  font-size: 1rem;
 }
 
 /* ---------- 모바일 공통 ---------- */

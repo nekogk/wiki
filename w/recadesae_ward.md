@@ -7,4 +7,5 @@
 
 
 # 개요
+---
 [[sluqecu_metropolis|슬루케추시]] 동부에 위치한 구. 

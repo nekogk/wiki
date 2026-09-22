@@ -2,26 +2,25 @@
 
 /* ---------- 글 목록 ---------- */
 .post-list {
-  padding: 3rem 2.5rem 5rem;
+  padding: 3rem 2.5rem 6rem;
 }
 
 /* 카테고리 페이지 제목 */
 .page-title {
-  margin: 0 0 2rem;
-  font-size: 2.375rem;
-  line-height: 1.3;
+  margin: 0 0 2.5rem;
+  font-size: 2.5rem;
 }
 
 /* 초성 묶음 사이 간격 */
-.post-section + .post-section { margin-top: 2.25rem; }
+.post-section + .post-section { margin-top: 2.5rem; }
 
 .section-label {
   margin: 0 0 1rem;
   font-family: var(--sans-font);   /* 카테고리와 같은 Pretendard */
   color: var(--muted);             /* 카테고리와 같은 회색 */
-  padding-left: 1.5rem;            /* 카드 안쪽 글자와 같은 선에 맞춤 */
+  padding-left: 1rem;            /* 카드 안쪽 글자와 같은 선에 맞춤 */
   font-size: 1rem;
-  line-height: 1.2;
+  line-height: 1;
   font-variant-numeric: tabular-nums;
 }
 
@@ -36,10 +35,10 @@
 /* 원래 사이트의 .details 유리 카드 */
 .post-card {
   display: block;
-  padding: 1.15rem 1.5rem 1.3rem;
+  padding: 1rem 1rem;
   background: var(--glass);
   border: 1px solid var(--glass-border);
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   box-shadow: var(--glass-shadow);
   color: var(--text-strong);
   text-decoration: none;
@@ -52,18 +51,17 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .post-title {
   margin: 0;
-  font-size: 1.5rem;
-  line-height: 1.35;
+  font-size: 1.6rem;
+  line-height: 1;
 }
 
 .post-category {
   flex-shrink: 0;
-  font-size: 0.875rem;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
   font-family: var(--sans-font);
@@ -73,8 +71,6 @@
 .post-preview {
   margin: 0.5rem 0 0;
   font-family: var(--serif-font);
-  font-size: 1rem;
-  line-height: 1.6;
   color: var(--text);
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -84,8 +80,6 @@
 }
 
 .post-preview:empty { display: none; }
-
-.post-preview .katex { font-size: 1.05em; }
 .post-preview img { vertical-align: middle; }
 
 .list-message {
@@ -95,13 +89,8 @@
 
 /* ---------- 모바일 (home 전용) ---------- */
 @media (max-width: 560px) {
-  .post-list { padding: 1.5rem 1.25rem 4rem; }
-  .section-label { padding-left: 1.2rem; }
-  .page-title { font-size: 1.875rem; margin-bottom: 1.5rem; }
-  .post-card {
-    padding: 1rem 1.2rem 1.1rem;
-    border-radius: 1.5rem;
-  }
+  .post-list { padding: 1.5rem 1.25rem 3rem; }
+  .page-title { font-size: 2rem; }
   .post-title { font-size: 1.3rem; }
 }
 
