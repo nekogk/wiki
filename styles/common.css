@@ -60,7 +60,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/NotoSerifCJKkr-Regular-subset.otf) format('opentype');
+  src: url(/fonts/NotoSerifKR-Regular.ttf) format('truetype');
 }
 
 @font-face {
@@ -68,7 +68,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/fonts/NotoSerifCJKkr-Bold-subset.otf) format('opentype');
+  src: url(/fonts/NotoSerifKR-Bold.ttf) format('truetype');
 }
 
 @font-face {
