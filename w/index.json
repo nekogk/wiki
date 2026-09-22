@@ -1,17 +1,16 @@
 {
   "ceqime": { "title": "체키메", "category": [ "character" ], "template": [ "goddess" ]},
-  "coroji": { "title": "삼록권" },
   "daco": { "title": "다코", "category": [ "character" ]},
-  "leghu": { "title": "레구" },
   "meriha": { "title": "메리하", "category": [ "character" ], "template": [ "goddess" ]},
   "miwha_ward": { "title": "미화구", "category": [ "sluqecu_ward" ], "template": [ "sluqecu_ward" ]},
   "ghashido_ward": { "title": "가시도구", "category": [ "sluqecu_ward" ], "template": [ "sluqecu_ward" ]},
-  "shitobu_ward": { "title": "시토부구", "category": [ "sluqecu_ward" ], "template": [ "sluqecu_ward" ]},
-  "shishiceso_ward": { "title": "시시체소구", "category": [ "sluqecu_ward" ], "template": [ "sluqecu_ward" ]},
-  "sluqecu_metropolis": { "title": "슬루케추시", "category": [ "coroji_metropolis", "rushikowa_city" ], "template": [ "coroji_metropolis", "sluqecu_ward" ]},
   "recadesae_ward": { "title": "레차데사에구", "category": [ "sluqecu_ward" ], "template": [ "sluqecu_ward" ]},
   "riris_city": { "title": "리리스시", "category": [ "rushikowa_city" ]},
   "rushichi": { "title": "루시치",  "category": [ "character" ], "template": [ "goddess" ]},
   "rushikowa": { "title": "루시코와", "category": [ "leghu_nation" ]},
-  "rushisewhu_metropolis": { "title": "루시세후시",  "category": [ "coroji_metropolis", "ectenium_city" ], "template": [ "coroji_metropolis" ]}
+  "rushisewhu_metropolis": { "title": "루시세후시",  "category": [ "coroji_metropolis", "ectenium_city" ], "template": [ "coroji_metropolis" ]},
+  "shitobu_ward": { "title": "시토부구", "category": [ "sluqecu_ward" ], "template": [ "sluqecu_ward" ]},
+  "shishiceso_ward": { "title": "시시체소구", "category": [ "sluqecu_ward" ], "template": [ "sluqecu_ward" ]},
+  "sluqecu_metropolis": { "title": "슬루케추시", "category": [ "coroji_metropolis", "rushikowa_city" ], "template": [ "coroji_metropolis", "sluqecu_ward" ]},
+  "tobarye_line": { "title": "토바례선", "category": [ "transit" ], "template": [ "sluqecu_metro" ]}
 }

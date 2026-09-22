@@ -1,7 +1,7 @@
 |     <big>서경권 전철 노선</big>     |              <              |              <               |              <              |              <              |                <                 |
 | :--------------------------: | :-------------------------: | :--------------------------: | :-------------------------: | :-------------------------: | :------------------------------: |
 |             일반철도             |              <              |              <               |              <              |              <              |                <                 |
-|   [[[yezzori_line\|예즈조리선]]   |    [[zajiwa_line\|자지와선]]    |  [[shamojesa_line\|샤모제사선]]   |     [[bicer_line\|비처선]]     |     [[kone_line\|코네선]]      |    [[nobichece_line\|노비체체선]]     |
+|   [[yezzori_line\|예즈조리선]]    |    [[zajiwa_line\|자지와선]]    |  [[shamojesa_line\|샤모제사선]]   |     [[bicer_line\|비처선]]     |     [[kone_line\|코네선]]      |    [[nobichece_line\|노비체체선]]     |
 |   [[zshaseme_line\|즈샤세메선]]   |  [[rubesesha_line\|루베세샤선]]  |      [[lega_line\|레가선]]      |  [[tobajesa_line\|토바제사선]]   |  [[rubeschi_line\|루베스치선]]   |                                  |
 |             도시철도             |              <              |              <               |              <              |              <              |                <                 |
 |    [[tobarye_line\|토바례선]]    |  [[zshashizu_line\|즈샤시주선]]  |    [[lesayu_line\|레사유선]]     |     [[hoker_line\|호커선]]     |  [[bigosefu_line\|비고세프선]]   |    [[crererube_line\|츠레레루베선]]    |
