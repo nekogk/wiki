@@ -103,7 +103,6 @@
     border-radius: 1.5rem;
   }
   .post-title { font-size: 1.3rem; }
-  .post-preview { font-size: 0.9375rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
