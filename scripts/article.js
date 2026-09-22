@@ -78,12 +78,19 @@ const WIKI_DIR = '/w/';
 const TEMPLATE_DIR = '/t/';
 let knownDocs = null;   // /w/index.json에 있는 문서 이름들. 없는 문서 링크를 회색으로 표시하는 데 쓴다
 
+// [[rushichi#제목]] 처럼 쓴 대상에서 문서 슬러그만 뽑는다 ([[#제목]]이면 null: 같은 문서 안)
+function wikiTargetSlug(target) {
+  const pathPart = target.split('#')[0].trim();
+  if (!pathPart) return null;
+  return pathPart.replace(/\.md$/, '').split('/').pop();
+}
+
 // [[rushichi#제목|표시]] 의 대상 → /w/rushichi/#제목
 function resolveWikiTarget(target) {
   const [pathPart, heading] = target.split('#');
   const hash = heading ? '#' + headingId(heading) : '';
   if (!pathPart.trim()) return hash;                       // [[#제목]] : 같은 문서 안
-  const slug = pathPart.trim().replace(/\.md$/, '').split('/').pop();
+  const slug = wikiTargetSlug(target);
   if (knownDocs && !knownDocs.has(slug)) return null;      // 아직 없는 문서
   return `${WIKI_DIR}${encodeURIComponent(slug)}/${hash}`;
 }
@@ -157,7 +164,7 @@ function attachFallback(img) {
   });
 }
 
-function transformText(text, base, maths, htmls, blocks, templates) {
+function transformText(text, base, maths, htmls, blocks, templates, selfSlug) {
   const codes = [];
   // 만들어 낸 HTML은 자리표시자로 넣어서 마크다운 문단 처리를 방해하지 않게 한다
   const keep = h => { htmls.push(h); return HTML_OPEN + (htmls.length - 1) + HTML_CLOSE; };
@@ -208,17 +215,20 @@ function transformText(text, base, maths, htmls, blocks, templates) {
       const alt = opt && !style ? opt.trim() : '';
       return keep(`<img ${imgSrcAttrs(name, base)} alt="${escapeHtml(alt)}"${style ? ` style="${style}"` : ''} loading="lazy">`);
     }
-    // 이미지가 아닌 임베드(다른 노트 등)는 링크로
-    const href = resolveWikiTarget(name);
+    // 이미지가 아닌 임베드(다른 노트 등)는 링크로. 자기 자신을 가리키면 링크 없는 볼드체로
     const label = escapeHtml(opt ? opt.trim() : name);
+    if (selfSlug && wikiTargetSlug(name) === selfSlug) return keep(`<strong>${label}</strong>`);
+    const href = resolveWikiTarget(name);
     return keep(href !== null ? `<a href="${href}">${label}</a>` : label);
   });
 
-  // 위키링크 [[대상|표시]]
+  // 위키링크 [[대상|표시]]. 자기 자신(이 문서)을 가리키면 링크 없는 볼드체로
   text = text.replace(/\[\[([^\]]+)\]\]/g, (_, inner) => {
     const [target, alias] = inner.split(/\\?\|/);
-    const label = escapeHtml((alias ?? target.split('#').pop().split('/').pop()).trim());
-    const href = resolveWikiTarget(target.trim());
+    const trimmed = target.trim();
+    const label = escapeHtml((alias ?? trimmed.split('#').pop().split('/').pop()).trim());
+    if (selfSlug && wikiTargetSlug(trimmed) === selfSlug) return keep(`<strong>${label}</strong>`);
+    const href = resolveWikiTarget(trimmed);
     return keep(href !== null ? `<a href="${href}">${label}</a>` : `<span class="wikilink-unresolved">${label}</span>`);
   });
 
@@ -373,11 +383,12 @@ export function fixRelativePaths(root, base = null) {
 // ---------- 틀 ----------
 // index.json의 "template" 배열(문서 위쪽에 순서대로 쌓임)이나 본문 안 {{이름}}(중간에 삽입)으로
 // 쓰인 틀마다 /t/이름.md를 불러와 글 본문과 같은 방식(위키링크, 표, 이미지 등)으로 렌더링한다.
-async function loadTemplate(name, docs) {
+// selfSlug: 이 틀을 보여주는 문서 자신. 틀 안에 이 문서로의 링크가 있으면 링크 없는 볼드체로 바꾼다.
+async function loadTemplate(name, docs, selfSlug) {
   try {
     const res = await fetch(`${TEMPLATE_DIR}${encodeURIComponent(name)}.md`);
     if (!res.ok) throw new Error(`${res.status}`);
-    const html = renderMarkdown(await res.text(), TEMPLATE_DIR, docs);
+    const html = renderMarkdown(await res.text(), TEMPLATE_DIR, docs, null, selfSlug);
     return `<div class="article-body wiki-template" data-template="${escapeHtml(name)}">${html}</div>`;
   } catch (err) {
     console.error(`틀을 불러오지 못했습니다: ${name}`, err);
@@ -396,19 +407,19 @@ function extractInlineTemplateNames(src) {
 }
 
 // 헤더용 목록 + 본문 안 {{이름}} 목록을 합쳐 한 번씩만 불러와 이름 → HTML 지도로 만든다
-async function loadTemplateMap(names, docs) {
+async function loadTemplateMap(names, docs, selfSlug) {
   const uniq = [...new Set(names.filter(Boolean))];
   const map = new Map();
-  await Promise.all(uniq.map(async name => map.set(name, await loadTemplate(name, docs))));
+  await Promise.all(uniq.map(async name => map.set(name, await loadTemplate(name, docs, selfSlug))));
   return map;
 }
 
 // ---------- 실행 ----------
 
-export function renderMarkdown(src, base, docs = null, templates = null) {
+export function renderMarkdown(src, base, docs = null, templates = null, selfSlug = null) {
   knownDocs = docs;
   const maths = [], htmls = [], blocks = [];
-  const pre = mapOutsideFences(stripFrontmatter(src), t => transformText(t, base, maths, htmls, blocks, templates));
+  const pre = mapOutsideFences(stripFrontmatter(src), t => transformText(t, base, maths, htmls, blocks, templates, selfSlug));
   return restorePlaceholders(md.render(pre), maths, htmls, blocks);
 }
 
@@ -450,7 +461,7 @@ async function main() {
     const mdText = await mdRes.text();
     const headerTemplateNames = info?.template ?? [];
     const inlineTemplateNames = extractInlineTemplateNames(mdText);
-    const templateMap = await loadTemplateMap([...headerTemplateNames, ...inlineTemplateNames], docs);
+    const templateMap = await loadTemplateMap([...headerTemplateNames, ...inlineTemplateNames], docs, slug);
 
     const templatesHtml = headerTemplateNames.length
       ? `<div class="article-templates">${headerTemplateNames.map(n => templateMap.get(n)).filter(Boolean).join('')}</div>`
