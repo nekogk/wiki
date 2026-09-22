@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ghashido_ward.md",
+                "file": "rushisewhu_metropolis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ghashido_ward"
+              "title": "rushisewhu_metropolis"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "rushichi.md",
+                "file": "rushisewhu_metropolis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,6 +190,17 @@
   },
   "active": "b1141435172389a5",
   "lastOpenFiles": [
+    "riris_city.md",
+    "recadesae_ward.md",
+    "rushisewhu_state.md",
+    "dechi_state.md",
+    "rushikowa.md",
+    "shishiceso_ward.md",
+    "ceqime.md",
+    "coroji.md",
+    "mige.md",
+    "gyru_palace.md",
+    "ghashido_ward.md",
     "ghashido_ward/index.html",
     "ghashido_ward",
     "shitobu_ward.md",
@@ -201,18 +212,11 @@
     "gashido_ward - 복사본",
     "miwha_ward - 복사본 (2)/index.html",
     "miwha_ward - 복사본 (2)",
-    "miwha_ward - 복사본/index.html",
-    "ghashido_ward.md",
-    "gyru_palace.md",
-    "rushikowa.md",
     "rushichi.md",
-    "recadesae_ward.md",
     "ectenium.md",
     "rushisewhu_metropolis.md",
-    "rushisewhu_state.md",
     "shibucheqa_streem.md",
     "sluqecu_metropolis.md",
-    "shishiceso_ward.md",
     "rushimis.md",
     "divine_throne_of_nomin.md",
     "pijizu_ward.md",
@@ -221,11 +225,7 @@
     "ectene_river.md",
     "ectenic_divine_empire.md",
     "whida.md",
-    "coroji.md",
     "national_sluqecu_university.md",
-    "riris_city.md",
-    "daco.md",
-    "inanium.md",
     "rushichi/profile.png",
     "rushichi/rushichi.png",
     "icon.svg",
