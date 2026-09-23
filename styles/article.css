@@ -15,7 +15,7 @@ summary:focus-visible {
 
 .article-header h1 {
   font-size: 2.5rem;
-  margin: 0 0 0.25rem;
+  margin: 0 0 0.55rem;
 }
 
 .article-meta {
@@ -36,11 +36,11 @@ summary:focus-visible {
 
 /* ---------- 본문 요소 ---------- */
 /* md의 #, ##, ### ... 이 각각 h2, h3, h4 ... 가 된다 */
-.article-body h2 { margin: 1.5rem 0 0.5rem; }
-.article-body h3 { margin: 1.5rem 0 0.7rem; }
-.article-body h4 { margin: 1.5rem 0 0.85rem; }
+.article-body h2 { margin: 1.5rem 0 0.7rem; }
+.article-body h3 { margin: 1.5rem 0 0.82rem; }
+.article-body h4 { margin: 1.5rem 0 0.91rem; }
 .article-body h5,
-.article-body h6 { margin: 1.5rem 0 0.95rem; }
+.article-body h6 { margin: 1.5rem 0 0.97rem; }
 
 .article-body h2 { font-size: 2rem; }
 .article-body h3 { font-size: 1.6rem; }
