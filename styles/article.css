@@ -96,15 +96,12 @@ summary:focus-visible {
 }
 
 .article-body img {
-  width: 100%;
-  max-width: 100%;
+  border: 0;
   height: auto;
   vertical-align: middle;
 }
 
 .article-body .map-embed {
-  width: 100%;
-  max-width: 100%;
   border: 0;
   vertical-align: middle;
 }
