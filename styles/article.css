@@ -204,7 +204,7 @@ summary.callout-title::marker { color: var(--muted); }
 .load-error { color: var(--muted); }
 
 /* ---------- 모바일 (article 전용) ---------- */
-@media (max-width: 560px) {
+@media (max-width: 60rem) {
   #content { padding: 1rem; }
   .article-header h1 { font-size: 2rem; }
   .article-body h2 { font-size: 1.7rem; }
