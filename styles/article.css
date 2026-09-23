@@ -210,6 +210,6 @@ summary.callout-title::marker { color: var(--muted); }
 @media (max-width: 560px) {
   #content { padding: 1rem; }
   .article-header h1 { font-size: 2rem; }
-  .article-body h2 { font-size: 1.6rem; }
-  .article-body h3 { font-size: 1.3rem; }
+  .article-body h2 { font-size: 1.7rem; }
+  .article-body h3 { font-size: 1.5rem; }
 }
