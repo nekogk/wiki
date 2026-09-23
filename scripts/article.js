@@ -106,7 +106,7 @@ function sizeStyle(opt) {
   const rem = n => `${Number((Number(n) / 16).toFixed(4))}rem`;
   return m[2]
     ? `width: ${rem(m[1])}; aspect-ratio: ${m[1]} / ${m[2]};`
-    : `max-height: ${rem(m[1])}; height: auto; width: auto; max-width: 100%;`;
+    : `max-height: ${rem(m[1])}; height: auto;`;
 }
 
 // ---------- 지도 ----------
@@ -126,7 +126,7 @@ function mapStyle(opt) {
   const rem = n => `${Number((Number(n) / 16).toFixed(4))}rem`;
   return m[2]
     ? ` style="width: ${rem(m[1])}; aspect-ratio: ${m[1]} / ${m[2]};"`
-    : ` style="max-height: ${rem(m[1])}; height: auto; width: auto; max-width: 100%;"`;
+    : ` style="max-height: ${rem(m[1])}; height: auto;"`;
 }
 
 function mapIframe(lat, lng, zoom, opt) {
