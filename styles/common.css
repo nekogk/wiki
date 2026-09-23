@@ -184,7 +184,7 @@ body *::-webkit-scrollbar-track { background: var(--panel); }
 /* ---------- 사이트 로고 ---------- */
 .site-header {
   align-items: center;
-  padding: 2rem 2rem 0;
+  padding: 2.5rem 2.5rem 0;
   line-height: 1;
 }
 
@@ -214,5 +214,5 @@ footer {
 /* ---------- 모바일 공통 ---------- */
 @media (max-width: 560px) {
   body { background: var(--panel); }
-  .site-header { padding: 1rem 1.25rem; }
+  .site-header { padding: 1rem 1rem; }
 }
