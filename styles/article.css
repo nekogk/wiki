@@ -8,7 +8,7 @@ summary:focus-visible {
 /* ---------- 본문 틀 ---------- */
 #content {
   display: block;
-  padding: 3rem 2.5rem 6rem;
+  padding: 2rem;
 }
 
 .article-header h1 {
@@ -208,7 +208,7 @@ summary.callout-title::marker { color: var(--muted); }
 
 /* ---------- 모바일 (article 전용) ---------- */
 @media (max-width: 560px) {
-  #content { padding: 1.5rem 1.25rem 3rem; }
+  #content { padding: 1rem; }
   .article-header h1 { font-size: 2rem; }
   .article-body h2 { font-size: 1.6rem; }
   .article-body h3 { font-size: 1.3rem; }

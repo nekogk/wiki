@@ -2,7 +2,7 @@
 
 /* ---------- 글 목록 ---------- */
 .post-list {
-  padding: 3rem 2.5rem 6rem;
+  padding: 2rem;
 }
 
 /* 카테고리 페이지 제목 */
@@ -90,7 +90,7 @@
 
 /* ---------- 모바일 (home 전용) ---------- */
 @media (max-width: 560px) {
-  .post-list { padding: 1.5rem 1.25rem 3rem; }
+  .post-list { padding: 1rem; }
   .page-title { font-size: 2rem; }
   .post-title { font-size: 1.3rem; }
 }
