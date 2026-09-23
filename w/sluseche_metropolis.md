@@ -1,11 +1,11 @@
 
-|         | ![[sluseche_metropolis/emblem_white.png\|144]] | <big>슬루세체시</big><br>緑泉京 \| Sluseche Metropolis |
-| :-----: | ---------------------------------------------: | ---------------------------------------------- |
-| 상위 행정구역 |                                              < | [[rushikowa\|루시코와]] [[deto_state\|데토주]]        |
+|     | ![[sluseche_metropolis/emblem_white.png\|144]] | <big>슬루세체시</big><br>緑泉京 \| Sluseche Metropolis |
+| :-: | ---------------------------------------------: | ---------------------------------------------- |
+|  주  |                                              < | [[deto_state\|데토주]]                            |
 
 # 개요
 ---
-**슬루세체시**(緑泉京 | Sluseche Metropolis)는 **[[rushikowa|루시코와]] 제 2의 도시**이자 [[deto_state|데토주]] 최대의 도시이다. 한국식 한자 독음으로는 녹천이라고 부른다.
+**슬루세체시**(緑泉京, Sluseche Metropolis)는 **[[rushikowa|루시코와]] 제 2의 도시**이자 [[deto_state|데토주]] 최대의 도시이다. 한국식 한자 독음으로는 녹천이라고 부른다.
 
 # 상징
 ---
