@@ -70,7 +70,7 @@
 /* 본문 미리보기: 명조, 넘치면 3줄에서 자름 */
 .post-preview {
   margin: 0.5rem 0 0;
-  font-family: var(--serif-font);
+  font-family: var(--sans-font);
   color: var(--text);
   display: -webkit-box;
   -webkit-box-orient: vertical;

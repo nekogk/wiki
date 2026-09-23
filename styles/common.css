@@ -49,47 +49,6 @@
 }
 
 @font-face {
-    font-family: 'serifRm';
-    src: url('/fonts/RusimezSerif.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-  font-family: 'serifKr';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/NotoSerifKR-Regular.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'serifKr';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/fonts/NotoSerifKR-Bold.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'serifSc';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/NotoSerifSC-Regular.ttf) format('truetype');
-  unicode-range: U+3400-4DBF, U+4E00-9FFF;
-}
-
-@font-face {
-  font-family: 'serifSc';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/fonts/NotoSerifSC-Bold.ttf) format('truetype');
-  unicode-range: U+3400-4DBF, U+4E00-9FFF;
-}
-
-@font-face {
   font-family: 'headKr';
   src: url('/fonts/HSSanTokki2.0(2024).ttf') format('truetype');
   font-weight: normal;
@@ -123,7 +82,6 @@
   --glass-shadow: 0 4px 20px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 
   --sans-font: 'sansRm','sansSc', 'sansKr', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-  --serif-font: 'serifRm','serifSc', 'serifKr', 'Noto Serif SC', 'AppleMyungjo', 'Batang', serif;
   --heading-font: 'headSc', 'headKr', var(--sans-font);
   --mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
 
@@ -157,7 +115,7 @@ body {
   padding: 0 0 1rem;
   background: var(--panel);
   scrollbar-color: #303030 var(--panel);
-  font-family: var(--serif-font);
+  font-family: var(--sans-font);
 }
 
 h1, h2, h3, h4, h5, h6 {
