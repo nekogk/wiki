@@ -1,7 +1,7 @@
 
 | <big>루시치</big><br>㒱七 \| Rushichi | <                                                                      |
 | :------------------------------: | ---------------------------------------------------------------------- |
-|  ![[rushichi/profile.png\|540]]  | <                                                                      |
+|  ![[rushichi/profile.png\|320]]  | <                                                                      |
 |                출생                | [[mige\|미게]] 원년 소만 21일                                                 |
 |                ^                 | [[rushisewhu_metropolis\|루시세후시]]                                       |
 |               거주지                | [[sluqecu_metropolis\|슬루케추시]] [[miwha_ward\|미화구]] [[rushimis\|우시 4-1]] |

@@ -103,7 +103,7 @@ function resolveWikiTarget(target) {
 function sizeStyle(opt) {
   const m = (opt ?? '').trim().match(/^(\d+)(?:x(\d+))?$/);
   if (!m) return null;
-  const rem = n => `${Number((Number(n) / 36).toFixed(4))}rem`;
+  const rem = n => `${Number((Number(n) / 16).toFixed(4))}rem`;
   return m[2]
     ? `width: ${rem(m[1])}; aspect-ratio: ${m[1]} / ${m[2]};`
     : `max-height: ${rem(m[1])}; height: auto; width: auto; max-width: 100%;`;
@@ -123,7 +123,7 @@ const MAP_EMBED = /!\[\[map:\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*(?:,\s*(-?[\d.]+)\s
 function mapStyle(opt) {
   const m = (opt ?? '').match(/^(\d+)(?:x(\d+))?$/);
   if (!m) return '';
-  const rem = n => `${Number((Number(n) / 36).toFixed(4))}rem`;
+  const rem = n => `${Number((Number(n) / 16).toFixed(4))}rem`;
   return m[2]
     ? ` style="width: ${rem(m[1])}; aspect-ratio: ${m[1]} / ${m[2]};"`
     : ` style="max-height: ${rem(m[1])}; height: auto; width: auto; max-width: 100%;"`;
@@ -132,7 +132,7 @@ function mapStyle(opt) {
 function mapIframe(lat, lng, zoom, opt) {
   const z = zoom ?? '0';
   const src = `${MAP_URL}?at=${lat},${lng}&z=${z}&embed=1`;
-  return `<iframe class="map-embed" src="${src}"${mapStyle(opt)} loading="lazy" title="슬루케추 지도 (${lat}, ${lng})"></iframe>`;
+  return `<iframe class="map-embed" src="${src}"${mapStyle(opt)} loading="lazy" title="Map (${lat}, ${lng})"></iframe>`;
 }
 
 // 이미지를 찾아볼 주소 목록 (앞에서부터 시도)

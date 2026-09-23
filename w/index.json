@@ -16,5 +16,6 @@
   "creseme_metropolis": { "title": "츠레세메시", "category": [ "coroji_metropolis", "rushikowa_city", "prefecture" ], "template": [ "coroji_metropolis" ]},
   "tobarye_line": { "title": "토바례선", "category": [ "transit" ], "template": [ "sluqecu_metro" ]},
   "buszsha_region": { "title": "서경권", "category": [ "rushikowa_region" ]},
-  "prefecture": { "title": "경시현", "category": [ "prefecture" ]}
+  "prefecture": { "title": "경시현", "category": [ "prefecture" ]},
+  "dechi_state": { "title": "데치주", "category": [ "rushikowa_region" ]}
 }

@@ -1,7 +1,7 @@
 
 | <big>체키메</big><br>華海 \| Ceqime | <                                                                      |
 | :----------------------------: | ---------------------------------------------------------------------- |
-|  ![[ceqime/profile.png\|540]]  | <                                                                      |
+|  ![[ceqime/profile.png\|320]]  | <                                                                      |
 |               출생               | [[mige\|미게]] 4년 우수 9일                                                  |
 |               ^                | [[rushisewhu_metropolis\|루시세후시]]                                       |
 |              거주지               | [[sluqecu_metropolis\|슬루케추시]] [[miwha_ward\|미화구]] [[rushimis\|우시 4-1]] |

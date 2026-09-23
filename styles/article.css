@@ -42,7 +42,7 @@ summary:focus-visible {
 .article-body h5,
 .article-body h6 {
   line-height: 1;
-  margin: 2.5rem 0 1rem;
+  margin: 1.5rem 0 1rem;
 }
 
 .article-body h2 { font-size: 2rem; }
@@ -95,27 +95,18 @@ summary:focus-visible {
 }
 
 .article-body img {
+  width: 100%;
   max-width: 100%;
   height: auto;
   vertical-align: middle;
 }
 
-.article-body p > img:only-child {
-  display: block;
-  margin: 2em auto;
-}
-
 .article-body .map-embed {
-  display: block;
   width: 100%;
   max-width: 100%;
-  aspect-ratio: 18 / 9;
-  margin: 2em auto;
   border: 0;
+  vertical-align: middle;
 }
-
-.article-body td .map-embed,
-.article-body th .map-embed { margin: 0.25em 0; }
 
 .article-body hr {
   border: 0;
