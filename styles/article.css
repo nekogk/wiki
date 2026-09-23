@@ -11,6 +11,8 @@ summary:focus-visible {
   padding: 2.5rem;
 }
 
+.article-header { margin-bottom: 1rem; }
+
 .article-header h1 {
   font-size: 2.5rem;
   line-height: 1;
@@ -18,7 +20,7 @@ summary:focus-visible {
 }
 
 .article-meta {
-  margin: 0 0 1rem;
+  margin: 0;
   font-family: var(--sans-font);
   color: var(--muted);
 }
@@ -29,10 +31,9 @@ summary:focus-visible {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
-  transition: color 0.15s;
 }
 
-.article-meta a:hover { color: var(--beige); }
+.article-meta a:hover { text-decoration-thickness: 2px; }
 
 /* ---------- 본문 요소 ---------- */
 /* md의 #, ##, ### ... 이 각각 h2, h3, h4 ... 가 된다 */
@@ -115,8 +116,7 @@ summary:focus-visible {
 }
 
 .article-body blockquote {
-  margin: 0 0 1.3em;
-  padding: 0.1em 0 0.1em 1.2em;
+  margin: 0 0 1rem;
   border-left: 3px solid var(--line);
   color: var(--muted);
 }
