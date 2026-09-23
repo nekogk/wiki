@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sluqecu_ward.md",
+                "file": "goddess.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sluqecu_ward"
+              "title": "goddess"
             }
           }
         ]
@@ -188,15 +188,15 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "6fb2c6b9e2e45c4b",
+  "active": "9de78d7d9a4058d6",
   "lastOpenFiles": [
+    "sluqecu_ward.md",
+    "tobarye_station.md",
     "sluqecu_metro.md",
-    "shishiceso_ward.md",
     "coroji_metropolis.md",
     "goddess.md",
-    "sluqecu_ward.md",
+    "shishiceso_ward.md",
     "creseme_metropolis.md",
-    "tobarye_station.md",
     "rebeyo_station.md",
     "remasesha_line.md",
     "haritome_line.md",

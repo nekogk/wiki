@@ -14,5 +14,6 @@
   "sluqecu_metropolis": { "title": "슬루케추시", "category": [ "coroji_metropolis", "rushikowa_city" ], "template": [ "coroji_metropolis", "sluqecu_ward" ]},
   "sluseche_metropolis": { "title": "슬루세체시", "category": [ "coroji_metropolis", "rushikowa_city" ], "template": [ "coroji_metropolis" ]},
   "creseme_metropolis": { "title": "츠레세메시", "category": [ "coroji_metropolis", "rushikowa_city" ], "template": [ "coroji_metropolis" ]},
-  "tobarye_line": { "title": "토바례선", "category": [ "transit" ], "template": [ "sluqecu_metro" ]}
+  "tobarye_line": { "title": "토바례선", "category": [ "transit" ], "template": [ "sluqecu_metro" ]},
+  "buszsha_region": { "title": "서경권", "category": [ "rushikowa_region" ]}
 }
