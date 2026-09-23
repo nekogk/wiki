@@ -51,7 +51,7 @@
 |      북부      | [[resexwa_ward\|레세와구]], [[pijizu_ward\|피지주구]], [[whohercache_ward\|훠허차체구]]       |
 |      동부      | [[refabyuxiko_ward\|레파뷰이코구]], [[sasgri_ward\|사스그리구]], [[recadesae_ward\|레차데사에구]] |
 |     동남부      | [[dabasha_ward\|다바샤구]], [[sechicaspe_ward\|세치차스페구]], [[mezuchisa_ward\|메주치사구]]   |
-|      남부      | [[tobacec_ward\|토바체츠구]], [[sachiseme_ward\|사치세메구]], [[gheyesacher_ward\|게예사처구]]  |
+|      남부      | [[tobacec_ward\|토바체츠구]], [[sachiseme_ward\|사치세메구]], [[gheyesacer_ward\|게예사처구]]   |
 |     서남부      | [[merehanya_ward\|메레하냐구]], [[seshisefu_ward\|세시세푸구]], [[miwha_ward\|미화구]]        |
 
 3핵도시 구조로 도심은 **[[shishiceso_ward|시시체소구]]**, 부도심은 [[jeseceso_ward|제세체소구]]와 [[remasesha_ward|레마세샤구]]이다. 보통 이 세 지역을 하타레체투, 라노, 레마세샤라고 부른다.
