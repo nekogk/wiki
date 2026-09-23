@@ -143,7 +143,6 @@ body *::-webkit-scrollbar-track { background: var(--panel); }
 .site-header {
   align-items: center;
   padding: 2.5rem 2.5rem 0;
-  line-height: 1;
 }
 
 .site-logo {
