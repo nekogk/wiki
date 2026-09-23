@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dechi_state.md",
+                "file": "buszsha_region.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "dechi_state"
+              "title": "buszsha_region"
             }
           }
         ]
@@ -190,25 +190,26 @@
   },
   "active": "670bcf8d99b83877",
   "lastOpenFiles": [
-    "daco.md",
     "dechi_state.md",
-    "riris_city.md",
     "ghashido_ward.md",
-    "rushikowa.md",
-    "sluqecu_metropolis.md",
-    "sluseche_metropolis.md",
-    "shitobu_ward.md",
-    "miwha_ward.md",
-    "recadesae_ward.md",
-    "shishiceso_ward.md",
-    "meriha.md",
     "creseme_metropolis.md",
     "ceqime.md",
-    "buszsha_region.md",
-    "prefecture.md",
-    "rushichi.md",
-    "rushisewhu_metropolis.md",
+    "meriha.md",
     "tobarye_line.md",
+    "whishes_city.md",
+    "sluseche_metropolis.md",
+    "sluqecu_metropolis.md",
+    "shitobu_ward.md",
+    "shishiceso_ward.md",
+    "rushisewhu_metropolis.md",
+    "rushikowa.md",
+    "rushichi.md",
+    "riris_city.md",
+    "recadesae_ward.md",
+    "prefecture.md",
+    "miwha_ward.md",
+    "daco.md",
+    "buszsha_region.md",
     "dechi_state/emblem.png",
     "dechi_state/emblem_white.png",
     "dechi_state/index.html",
@@ -233,7 +234,6 @@
     "resexwa_ward.md",
     "rushimis.md",
     "sechicaspe_line.md",
-    "tozeshita_ward.md",
     "rushikowa/flag.png",
     "rushikowa/flag_rusikowa.png"
   ]
