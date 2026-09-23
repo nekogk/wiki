@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tobarye_station.md",
+                "file": "sluqecu_ward.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tobarye_station"
+              "title": "sluqecu_ward"
             }
           }
         ]
@@ -190,9 +190,11 @@
   },
   "active": "6fb2c6b9e2e45c4b",
   "lastOpenFiles": [
+    "recadesae_ward.md",
     "sluqecu_ward.md",
-    "sluqecu_metro.md",
+    "sezomure_ward.md",
     "tobarye_station.md",
+    "sluqecu_metro.md",
     "goddess.md",
     "coroji_metropolis.md",
     "shishiceso_ward.md",
@@ -213,8 +215,6 @@
     "crererube_line.md",
     "bigosefu_line.md",
     "bigocrere_line.md",
-    "hoker_line.md",
-    "cezsefu_line.md",
-    "bipejoda_line.md"
+    "hoker_line.md"
   ]
 }
