@@ -170,7 +170,7 @@ footer {
 }
 
 /* ---------- 모바일 공통 ---------- */
-@media (max-width: 560px) {
+@media (max-width: 60rem) {
   body { background: var(--panel); }
   .site-header { padding: 1rem 1rem; }
 }
