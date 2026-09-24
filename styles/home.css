@@ -80,7 +80,6 @@
 }
 
 @media (max-width: 65rem) {
-  .post-list { padding: 3vw; }
   .page-title { font-size: 2rem; }
   .post-title { font-size: 1.5rem; }
 }
