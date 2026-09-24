@@ -63,7 +63,6 @@
   unicode-range: U+3400-4DBF, U+4E00-9FFF;
 }
 
-/* ---------- 공통 토큰 ---------- */
 :root {
   --bg: #101010;
   --panel: #202020;
@@ -129,17 +128,14 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
-/* ---------- 스크롤바 (원래 사이트와 동일) ---------- */
 ::-webkit-scrollbar { width: 0.5rem; height: 0.5rem; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: #303030; border-radius: 0.5rem; }
 ::-webkit-scrollbar-thumb:hover { background: #404040; }
 
-/* body 안의 스크롤 영역(코드 블록, 긴 수식, 표 등)은 패널 색 */
 body { scrollbar-color: #303030 var(--panel); }
 body *::-webkit-scrollbar-track { background: var(--panel); }
 
-/* ---------- 사이트 로고 ---------- */
 .site-logo {
   font-family: var(--sans-font);
   display: inline-flex;
@@ -164,7 +160,6 @@ footer {
   font-family: var(--sans-font);
 }
 
-/* ---------- 모바일 공통 ---------- */
 @media (max-width: 65rem) {
   body { background: var(--panel); }
   .site-header { padding: 3vw 3vw 0; }

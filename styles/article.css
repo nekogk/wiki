@@ -5,7 +5,6 @@ summary:focus-visible {
   outline-offset: 3px;
 }
 
-/* ---------- 본문 틀 ---------- */
 #content { display: block; }
 
 .article-header { margin-bottom: 1rem; }
@@ -22,7 +21,6 @@ summary:focus-visible {
   color: var(--muted);
 }
 
-/* 카테고리 링크 */
 .article-meta a {
   color: inherit;
   text-decoration: underline;
@@ -32,8 +30,6 @@ summary:focus-visible {
 
 .article-meta a:hover { text-decoration-thickness: 2px; }
 
-/* ---------- 본문 요소 ---------- */
-/* md의 #, ##, ### ... 이 각각 h2, h3, h4 ... 가 된다 */
 .article-body h2,
 .article-body h3,
 .article-body h4,
@@ -57,11 +53,8 @@ summary:focus-visible {
 
 .article-body li { margin: 0.25em 0; }
 
-/* 본문 양쪽 정렬 (문단, 목록, 인용, 콜아웃 안의 글) */
 .article-body p,
-.article-body li {
-  text-align: justify;
-}
+.article-body li { text-align: justify; }
 .article-body li > ul,
 .article-body li > ol { margin: 0.25em 0 0; }
 
@@ -129,7 +122,6 @@ summary:focus-visible {
   padding: 0;
 }
 
-/* 표 */
 .table-wrap { overflow-x: auto; }
 
 .article-body table {
@@ -138,7 +130,6 @@ summary:focus-visible {
   margin: 0 0 1rem;
 }
 
-/* 병합된 칸은 세로 가운데 */
 .article-body td[rowspan],
 .article-body th[rowspan] { vertical-align: middle; }
 
@@ -165,7 +156,6 @@ summary:focus-visible {
 
 .article-body .math-display .katex-display { margin: 0; }
 
-/* ---------- 콜아웃: 원래 사이트의 .details 유리 카드 ---------- */
 .callout {
   --c: var(--beige);
   margin: 0 0 1rem;
@@ -193,10 +183,8 @@ summary.callout-title::marker { color: var(--muted); }
 .callout-body { margin-top: 0.4em; }
 .callout-body > :last-child { margin-bottom: 0; }
 
-/* ---------- 오류 메시지 ---------- */
 .load-error { color: var(--muted); }
 
-/* ---------- 모바일 (article 전용) ---------- */
 @media (max-width: 65rem) {
   #content { padding: 3vw; }
   .article-header h1 { font-size: 2rem; }
