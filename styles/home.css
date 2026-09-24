@@ -34,7 +34,7 @@
 /* 원래 사이트의 .details 유리 카드 */
 .post-card {
   display: block;
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
   background: var(--glass);
   border: 1px solid var(--glass-border);
   border-radius: 1.5rem;
@@ -55,7 +55,7 @@
 .post-title {
   margin: 0;
   font-size: 1.6rem;
-  line-height: 1.3; 
+  line-height: 2.1rem; 
 }
 
 .post-category {
@@ -87,7 +87,7 @@
 }
 
 /* ---------- 모바일 (home 전용) ---------- */
-@media (max-width: 60rem) {
+@media (max-width: 64rem) {
   .post-list { padding: 4vw; }
   .page-title { font-size: 2rem; }
   .post-title { font-size: 1.5rem; }
