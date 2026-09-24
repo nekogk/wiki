@@ -31,7 +31,6 @@
   background: var(--glass);
   border: 1px solid var(--glass-border);
   border-radius: 1.5rem;
-  box-shadow: var(--glass-shadow);
   color: var(--text-strong);
   text-decoration: none;
   transition: background 0.2s ease;

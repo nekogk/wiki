@@ -163,7 +163,6 @@ summary:focus-visible {
   background: var(--glass);
   border: 1px solid var(--glass-border);
   border-radius: 1.5rem;
-  box-shadow: var(--glass-shadow);
 }
 
 .callout-tip, .callout-hint, .callout-important, .callout-success, .callout-check, .callout-done,
