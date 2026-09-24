@@ -64,5 +64,8 @@
   "nobichece_line": { "title": "노비체체선", "category": [ "sluqecu_metro" ], "template": [ "sluqecu_metro" ]},
   "zshaseme_line": { "title": "즈샤세메선", "category": [ "sluqecu_metro" ], "template": [ "sluqecu_metro" ]},
   "lega_line": { "title": "레가선", "category": [ "sluqecu_metro" ], "template": [ "sluqecu_metro" ]},
-  "dechi_state": { "title": "데치주", "category": [ "rushikowa_region" ]}
+  "dechi_state": { "title": "데치주", "category": [ "rushikowa_region" ]},
+  "stellar_romanization": { "title": "성라식 로마자 표기법" },
+  "coroji_romanization": { "title": "삼록언어청 공시 로마자 표기법" },
+  "ropona": { "title": "로포나" }
 }
