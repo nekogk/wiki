@@ -1,9 +1,6 @@
 @import url('./common.css');
 
 /* ---------- 글 목록 ---------- */
-.post-list {
-  padding: 2rem;
-}
 
 /* 카테고리 페이지 제목 */
 .page-title {
@@ -14,7 +11,7 @@
 /* 초성 묶음 사이 간격 */
 
 .section-label {
-  margin: 1.5 0 0.5rem;
+  margin: 1.5rem 0 0.5rem;
   font-family: var(--sans-font);   /* 카테고리와 같은 Pretendard */
   color: var(--muted);             /* 카테고리와 같은 회색 */
   padding-left: 1rem;            /* 카드 안쪽 글자와 같은 선에 맞춤 */
