@@ -111,11 +111,10 @@ summary:focus-visible {
 
 .article-body blockquote {
   margin: 0 0 1rem;
-  border-left: 3px solid var(--line);
-  color: var(--muted);
+  padding: 0 1rem 0;
+  border-left: 2px solid var(--pink);
+  color: var(--text);
 }
-
-.article-body blockquote > :last-child { margin-bottom: 0; }
 
 /* 코드 */
 .article-body code {
