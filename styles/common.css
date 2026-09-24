@@ -161,7 +161,6 @@ footer {
 }
 
 @media (max-width: 65rem) {
-  .container { padding: 3vw; }
   body { background: var(--panel); }
-  .site-header { padding: 3vw 3vw 0; }
+  .container { padding: 3vw; }
 }
