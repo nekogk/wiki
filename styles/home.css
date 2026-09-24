@@ -2,20 +2,19 @@
 
 /* ---------- 글 목록 ---------- */
 .post-list {
-  padding: 2.5rem;
+  padding: 2rem;
 }
 
 /* 카테고리 페이지 제목 */
 .page-title {
-  margin: 0 0 2.5rem;
+  margin: 0 0 1rem;
   font-size: 2.5rem;
 }
 
 /* 초성 묶음 사이 간격 */
-.post-section + .post-section { margin-top: 2.5rem; }
 
 .section-label {
-  margin: 0 0 1rem;
+  margin: 1.5 0 0.5rem;
   font-family: var(--sans-font);   /* 카테고리와 같은 Pretendard */
   color: var(--muted);             /* 카테고리와 같은 회색 */
   padding-left: 1rem;            /* 카드 안쪽 글자와 같은 선에 맞춤 */
@@ -29,10 +28,13 @@
   padding: 0;
   display: grid;
   gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* 원래 사이트의 .details 유리 카드 */
 .post-card {
+  max-width: 30rem;
   display: block;
   padding: 0.5rem 1rem;
   background: var(--glass);
@@ -59,6 +61,7 @@
 }
 
 .post-category {
+  margin-left: 1rem;
   flex-shrink: 0;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
@@ -87,8 +90,8 @@
 }
 
 /* ---------- 모바일 (home 전용) ---------- */
-@media (max-width: 64rem) {
-  .post-list { padding: 4vw; }
+@media (max-width: 65rem) {
+  .post-list { padding: 3vw; }
   .page-title { font-size: 2rem; }
   .post-title { font-size: 1.5rem; }
 }

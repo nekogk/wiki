@@ -109,7 +109,7 @@ body {
 }
 
 .container {
-  max-width: 64rem;
+  max-width: 65rem;
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 0 1rem;
@@ -142,7 +142,7 @@ body *::-webkit-scrollbar-track { background: var(--panel); }
 /* ---------- 사이트 로고 ---------- */
 .site-header {
   align-items: center;
-  padding: 2.5rem 2.5rem 0;
+  padding: 2rem 2rem 0;
 }
 
 .site-logo {
@@ -169,7 +169,7 @@ footer {
 }
 
 /* ---------- 모바일 공통 ---------- */
-@media (max-width: 64rem) {
+@media (max-width: 65rem) {
   body { background: var(--panel); }
-  .site-header { padding: 4vw 4vw 0; }
+  .site-header { padding: 3vw 3vw 0; }
 }

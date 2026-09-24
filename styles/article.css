@@ -8,7 +8,7 @@ summary:focus-visible {
 /* ---------- 본문 틀 ---------- */
 #content {
   display: block;
-  padding: 2.5rem;
+  padding: 2rem;
 }
 
 .article-header { margin-bottom: 1rem; }
@@ -53,7 +53,7 @@ summary:focus-visible {
 .article-body ul,
 .article-body ol,
 .article-body pre,
-.article-body .table-wrap { margin: 0 0 1rem; }
+.article-body .table-wrap { margin: 0 0 1.5rem; }
 
 .article-body ul,
 .article-body ol { padding-left: 1.5em; }
@@ -201,8 +201,8 @@ summary.callout-title::marker { color: var(--muted); }
 .load-error { color: var(--muted); }
 
 /* ---------- 모바일 (article 전용) ---------- */
-@media (max-width: 64rem) {
-  #content { padding: 4vw; }
+@media (max-width: 65rem) {
+  #content { padding: 3vw; }
   .article-header h1 { font-size: 2rem; }
   .article-body h2 { font-size: 1.7rem; }
   .article-body h3 { font-size: 1.5rem; }
