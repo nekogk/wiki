@@ -11,9 +11,9 @@
 # 개요
 ---
 
-|              [[buszsha_region\|서경권]]의 [[prefecture\|경시현]]               |           <            |             <              |             <              |            <            |
-| :---------------------------------------------------------------------: | :--------------------: | :------------------------: | :------------------------: | :---------------------: |
-| ![[sluqecu_metropolis/emblem.png\|32]]<br>[[sluqecu_metropolis\|슬루케추시]] | [[whishes_city\|휘셰스시]] | [[smijiseda_city\|스미지세다시]] |  [[haritome_city\|하리토메시]]  | [[cresefu_city\|츠레세푸시]] |
-|                                    ?                                    | [[ruchi_county\|루치현]]  | [[remaxili_county\|레마일리현]] | [[hanyaris_county\|하냐리스현]] |            ?            |
+| [[buszsha_region\|서경권]]의 [[prefecture\|경시현]] | < | < | < | < |
+|:-:|:-:|:-:|:-:|:-:|
+| ![[sluqecu_metropolis/emblem.png\|32]]<br>[[sluqecu_metropolis\|슬루케추시]] | [[whishes_city\|휘셰스시]] | [[smijiseda_city\|스미지세다시]] | [[haritome_city\|하리토메시]] | [[cresefu_city\|츠레세푸시]] |
+| ? | [[ruchi_county\|루치현]] | [[remaxili_county\|레마일리현]] | [[hanyaris_county\|하냐리스현]] | ? |
 
 [[sluqecu_metropolis|슬루케추시]]를 중심으로 한 도시권. 

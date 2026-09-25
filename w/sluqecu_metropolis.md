@@ -1,13 +1,13 @@
 
-|                                  | ![[sluqecu_metropolis/emblem_white.png\|64]] | <big>슬루케추시</big><br>緑山京 \| Sluqecu Metropolis |
-| :------------------------------: | -------------------------------------------: | --------------------------------------------- |
-| ![[map:36928,27904,-5\|400x160]] |                                            < | <                                             |
-|              시청 소재지              |                                            < | [[shishiceso_ward\|시시체소구]] 하타레체투 3가 11-17     |
-|                주                 |                                            < | [[dechi_state\|데치주]]                          |
-|             하위 행정구역              |                                            < | 30구                                           |
-|                면적                |                                            < | 657km<sup>2</sup>                             |
-|                인구                |                                            < | 890만명                                         |
-|               지역번호               |                                            < | 011                                           |
+| | ![[sluqecu_metropolis/emblem_white.png\|64]] | <big>슬루케추시</big><br>緑山京 \| Sluqecu Metropolis |
+| :-|
+| ![[map:36928,27904,-5\|400x160]] | < | < |
+| 시청 소재지 | < | [[shishiceso_ward\|시시체소구]] 하타레체투 3가 11-17 |
+| 주 | < | [[dechi_state\|데치주]] |
+| 하위 행정구역 | < | 30구 |
+| 면적 | < | 657km<sup>2</sup> |
+| 인구 | < | 890만명 |
+| 지역번호 | < | 011 |
 
 # 개요
 ---
@@ -19,8 +19,8 @@
 ---
 
 | ![[sluqecu_metropolis/flag.png\|160]] | ![[sluqecu_metropolis/emblem_white.png\|160]] |
-| :-----------------------------------: | :-------------------------------------------: |
-|                  깃발                   |                      휘장                       |
+| :-: | :-: |
+| 깃발 | 휘장 |
 
 [[rushikowa|루시코와]]의 상징인 달과 정보화된 현대적 도시를 상징한다. 깃발에 쓰이는 주 색은 연두색 <sub>(#89B55C)</sub>이다.
 
@@ -41,18 +41,18 @@
 ## 도시구조
 ---
 
-| 슬루케추시의 지역 구분 | <                                                                                |
-| :----------: | -------------------------------------------------------------------------------- |
-|      중부      | [[shishiceso_ward\|시시체소구]], [[ghashido_ward\|가시도구]], [[shitobu_ward\|시토부구]]      |
-|     내남부      | [[righeju_ward\|리게주구]], [[jeseceso_ward\|제세체소구]], [[tozeshita_ward\|토제시타구]]      |
-|     내서부      | [[miseme_ward\|미세메구]], [[asrinyu_ward\|아스리뉴구]], [[lesawez_ward\|레사웨즈구]]          |
-|      서부      | [[sezomure_ward\|세조무레구]], [[remasesha_ward\|레마세샤구]], [[rereas_ward\|레레아스구]]      |
-|     서북부      | [[serksosi_ward\|서코시구]], [[yujaseme_ward\|유자세메구]], [[kozewhora_ward\|코제훠라구]]     |
-|      북부      | [[resexwa_ward\|레세와구]], [[pijizu_ward\|피지주구]], [[whohercache_ward\|훠허차체구]]       |
-|      동부      | [[refabyuxiko_ward\|레파뷰이코구]], [[sasgri_ward\|사스그리구]], [[recadesae_ward\|레차데사에구]] |
-|     동남부      | [[dabasha_ward\|다바샤구]], [[sechicaspe_ward\|세치차스페구]], [[mezuchisa_ward\|메주치사구]]   |
-|      남부      | [[tobacec_ward\|토바체츠구]], [[sachiseme_ward\|사치세메구]], [[gheyesacer_ward\|게예사처구]]   |
-|     서남부      | [[merehanya_ward\|메레하냐구]], [[seshisefu_ward\|세시세푸구]], [[miwha_ward\|미화구]]        |
+| 슬루케추시의 지역 구분 | < |
+| :-: | - |
+| 중부 | [[shishiceso_ward\|시시체소구]], [[ghashido_ward\|가시도구]], [[shitobu_ward\|시토부구]] |
+| 내남부 | [[righeju_ward\|리게주구]], [[jeseceso_ward\|제세체소구]], [[tozeshita_ward\|토제시타구]] |
+| 내서부 | [[miseme_ward\|미세메구]], [[asrinyu_ward\|아스리뉴구]], [[lesawez_ward\|레사웨즈구]] |
+| 서부 | [[sezomure_ward\|세조무레구]], [[remasesha_ward\|레마세샤구]], [[rereas_ward\|레레아스구]] |
+| 서북부 | [[serksosi_ward\|서코시구]], [[yujaseme_ward\|유자세메구]], [[kozewhora_ward\|코제훠라구]] |
+| 북부 | [[resexwa_ward\|레세와구]], [[pijizu_ward\|피지주구]], [[whohercache_ward\|훠허차체구]] |
+| 동부 | [[refabyuxiko_ward\|레파뷰이코구]], [[sasgri_ward\|사스그리구]], [[recadesae_ward\|레차데사에구]] |
+| 동남부 | [[dabasha_ward\|다바샤구]], [[sechicaspe_ward\|세치차스페구]], [[mezuchisa_ward\|메주치사구]] |
+| 남부 | [[tobacec_ward\|토바체츠구]], [[sachiseme_ward\|사치세메구]], [[gheyesacer_ward\|게예사처구]] |
+| 서남부 | [[merehanya_ward\|메레하냐구]], [[seshisefu_ward\|세시세푸구]], [[miwha_ward\|미화구]] |
 
 3핵도시 구조로 도심은 **[[shishiceso_ward|시시체소구]]**, 부도심은 [[jeseceso_ward|제세체소구]]와 [[remasesha_ward|레마세샤구]]이다. 보통 이 세 지역을 하타레체투, 라노, 레마세샤라고 부른다.
 

@@ -1,6 +1,6 @@
 
 |                         <big>슬루케추역</big><br>緑山駅 \| Sluqecu Station                         |                                                    <                                                     |                                                  <                                                  |
-| :----------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
+| :-: | :-: | :-|
 |             <small>외선순환</small><br>[[hatarechetu_station\|하타레체투]]<br>← 1.4 km              | ![[shamojesa_line/icon.png\|32]]<br><small>[[shamojesa_line\|샤모제사선]]</small><br><small>(DC1201)</small>  |                     <small>내선순환</small><br>[[cherema_station\|체레마]]<br>2.6 km →                     |
 |                <small>? 방면</small><br>[[rujewho_station\|루제훠]]<br>← 2.3 km                 |  ![[zshaseme_line/icon.png\|32]]<br><small>[[zshaseme_line\|즈샤세메선]]</small><br><small>(DC2050)</small>   |                  <small>? 방면</small><br>[[hatarechetu_station\|하타레체투]]<br>1.5 km →                  |
 |    <small>[[rebeyo_station\|레베요]] 방면</small><br>[[rewesuwhu_station\|레웨수후]]<br>← 0.8 km    |    ![[tobarye_line/icon.png\|32]]<br><small>[[tobarye_line\|토바례선]]</small><br><small>(SQ0147)</small>    |        <small>[[qecude_station\|케추데]] 방면</small><br>[[gyru_palace_station\|현림궁]]<br>0.6 km →        |
