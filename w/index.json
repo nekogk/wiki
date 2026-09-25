@@ -75,5 +75,13 @@
   "rechefacu_university": { "title": "레체파추대학교", "category": [ "divine_university" ]},
   "rujikade": { "title": "육경대", "category": [ "divine_university" ]},
   "common_essay_exam": { "title": "과별공통논술" },
+  "sluqecu_station": { "title": "슬루케추역", "category": [ "sluqecu_station" ]},
+  "metropolitan_city_hall_station": { "title": "시청역", "category": [ "sluqecu_station" ]},
+  "righeju_station": { "title": "리게주역", "category": [ "sluqecu_station" ]},
+  "hatarechetu_station": { "title": "하타레체투역", "category": [ "sluqecu_station" ]},
+  "rizaseca_station": { "title": "리자세차역", "category": [ "sluqecu_station" ]},
+  "gyru_palace_station": { "title": "현림궁역", "category": [ "sluqecu_station" ]},
+  "national_sluqecu_university_station": { "title": "슬루케추대학교역", "category": [ "sluqecu_station" ]},
+  "cetu_station": { "title": "체투역", "category": [ "sluqecu_station" ]},
   "ropona": { "title": "로포나" }
 }
