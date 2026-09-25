@@ -1,4 +1,4 @@
---
+
 | | ![[zshashizu_line/icon.png\|64]] | <big>즈샤시주선</big><br>京心鉄道 \| Zshashizu Line |
 | :-: | -: | :- |
 | 노선 정보 | < | < |
