@@ -67,5 +67,11 @@
   "dechi_state": { "title": "데치주", "category": [ "rushikowa_region" ]},
   "stellar_romanization": { "title": "성라식 로마자 표기법" },
   "coroji_romanization": { "title": "삼록언어청 공시 로마자 표기법" },
+  "sluqecu_university": { "title": "슬루케추대학교", "category": [ "divine_university" ] },
+  "sluseche_university": { "title": "슬루세체대학교", "category": [ "divine_university" ] },
+  "rushisewhu_university": { "title": "루시세후대학교", "category": [ "divine_university" ] },
+  "creseme_university": { "title": "츠레세메대학교", "category": [ "divine_university" ] },
+  "pejeseme_university": { "title": "페제세메대학교", "category": [ "divine_university" ] },
+  "rechefacu_university": { "title": "레체파추대학교", "category": [ "divine_university" ] },
   "ropona": { "title": "로포나" }
 }
