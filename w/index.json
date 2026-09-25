@@ -83,5 +83,7 @@
   "gyru_palace_station": { "title": "현림궁역", "category": [ "sluqecu_station" ]},
   "national_sluqecu_university_station": { "title": "슬루케추대학교역", "category": [ "sluqecu_station" ]},
   "cetu_station": { "title": "체투역", "category": [ "sluqecu_station" ]},
+  "hatarechetu_park_station": { "title": "하타레체투공원역", "category": [ "sluqecu_station" ]},
+  "hatarechetu_4th_street_station": { "title": "하타레체투4가역", "category": [ "sluqecu_station" ]},
   "ropona": { "title": "로포나" }
 }
