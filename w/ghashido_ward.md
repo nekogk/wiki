@@ -8,4 +8,6 @@
 
 # 개요
 ---
-[[sluqecu_metropolis|슬루케추시]] 중부에 위치한 구.
+**가시도구**는 [[sluqecu_metropolis|슬루케추시]] 중부에 위치한 구로, 동쪽으로는 [[shishiceso_ward|시시체소구]], 서쪽으로는 [[refabyuxiko_ward|레파뷰이코구]], 남쪽으로는 [[shitobu_ward|시토부구]]와 [[sasgri_ward|사스그리구]], 북쪽으로는 [[pijizu_ward|피지주구]]와 [[whohercache_ward|훠허차체구]]를 접하고 있다. 구의 중심에는 [[sebucheqa_streem|세부체카천]]이 흐른다.
+
+과거에는 동구로도 불렸으며, 현재는 시시체소구의 하타레체투 도심가의 확장으로 가시도구의 북쪽은 도심화가 많이 진행된 상태이다.

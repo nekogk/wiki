@@ -5,10 +5,13 @@
 |                   구청 소재지                   | 유헤즈 3가 4-21                   |
 |                    경시현                     | [[sluqecu_metropolis\|슬루케추시]] |
 |                  하위 행정구역                   | 13가                           |
+|                    지역번호                    | 011-01                        |
 
 # 개요
 ---
-[[sluqecu_metropolis|슬루케추시]] 중부에 위치한 구. 명실상부 슬루케추의 도심을 구성하며, 중심으로는 [[sebucheqa_streem|세부체카천]]이 흐른다. 동쪽으로 [[ghashido_ward|가시도구]], 서쪽으로 [[miseme_ward|미세메구]]와 [[lesawez_ward|레사웨즈구]], 남쪽으로 [[shitobu_ward|시토부구]], 북쪽으로 [[pijizu_ward|피지주구]]와 맞대고 있다. 구의 명칭 시시체소는 '신의 길'이라는 뜻으로, 전근대에는 [[divine_throne_of_nomin|노미신좌]]와 [[gyru_palace|현림궁]]을 잇는 길을 뜻하는 단어였다.
+[[sluqecu_metropolis|슬루케추시]] 중부에 위치한 구. 명실상부 슬루케추의 도심을 구성하며, 중심으로는 [[sebucheqa_streem|세부체카천]]이 흐른다. 동쪽으로 [[ghashido_ward|가시도구]], 서쪽으로 [[miseme_ward|미세메구]]와 [[lesawez_ward|레사웨즈구]], 남쪽으로 [[shitobu_ward|시토부구]], 북쪽으로 [[pijizu_ward|피지주구]]와 맞대고 있다.
+
+과거에는 중구로 불렸으며, 현재의 명칭 시시체소는 '신의 길'이라는 뜻을 가진다. 전근대부터 [[divine_throne_of_nomin|노미신좌]]와 [[gyru_palace|현림궁]]을 잇는 정치, 종교적으로 중요도가 높은 이 길을 시시체소라 불렀으며, 이 지역은 현재에도 중요한 지역이다.
 
 # 상징
 ---

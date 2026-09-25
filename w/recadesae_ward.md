@@ -8,4 +8,4 @@
 
 # 개요
 ---
-[[sluqecu_metropolis|슬루케추시]] 동부에 위치한 구. 
+**레차데사에구**는 [[sluqecu_metropolis|슬루케추시]] 동부에 위치한 구이다.
