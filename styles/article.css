@@ -161,7 +161,7 @@ summary:focus-visible {
   margin: 0 0 1rem;
   padding: 0.5rem 1rem;
   background: var(--glass);
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--line);
   border-radius: 1.5rem;
 }
 

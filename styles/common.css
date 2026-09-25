@@ -64,20 +64,18 @@
 }
 
 :root {
-  --bg: #101010;
-  --panel: #202020;
-  --text: #e6e6e6;
+  --bg: #111111;
+  --panel: #222222;
+  --glass: #333333;
+  --glass-hover: #444444;
+  --line: #555555;
+  --muted: #999999;
+  --text: #eeeeee;
   --text-strong: #ffffff;
-  --muted: #9a9a9a;
-  --line: #505050;
   --green: #61c26c;
   --beige: #eabf8c;
   --coral: #ed7457;
   --pink: #f3a6c0;
-
-  --glass: rgba(255, 255, 255, 0.07);
-  --glass-hover: rgba(255, 255, 255, 0.14);
-  --glass-border: rgba(255, 255, 255, 0.21);
 
   --sans-font: 'sansRm','sansSc', 'sansKr', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
   --heading-font: 'headSc', 'headKr', var(--sans-font);
