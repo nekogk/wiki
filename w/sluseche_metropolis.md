@@ -1,7 +1,7 @@
 
-| | ![[sluseche_metropolis/emblem_white.png\|64]] | <big>슬루세체시</big><br>緑泉京 \| Sluseche Metropolis |
-| :-: | -: | - |
-| 주 | < | [[deto_state\|데토주]] |
+| | ![[sluseche_metropolis/emblem_white.png\|64]] | <big>슬루세체시</big><br>緑泉京 \| Sluseche Metropolis | < |
+| :-: | -: | - | :-: |
+| 주 | < | < | [[deto_state\|데토주]] |
 
 # 개요
 ---

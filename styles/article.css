@@ -7,7 +7,7 @@ summary:focus-visible {
 
 #content { display: block; }
 
-.article-header { margin-bottom: 1rem; }
+.article-header { margin-bottom: 1.5rem; }
 
 .article-header h1 {
   font-size: 2.5rem;
@@ -96,11 +96,11 @@ summary:focus-visible {
 .article-body hr {
   border: 0;
   border-top: 1px solid var(--line);
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
 }
 
 .article-body blockquote {
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
   padding: 0 1rem 0;
   border-left: 2px solid var(--pink);
   color: var(--text);
@@ -127,7 +127,7 @@ summary:focus-visible {
 .article-body table {
   border-collapse: collapse;
   width: auto; 
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
 }
 
 .article-body td[rowspan],
@@ -136,7 +136,7 @@ summary:focus-visible {
 .article-body th,
 .article-body td {
   white-space: nowrap;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   border-bottom: 1px solid var(--line);
   text-align: left;
 }
@@ -148,8 +148,7 @@ summary:focus-visible {
 
 .article-body .math-display {
   display: block;
-  margin: 0 0 1rem;
-  padding: 0.5rem 1rem;
+  margin: 0 0 1.5rem;
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -159,7 +158,7 @@ summary:focus-visible {
 .callout {
   --c: var(--beige);
   margin: 0 0 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   background: var(--glass);
   border: 1px solid var(--line);
   border-radius: 1.5rem;

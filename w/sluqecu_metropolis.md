@@ -1,13 +1,13 @@
 
-| | ![[sluqecu_metropolis/emblem_white.png\|64]] | <big>슬루케추시</big><br>緑山京 \| Sluqecu Metropolis |
-| :-|
-| ![[map:36928,27904,-5\|400x160]] | < | < |
-| 시청 소재지 | < | [[shishiceso_ward\|시시체소구]] 하타레체투 3가 11-17 |
-| 주 | < | [[dechi_state\|데치주]] |
-| 하위 행정구역 | < | 30구 |
-| 면적 | < | 657km<sup>2</sup> |
-| 인구 | < | 890만명 |
-| 지역번호 | < | 011 |
+| | ![[sluqecu_metropolis/emblem_white.png\|64]] | <big>슬루케추시</big><br>緑山京 \| Sluqecu Metropolis | < |
+| :-: | -: | - | :-: |
+| ![[map:36928,27904,-5\|400x160]] | < | < | < |
+| 시청 소재지 | < | < | [[shishiceso_ward\|시시체소구]] 하타레체투 3가 11-17 |
+| 주 | < | < | [[dechi_state\|데치주]] |
+| 하위 행정구역 | < | < | 30구 |
+| 면적 | < | < | 657km<sup>2</sup> |
+| 인구 | < | < | 890만명 |
+| 지역번호 | < | < | 011 |
 
 # 개요
 ---

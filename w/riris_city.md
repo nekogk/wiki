@@ -1,9 +1,9 @@
 
-| | ![[riris_city/emblem_white.png\|64]] | <big>리리스시</big><br>旧雲市 \| Riris City |
-| :-: | -: | - |
-| 주 | < | [[hayane_state\|하야네주]] |
-| 하위 행정구역 | < | 9구 |
-| 인구 | < | 370만명 |
+| | ![[riris_city/emblem_white.png\|64]] | <big>리리스시</big><br>旧雲市 \| Riris City | < |
+| :-: | -: | - | :-: |
+| 주 | < | < | [[hayane_state\|하야네주]] |
+| 하위 행정구역 | < | < | 9구 |
+| 인구 | < | < | 370만명 |
 
 # 개요
 ---
