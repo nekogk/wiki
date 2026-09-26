@@ -85,5 +85,12 @@
   "cetu_station": { "title": "체투역", "category": [ "sluqecu_station" ]},
   "hatarechetu_park_station": { "title": "하타레체투공원역", "category": [ "sluqecu_station" ]},
   "hatarechetu_4th_street_station": { "title": "하타레체투4가역", "category": [ "sluqecu_station" ]},
-  "ropona": { "title": "로포나" }
+  "ropona": { "title": "로포나" },
+  "leghu": { "title": "레구", "category": [ "wez_system" ]  },
+  "ryapyes": { "title": "랴페스", "category": [ "wez_system" ]  },
+  "rushipyes": { "title": "루시페스", "category": [ "wez_system" ]  },
+  "wez": { "title": "웨즈", "category": [ "wez_system" ]  },
+  "facu": { "title": "파추", "category": [ "wez_system" ] },
+  "sprenyiat": { "title": "스프렌지아트", "category": [ "leghu_nation" ]},
+  "sprenyiat_se_xpran": { "title": "스프렌지아트어" }
 }
