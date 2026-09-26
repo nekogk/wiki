@@ -47,7 +47,7 @@
 | 내남부 | [[righeju_ward\|리게주구]], [[jeseceso_ward\|제세체소구]], [[tozeshita_ward\|토제시타구]] |
 | 내서부 | [[miseme_ward\|미세메구]], [[asrinyu_ward\|아스리뉴구]], [[lesawez_ward\|레사웨즈구]] |
 | 서부 | [[sezomure_ward\|세조무레구]], [[remasesha_ward\|레마세샤구]], [[rereas_ward\|레레아스구]] |
-| 서북부 | [[serksosi_ward\|서코시구]], [[yujaseme_ward\|유자세메구]], [[kozewhora_ward\|코제훠라구]] |
+| 서북부 | [[serksoshi_ward\|서코시구]], [[yujaseme_ward\|유자세메구]], [[kozewhora_ward\|코제훠라구]] |
 | 북부 | [[resexwa_ward\|레세와구]], [[pijizu_ward\|피지주구]], [[whohercache_ward\|훠허차체구]] |
 | 동부 | [[refabyuxiko_ward\|레파뷰이코구]], [[sasgri_ward\|사스그리구]], [[recadesae_ward\|레차데사에구]] |
 | 동남부 | [[dabasha_ward\|다바샤구]], [[sechicaspe_ward\|세치차스페구]], [[mezuchisa_ward\|메주치사구]] |
