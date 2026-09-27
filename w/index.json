@@ -1,6 +1,7 @@
 {
   "ceqime": { "title": "체키메", "category": [ "character" ], "template": [ "goddess" ]},
   "daco": { "title": "다코", "category": [ "character" ]},
+  "rebigo_creghada": { "title": "레비고 츠레가다", "category": [ "character" ]},
   "meriha": { "title": "메리하", "category": [ "character" ], "template": [ "goddess" ]},
   "miwha_ward": { "title": "미화구", "category": [ "sluqecu_ward" ], "template": [ "sluqecu_ward" ]},
   "ghashido_ward": { "title": "가시도구", "category": [ "sluqecu_ward" ], "template": [ "sluqecu_ward" ]},
@@ -95,5 +96,6 @@
   "facu": { "title": "파추", "category": [ "wez_system" ] },
   "cdifgian": { "title": "슈디프기안", "category": [ "leghu_nation" ]},
   "cdiphres_ecoin": { "title": "슈디프레스어" },
+  "gri": { "title": "그리" },
   "stiapjip": { "title": "스티압지프", "category": [ "capital_city" ]}
 }
