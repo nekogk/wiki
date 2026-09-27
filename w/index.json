@@ -8,10 +8,12 @@
   "riris_city": { "title": "리리스시", "category": [ "rushikowa_city", "prefecture" ]},
   "rushichi": { "title": "루시치",  "category": [ "character" ], "template": [ "goddess" ]},
   "rushikowa": { "title": "루시코와", "category": [ "leghu_nation" ]},
-  "rushisewhu_metropolis": { "title": "루시세후시",  "category": [ "coroji_metropolis", "ectenium_city", "prefecture" ], "template": [ "coroji_metropolis" ]},
+  "rushisewhu_metropolis": { "title": "루시세후시",  "category": [ "coroji_metropolis", "ectenium_city", "prefecture", "capital_city" ], "template": [ "coroji_metropolis" ]},
+  "pejeseme_metropolis": { "title": "페제세메시",  "category": [ "coroji_metropolis", "ectenium_city", "prefecture" ], "template": [ "coroji_metropolis" ]},
+  "rechefacu_metropolis": { "title": "레체파추시",  "category": [ "coroji_metropolis", "prefecture", "capital_city" ], "template": [ "coroji_metropolis" ]},
   "shitobu_ward": { "title": "시토부구", "category": [ "sluqecu_ward" ], "template": [ "sluqecu_ward" ]},
   "shishiceso_ward": { "title": "시시체소구", "category": [ "sluqecu_ward" ], "template": [ "sluqecu_ward" ]},
-  "sluqecu_metropolis": { "title": "슬루케추시", "category": [ "coroji_metropolis", "rushikowa_city", "prefecture" ], "template": [ "coroji_metropolis", "sluqecu_ward" ]},
+  "sluqecu_metropolis": { "title": "슬루케추시", "category": [ "coroji_metropolis", "rushikowa_city", "prefecture", "capital_city"], "template": [ "coroji_metropolis", "sluqecu_ward" ]},
   "sluseche_metropolis": { "title": "슬루세체시", "category": [ "coroji_metropolis", "rushikowa_city", "prefecture" ], "template": [ "coroji_metropolis" ]},
   "creseme_metropolis": { "title": "츠레세메시", "category": [ "coroji_metropolis", "rushikowa_city", "prefecture" ], "template": [ "coroji_metropolis" ]},
   "tobarye_line": { "title": "토바례선", "category": [ "sluqecu_metro" ], "template": [ "sluqecu_metro" ]},
@@ -91,6 +93,7 @@
   "rushipyes": { "title": "루시페스", "category": [ "wez_system" ]  },
   "wez": { "title": "웨즈", "category": [ "wez_system" ]  },
   "facu": { "title": "파추", "category": [ "wez_system" ] },
-  "sprenyiat": { "title": "스프렌지아트", "category": [ "leghu_nation" ]},
-  "sprenyiat_se_xpran": { "title": "스프렌지아트어" }
+  "cdifgian": { "title": "슈디프기안", "category": [ "leghu_nation" ]},
+  "cdiphres_ecoin": { "title": "슈디프레스어" },
+  "stiapjip": { "title": "스티압지프", "category": [ "capital_city" ]}
 }
