@@ -8,7 +8,7 @@
 |             국적              | ![[rushikowa/flag.png\|16]] [[rushikowa\|루시코와]]                                            |
 |             학력              | 중학학력인정제도<sub> (합격)</sub><br>[[sluqecu_university\|슬루케추대학교]] <sub>(도시공학 · 컴퓨터공학 / 학사)</sub> |
 |             신체              | 171cm \| 51kg                                                                              |
-|             가족              | 어머니                                                                                        |
+|             가족              | 어머니<br>남동생 [[rebigo_creghada\|레비고 츠레가다]]                                                   |
 |             성격              | INTP \| 9w8                                                                                |
 
 # 개요
