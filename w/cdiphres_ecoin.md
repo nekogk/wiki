@@ -1,5 +1,5 @@
 
-| <big>슈디프레스어</big><br>Çdiphres Ecôiñ | < |
+| <big>슈디프레스어</big><br>Çdiphres Ecoiñ | < |
 | :-: | - |
 | 유형 | 교착어 |
 | 어순 | 주어-서술어-목적어 (SVO) |
@@ -7,7 +7,7 @@
 | 공용어 지정 지역 | [[cdifgian\|슈디프기안]] |
 | 계통 | **고립어** |
 
->Ûqfris eñtioñ phôutzuaq semtiq seçût.
+>Uqfris eñtioñ phoutzuaq semtiq seçut.
 >초록 물결이 톡톡 튀는 젊음처럼
 
 # 개요
