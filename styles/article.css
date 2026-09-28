@@ -127,7 +127,7 @@ summary:focus-visible {
 .article-body table {
   border-collapse: collapse;
   width: auto; 
-  margin: 0 0 1.5rem;
+  margin: 0;
 }
 
 .article-body td[rowspan],
@@ -157,8 +157,8 @@ summary:focus-visible {
 
 .callout {
   --c: var(--beige);
-  margin: 0 0 1rem;
-  padding: 0.5rem 1.5rem;
+  margin: 0 0 1.5rem;
+  padding: 0.5rem 1rem;
   background: var(--glass);
   border: 1px solid var(--line);
   border-radius: 1.5rem;
