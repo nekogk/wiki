@@ -1,22 +1,18 @@
-// 카테고리 페이지(/c/폴더/): 그 카테고리의 문서를 제목 가나다순으로 정렬하고
-// 첫 글자의 초성(ㄱ, ㄴ, ㄷ …)별로 묶어 보여준다.
-
 import { escapeHtml, loadJson, loadDocs, cardsHtml, fillPreviews, pickOne, CATEGORY_INDEX } from '/scripts/common.js';
 
 const listEl = document.getElementById('post-list');
 
 const CHOSEONG = ['ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'];
-const MERGE = { 'ㄲ': 'ㄱ', 'ㄸ': 'ㄷ', 'ㅃ': 'ㅂ', 'ㅆ': 'ㅅ', 'ㅉ': 'ㅈ' };   // 된소리는 예사소리 묶음에
+const MERGE = { 'ㄲ': 'ㄱ', 'ㄸ': 'ㄷ', 'ㅃ': 'ㅂ', 'ㅆ': 'ㅅ', 'ㅉ': 'ㅈ' };
 const OTHER = '기타';
 
-// 제목 첫 글자 → 묶음 이름
 export function groupLabel(title) {
   const ch = Array.from(title.trim())[0] ?? '';
   const code = ch.codePointAt(0) ?? 0;
   let label;
-  if (code >= 0xac00 && code <= 0xd7a3) label = CHOSEONG[Math.floor((code - 0xac00) / 588)];   // 완성형 한글
-  else if (CHOSEONG.includes(ch)) label = ch;                                                    // 자모만 있는 경우
-  else if (/[a-z]/i.test(ch)) return ch.toUpperCase();                                           // 로마자
+  if (code >= 0xac00 && code <= 0xd7a3) label = CHOSEONG[Math.floor((code - 0xac00) / 588)];
+  else if (CHOSEONG.includes(ch)) label = ch;
+  else if (/[a-z]/i.test(ch)) return ch.toUpperCase();
   else return OTHER;
   return MERGE[label] ?? label;
 }
@@ -34,7 +30,6 @@ async function main() {
       return;
     }
 
-    // 카드 오른쪽: 이 분류를 뺀 나머지 분류 중 하나를 무작위로, 한글 이름으로 (없으면 표시 안 함)
     const otherCategory = d => {
       const others = d.categories.filter(c => c !== folder);
       return others.length ? (cats[pickOne(others)] ?? '') : '';
@@ -44,7 +39,6 @@ async function main() {
       .filter(d => d.categories.includes(folder))
       .sort((a, b) => collator.compare(a.title, b.title));
 
-    // 정렬 순서대로 묶되, '기타'는 맨 뒤로
     const groups = new Map();
     for (const d of members) {
       const label = groupLabel(d.title);

@@ -1,12 +1,8 @@
-// 홈: /indexes/article.json에서 문서를 무작위로 최대 10개 뽑아 카드로 보여준다.
-
 import { loadDocs, loadJson, cardsHtml, fillPreviews, pickOne, CATEGORY_INDEX } from '/scripts/common.js';
 
-const RANDOM_COUNT = 1024;   // 홈에 보여줄 랜덤 글 최대 개수
-
+const RANDOM_COUNT = 1024;
 const listEl = document.getElementById('post-list');
 
-// 피셔-예이츠 셔플로 섞은 뒤 앞에서 n개
 function sample(arr, n) {
   const a = arr.slice();
   for (let i = a.length - 1; i > 0; i--) {
@@ -24,7 +20,6 @@ async function main() {
       return;
     }
 
-    // 카드 오른쪽 뱃지: 분류 슬러그를 category.json에서 한글 이름으로 바꿔 보여준다
     const catName = slug => cats[slug] ?? slug;
 
     listEl.innerHTML = `
