@@ -1,20 +1,40 @@
 import markdownit from 'https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/+esm';
 import katex from 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.mjs';
 
+// ── 경로·URL 상수 ──
+export const WIKI_DIR = '/wiki/';
+export const MD_DIR = '/articles/';
+export const ARTICLE_INDEX = '/indexes/article.json';
+export const CATEGORY_INDEX = '/indexes/category.json';
 const KATEX_CSS = 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css';
+const MAP_URL = 'https://sluqecu.dacordia.com/';
 
+// ── 치환용 자리표시자 (유니코드 사용자 영역 문자라 본문과 겹치지 않음) ──
 const MATH_OPEN = '\uE000', MATH_CLOSE = '\uE001';
 const CODE_OPEN = '\uE002', CODE_CLOSE = '\uE003';
 const HTML_OPEN = '\uE004', HTML_CLOSE = '\uE005';
 const BLOCK_OPEN = '\uE006', BLOCK_CLOSE = '\uE007';
 
-const md = markdownit({
-  html: true,
-  linkify: true,
-  typographer: false,
-  breaks: true,
-});
+// 자리표시자 검색용 정규식을 미리 만들어 둠 (g 플래그라 replace에서 재사용해도 안전)
+const placeholderRe = (open, close, wrap = s => s) => new RegExp(wrap(`${open}(\\d+)${close}`), 'g');
+const CODE_RE = placeholderRe(CODE_OPEN, CODE_CLOSE);
+const HTML_RE = placeholderRe(HTML_OPEN, HTML_CLOSE);
+const MATH_RE = placeholderRe(MATH_OPEN, MATH_CLOSE);
+const MATH_P_RE = placeholderRe(MATH_OPEN, MATH_CLOSE, s => `<p>${s}</p>`);
+const MATH_BR_RE = placeholderRe(MATH_OPEN, MATH_CLOSE, s => `(?:<br>\\s*)?(${s})(?:\\s*<br>)?`);
+const BLOCK_RE = placeholderRe(BLOCK_OPEN, BLOCK_CLOSE);
+const BLOCK_P_RE = placeholderRe(BLOCK_OPEN, BLOCK_CLOSE, s => `<p>${s}</p>`);
 
+// ── 문법 정규식 ──
+const FRONTMATTER = /^\uFEFF?---\r?\n[\s\S]*?\r?\n---\r?\n?/;
+const TEMPLATE_LINE = /^[ \t]*\{\{\s*([^{}\n]+?)\s*\}\}[ \t]*$/gm;
+const IMAGE_EXT = /\.(png|jpe?g|gif|webp|svg|avif|bmp)$/i;
+const MAP_EMBED = /!\[\[map:\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*(?:,\s*(-?[\d.]+)\s*)?(?:\\?\|\s*([^\]]*?)\s*)?\]\]/g;
+
+// 마크다운 파서 (HTML 허용, URL 자동 링크, 줄바꿈을 <br>로)
+const md = markdownit({ html: true, linkify: true, breaks: true });
+
+// 제목 단계를 한 칸씩 내림 (#→h2 …), 페이지의 h1은 문서 제목용으로 남겨 둠
 md.core.ruler.push('shift_headings', state => {
   for (const t of state.tokens) {
     if (t.type === 'heading_open' || t.type === 'heading_close') {
@@ -23,18 +43,48 @@ md.core.ruler.push('shift_headings', state => {
   }
 });
 
-function stripFrontmatter(src) {
-  return src.replace(/^\uFEFF?---\r?\n[\s\S]*?\r?\n---\r?\n?/, '');
+// ── 공용 유틸 (common.js에서도 가져다 씀) ──
+
+// HTML 특수문자 이스케이프
+export function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
+// 'a/b/c/' 같은 경로에서 마지막 조각(슬러그)을 꺼냄
+export function slugOf(path) {
+  return path.split('/').filter(Boolean).pop();
+}
+
+// 분류 값(문자열 하나 또는 배열)을 문자열 배열로 정규화
+export function toCategories(value) {
+  if (Array.isArray(value)) return value.filter(Boolean).map(String);
+  return value ? [String(value)] : [];
+}
+
+// 문서 맨 앞의 YAML 머리말(--- … ---) 제거
+export function stripFrontmatter(src) {
+  return src.replace(FRONTMATTER, '');
+}
+
+// KaTeX 스타일시트를 <head>에 한 번만 추가
+export function ensureKatexCss() {
+  if (document.querySelector(`link[href="${KATEX_CSS}"]`)) return;
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = KATEX_CSS;
+  document.head.append(link);
+}
+
+// ── 마크다운 전처리 ──
+
+// 코드 펜스(``` / ~~~) 바깥 부분에만 fn을 적용하고 펜스 안은 그대로 둠
 function mapOutsideFences(src, fn) {
-  const lines = src.split('\n');
   const out = [];
   let buf = [];
   let fence = null;
   const flush = () => { if (buf.length) { out.push(fn(buf.join('\n'))); buf = []; } };
 
-  for (const line of lines) {
+  for (const line of src.split('\n')) {
     const m = line.match(/^\s*(`{3,}|~{3,})/);
     if (fence) {
       out.push(line);
@@ -51,90 +101,77 @@ function mapOutsideFences(src, fn) {
   return out.join('\n');
 }
 
+// 경로의 각 조각을 URL 인코딩 ('/'는 유지)
 function encodePath(p) {
   return p.split('/').map(encodeURIComponent).join('/');
 }
 
+// 제목 텍스트 → 앵커 id
 function headingId(text) {
   return text.trim().toLowerCase().replace(/\s+/g, '-').replace(/[^\p{L}\p{N}_-]/gu, '');
 }
 
-function escapeHtml(s) {
-  return s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-}
-
-const IMAGE_EXT = /\.(png|jpe?g|gif|webp|svg|avif|bmp)$/i;
-
-const WIKI_DIR = '/wiki/';
-export const MD_DIR = '/articles/';
-export const ARTICLE_INDEX = '/indexes/article.json';
-export const CATEGORY_INDEX = '/indexes/category.json';
-let knownDocs = null;
-
+// 위키 링크 대상('문서#제목', 'dir/문서.md')에서 문서 슬러그만 추출, 경로가 없으면 null
 function wikiTargetSlug(target) {
   const pathPart = target.split('#')[0].trim();
   if (!pathPart) return null;
   return pathPart.replace(/\.md$/, '').split('/').pop();
 }
 
-function resolveWikiTarget(target) {
+// 위키 링크 대상 → href. 같은 문서 내 앵커면 '#…', 존재하지 않는 문서면 null
+function resolveWikiTarget(target, docs) {
   const [pathPart, heading] = target.split('#');
   const hash = heading ? '#' + headingId(heading) : '';
   if (!pathPart.trim()) return hash;
   const slug = wikiTargetSlug(target);
-  if (knownDocs && !knownDocs.has(slug)) return null;
+  if (docs && !docs.has(slug)) return null;
   return `${WIKI_DIR}${encodeURIComponent(slug)}/${hash}`;
 }
 
+// 위키 링크 HTML: 현재 문서면 굵게, 대상 문서가 없으면 fallback
+function wikiLink(target, label, ctx, fallback) {
+  if (ctx.selfSlug && wikiTargetSlug(target) === ctx.selfSlug) return `<strong>${label}</strong>`;
+  const href = resolveWikiTarget(target, ctx.docs);
+  return href !== null ? `<a href="${href}">${label}</a>` : fallback;
+}
+
+// 크기 옵션 '64' / '400x160' → CSS 문자열 (px를 rem으로 환산), 형식이 아니면 null
 function sizeStyle(opt) {
   const m = (opt ?? '').trim().match(/^(\d+)(?:x(\d+))?$/);
   if (!m) return null;
-  const rem = n => `${Number((Number(n) / 16).toFixed(4))}rem`;
+  const rem = n => `${Number((n / 16).toFixed(4))}rem`;
   return m[2]
     ? `width: ${rem(m[1])}; aspect-ratio: ${m[1]} / ${m[2]};`
     : `max-height: ${rem(m[1])}; height: auto;`;
 }
 
-const MAP_URL = 'https://sluqecu.dacordia.com/';
-const MAP_EMBED = /!\[\[map:\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*(?:,\s*(-?[\d.]+)\s*)?(?:\\?\|\s*([^\]]*?)\s*)?\]\]/g;
+// CSS 문자열 → ' style="…"' 속성 (없으면 빈 문자열)
+const styleAttr = style => (style ? ` style="${style}"` : '');
 
-function mapStyle(opt) {
-  const m = (opt ?? '').match(/^(\d+)(?:x(\d+))?$/);
-  if (!m) return '';
-  const rem = n => `${Number((Number(n) / 16).toFixed(4))}rem`;
-  return m[2]
-    ? ` style="width: ${rem(m[1])}; aspect-ratio: ${m[1]} / ${m[2]};"`
-    : ` style="max-height: ${rem(m[1])}; height: auto;"`;
+// ![[map:위도,경도,줌|크기]] → 지도 iframe
+function mapIframe(lat, lng, zoom = '0', opt) {
+  const src = `${MAP_URL}?at=${lat},${lng}&z=${zoom}&embed=1`;
+  return `<iframe class="map-embed" src="${src}"${styleAttr(sizeStyle(opt))} loading="lazy" title="Map (${lat}, ${lng})"></iframe>`;
 }
 
-function mapIframe(lat, lng, zoom, opt) {
-  const z = zoom ?? '0';
-  const src = `${MAP_URL}?at=${lat},${lng}&z=${z}&embed=1`;
-  return `<iframe class="map-embed" src="${src}"${mapStyle(opt)} loading="lazy" title="Map (${lat}, ${lng})"></iframe>`;
+// 이미지 이름 → URL. 절대 경로·외부 URL은 그대로, 나머지는 /assets/ 아래로
+function assetUrl(src) {
+  if (/^([a-z][a-z0-9+.-]*:|\/|#)/i.test(src)) return src;
+  return `/assets/${encodePath(decodeURIComponent(src))}`;
 }
 
-function assetCandidates(src) {
-  if (/^([a-z][a-z0-9+.-]*:|\/|#)/i.test(src)) return [src];
-  const clean = decodeURIComponent(src);
-  return `/assets/${encodePath(clean)}`;
-}
-
-function attachFallback(img) {
-  img.addEventListener('error', () => {
-    const list = (img.dataset.fallback ?? '').split(' ').filter(Boolean);
-    if (!list.length) return;
-    img.dataset.fallback = list.slice(1).join(' ');
-    img.src = list[0];
-  });
-}
-
-function transformText(text, base, maths, htmls, blocks, templates, selfSlug) {
+// 위키 전용 문법(주석·틀·수식·지도·이미지·링크·형광펜)을 HTML/자리표시자로 바꿈
+// 코드 구간은 잠시 빼 두었다가 마지막에 되돌려서 치환되지 않게 함
+function transformText(text, ctx) {
+  const { maths, htmls, blocks, templates } = ctx;
   const codes = [];
   const keep = h => { htmls.push(h); return HTML_OPEN + (htmls.length - 1) + HTML_CLOSE; };
 
+  // %%주석%% 제거
   text = text.replace(/%%[\s\S]*?%%/g, '');
 
-  text = text.replace(/^[ \t]*\{\{\s*([^{}\n]+?)\s*\}\}[ \t]*$/gm, (whole, name) => {
+  // 한 줄 전체가 {{틀}} → 틀 블록 자리표시자
+  text = text.replace(TEMPLATE_LINE, (_, name) => {
     const html = templates?.get(name);
     if (html) {
       blocks.push(html);
@@ -143,70 +180,78 @@ function transformText(text, base, maths, htmls, blocks, templates, selfSlug) {
     return keep(`<span class="wikilink-unresolved">틀 없음: ${escapeHtml(name)}</span>`);
   });
 
+  // 인라인 코드 보호
   text = text.replace(/(`+)([\s\S]*?[^`])\1(?!`)/g, m => {
     codes.push(m);
     return CODE_OPEN + (codes.length - 1) + CODE_CLOSE;
   });
 
+  // $$블록 수식$$ (인용문 안이면 '>' 접두어 제거)
   text = text.replace(/\$\$([\s\S]+?)\$\$/g, (_, tex) => {
-    tex = tex.replace(/^[ \t]*>[ \t]?/gm, '');
-    maths.push({ tex, display: true });
+    maths.push({ tex: tex.replace(/^[ \t]*>[ \t]?/gm, ''), display: true });
     return MATH_OPEN + (maths.length - 1) + MATH_CLOSE;
   });
 
+  // $인라인 수식$
   text = text.replace(/(^|[^\\$])\$(?=\S)((?:\\.|[^$\\\n])+?)(?<=\S)\$(?!\d)/g, (_, pre, tex) => {
     maths.push({ tex, display: false });
     return pre + MATH_OPEN + (maths.length - 1) + MATH_CLOSE;
   });
 
+  // 지도 임베드
   text = text.replace(MAP_EMBED, (_, lat, lng, zoom, opt) => keep(mapIframe(lat, lng, zoom, opt)));
 
+  // ![[이미지|크기 또는 alt]] / ![[문서|라벨]]
   text = text.replace(/!\[\[([^\]]+)\]\]/g, (_, inner) => {
     const [target, opt] = inner.split(/\\?\|/);
     const name = target.trim();
     if (IMAGE_EXT.test(name)) {
       const style = sizeStyle(opt);
       const alt = opt && !style ? opt.trim() : '';
-      return keep(`<img src="${assetCandidates(name)}" alt="${escapeHtml(alt)}"${style ? ` style="${style}"` : ''} loading="lazy">`);
+      return keep(`<img src="${assetUrl(name)}" alt="${escapeHtml(alt)}"${styleAttr(style)} loading="lazy">`);
     }
     const label = escapeHtml(opt ? opt.trim() : name);
-    if (selfSlug && wikiTargetSlug(name) === selfSlug) return keep(`<strong>${label}</strong>`);
-    const href = resolveWikiTarget(name);
-    return keep(href !== null ? `<a href="${href}">${label}</a>` : label);
+    return keep(wikiLink(name, label, ctx, label));
   });
 
+  // [[문서#제목|라벨]]
   text = text.replace(/\[\[([^\]]+)\]\]/g, (_, inner) => {
     const [target, alias] = inner.split(/\\?\|/);
-    const trimmed = target.trim();
-    const label = escapeHtml((alias ?? trimmed.split('#').pop().split('/').pop()).trim());
-    if (selfSlug && wikiTargetSlug(trimmed) === selfSlug) return keep(`<strong>${label}</strong>`);
-    const href = resolveWikiTarget(trimmed);
-    return keep(href !== null ? `<a href="${href}">${label}</a>` : `<span class="wikilink-unresolved">${label}</span>`);
+    const name = target.trim();
+    const label = escapeHtml((alias ?? name.split('#').pop().split('/').pop()).trim());
+    return keep(wikiLink(name, label, ctx, `<span class="wikilink-unresolved">${label}</span>`));
   });
 
+  // ==형광펜==
   text = text.replace(/==([^=\n]+)==/g, (_, inner) => keep('<mark>') + inner + keep('</mark>'));
 
-  text = text.replace(new RegExp(CODE_OPEN + '(\\d+)' + CODE_CLOSE, 'g'), (_, i) => codes[+i]);
-  return text;
+  // 인라인 코드 복원
+  return text.replace(CODE_RE, (_, i) => codes[+i]);
 }
 
-function restorePlaceholders(html, maths, htmls, blocks) {
-  html = html.replace(new RegExp(`${HTML_OPEN}(\\d+)${HTML_CLOSE}`, 'g'), (_, i) => htmls[+i]);
-  const render = (i, forceDisplay) => {
+// 마크다운 렌더 결과의 자리표시자를 실제 HTML·수식·틀로 되돌림
+function restorePlaceholders(html, { maths, htmls, blocks }) {
+  html = html.replace(HTML_RE, (_, i) => htmls[+i]);
+
+  // 수식 하나를 KaTeX로 렌더
+  const render = i => {
     const { tex, display } = maths[+i];
-    const out = katex.renderToString(tex.trim(), { displayMode: display || forceDisplay, throwOnError: false });
+    const out = katex.renderToString(tex.trim(), { displayMode: display, throwOnError: false });
     return display ? `<span class="math-display">${out}</span>` : out;
   };
-  html = html.replace(new RegExp(`(?:<br>\\s*)?(${MATH_OPEN}(\\d+)${MATH_CLOSE})(?:\\s*<br>)?`, 'g'),
-    (whole, ph, i) => (maths[+i].display ? ph : whole));
+  // 블록 수식 앞뒤에 붙은 <br> 제거
+  html = html.replace(MATH_BR_RE, (whole, ph, i) => (maths[+i].display ? ph : whole));
+  html = html.replace(MATH_P_RE, (_, i) => render(i));
+  html = html.replace(MATH_RE, (_, i) => render(i));
 
-  html = html.replace(new RegExp(`<p>${MATH_OPEN}(\\d+)${MATH_CLOSE}</p>`, 'g'), (_, i) => render(i));
-  html = html.replace(new RegExp(`${MATH_OPEN}(\\d+)${MATH_CLOSE}`, 'g'), (_, i) => render(i));
-
-  html = html.replace(new RegExp(`<p>${BLOCK_OPEN}(\\d+)${BLOCK_CLOSE}</p>`, 'g'), (_, i) => blocks[+i]);
-  return html.replace(new RegExp(`${BLOCK_OPEN}(\\d+)${BLOCK_CLOSE}`, 'g'), (_, i) => blocks[+i]);
+  // 틀 블록은 <p>로 감싸졌으면 벗겨서 삽입
+  html = html.replace(BLOCK_P_RE, (_, i) => blocks[+i]);
+  return html.replace(BLOCK_RE, (_, i) => blocks[+i]);
 }
 
+// ── 렌더 후 DOM 후처리 ──
+
+// > [!type]± 제목 형식의 인용문을 콜아웃 박스로 변환 (+/-가 있으면 접기 가능)
 function buildCallouts(root) {
   for (const bq of root.querySelectorAll('blockquote')) {
     const first = bq.firstElementChild;
@@ -215,7 +260,6 @@ function buildCallouts(root) {
     if (!m) continue;
 
     const [whole, type, fold, rawTitle] = m;
-    const title = rawTitle || type.charAt(0).toUpperCase() + type.slice(1);
     first.innerHTML = first.innerHTML.slice(whole.length);
     if (!first.innerHTML.trim()) first.remove();
 
@@ -225,7 +269,7 @@ function buildCallouts(root) {
 
     const head = document.createElement(fold ? 'summary' : 'div');
     head.className = 'callout-title';
-    head.innerHTML = title;
+    head.innerHTML = rawTitle || type.charAt(0).toUpperCase() + type.slice(1);
 
     const body = document.createElement('div');
     body.className = 'callout-body';
@@ -237,14 +281,17 @@ function buildCallouts(root) {
   }
 }
 
+// 셀 내용이 병합 기호('<' 또는 '^') 하나뿐인지 검사
 function isMarker(cell, mark) {
   return cell.children.length === 0 && cell.textContent.trim() === mark;
 }
 
+// 표 셀 병합: '<'는 왼쪽 셀과 가로 병합, '^'는 위쪽 셀과 세로 병합
 function mergeTableCells(root) {
   for (const table of root.querySelectorAll('table')) {
     const rows = [...table.rows];
 
+    // 가로 병합
     for (const row of rows) {
       let left = null;
       for (const cell of [...row.cells]) {
@@ -253,27 +300,28 @@ function mergeTableCells(root) {
       }
     }
 
+    // 세로 병합: owner[r][c] = 그 칸을 실제로 차지하는 셀 (같은 thead/tbody 안에서만 병합)
     const owner = [];
-
     rows.forEach((row, r) => {
       owner[r] = [];
       let col = 0;
       for (const cell of [...row.cells]) {
         const span = cell.colSpan;
         const up = r > 0 ? owner[r - 1][col] : null;
+        let target = cell;
         if (up && isMarker(cell, '^') && up.parentElement.parentElement === row.parentElement) {
           up.rowSpan += 1;
-          for (let k = 0; k < span; k++) owner[r][col + k] = up;
           cell.remove();
-        } else {
-          for (let k = 0; k < span; k++) owner[r][col + k] = cell;
+          target = up;
         }
+        for (let k = 0; k < span; k++) owner[r][col + k] = target;
         col += span;
       }
     });
   }
 }
 
+// 제목마다 고유 id 부여 (중복이면 -1, -2 …)
 function addHeadingIds(root) {
   const used = new Map();
   for (const h of root.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
@@ -285,19 +333,19 @@ function addHeadingIds(root) {
   }
 }
 
-function categoryLine(value, catDirs) {
-  const slugs = (Array.isArray(value) ? value : [value]).filter(Boolean).map(String);
-  if (!slugs.length) return '';
-  const items = slugs.map(slug => {
-    const name = catDirs[slug];
-    return name ? `<a href="/category/${encodeURIComponent(slug)}/">${escapeHtml(name)}</a>` : escapeHtml(slug);
-  });
-  return `<p class="article-meta">분류: ${items.join(', ')}</p>`;
+// 가로 스크롤을 위해 표를 .table-wrap으로 감쌈
+function wrapTables(root) {
+  for (const t of root.querySelectorAll('table')) {
+    const wrap = document.createElement('div');
+    wrap.className = 'table-wrap';
+    t.replaceWith(wrap);
+    wrap.append(t);
+  }
 }
 
-export function fixRelativePaths(root, base = null) {
+// 표준 마크다운 이미지의 'alt|크기' 처리, 상대 경로 .md 링크를 위키 주소로 변환
+export function fixRelativePaths(root) {
   for (const img of root.querySelectorAll('img[src]')) {
-    if (img.dataset.fallback) attachFallback(img);
     const m = (img.getAttribute('alt') ?? '').match(/^(.*?)\\?\|(\d+(?:x\d+)?)$/);
     if (m && !img.getAttribute('style')) {
       img.setAttribute('alt', m[1].trim());
@@ -310,11 +358,22 @@ export function fixRelativePaths(root, base = null) {
   }
 }
 
+// ── 렌더링 진입점 ──
+
+// 마크다운 → HTML. docs: 존재하는 문서 슬러그 Set(null이면 링크 검사 안 함),
+// templates: 틀 이름 → HTML Map, selfSlug: 굵게 표시할 현재 문서
+export function renderMarkdown(src, docs = null, templates = null, selfSlug = null) {
+  const ctx = { docs, templates, selfSlug, maths: [], htmls: [], blocks: [] };
+  const pre = mapOutsideFences(stripFrontmatter(src), t => transformText(t, ctx));
+  return restorePlaceholders(md.render(pre), ctx);
+}
+
+// 틀 문서 하나를 불러와 HTML로 렌더 (실패하면 null → '틀 없음' 표시)
 async function loadTemplate(name, docs, selfSlug) {
   try {
     const res = await fetch(`${MD_DIR}${encodeURIComponent(name)}.md`);
     if (!res.ok) throw new Error(`${res.status}`);
-    const html = renderMarkdown(await res.text(), `${MD_DIR}${encodeURIComponent(name)}/`, docs, null, selfSlug);
+    const html = renderMarkdown(await res.text(), docs, null, selfSlug);
     return `<div class="article-body wiki-template" data-template="${escapeHtml(name)}">${html}</div>`;
   } catch (err) {
     console.error(`틀을 불러오지 못했습니다: ${name}`, err);
@@ -322,43 +381,41 @@ async function loadTemplate(name, docs, selfSlug) {
   }
 }
 
-function extractInlineTemplateNames(src) {
-  const names = [];
+// 본문(코드 펜스 밖)에 쓰인 {{틀}} 이름을 모아 모두 병렬로 불러옴
+async function loadTemplateMap(src, docs, selfSlug) {
+  const names = new Set();
   mapOutsideFences(stripFrontmatter(src), block => {
-    for (const m of block.matchAll(/^[ \t]*\{\{\s*([^{}\n]+?)\s*\}\}[ \t]*$/gm)) names.push(m[1].trim());
-    return block;   // 내용은 바꾸지 않고, 이름만 훑어 모은다
+    for (const m of block.matchAll(TEMPLATE_LINE)) {
+      const name = m[1].trim();
+      if (name) names.add(name);
+    }
+    return block;
   });
-  return names;
+  const entries = await Promise.all([...names].map(async name => [name, await loadTemplate(name, docs, selfSlug)]));
+  return new Map(entries);
 }
 
-async function loadTemplateMap(names, docs, selfSlug) {
-  const uniq = [...new Set(names.filter(Boolean))];
-  const map = new Map();
-  await Promise.all(uniq.map(async name => map.set(name, await loadTemplate(name, docs, selfSlug))));
-  return map;
+// 문서 제목 아래에 붙는 '분류: …' 줄
+function categoryLine(value, catDirs) {
+  const slugs = toCategories(value);
+  if (!slugs.length) return '';
+  const items = slugs.map(slug => {
+    const name = catDirs[slug];
+    return name ? `<a href="/category/${encodeURIComponent(slug)}/">${escapeHtml(name)}</a>` : escapeHtml(slug);
+  });
+  return `<p class="article-meta">분류: ${items.join(', ')}</p>`;
 }
 
-export function renderMarkdown(src, base, docs = null, templates = null, selfSlug = null) {
-  knownDocs = docs;
-  const maths = [], htmls = [], blocks = [];
-  const pre = mapOutsideFences(stripFrontmatter(src), t => transformText(t, base, maths, htmls, blocks, templates, selfSlug));
-  return restorePlaceholders(md.render(pre), maths, htmls, blocks);
-}
-
+// 문서 페이지: 주소의 슬러그로 .md를 불러와 렌더
 async function main() {
   const root = document.getElementById('content');
+  // common.js가 렌더러를 쓰려고 이 모듈을 import할 때도 실행되므로 문서 페이지가 아니면 종료
   if (!root) return;
 
-  if (!document.querySelector(`link[href="${KATEX_CSS}"]`)) {
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = KATEX_CSS;
-    document.head.append(link);
-  }
+  ensureKatexCss();
 
-  const page = location.pathname.replace(/\/?$/, '/');
-  const slug = decodeURIComponent(page.split('/').filter(Boolean).pop() ?? '');
-  const base = `${MD_DIR}${encodeURIComponent(slug)}/`;    // 이 문서의 이미지 폴더
+  const slug = decodeURIComponent(slugOf(location.pathname) ?? '');
+  // 인덱스 JSON은 실패해도 빈 객체로 대체해서 본문은 보여 줌
   const getJson = url => fetch(url).then(r => (r.ok ? r.json() : {})).catch(() => ({}));
 
   try {
@@ -369,34 +426,28 @@ async function main() {
     ]);
     if (!mdRes.ok) throw new Error(`${slug}.md를 찾을 수 없습니다 (${mdRes.status})`);
 
-    const bySlug = new Map(Object.entries(meta).map(([k, v]) => [k.split('/').filter(Boolean).pop(), v]));
+    const bySlug = new Map(Object.entries(meta).map(([k, v]) => [slugOf(k), v]));
     const info = bySlug.get(slug);
-    let header = '';
-    if (info) {
-      header = `<header class="article-header">
+    const header = info
+      ? `<header class="article-header">
         <h1>${escapeHtml(info.title)}</h1>
         ${categoryLine(info.category, catDirs)}
-      </header>`;
-    }
+      </header>`
+      : '';
 
+    // 인덱스를 못 불러왔으면 null로 두어 링크 존재 검사를 건너뜀
     const docs = bySlug.size ? new Set(bySlug.keys()) : null;
     const mdText = await mdRes.text();
-    const templateMap = await loadTemplateMap(extractInlineTemplateNames(mdText), docs, slug);
+    const templateMap = await loadTemplateMap(mdText, docs, slug);
 
     root.innerHTML = header
-      + `<div class="article-body">${renderMarkdown(mdText, base, docs, templateMap)}</div>`;
+      + `<div class="article-body">${renderMarkdown(mdText, docs, templateMap, slug)}</div>`;
 
-    fixRelativePaths(root, base);
+    fixRelativePaths(root);
     mergeTableCells(root);
     buildCallouts(root);
     addHeadingIds(root.querySelector('.article-body'));
-
-    for (const t of root.querySelectorAll('table')) {
-      const wrap = document.createElement('div');
-      wrap.className = 'table-wrap';
-      t.replaceWith(wrap);
-      wrap.append(t);
-    }
+    wrapTables(root);
 
     if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
   } catch (err) {

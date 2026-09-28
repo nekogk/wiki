@@ -5,7 +5,7 @@
 |               어순                | 주어-목적어-서술어 (SOV)                                                                                        |
 |              서자방향               | 좌횡서 (왼쪽부터 가로쓰기)<br>우종서 (오른쪽부터 세로쓰기)                                                                     |
 |               문자                | [[rushimez\|루시메즈]], 한자                                                                                  |
-|            공용어 지정 지역            | ![[risrushi_flag.png\|16]] [[rushikowa\|루시코와]]<br>[[ectenium\|연본국]]<br>[[rechefacu_republic\|레체파추공화국]] |
+|            공용어 지정 지역            | ![[rushikowa_flag.png\|16]] [[rushikowa\|루시코와]]<br>[[ectenium\|연본국]]<br>[[rechefacu_republic\|레체파추공화국]] |
 |               계통                | 연어족<br>로포나어파<br>로포나어                                                                                    |
 
 >緑波迸幼时
