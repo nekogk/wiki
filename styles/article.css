@@ -96,7 +96,7 @@ summary:focus-visible {
 .article-body hr {
   border: 0;
   border-top: 1px solid var(--line);
-  margin: 0 0 1.5rem;
+  margin: 0 0 0.5rem;
 }
 
 .article-body blockquote {
