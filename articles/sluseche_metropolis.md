@@ -1,6 +1,6 @@
 {{coroji_metropolis}}
 
-| | ![[sluseche_metropolis/emblem_white.png\|64]] | <big>슬루세체시</big><br>緑泉京 \| Sluseche Metropolis | < |
+| | ![[sluseche_metropolis_white.png\|64]] | <big>슬루세체시</big><br>緑泉京 \| Sluseche Metropolis | < |
 | :-: | -: | - | :-: |
 | 주 | < | < | [[deto_state\|데토주]] |
 
@@ -11,7 +11,7 @@
 # 상징
 ---
 
-| ![[sluseche_metropolis/flag.png\|160]] | ![[sluseche_metropolis/emblem_white.png\|160]] |
+| ![[sluseche_metropolis_flag.png\|160]] | ![[sluseche_metropolis_white.png\|160]] |
 | :-: | :-: |
 | 깃발 | 휘장 |
 

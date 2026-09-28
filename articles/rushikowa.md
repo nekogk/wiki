@@ -1,7 +1,7 @@
 
 | <big>루시코와</big><br>㒱囯 \| Rushikowa | < |  < |
 | :-: | :- | :-: |
-|  ![[rushikowa/flag.png\|160]]  | < | ![[rushikowa/emblem_white.png\|160]] |
+|  ![[risrushi_flag.png\|160]]  | < | ![[risrushi_white.png\|160]] |
 | 국기 | < |  국장  |
 | 상징 | < |  < |
 | 국가 | ? |  < |

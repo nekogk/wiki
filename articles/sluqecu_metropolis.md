@@ -2,7 +2,7 @@
 
 {{sluqecu_ward}}
 
-| | ![[sluqecu_metropolis/emblem_white.png\|64]] | <big>슬루케추시</big><br>緑山京 \| Sluqecu Metropolis | < |
+| | ![[sluqecu_metropolis_white.png\|64]] | <big>슬루케추시</big><br>緑山京 \| Sluqecu Metropolis | < |
 | :-: | -: | - | :-: |
 | ![[map:36928,27904,-5\|400x160]] | < | < | < |
 | 시청 소재지 | < | < | [[shishiceso_ward\|시시체소구]] 하타레체투 3가 11-17 |
@@ -21,7 +21,7 @@
 # 상징
 ---
 
-| ![[sluqecu_metropolis/flag.png\|160]] | ![[sluqecu_metropolis/emblem_white.png\|160]] |
+| ![[sluqecu_metropolis_flag.png\|160]] | ![[sluqecu_metropolis_white.png\|160]] |
 | :-: | :-: |
 | 깃발 | 휘장 |
 
