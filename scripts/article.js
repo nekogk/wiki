@@ -116,8 +116,7 @@ function mapIframe(lat, lng, zoom, opt) {
 function assetCandidates(src) {
   if (/^([a-z][a-z0-9+.-]*:|\/|#)/i.test(src)) return [src];
   const clean = decodeURIComponent(src);
-  if (clean.includes('/')) return MD_DIR + encodePath(clean);
-  return `${MD_DIR}assets/${encodePath(clean)}`;
+  return `/assets/${encodePath(clean)}`;
 }
 
 function attachFallback(img) {
