@@ -1,7 +1,7 @@
 import { renderMarkdown, fixRelativePaths, MD_DIR, ARTICLE_INDEX, CATEGORY_INDEX } from '/scripts/article.js';
 
 export { ARTICLE_INDEX, CATEGORY_INDEX };
-export const WIKI_DIR = '/w/';
+export const WIKI_DIR = '/wiki/';
 
 export function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));

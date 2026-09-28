@@ -65,7 +65,7 @@ function escapeHtml(s) {
 
 const IMAGE_EXT = /\.(png|jpe?g|gif|webp|svg|avif|bmp)$/i;
 
-const WIKI_DIR = '/w/';
+const WIKI_DIR = '/wiki/';
 export const MD_DIR = '/articles/';
 export const ARTICLE_INDEX = '/indexes/article.json';
 export const CATEGORY_INDEX = '/indexes/category.json';
@@ -290,7 +290,7 @@ function categoryLine(value, catDirs) {
   if (!slugs.length) return '';
   const items = slugs.map(slug => {
     const name = catDirs[slug];
-    return name ? `<a href="/c/${encodeURIComponent(slug)}/">${escapeHtml(name)}</a>` : escapeHtml(slug);
+    return name ? `<a href="/category/${encodeURIComponent(slug)}/">${escapeHtml(name)}</a>` : escapeHtml(slug);
   });
   return `<p class="article-meta">분류: ${items.join(', ')}</p>`;
 }
@@ -356,7 +356,7 @@ async function main() {
     document.head.append(link);
   }
 
-  const page = location.pathname.replace(/\/?$/, '/');   // 항상 "/w/rushichi/" 형태
+  const page = location.pathname.replace(/\/?$/, '/');
   const slug = decodeURIComponent(page.split('/').filter(Boolean).pop() ?? '');
   const base = `${MD_DIR}${encodeURIComponent(slug)}/`;    // 이 문서의 이미지 폴더
   const getJson = url => fetch(url).then(r => (r.ok ? r.json() : {})).catch(() => ({}));
