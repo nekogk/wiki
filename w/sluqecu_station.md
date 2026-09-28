@@ -71,11 +71,11 @@
 | 5 | ^ | 급행 | ? 방면 |
 | ^ | ^ | 쾌속 | ? 방면 |
 | 6 | ^ | 완행 | ? 방면 |
-| 7 | ^ | 일반열차 | [[creseme_station|츠레세메]] 방면 |
-| ^ | ![[yezzori_line/icon.png\|16]] [[yezzori_line\|예즈조리선]] | ^ | [[xijiqa_station|이지카]], [[sluseche_station|슬루세체]] 방면 |
-| 8 | ![[zshaseme_line/icon.png\|16]] [[zshaseme_line\|즈샤세메선]] | 고속열차 | [[creseme_station|츠레세메]] 방면 |
-| ^ | ![[yezzori_line/icon.png\|16]] [[yezzori_line\|예즈조리선]] | ^ | [[xijiqa_station|이지카]], [[sluseche_station|슬루세체]] 방면 |
-| 9 | ![[zshaseme_line/icon.png\|16]] [[zshaseme_line\|즈샤세메선]] | ^ | ? 방면 |
+| 7 | ![[yezzori_line/icon.png\|16]] [[yezzori_line\|예즈조리선]] | 일반열차 | [[xijiqa_station|이지카]], [[sluseche_station|슬루세체]] 방면 |
+| ^ | ![[zshaseme_line/icon.png\|16]] [[zshaseme_line\|즈샤세메선]] | ^ | [[creseme_station|츠레세메]] 방면 |
+| 8 | ![[yezzori_line/icon.png\|16]] [[yezzori_line\|예즈조리선]] | 고속열차 | [[xijiqa_station|이지카]], [[sluseche_station|슬루세체]] 방면 |
+| ^ | ![[zshaseme_line/icon.png\|16]] [[zshaseme_line\|즈샤세메선]] | ^ | [[creseme_station|츠레세메]] 방면 |
+| 9 | ^ | ^ | ? 방면 |
 | 10 | ^ | 일반열차 | ? 방면 |
 | 11 | ^ | ^ | ? 방면 |
 
