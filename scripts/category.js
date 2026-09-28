@@ -1,7 +1,7 @@
 // 카테고리 페이지(/c/폴더/): 그 카테고리의 문서를 제목 가나다순으로 정렬하고
 // 첫 글자의 초성(ㄱ, ㄴ, ㄷ …)별로 묶어 보여준다.
 
-import { escapeHtml, loadJson, loadDocs, cardsHtml, fillPreviews, pickOne } from '/scripts/common.js';
+import { escapeHtml, loadJson, loadDocs, cardsHtml, fillPreviews, pickOne, CATEGORY_INDEX } from '/scripts/common.js';
 
 const listEl = document.getElementById('post-list');
 
@@ -27,7 +27,7 @@ async function main() {
   const folder = decodeURIComponent(location.pathname.split('/').filter(Boolean).pop() ?? '');
 
   try {
-    const [cats, docs] = await Promise.all([loadJson('/c/index.json'), loadDocs()]);
+    const [cats, docs] = await Promise.all([loadJson(CATEGORY_INDEX), loadDocs()]);
     const name = cats[folder];
     if (!name) {
       listEl.innerHTML = '<p class="list-message">알 수 없는 분류입니다</p>';

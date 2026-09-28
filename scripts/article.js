@@ -1,4 +1,4 @@
-// 글 페이지(/w/이름/): /w/이름.md를 불러와서 #content에 렌더링한다.
+// 글 페이지(/w/이름/): /markdown/이름.md를 불러와서 #content에 렌더링한다.
 // Obsidian 문법(수식, ![[임베드]], [[위키링크]], ==하이라이트==, %%주석%%, 콜아웃)을 처리한다.
 
 import markdownit from 'https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/+esm';
@@ -19,7 +19,7 @@ const md = markdownit({
   breaks: true,      // Obsidian처럼 줄바꿈 한 번을 <br>로
 });
 
-// 페이지 제목(<h1>)은 index.json에서 오므로 md의 제목은 한 단계씩 내린다.
+// 페이지 제목(<h1>)은 article.json에서 오므로 md의 제목은 한 단계씩 내린다.
 // # → h2, ## → h3, ... ##### → h6, ###### → h6
 md.core.ruler.push('shift_headings', state => {
   for (const t of state.tokens) {
@@ -74,9 +74,11 @@ function escapeHtml(s) {
 
 const IMAGE_EXT = /\.(png|jpe?g|gif|webp|svg|avif|bmp)$/i;
 
-const WIKI_DIR = '/w/';
-const TEMPLATE_DIR = '/t/';
-let knownDocs = null;   // /w/index.json에 있는 문서 이름들. 없는 문서 링크를 회색으로 표시하는 데 쓴다
+const WIKI_DIR = '/w/';            // 글 페이지 주소: /w/이름/
+export const MD_DIR = '/markdown/';   // 문서·틀 파일: /markdown/이름.md, 이미지: /markdown/이름/그림.png
+export const ARTICLE_INDEX = '/indexes/article.json';
+export const CATEGORY_INDEX = '/indexes/category.json';
+let knownDocs = null;   // article.json에 있는 문서 이름들. 없는 문서 링크를 회색으로 표시하는 데 쓴다
 
 // [[rushichi#제목]] 처럼 쓴 대상에서 문서 슬러그만 뽑는다 ([[#제목]]이면 null: 같은 문서 안)
 function wikiTargetSlug(target) {
@@ -136,16 +138,16 @@ function mapIframe(lat, lng, zoom, opt) {
 }
 
 // 이미지를 찾아볼 주소 목록 (앞에서부터 시도)
-//   파일 이름만: 이 문서의 폴더(/w/daco/) → /w/assets/
-//   경로를 씀:   /w/ 기준 (예: daco/profile.png → /w/daco/profile.png)
+//   파일 이름만: 이 문서의 폴더(/markdown/daco/) → /markdown/assets/
+//   경로를 씀:   /markdown/ 기준 (예: daco/profile.png → /markdown/daco/profile.png)
 //   http:, data:, /절대경로: 그대로
 function assetCandidates(src, base) {
   if (/^([a-z][a-z0-9+.-]*:|\/|#)/i.test(src)) return [src];
   const clean = decodeURIComponent(src);
-  if (clean.includes('/')) return [WIKI_DIR + encodePath(clean)];
+  if (clean.includes('/')) return [MD_DIR + encodePath(clean)];
   const list = [];
-  if (base && base !== WIKI_DIR) list.push(base + encodePath(clean));
-  list.push(`${WIKI_DIR}assets/${encodePath(clean)}`);
+  if (base && base !== MD_DIR) list.push(base + encodePath(clean));
+  list.push(`${MD_DIR}assets/${encodePath(clean)}`);
   return list;
 }
 
@@ -344,8 +346,8 @@ function addHeadingIds(root) {
 }
 
 // category(없음, 문자열, 배열) → "분류: 뭐시기, 저시기" (분류가 없으면 줄 자체를 생략)
-// index.json에는 분류를 슬러그로 저장한다(예: ["character"]).
-// /c/index.json({ "슬러그": "한글 이름" })에서 화면에 보일 한글 이름을 찾고 /c/슬러그/ 로 링크한다
+// article.json에는 분류를 슬러그로 저장한다(예: ["character"]).
+// category.json({ "슬러그": "한글 이름" })에서 화면에 보일 한글 이름을 찾고 /c/슬러그/ 로 링크한다
 function categoryLine(value, catDirs) {
   const slugs = (Array.isArray(value) ? value : [value]).filter(Boolean).map(String);
   if (!slugs.length) return '';
@@ -357,8 +359,8 @@ function categoryLine(value, catDirs) {
 }
 
 // 보통 마크다운 문법으로 쓴 상대 경로도 위키 구조에 맞춘다
-//   ![](그림.png) → /w/assets/그림.png,   [글](rushichi.md#제목) → /w/rushichi/#제목
-// base: 이 문서의 주소(/w/daco/). 파일 이름만 쓴 이미지를 이 폴더에서 먼저 찾는다
+//   ![](그림.png) → /markdown/이름/그림.png,   [글](rushichi.md#제목) → /w/rushichi/#제목
+// base: 이 문서의 이미지 폴더(/markdown/daco/). 파일 이름만 쓴 이미지를 이 폴더에서 먼저 찾는다
 export function fixRelativePaths(root, base = null) {
   for (const img of root.querySelectorAll('img[src]')) {
     if (!img.hasAttribute('data-fallback')) {
@@ -381,14 +383,13 @@ export function fixRelativePaths(root, base = null) {
 }
 
 // ---------- 틀 ----------
-// index.json의 "template" 배열(문서 위쪽에 순서대로 쌓임)이나 본문 안 {{이름}}(중간에 삽입)으로
-// 쓰인 틀마다 /t/이름.md를 불러와 글 본문과 같은 방식(위키링크, 표, 이미지 등)으로 렌더링한다.
+// 본문에 {{이름}}으로 쓰인 틀마다 /markdown/이름.md를 불러와 글 본문과 같은 방식(위키링크, 표, 이미지 등)으로 렌더링한다.
 // selfSlug: 이 틀을 보여주는 문서 자신. 틀 안에 이 문서로의 링크가 있으면 링크 없는 볼드체로 바꾼다.
 async function loadTemplate(name, docs, selfSlug) {
   try {
-    const res = await fetch(`${TEMPLATE_DIR}${encodeURIComponent(name)}.md`);
+    const res = await fetch(`${MD_DIR}${encodeURIComponent(name)}.md`);
     if (!res.ok) throw new Error(`${res.status}`);
-    const html = renderMarkdown(await res.text(), TEMPLATE_DIR, docs, null, selfSlug);
+    const html = renderMarkdown(await res.text(), `${MD_DIR}${encodeURIComponent(name)}/`, docs, null, selfSlug);
     return `<div class="article-body wiki-template" data-template="${escapeHtml(name)}">${html}</div>`;
   } catch (err) {
     console.error(`틀을 불러오지 못했습니다: ${name}`, err);
@@ -406,7 +407,7 @@ function extractInlineTemplateNames(src) {
   return names;
 }
 
-// 헤더용 목록 + 본문 안 {{이름}} 목록을 합쳐 한 번씩만 불러와 이름 → HTML 지도로 만든다
+// 본문 안 {{이름}} 목록을 한 번씩만 불러와 이름 → HTML 지도로 만든다
 async function loadTemplateMap(names, docs, selfSlug) {
   const uniq = [...new Set(names.filter(Boolean))];
   const map = new Map();
@@ -434,15 +435,16 @@ async function main() {
     document.head.append(link);
   }
 
-  const base = location.pathname.replace(/\/?$/, '/');   // 항상 "/w/rushichi/" 형태
-  const slug = decodeURIComponent(base.split('/').filter(Boolean).pop() ?? '');
+  const page = location.pathname.replace(/\/?$/, '/');   // 항상 "/w/rushichi/" 형태
+  const slug = decodeURIComponent(page.split('/').filter(Boolean).pop() ?? '');
+  const base = `${MD_DIR}${encodeURIComponent(slug)}/`;    // 이 문서의 이미지 폴더
   const getJson = url => fetch(url).then(r => (r.ok ? r.json() : {})).catch(() => ({}));
 
   try {
     const [mdRes, meta, catDirs] = await Promise.all([
-      fetch(`${WIKI_DIR}${encodeURIComponent(slug)}.md`),
-      getJson(`${WIKI_DIR}index.json`),
-      getJson('/c/index.json'),
+      fetch(`${MD_DIR}${encodeURIComponent(slug)}.md`),
+      getJson(ARTICLE_INDEX),
+      getJson(CATEGORY_INDEX),
     ]);
     if (!mdRes.ok) throw new Error(`${slug}.md를 찾을 수 없습니다 (${mdRes.status})`);
 
@@ -459,15 +461,9 @@ async function main() {
 
     const docs = bySlug.size ? new Set(bySlug.keys()) : null;
     const mdText = await mdRes.text();
-    const headerTemplateNames = info?.template ?? [];
-    const inlineTemplateNames = extractInlineTemplateNames(mdText);
-    const templateMap = await loadTemplateMap([...headerTemplateNames, ...inlineTemplateNames], docs, slug);
+    const templateMap = await loadTemplateMap(extractInlineTemplateNames(mdText), docs, slug);
 
-    const templatesHtml = headerTemplateNames.length
-      ? `<div class="article-templates">${headerTemplateNames.map(n => templateMap.get(n)).filter(Boolean).join('')}</div>`
-      : '';
-
-    root.innerHTML = header + templatesHtml
+    root.innerHTML = header
       + `<div class="article-body">${renderMarkdown(mdText, base, docs, templateMap)}</div>`;
 
     // 틀도 본문과 같은 후처리(상대 경로, 칸 병합, 콜아웃, 표 감싸기)를 받는다

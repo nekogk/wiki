@@ -1,20 +1,22 @@
 // 홈(home.js)과 카테고리 페이지(category.js)가 같이 쓰는 코드
 
-import { renderMarkdown, fixRelativePaths } from '/scripts/article.js';
+import { renderMarkdown, fixRelativePaths, MD_DIR, ARTICLE_INDEX, CATEGORY_INDEX } from '/scripts/article.js';
 
+export { ARTICLE_INDEX, CATEGORY_INDEX };
 export const WIKI_DIR = '/w/';
 
 export function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
-// index.json 키 → 문서 이름. "rushichi"든 "/w/rushichi/"든 마지막 조각만 쓴다
+// article.json 키 → 문서 이름. "rushichi"든 "/w/rushichi/"든 마지막 조각만 쓴다
 export function slugOf(key) {
   return key.split('/').filter(Boolean).pop();
 }
 
 export const docUrl = slug => `${WIKI_DIR}${encodeURIComponent(slug)}/`;      // /w/rushichi/
-export const mdUrl = slug => `${WIKI_DIR}${encodeURIComponent(slug)}.md`;     // /w/rushichi.md
+export const mdUrl = slug => `${MD_DIR}${encodeURIComponent(slug)}.md`;       // /markdown/rushichi.md
+export const assetDir = slug => `${MD_DIR}${encodeURIComponent(slug)}/`;      // /markdown/rushichi/
 
 // category는 "문자열" 하나여도, ["여러", "개"] 배열이어도 된다
 export function toCategories(value) {
@@ -32,9 +34,9 @@ export async function loadJson(url) {
   return res.json();
 }
 
-// /w/index.json → [{ slug, title, categories }]
+// /indexes/article.json → [{ slug, title, categories }]
 export async function loadDocs() {
-  const data = await loadJson(`${WIKI_DIR}index.json`);
+  const data = await loadJson(ARTICLE_INDEX);
   return Object.entries(data).map(([key, info]) => ({
     slug: slugOf(key),
     title: String(info.title ?? slugOf(key)),
@@ -46,6 +48,7 @@ export async function loadDocs() {
 // "# 개요"(또는 "# 1. 개요") 아래부터 다음 # 제목 전까지를 마크다운으로 렌더링해 보여준다.
 // 글자 수로 자르지 않는다. 화면에서는 CSS가 3줄까지만 보여주고 넘치면 …으로 줄인다.
 // (개요 위에는 표가 있으므로 건너뜀. 개요 제목이 없으면 프론트매터만 떼고 처음부터)
+// {{틀}} 줄은 미리보기에서 뺀다
 
 const OVERVIEW = /^#{1,6}[ \t]+(?:\d+\.[ \t]*)?개요[ \t]*$/m;
 const NEXT_HEADING = /^#{1,6}[ \t]/m;
@@ -53,7 +56,8 @@ const KATEX_CSS = 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css
 const ICON_MAX_REM = 1.5;   // 이 높이(rem) 이하로 지정한 이미지는 아이콘으로 보고 미리보기에 남긴다
 
 export function previewSource(src) {
-  let body = src.replace(/^\uFEFF?---\r?\n[\s\S]*?\r?\n---\r?\n?/, '');
+  let body = src.replace(/^\uFEFF?---\r?\n[\s\S]*?\r?\n---\r?\n?/, '')
+    .replace(/^[ \t]*\{\{[^{}\n]*\}\}[ \t]*\r?$/gm, '');
   const m = OVERVIEW.exec(body);
   if (m) {
     body = body.slice(m.index + m[0].length);
@@ -74,7 +78,7 @@ function unwrapFormatting(node) {
 }
 
 export function renderPreview(src, docs, slug) {
-  const base = docUrl(slug);   // 문서 폴더의 이미지도 찾을 수 있게
+  const base = assetDir(slug);   // 문서 폴더의 이미지도 찾을 수 있게
   const tmp = document.createElement('div');
   tmp.innerHTML = renderMarkdown(previewSource(src), base, docs);
   fixRelativePaths(tmp, base);
