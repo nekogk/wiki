@@ -79,7 +79,7 @@
   color: var(--muted);
 }
 
-@media (max-width: 64rem) {
+@media (max-width: 65rem) {
   .page-title { font-size: 2rem; }
   .post-title { font-size: 1.5rem; }
 }
