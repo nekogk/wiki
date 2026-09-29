@@ -91,9 +91,9 @@
 
 | | < | < | < |
 | :-: | :-: | :-: | :- |
-| 1 | ![[tobarye_line.png\|16]] [[tobarye_line\|토바례선]] | 완행 | [[ryudamuko_zoritulye_station\|류다무코]], [[mitareju_zoritulye_station\|미타레주조리툴례]], [[risheco_station\|리셰초]] 방면 |
+| 1 | ![[tobarye_line.png\|16]] [[tobarye_line\|토바례선]] | 완행 | [[ryudamuko_station\|류다무코]], [[mitareju_zoritulye_station\|미타레주조리툴례]], [[risheco_station\|리셰초]] 방면 |
 | 2 | ^ | 급행 | [[risheco_station\|리셰초]], [[qecude_station\|케추데]] 방면 |
 | ^ | ^ | 쾌속 | [[risheco_station\|리셰초]] 방면 |
 | 3 | ^ | 급행 | [[rebeyo_station\|레베요]] 방면 |
 | ^ | ^ | 쾌속 | [[rebeyo_station\|레베요]] 방면 |
-| 4 | ^ | 완행 | [[ejibica_station\|에지비차]], [[whoresefu_station\|훠레세푸]], [[rebeyo_station\|레베요]] 방면 |
+| 4 | ^ | 완행 | [[ejibica_station\|에지비차]], [[sarekoje_station\|사레코제행]], [[rebeyo_station\|레베요]] 방면 |
