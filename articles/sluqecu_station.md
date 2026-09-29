@@ -96,4 +96,4 @@
 | ^ | ^ | 쾌속 | [[risheco_station\|리셰초]] 방면 |
 | 3 | ^ | 급행 | [[rebeyo_station\|레베요]] 방면 |
 | ^ | ^ | 쾌속 | [[rebeyo_station\|레베요]] 방면 |
-| 4 | ^ | 완행 | [[ejibica_station\|에지비차]], [[sarekoje_station\|사레코제행]], [[rebeyo_station\|레베요]] 방면 |
+| 4 | ^ | 완행 | [[ejibica_station\|에지비차]], [[sarekoje_station\|사레코제]], [[rebeyo_station\|레베요]] 방면 |

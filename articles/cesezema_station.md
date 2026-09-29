@@ -14,3 +14,17 @@
 # 개요
 ---
 **체세제마역**은 [[sluqecu_metropolis\|슬루케추시]] [[pijizu_ward\|피지주구]]에 위치한 [[tobarye_line\|토바례선]]의 지하역이다. 
+
+# 승강장
+---
+
+| | < | < | < | < | < |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| ↑ [[ejibica_station\|에지비차]] | < | < | < | < | < |
+| 1 | \| | \| | \| | \| | 2 |
+| ↓ [[rewesuwhu_station\|레웨수후]] | < | < | < | < | < |
+
+| | < | < | < |
+| :-: | :-: | :-: | :- |
+| 1 | ![[tobarye_line.png\|16]] [[tobarye_line\|토바례선]] | 완행 | [[ryudamuko_station\|류다무코]], [[mitareju_zoritulye_station\|미타레주조리툴례]], [[risheco_station\|리셰초]] 방면 |
+| 2 | ^ | 완행 | [[ejibica_station\|에지비차]], [[sarekoje_station\|사레코제행]], [[rebeyo_station\|레베요]] 방면 |
