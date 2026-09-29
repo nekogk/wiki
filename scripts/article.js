@@ -2,7 +2,7 @@ import markdownit from 'https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/+esm';
 import katex from 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.mjs';
 
 // ── 경로·URL 상수 ──
-export const WIKI_DIR = '/wiki/';
+export const WIKI_DIR = '/w/';
 export const MD_DIR = '/articles/';
 export const ARTICLE_INDEX = '/indexes/article.json';
 export const CATEGORY_INDEX = '/indexes/category.json';
@@ -401,7 +401,7 @@ function categoryLine(value, catDirs) {
   if (!slugs.length) return '';
   const items = slugs.map(slug => {
     const name = catDirs[slug];
-    return name ? `<a href="/category/${encodeURIComponent(slug)}/">${escapeHtml(name)}</a>` : escapeHtml(slug);
+    return name ? `<a href="/c/${encodeURIComponent(slug)}/">${escapeHtml(name)}</a>` : escapeHtml(slug);
   });
   return `<p class="article-meta">분류: ${items.join(', ')}</p>`;
 }
