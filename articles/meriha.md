@@ -8,7 +8,7 @@
 | 거주지 | [[sluqecu_metropolis\|슬루케추시]] [[miwha_ward\|미화구]] [[rushimis\|우루시가 4-1]] |
 | 국적 | **없음** |
 | 신체 | 161cm \| 45kg |
-| 가족 | [[rushichi\|메리하]], [[ceqime\|체키메]] |
+| 가족 | [[rushichi\|루시치]], [[ceqime\|체키메]] |
 | 성격 | ISTP \| 6w5 |
 
 # 개요
