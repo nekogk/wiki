@@ -108,7 +108,7 @@ body {
   max-width: 65rem;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 2rem 2rem 1rem;
+  padding: 2.5rem 2.5rem 1rem;
   background: var(--panel);
   scrollbar-color: #303030 var(--panel);
   font-family: var(--sans-font);
@@ -141,12 +141,12 @@ body *::-webkit-scrollbar-track { background: var(--panel); }
   color: var(--text-strong);
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 .site-logo img {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   display: block;
 }
 
@@ -159,5 +159,5 @@ footer {
 
 @media (max-width: 65rem) {
   body { background: var(--panel); }
-  .container { padding: 3vw; }
+  .container { padding: 4vw; }
 }
