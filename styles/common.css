@@ -108,7 +108,7 @@ body {
   max-width: 65rem;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 2.5rem 2.5rem 1rem;
+  padding: 2.5rem;
   background: var(--panel);
   scrollbar-color: #303030 var(--panel);
   font-family: var(--sans-font);
@@ -151,7 +151,7 @@ body *::-webkit-scrollbar-track { background: var(--panel); }
 }
 
 footer {
-  margin: 1.0rem 0 0;
+  margin: 0;
   text-align: center;
   color: var(--muted);
   font-family: var(--sans-font);
