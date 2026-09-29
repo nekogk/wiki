@@ -1,12 +1,13 @@
 @import url('./common.css');
 
 .page-title {
-  margin: 0rem;
+  margin: 1.5rem 0 0;
   font-size: 2.5rem;
+  line-height: 3rem;
 }
 
 .section-label {
-  margin: 2.5rem 0 0.5rem;
+  margin: 1.5rem 0 0.5rem;
   font-family: var(--sans-font);
   color: var(--muted);
   padding-left: 0.5rem;
@@ -78,7 +79,7 @@
   color: var(--muted);
 }
 
-@media (max-width: 65rem) {
+@media (max-width: 66rem) {
   .page-title { font-size: 2rem; }
   .post-title { font-size: 1.5rem; }
 }

@@ -105,7 +105,7 @@ body {
 }
 
 .container {
-  max-width: 65rem;
+  max-width: 66rem;
   min-height: 100vh;
   margin: 0 auto;
   padding: 2.5rem;
@@ -133,6 +133,8 @@ a:focus-visible {
 body { scrollbar-color: #303030 var(--panel); }
 body *::-webkit-scrollbar-track { background: var(--panel); }
 
+.site-header { height: 2rem; }
+
 .site-logo {
   font-family: var(--sans-font);
   display: inline-flex;
@@ -151,13 +153,13 @@ body *::-webkit-scrollbar-track { background: var(--panel); }
 }
 
 footer {
-  margin: 0;
+  margin: 1.5rem 0 0;
   text-align: center;
   color: var(--muted);
   font-family: var(--sans-font);
 }
 
-@media (max-width: 65rem) {
+@media (max-width: 66rem) {
   body { background: var(--panel); }
   .container { padding: 4vw; }
 }
