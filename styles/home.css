@@ -1,12 +1,12 @@
 @import url('./common.css');
 
 .page-title {
-  margin: 0 0.5rem;
+  margin: 0 0 0.5rem;
   font-size: 2.5rem;
 }
 
 .section-label {
-  margin: 1.5rem 0 0.5rem;
+  margin: 2.5rem 0 0.5rem;
   font-family: var(--sans-font);
   color: var(--muted);
   padding-left: 0.5rem;
