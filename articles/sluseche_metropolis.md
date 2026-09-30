@@ -1,8 +1,12 @@
 {{coroji_metropolis}}
+{{sluseche_ward}}
 
 | | ![[sluseche_metropolis_white.png\|64]] | <big>슬루세체시</big><br>緑泉京 \| Sluseche Metropolis | < |
 | :-: | -: | - | :-: |
 | 주 | < | < | [[deto_state\|데토주]] |
+| 하위 행정구역 | < | < | 26구 |
+| 면적 | < | < | 685km<sup>2</sup> |
+| 인구 | < | < | 720만명 |
 
 # 개요
 ---

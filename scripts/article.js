@@ -23,7 +23,9 @@ const MATH_RE = placeholderRe(MATH_OPEN, MATH_CLOSE);
 const MATH_P_RE = placeholderRe(MATH_OPEN, MATH_CLOSE, s => `<p>${s}</p>`);
 const MATH_BR_RE = placeholderRe(MATH_OPEN, MATH_CLOSE, s => `(?:<br>\\s*)?(${s})(?:\\s*<br>)?`);
 const BLOCK_RE = placeholderRe(BLOCK_OPEN, BLOCK_CLOSE);
-const BLOCK_P_RE = placeholderRe(BLOCK_OPEN, BLOCK_CLOSE, s => `<p>${s}</p>`);
+const BLOCK_BR_RE = placeholderRe(BLOCK_OPEN, BLOCK_CLOSE, s => `(?:<br>\\s*)?(${s})(?:\\s*<br>)?`);
+// <p> 안에 틀 자리표시자만 (하나 이상) 들어 있는 경우
+const BLOCK_P_RE = new RegExp(`<p>((?:\\s*${BLOCK_OPEN}\\d+${BLOCK_CLOSE})+)\\s*</p>`, 'g');
 
 // ── 문법 정규식 ──
 const FRONTMATTER = /^\uFEFF?---\r?\n[\s\S]*?\r?\n---\r?\n?/;
@@ -244,8 +246,10 @@ function restorePlaceholders(html, { maths, htmls, blocks }) {
   html = html.replace(MATH_P_RE, (_, i) => render(i));
   html = html.replace(MATH_RE, (_, i) => render(i));
 
-  // 틀 블록은 <p>로 감싸졌으면 벗겨서 삽입
-  html = html.replace(BLOCK_P_RE, (_, i) => blocks[+i]);
+  // 틀 앞뒤에 붙은 <br> 제거 (틀이 연달아 오면 사이에 빈 줄이 생기던 문제)
+  html = html.replace(BLOCK_BR_RE, '$1');
+  // 틀만 든 <p>는 벗겨서 삽입
+  html = html.replace(BLOCK_P_RE, (_, inner) => inner);
   return html.replace(BLOCK_RE, (_, i) => blocks[+i]);
 }
 
