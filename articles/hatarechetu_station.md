@@ -20,7 +20,7 @@
 | [[tobarye_line\|토바례선]] | [[sluqecu_metropolis\|슬루케추시]] | < |
 | [[lesayu_line\|레사유선]] | ^ | < |
 | 개업일 | < | < |
-| [[tobarye_line\|토바례선]] | [[rimi\|리미]] 9년 입추 3일 | < |
+| [[tobarye_line\|토바례선]] | [[rimi_era\|리미]] 9년 입추 3일 | < |
 # 개요
 ---
 [[sluqecu_metropolis|슬루케추시]] [[shishiceso_ward|시시체소구]]에 위치한 일반철도역. [[shamojesa_line|샤모제사선]], [[zshaseme_line|즈샤세메선]], [[tobarye_line|토바례선]], [[lesayu_line|레사유선]], [[hatarechetu_line|하타레체투선]]이 만나는 환승역으로, 이 노선 중 [[shamojesa_line|샤모제사선]], [[zshaseme_line|즈샤세메선]], [[tobarye_line|토바례선]]은 인근의 [[sluqecu_station|슬루케추역]] 또한 경유한다.

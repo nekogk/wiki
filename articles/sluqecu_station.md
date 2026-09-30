@@ -21,7 +21,7 @@
 | [[hoker_line\|호커선]] | ^ | < |
 | [[crererube_line\|츠레레루베선]] | ^ | < |
 | 개업일 | < | < |
-| [[tobarye_line\|토바례선]] | [[rimi\|리미]] 9년 입추 3일 | < |
+| [[tobarye_line\|토바례선]] | [[rimi_era\|리미]] 9년 입추 3일 | < |
 
 # 개요
 ---

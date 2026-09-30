@@ -13,7 +13,7 @@
 | [[rubesesha_line\|루베세샤선]] | [[dechi_railroad_agency\|데치주 철도청]] | < |
 | [[tobarye_line\|토바례선]] | [[sluqecu_metropolis\|슬루케추시]] | < |
 | 개업일 | < | < |
-| [[tobarye_line\|토바례선]] | [[rimi\|리미]] 9년 입추 3일 | < |
+| [[tobarye_line\|토바례선]] | [[rimi_era\|리미]] 9년 입추 3일 | < |
 
 # 개요
 ---

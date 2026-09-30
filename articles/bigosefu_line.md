@@ -11,7 +11,7 @@
 | 구성 노선 | < | 본선<br>라토지선 |
 |  상징색  | < | 분홍색 <sub>(#EF8AA4)</sub> |
 | 노선번호  | < | 5호선  |
-|  개통일  | < | [[rimi\|리미]] 41년 상강 11일  |
+|  개통일  | < | [[rimi_era\|리미]] 41년 상강 11일  |
 |  소유자  | < | [[sluqecu_metropolis\|슬루케추시]]  |
 | 차량기지  | < | 코일리세즈차량기지<br>라토차량기지  |
 | 노선 제원 | < | <  |
@@ -19,7 +19,7 @@
 |  궤간 | < | 1435mm |
 | 선로구성  | < | 복복선 <sub>(코일리세즈 ~ 레차데사에)</sub><br>복선 <sub>(베게세메 ~ 코일리세즈, 레차데사에 ~ 다지차체)</sub><br>단선 <sub>(로쇼스푸 ~ 라토)</sub>  |
 | 통행방향  | < | 우측통행 |
-| 개통 연혁 | < | [[rimi\|리미]] 41년 [[isteba_station\|이스테바]] ↔ [[birisebu\|비리세부]]<br>[[rimi\|리미]] 41년 [[koxilisez_station\|코일리세즈]] ↔ [[isteba_station\|이스테바]] [[lesayu_line\|레사유선]]에서 이관<br>[[shoje\|쇼제]] 6년 [[birisebu\|비리세부]] ↔ [[lano_station\|라노]]<br>[[shoje\|쇼제]] 8년 [[lano_station\|라노]] ↔ [[lato_station\|라토]]<br>[[shoje\|쇼제]] 16년 [[begheseme_station\|베게세메]] ↔ [[koxilisez_station\|코일리세즈]]<br>[[whuda\|우다]] 11년 [[loshosfu_station\|로쇼스푸]] ↔ [[dajicache_station\|다지차체역]] |
+| 개통 연혁 | < | [[rimi_era\|리미]] 41년 [[isteba_station\|이스테바]] ↔ [[birisebu\|비리세부]]<br>[[rimi_era\|리미]] 41년 [[koxilisez_station\|코일리세즈]] ↔ [[isteba_station\|이스테바]] [[lesayu_line\|레사유선]]에서 이관<br>[[shoje_era\|쇼제]] 6년 [[birisebu\|비리세부]] ↔ [[lano_station\|라노]]<br>[[shoje_era\|쇼제]] 8년 [[lano_station\|라노]] ↔ [[lato_station\|라토]]<br>[[shoje_era\|쇼제]] 16년 [[begheseme_station\|베게세메]] ↔ [[koxilisez_station\|코일리세즈]]<br>[[whuda_era\|우다]] 11년 [[loshosfu_station\|로쇼스푸]] ↔ [[dajicache_station\|다지차체역]] |
 
 # 개요
 ---

@@ -12,7 +12,7 @@
 | [[zshashizu_line\|즈샤시주선]] | [[sluqecu_metropolis\|슬루케추시]] | < |
 | [[crererube_line\|츠레레루베선]] | ^ | < |
 | 개업일 | < | < |
-| [[zshashizu_line\|즈샤시주선]] | [[rimi\|리미]] 26년 상강 17일 | < |
+| [[zshashizu_line\|즈샤시주선]] | [[rimi_era\|리미]] 26년 상강 17일 | < |
 
 # 개요
 ---
