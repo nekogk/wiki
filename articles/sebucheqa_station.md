@@ -5,7 +5,7 @@
 | ![[map:42893,28407,-1\|400x160]] | < | < |
 | 주소 | < | < |
 | [[sluqecu_metropolis\|슬루케추시]] [[shishiceso_ward\|시시체소구]] | < | < |
-| [[tobarye_line\|토바례선]] | 유훼즈 1가 7-12 | < |
+| [[tobarye_line\|토바례선]] | 유웨즈 1가 7-12 | < |
 | 운영기관 | < | < |
 | [[tobarye_line\|토바례선]] | [[sluqecu_metropolis\|슬루케추시]] | < |
 | 개업일 | < | < |

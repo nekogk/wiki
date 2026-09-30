@@ -4,8 +4,8 @@
 | :-: | - |
 | ![[meriha/profile.png\|320]] | < |
 | 출생 | [[mige\|미게]] 6년 상강 20일 |
-| ^ | [[rushisewhu_metropolis\|루시세후시]] |
-| 거주지 | [[sluqecu_metropolis\|슬루케추시]] [[miwha_ward\|미화구]] [[rushimis\|우루시가 4-1]] |
+| ^ | [[rushisewhu_metropolis\|루시세우시]] |
+| 거주지 | [[sluqecu_metropolis\|슬루케추시]] [[miwha_ward\|미와구]] [[rushimis\|우루시가 4-1]] |
 | 국적 | **없음** |
 | 신체 | 161cm \| 45kg |
 | 가족 | [[rushichi\|루시치]], [[ceqime\|체키메]] |

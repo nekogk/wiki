@@ -11,7 +11,7 @@
 
 [[coroji|삼록권]]의 6대 대도시에 부여된 특수행정구역으로, 영어로는 Metropolis라고 번역한다.
 
-[[ectenic_divine_empire|대연신국]] 시절에는 [[sluqecu_metropolis|슬루케추시]]와 [[rushisewhu_metropolis|루시세후시]]만이 서경과 동경으로 불려 두개의 경만이 존재했다. 대연신국의 분할 이후, [[rechefacu_republic|레체파추공화국]]에 경을 나타내는 행정구역이 없어 수도인 [[rechefacu_metropolis|레체파추시]]의 행정구역이 시가 된다는 문제와 형평성 문제로 인해, 당시 도시규모적으로는 경에 필적하던 [[sluseche_metropolis|슬루세체시]], [[creseme_metropolis|츠레세메시]], [[pejeseme_metropolis|페제세메시]]와 함께 경으로 승격되어 6개의 경 행정구역이 생겨났다.
+[[ectenic_divine_empire|대연신국]] 시절에는 [[sluqecu_metropolis|슬루케추시]]와 [[rushisewhu_metropolis|루시세우시]]만이 서경과 동경으로 불려 두개의 경만이 존재했다. 대연신국의 분할 이후, [[rechefacu_republic|레체파추공화국]]에 경을 나타내는 행정구역이 없어 수도인 [[rechefacu_metropolis|레체파추시]]의 행정구역이 시가 된다는 문제와 형평성 문제로 인해, 당시 도시규모적으로는 경에 필적하던 [[sluseche_metropolis|슬루세체시]], [[creseme_metropolis|츠레세메시]], [[pejeseme_metropolis|페제세메시]]와 함께 경으로 승격되어 6개의 경 행정구역이 생겨났다.
 
 한국과 일본의 도나 특별시, 광역시와 정령지정도시와 특례시 사이에 있는 행정구역 체계이다. 상위 행정구역인 주 아래에 소속되지만, 그 권한은 주에 필적한다.
 

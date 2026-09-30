@@ -29,9 +29,9 @@
 
 # 역사
 ---
-현재의 위상과 달리 슬루케추시의 역사는 길지 않다. 고대 시절의 [[coroji|삼록권]]은 [[rushisewhu_state|루시세후]] 인근이 영향권이였다.
+현재의 위상과 달리 슬루케추시의 역사는 길지 않다. 고대 시절의 [[coroji|삼록권]]은 [[rushisewhu_state|루시세우]] 인근이 영향권이였다.
 
-슬루케추의 역사는 [[ectenic_divine_empire|대연신국]]의 건국 당시부터 시작된다. 삼록권의 상징이 [[ectene_river|연강]]이 된 이후 건국된 대연신국은 슬루케추를 서경으로, [[rushisewhu_metropolis|루시세후]]를 동경으로 삼았다.
+슬루케추의 역사는 [[ectenic_divine_empire|대연신국]]의 건국 당시부터 시작된다. 삼록권의 상징이 [[ectene_river|연강]]이 된 이후 건국된 대연신국은 슬루케추를 서경으로, [[rushisewhu_metropolis|루시세우]]를 동경으로 삼았다.
 
 # 지리
 ---
@@ -39,7 +39,7 @@
 
 서해를 접하는 [[remasesha_ward|레마세샤구]]와 [[sezomure_ward|세조무레구]] 대부분은 [[ectene_river|연강]]에 의한 퇴적지이다. 현재도 자연과 인간에 의해 개간이 이어지고 있는데, 부도심인 레마세샤 지역이 해안과 접하고 있다 보니 간척에 적극적인 편.
 
-동쪽의 [[dabasha_ward|다바샤구]]와 [[haritome_city|하리토메시]]가 접하는 지역에 존재하는 [[whopuwhili_mountain|훠푸휠리산]]을 제외하면 도시 내에 산이 존재하지 않는다. 광역도시권 전체에도 산이 적은 축에 속하는 도시이다.
+동쪽의 [[dabasha_ward|다바샤구]]와 [[haritome_city|하리토메시]]가 접하는 지역에 존재하는 [[whopuwhili_mountain|워푸휠리산]]을 제외하면 도시 내에 산이 존재하지 않는다. 광역도시권 전체에도 산이 적은 축에 속하는 도시이다.
 
 ## 도시구조
 ---
@@ -50,12 +50,12 @@
 | 내남부 | [[righeju_ward\|리게주구]], [[jeseceso_ward\|제세체소구]], [[tozeshita_ward\|토제시타구]] |
 | 내서부 | [[miseme_ward\|미세메구]], [[asrinyu_ward\|아스리뉴구]], [[lesawez_ward\|레사웨즈구]] |
 | 서부 | [[sezomure_ward\|세조무레구]], [[remasesha_ward\|레마세샤구]], [[rereas_ward\|레레아스구]] |
-| 서북부 | [[serksoshi_ward\|서코시구]], [[yujaseme_ward\|유자세메구]], [[kozewhora_ward\|코제훠라구]] |
-| 북부 | [[resexwa_ward\|레세와구]], [[pijizu_ward\|피지주구]], [[whohercache_ward\|훠허차체구]] |
+| 서북부 | [[serksoshi_ward\|서코시구]], [[yujaseme_ward\|유자세메구]], [[kozewhora_ward\|코제워라구]] |
+| 북부 | [[resexwa_ward\|레세와구]], [[pijizu_ward\|피지주구]], [[whohercache_ward\|워허차체구]] |
 | 동부 | [[refabyuxiko_ward\|레파뷰이코구]], [[sasgri_ward\|사스그리구]], [[recadesae_ward\|레차데사에구]] |
 | 동남부 | [[dabasha_ward\|다바샤구]], [[sechicaspe_ward\|세치차스페구]], [[mezuchisa_ward\|메주치사구]] |
 | 남부 | [[tobacec_ward\|토바체츠구]], [[sachiseme_ward\|사치세메구]], [[gheyesacer_ward\|게예사처구]] |
-| 서남부 | [[merehanya_ward\|메레하냐구]], [[seshisefu_ward\|세시세푸구]], [[miwha_ward\|미화구]] |
+| 서남부 | [[merehanya_ward\|메레하냐구]], [[seshisefu_ward\|세시세푸구]], [[miwha_ward\|미와구]] |
 
 3핵도시 구조로 도심은 **[[shishiceso_ward|시시체소구]]**, 부도심은 [[jeseceso_ward|제세체소구]]와 [[remasesha_ward|레마세샤구]]이다. 보통 이 세 지역을 하타레체투, 라노, 레마세샤라고 부른다.
 
