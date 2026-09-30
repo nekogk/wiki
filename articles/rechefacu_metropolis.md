@@ -1,8 +1,8 @@
 {{coroji_metropolis}}
 
-| <big>레체파추시</big><br>地月京 \| Rechefacu Metropolis | < |
-| :-: | :-: |
-| 주 | [[rechefacu_state\|레체파추주]] |
+| | ![[rechefacu_metropolis_white.png\|64]] | <big>레체파추시</big><br>地月京 \| Rechefacu Metropolis | < |
+| :-: | -: | :- | :-: |
+| 주 | < | < | [[rechefacu_state\|레체파추주]] |
 
 # 개요
 ---
