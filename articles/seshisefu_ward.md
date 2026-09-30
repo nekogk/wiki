@@ -1,6 +1,6 @@
 {{sluqecu_ward}}
 
-| <big>세시세푸구</big><br>浅浦区 \| Sezomure Ward | < |
+| <big>세시세푸구</big><br>浅浦区 \| Seshisefu Ward | < |
 | :-: | :-: |
 | ![[map:26491,21067,-2\|400x160]] | < |
 | 경시현 | [[sluqecu_metropolis\|슬루케추시]] |
