@@ -3,6 +3,7 @@
 
 | | ![[sluseche_metropolis_white.png\|64]] | <big>슬루세체시</big><br>緑泉京 \| Sluseche Metropolis | < |
 | :-: | -: | - | :-: |
+| 시청 소재지 | < | < | [[nyega_ward\|녜가구]] 조리체카 1가 13-24 |
 | 주 | < | < | [[deto_state\|데토주]] |
 | 하위 행정구역 | < | < | 26구 |
 | 면적 | < | < | 685km<sup>2</sup> |
