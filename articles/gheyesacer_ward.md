@@ -1,6 +1,6 @@
 {{sluqecu_ward}}
 
-| <big>가시도구</big><br>香振区 \| Gheyesacer Ward | < |
+| <big>게예사처구</big><br>香振区 \| Gheyesacer Ward | < |
 | :-: | :-: |
 | ![[map:28102,29008,-2\|400x160]] | < |
 | 경시현 | [[sluqecu_metropolis\|슬루케추시]] |

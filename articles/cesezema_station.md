@@ -13,7 +13,7 @@
 
 # 개요
 ---
-**체세제마역**은 [[sluqecu_metropolis\|슬루케추시]] [[pijizu_ward\|피지주구]]에 위치한 [[tobarye_line\|토바례선]]의 지하역이다. 
+**체세제마역**은 [[sluqecu_metropolis|슬루케추시]] [[pijizu_ward|피지주구]]에 위치한 [[tobarye_line|토바례선]]의 지하역이다. 
 
 # 승강장
 ---

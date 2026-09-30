@@ -77,7 +77,6 @@
   "metropolitan_city_hall_station": { "title": "시청역", "category": [ "sluqecu_station" ]},
   "hatarechetu_station": { "title": "하타레체투역", "category": [ "sluqecu_station" ]},
   "gyru_palace_station": { "title": "현림궁역", "category": [ "sluqecu_station" ]},
-  "national_sluqecu_university_station": { "title": "슬루케추대학교역", "category": [ "sluqecu_station" ]},
   "hatarechetu_park_station": { "title": "하타레체투공원역", "category": [ "sluqecu_station" ]},
   "hatarechetu_4th_street_station": { "title": "하타레체투4가역", "category": [ "sluqecu_station" ]},
   "cesezema_station": { "title": "체세제마역", "category": [ "sluqecu_station" ]},
@@ -99,5 +98,6 @@
   "rojino_era": { "title": "로지노 시대", "category": [ "era" ]},
   "rimi_era": { "title": "리미 시대", "category": [ "era" ]},
   "shoje_era": { "title": "쇼제 시대", "category": [ "era" ]},
-  "whuda_era": { "title": "우다 시대", "category": [ "era" ]}
+  "whuda_era": { "title": "우다 시대", "category": [ "era" ]},
+  "seyareji": { "title": "세야레지" }
 }

@@ -1,5 +1,5 @@
 
-| <big>루시폐스</big><br>暁星 \| Rushipyes | < |
+| <big>루시폐스</big><br>㒱星 \| Rushipyes | < |
 | :-: | :- |
 | ![[rushipyes/image.png\|320]] | < |
 | 학명 | 日三番熒惑 |
