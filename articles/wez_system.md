@@ -22,8 +22,8 @@
 | 사진 | 명칭 | 위성 수 | 비고 |
 | ![[ryapyes.png\|160]] | [[ryapyes\|랴폐스(暁星)]] | 위성 없음 | 내행성<br>지구형 행성 |
 | ![[leghu.png\|160]] | [[leghu\|레구(地球)]] | 1 | 생명체 존재<br>지구형 행성 |
-| ![[dawhopyes.png\|160]] | [[rushipyes\|루시폐스(赤星)]] | 3 | 외행성<br>지구형 행성 |
+| ![[dawhopyes.png\|160]] | [[dawhopyes\|다워폐스(赤星)]] | 3 | 외행성<br>지구형 행성 |
 | ![[gheyobapyes.png\|160]] | [[gheyobapyes\|게요바폐스(黄星)]] | | 외행성<br>목성형 행성<br>고리 있음 |
 | ![[wase.png\|160]] | [[wase\|와세(王星)]] | | 외행성<br>거대 얼음 행성<br>고리 있음 |
-| ![[kapajise.png\|160]] | [[kapajise\|카파지세(古柏星)]] | | 외행성<br>지구형 행성 |
-| ![[yerse.png\|160]] | [[yerse\|여세(神星)]] | | 외행성<br>지구형 행성 |
+| ![[kapajise.png\|160]] | [[kapajise\|카파지세(古柏星)]] | | 외행성<br>얼음 행성 |
+| ![[yerse.png\|160]] | [[yerse\|여세(神星)]] | | 외행성<br>얼음 행성 |
