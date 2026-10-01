@@ -83,6 +83,7 @@
   "ejibica_station": { "title": "에지비차역", "category": [ "sluqecu_station" ]},
   "rewesuwhu_station": { "title": "레웨수우역", "category": [ "sluqecu_station" ]},
   "sebucheqa_station": { "title": "세부체카역", "category": [ "sluqecu_station" ]},
+  "dechi_state": { "title": "데치주", "category": [ "coroji_state" ]},
   "ropona": { "title": "로포나" },
   "cdiphres_ecoin": { "title": "슈디프레스어" },
   "leghu": { "title": "레구", "category": [ "wez_system" ]  },

@@ -6,6 +6,8 @@ export const WIKI_DIR = '/w/';
 export const MD_DIR = '/articles/';
 export const ARTICLE_INDEX = '/indexes/article.json';
 export const CATEGORY_INDEX = '/indexes/category.json';
+export const TEMPLATE_DIR = '/t/';
+export const TEMPLATE_INDEX = '/indexes/templete.json';
 const KATEX_CSS = 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css';
 const MAP_URL = 'https://sluqecu.dacordia.com/';
 
@@ -404,7 +406,7 @@ function categoryLine(value, catDirs) {
   const slugs = toCategories(value);
   if (!slugs.length) return '';
   const items = slugs.map(slug => {
-    const name = catDirs[slug];
+    const name = catDirs[slug]?.title;
     return name ? `<a href="/c/${encodeURIComponent(slug)}/">${escapeHtml(name)}</a>` : escapeHtml(slug);
   });
   return `<p class="article-meta">분류: ${items.join(', ')}</p>`;
@@ -419,19 +421,24 @@ async function main() {
   ensureKatexCss();
 
   const slug = decodeURIComponent(slugOf(location.pathname) ?? '');
+  // /t/ 아래는 틀 페이지: 제목은 틀 인덱스에서 가져오고 분류는 표시하지 않음
+  const isTemplate = location.pathname.startsWith(TEMPLATE_DIR);
   // 인덱스 JSON은 실패해도 빈 객체로 대체해서 본문은 보여 줌
   const getJson = url => fetch(url).then(r => (r.ok ? r.json() : {})).catch(() => ({}));
 
   try {
-    const [mdRes, meta, catDirs] = await Promise.all([
+    const [mdRes, meta, catDirs, tplMeta] = await Promise.all([
       fetch(`${MD_DIR}${encodeURIComponent(slug)}.md`),
       getJson(ARTICLE_INDEX),
       getJson(CATEGORY_INDEX),
+      isTemplate ? getJson(TEMPLATE_INDEX) : {},
     ]);
     if (!mdRes.ok) throw new Error(`${slug}.md를 찾을 수 없습니다 (${mdRes.status})`);
 
     const bySlug = new Map(Object.entries(meta).map(([k, v]) => [slugOf(k), v]));
-    const info = bySlug.get(slug);
+    const info = isTemplate
+      ? (tplMeta[slug] ? { title: tplMeta[slug].title ?? slug } : null)
+      : bySlug.get(slug);
     const header = info
       ? `<header class="article-header">
         <h1>${escapeHtml(info.title)}</h1>

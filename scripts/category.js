@@ -24,7 +24,7 @@ async function main() {
 
   try {
     const [cats, docs] = await Promise.all([loadJson(CATEGORY_INDEX), loadDocs()]);
-    const name = cats[folder];
+    const name = cats[folder]?.title;
     if (!name) {
       listEl.innerHTML = '<p class="list-message">알 수 없는 분류입니다</p>';
       return;
@@ -33,7 +33,7 @@ async function main() {
     // 카드 옆에는 현재 분류를 뺀 다른 분류 중 하나를 표시
     const otherCategory = d => {
       const others = d.categories.filter(c => c !== folder);
-      return others.length ? cats[pickOne(others)] ?? '' : '';
+      return others.length ? cats[pickOne(others)]?.title ?? '' : '';
     };
 
     const members = docs

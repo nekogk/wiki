@@ -27,7 +27,7 @@ async function main() {
     const side = d => {
       if (!d.categories.length) return '';
       const c = pickOne(d.categories);
-      return cats[c] ?? c;
+      return cats[c]?.title ?? c;
     };
 
     listEl.innerHTML = `
