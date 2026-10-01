@@ -1,7 +1,7 @@
 | <big>레비고 츠레가다</big><br>金江南輝 \| Rebigo Creghada | < |
 | :-: | - |
 | ![[rebigo_creghada/profile.png\|320]] | < |
-| 출생 | [[whuda_era\|우다]] 3년 춘분 8일 |
+| 출생 | [[whuda_era\|우다]] 3년 우수 17일 |
 | ^ | [[riris_city\|리리스시]] |
 | 거주지 | [[lyuxiqecu_city\|류이케추시]] |
 | 국적 | ![[rushikowa_flag.png\|16]] [[rushikowa\|루시코와]] |
