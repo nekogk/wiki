@@ -2,7 +2,7 @@
 | :-: | - |
 | ![[daco.png\|320]] | < |
 | 본명 | 레비고 미체키(金江来華) |
-| 출생 | [[whuda_era\|우다]] 원년 청명 12일 |
+| 출생 | [[whuda_era\|우다]] 원년 우수 9일 |
 | ^ | [[riris_city\|리리스시]] |
 | 거주지 | [[sluqecu_metropolis\|슬루케추시]] [[recadesae_ward\|레차데사에구]] |
 | 국적 | ![[rushikowa_flag.png\|16]] [[rushikowa\|루시코와]] |
