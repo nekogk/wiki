@@ -3,7 +3,7 @@
 | <big>루시치</big><br>㒱七 \| Rushichi | < |
 | :-: | - |
 | ![[rushichi.png\|320]] | < |
-| 출생 | [[mige_era\|미게]] 원년 입하 15일 |
+| 출생 | [[mige_era\|미게]] 원년 소만 3일 |
 | ^ | [[rushisewhu_metropolis\|루시세우시]] |
 | 거주지 | [[sluqecu_metropolis\|슬루케추시]] [[miwha_ward\|미와구]] [[rushimis\|우루시가 4-1]] |
 | 국적 | **없음** |

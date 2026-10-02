@@ -3,7 +3,7 @@
 | <big>메리하</big><br>卯冬 \| Meriha | < |
 | :-: | - |
 | ![[meriha.png\|320]] | < |
-| 출생 | [[mige_era\|미게]] 6년 상강 18일 |
+| 출생 | [[mige_era\|미게]] 6년 상강 8일 |
 | ^ | [[rushisewhu_metropolis\|루시세우시]] |
 | 거주지 | [[sluqecu_metropolis\|슬루케추시]] [[miwha_ward\|미와구]] [[rushimis\|우루시가 4-1]] |
 | 국적 | **없음** |
