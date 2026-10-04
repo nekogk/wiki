@@ -1,6 +1,6 @@
 
 | <big>하타레체투역</big><br>初地駅 \| Hatarechetu Station | < | < |
-| :----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
+| :-: | :--: | :--: |
 | <small>외선순환</small><br>[[yuwhez_station\|유웨즈]]<br>← 0.9 km | ![[shamojesa_line.png\|32]]<br><small>[[shamojesa_line\|샤모제사선]]</small><br><small>(DC1221)</small> | <small>내선순환</small><br>[[sluqecu_station\|슬루케추]]<br>1.4 km → |
 | <small>? 방면</small><br>[[yuwhez_station\|유웨즈]]<br>← 0.9 km | ![[zshaseme_line.png\|32]]<br><small>[[zshaseme_line\|즈샤세메선]]</small><br><small>(DC2049)</small> | <small>? 방면</small><br>[[sluqecu_station\|슬루케추]]<br>1.5 km → |
 | <small>[[qecude_station\|케추데]] 방면</small><br>[[metropolitan_city_hall_station\|시청]]<br>← 0.5 km | ![[tobarye_line.png\|32]]<br><small>[[tobarye_line\|토바례선]]</small><br><small>(SQ0151)</small> | <small>[[rebeyo_station\|레베요]] 방면</small><br>[[gyru_palace_station\|현림궁]]<br>0.7 km → |

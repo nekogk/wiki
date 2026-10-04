@@ -1,5 +1,5 @@
 | [[xigoshazsha_region\|동경권]] 전철 노선 | < | < | < | < | < |
-| :-------------------------------------------------: | :------------------------------------------------------: | :------------------------------------------------------: | :-------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------------: |
+| :-: | :---: | :---: | :-: | :-: | :--: |
 | 일반철도 | < | < | < | < | < |
 | ![[yezzori_line.png\|16]] [[yezzori_line\|예즈조리선]] | ![[zajiwa_line.png\|16]] [[zajiwa_line\|자지와선]] | ![[shamojesa_line.png\|16]] [[shamojesa_line\|샤모제사선]] | ![[bicer_line.png\|16]] [[bicer_line\|비처선]] | ![[kone_line.png\|16]] [[kone_line\|코네선]] | ![[pijibichece_line.png\|16]] [[pijibichece_line\|피지비체체선]] |
 | ![[zshaseme_line.png\|16]] [[zshaseme_line\|즈샤세메선]] | ![[creresesha_line.png\|16]] [[creresesha_line\|츠레레세샤선]] | ![[lega_line.png\|16]] [[lega_line\|레가선]] | ![[tobajesa_line.png\|16]] [[tobajesa_line\|토바제사선]] | ![[crereschi_line.png\|16]] [[crereschi_line\|츠레레스치선]] | |

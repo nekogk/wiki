@@ -1,6 +1,6 @@
 
 | <big>에지비차역</big><br>説短駅 \| Ejibica Station | < | < |
-| :-------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: |
+| :-: | :---: | :---: |
 | <small>[[rujewho_station\|루제워]] 방면</small><br>[[rujewho_station\|루제워]]<br>←1.1 km | ![[creresesha_line.png\|32]]<br><small>[[creresesha_line\|츠레레세샤선]]</small><br><small>(DC2151)</small> | <small>[[futecoda_station\|푸테초다]]·[[smijiseda_station\|스미지세다]] 방면</small><br>[[sobecalye_station\|소바찰례]]<br>1.2 km → |
 | <small>[[qecude_station\|케추데]] 방면</small><br>[[cesezema_station\|체세제마]]<br>← 0.8 km | ![[tobarye_line.png\|32]]<br><small>[[tobarye_line\|토바례선]]</small><br><small>(SQ0156)</small> | <small>[[rebeyo_station\|레베요]] 방면</small><br>[[rihajico_station\|리하지초]]<br>0.7 km → |
 | <small>[[lano_park_station\|라노공원]] 방면</small><br>[[cesezema_bus_station\|체세제마부스]]<br>← 0.8 km | ![[nijere_line.png\|32]]<br><small>[[nijere_line\|니제레선]]</small><br><small>(NJ62)</small> | <small>시종착</small> |
@@ -27,13 +27,13 @@
 ---
 
 | | < | < | < | < | < | < | < | < | < |
-| :--------------------------: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| :--: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | ↑ [[cesezema_station\|체세제마]] | < | < | < | < | < | < | < | < | < |
 | \| | 1 | 2 | \| | \| | 3 | 4 | \| | \| | 5 |
 | ↓ [[rihajico_station\|리하지초]] | < | < | < | < | < | < | < | < | < |
 
 | | < | < | < |
-| :-: | :----------------------------------------------: | :-: | :------------------------------------------------------------------------------------------------- |
+| :-: | :-: | :-: | :- |
 | 1 | ![[tobarye_line.png\|16]] [[tobarye_line\|토바례선]] | 완행 | 당역 종착<br>[[sarekoje_station\|사레코제]], [[rebeyo_station\|레베요]] 방면 |
 | 2 | ^ | 급행 | [[rebeyo_station\|레베요]] 방면 |
 | ^ | ^ | 쾌속 | [[rebeyo_station\|레베요]] 방면 |
