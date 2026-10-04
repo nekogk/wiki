@@ -5,7 +5,7 @@
 | <small>? 방면</small><br>[[yuwhez_station\|유웨즈]]<br>← 0.9 km | ![[zshaseme_line.png\|32]]<br><small>[[zshaseme_line\|즈샤세메선]]</small><br><small>(DC2049)</small> | <small>? 방면</small><br>[[sluqecu_station\|슬루케추]]<br>1.5 km → |
 | <small>[[qecude_station\|케추데]] 방면</small><br>[[metropolitan_city_hall_station\|시청]]<br>← 0.5 km | ![[tobarye_line.png\|32]]<br><small>[[tobarye_line\|토바례선]]</small><br><small>(SQ0151)</small> | <small>[[rebeyo_station\|레베요]] 방면</small><br>[[gyru_palace_station\|현림궁]]<br>0.7 km → |
 | <small>외선순환</small><br>[[state_capitol_station\|주청사]]<br>← 0.8 km | ![[lesayu_line.png\|32]]<br><small>[[lesayu_line\|레사유선]]</small><br><small>(SQ0352)</small> | <small>내선순환</small><br>[[hatarechetu_park_station\|하타레체투공원]]<br>0.6 km → |
-| <small>[[dabasha_station\|다바샤]] 방면</small><br>[[metropolitan_city_hall_station\|시청]]<br>← 0.5 km | ![[hatarechetu_line/icon.png\|32]]<br><small>[[hatarechetu_line\|하타레체투선]]</small><br><small>(HR50)</small> | <small>[[remari\|레마리]] 방면</small><br>[[shishiceso_station\|시시체소]]<br>0.7 km → |
+| <small>[[dabasha_station\|다바샤]] 방면</small><br>[[metropolitan_city_hall_station\|시청]]<br>← 0.5 km | ![[hatarechetu_line/icon.png\|32]]<br><small>[[hatarechetu_line\|하타레체투선]]</small><br><small>(HR50)</small> | <small>[[remari_station\|레마리]] 방면</small><br>[[shishiceso_station\|시시체소]]<br>0.7 km → |
 | ![[map:21176,36603,-1\|400x160]] | < | < |
 | 주소 | < | < |
 | [[sluqecu_metropolis\|슬루케추시]] [[shishiceso_ward\|시시체소구]] | < | < |

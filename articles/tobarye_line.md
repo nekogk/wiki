@@ -18,7 +18,7 @@
 | 궤간 | < | 1435mm |
 | 선로구성 | < | 복복선 <sub>(류다무코 ~ 에지비차)</sub><br>복선 <sub>(케추데 ~ 류다무코 에지비차 ~ 레베요)</sub> |
 | 통행방향 | < | 우측통행 |
-| 개통 연혁 | < | [[rimi_era\|리미]] 9년 [[nijere_station\|니제레]] ↔ [[ejibica_station\|에지비차]]<br>[[rimi_era\|리미]] 9년 [[righeju_station\|리게주]] ↔ [[nijere_station\|니제레]]<br>[[rimi_era\|리미]] 11년 [[mezuchisa_station\|메주치사]] ↔ [[righeju_station\|리게주]]<br>[[rimi_era\|리미]] 27년 [[ejibica_station\|에지비차]] ↔ [[smijiseda_station\|스미지세다]]<br>[[rimi_era\|리미]] 44년 [[smijiseda_station\|스미지세다]] ↔ [[sarekoje_station\|사레코제]]<br>[[shoje_era\|쇼제]] 7년 [[sarekoje_station\|사레코제]] ↔ [[futecoda_station\|프테초다]]<br>[[shoje_era\|쇼제]] 10년 [[risheco_station\|리셰초]] ↔ [[mezuchisa_station\|메주치사]]<br>[[shoje_era\|쇼제]] 12년 [[futecoda_station\|푸테초다]] ↔ [[rebeyo_station\|레베요]]<br>[[whuda_era\|우다]] 2년 [[qecude_station\|케추데]] ↔ [[risheco_station\|리셰초]] |
+| 개통 연혁 | < | [[rimi_era\|리미]] 9년 [[nijere_station\|니제레]] ↔ [[ejibica_station\|에지비차]]<br>[[rimi_era\|리미]] 9년 [[righeju_station\|리게주]] ↔ [[nijere_station\|니제레]]<br>[[rimi_era\|리미]] 11년 [[mezuchisa_station\|메주치사]] ↔ [[righeju_station\|리게주]]<br>[[rimi_era\|리미]] 27년 [[ejibica_station\|에지비차]] ↔ [[smijiseda_station\|스미지세다]]<br>[[rimi_era\|리미]] 44년 [[smijiseda_station\|스미지세다]] ↔ [[sarekoje_station\|사레코제]]<br>[[shoje_era\|쇼제]] 7년 [[sarekoje_station\|사레코제]] ↔ [[futecoda_station\|푸테초다]]<br>[[shoje_era\|쇼제]] 10년 [[risheco_station\|리셰초]] ↔ [[mezuchisa_station\|메주치사]]<br>[[shoje_era\|쇼제]] 12년 [[futecoda_station\|푸테초다]] ↔ [[rebeyo_station\|레베요]]<br>[[whuda_era\|우다]] 2년 [[qecude_station\|케추데]] ↔ [[risheco_station\|리셰초]] |
 
 
 # 개요
@@ -46,7 +46,7 @@
 # 현존 행선지
 ---
 - 상행
- [[qecude_station|케추데급행]] - [[rebeyo_station|레베요]]에서 출발하는 급행 계통으로, [[risheco_station|리셰초]] 이남 구간에서는 각역정차로 전환된다.
+ [[qecude_station|케추데급행]] - [[rebeyo_station|레베요]]에서 출발하는 급행 계통으로, [[risheco_station|리셰초]] 이북 구간에서는 각역정차로 전환된다.
  [[risheco_station|리셰초행]] - [[ejibica_station|에지비차]]에서 출발하는 보통열차이다.
  [[risheco_station|리셰초급행]] - [[rebeyo_station|레베요]]에서 출발하는 급행열차이다.
  [[risheco_station|리셰초쾌속]] - [[risheco_station|리셰초]]까지 전 구간을 통과 운행하는 최상위 등급 열차이다.

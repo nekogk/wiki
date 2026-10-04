@@ -1,7 +1,7 @@
 {{sluqecu_metro}}
 
 | | ![[bigosefu_line.png\|64]] | <big>비고세푸선</big><br>江浦鉄道 \| Bigosefu Line |
-| :-: | -: | :- |
+| :---: | -: | :-- |
 | 노선 정보 | < | < |
 | 노선 분류 | < | 도시철도 |
 | 차량 분류 | < | 대형 중전철 |
@@ -15,11 +15,11 @@
 | 소유자 | < | [[sluqecu_metropolis\|슬루케추시]] |
 | 차량기지 | < | 코일리세즈차량기지 |
 | 노선 제원 | < | < |
-| 노선연장 | < | 본선: 68.8km<br>라토지선: 2.4k |
-| 궤간 | < | 본선: 68.8km <br>라토지선: 2.4km <br>도합: 71.2km |
+| 노선연장 | < | 본선: 68.8km <br>라토지선: 2.4km <br>도합: 71.2km |
+| 궤간 | < | 1435mm |
 | 선로구성 | < | 복복선 <sub>(레차데사에 ~ 코일리세즈)</sub><br>복선 <sub>(다지차체 ~ 레차데사에, 코일리세즈 ~ 베게세메)</sub><br>단선 <sub>(로쇼스푸 ~ 라토)</sub> |
-| 통행방향 | < | \| \|<br>\|---\|<br>\|우측통행\| |
-| 개통 연혁 | < | [[rimi_era\|리미]] 41년 [[birisebu\|비리세부]] ↔ [[isteba_station\|이스테바]]<br>[[rimi_era\|리미]] 41년 [[isteba_station\|이스테바]] ↔ [[koxilisez_station\|코일리세즈]] [[lesayu_line\|레사유선]]에서 이관<br>[[shoje_era\|쇼제]] 6년 [[lano_station\|라노]] ↔ [[birisebu\|비리세부]]<br>[[shoje_era\|쇼제]] 8년 [[lato_station\|라토]] ↔ [[lano_station\|라노]]<br>[[shoje_era\|쇼제]] 16년 [[koxilisez_station\|코일리세즈]] ↔ [[begheseme_station\|베게세메]]<br>[[whuda_era\|우다]] 11년 [[dajicache_station\|다지차체]] ↔ [[loshosfu_station\|로쇼스푸]] |
+| 통행방향 | < | 우측통행 |
+| 개통 연혁 | < | [[rimi_era\|리미]] 41년 [[birisebu_station\|비리세부]] ↔ [[isteba_station\|이스테바]]<br>[[rimi_era\|리미]] 41년 [[isteba_station\|이스테바]] ↔ [[koxilisez_station\|코일리세즈]] [[lesayu_line\|레사유선]]에서 이관<br>[[shoje_era\|쇼제]] 6년 [[lano_station\|라노]] ↔ [[birisebu_station\|비리세부]]<br>[[shoje_era\|쇼제]] 8년 [[lato_station\|라토]] ↔ [[lano_station\|라노]]<br>[[shoje_era\|쇼제]] 16년 [[koxilisez_station\|코일리세즈]] ↔ [[begheseme_station\|베게세메]]<br>[[whuda_era\|우다]] 11년 [[dajicache_station\|다지차체]] ↔ [[loshosfu_station\|로쇼스푸]] |
 
 # 개요
 ---
