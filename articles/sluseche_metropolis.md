@@ -4,14 +4,14 @@
 | | ![[sluseche_metropolis_white.png\|64]] | <big>슬루세체시</big><br>緑泉京 \| Sluseche Metropolis | < |
 | :--: | -: | - | :-: |
 | 시청 소재지 | < | < | [[nyega_ward\|녜가구]] 조리체카 1가 13-24 |
-| 주 | < | < | [[kamichi_state\|카미치주]] |
+| 주 | < | < | [[kamile_state\|카밀레주]] |
 | 하위 행정구역 | < | < | 25구 |
 | 면적 | < | < | 663km<sup>2</sup> |
 | 인구 | < | < | 720만명 |
 
 # 개요
 ---
-**슬루세체시**(緑泉京, Sluseche Metropolis)는 **[[rushikowa|루시코와]] 제 2의 도시**이자 [[kamichi_state|카미치주]] 최대의 도시이다. 한국식 한자 독음으로는 녹천이라고 부른다.
+**슬루세체시**(緑泉京, Sluseche Metropolis)는 **[[rushikowa|루시코와]] 제 2의 도시**이자 [[kamile_state|카밀레주]] 최대의 도시이다. 한국식 한자 독음으로는 녹천이라고 부른다.
 
 # 상징
 ---
