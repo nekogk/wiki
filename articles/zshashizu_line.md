@@ -23,7 +23,7 @@
 
 # 개요
 ---
-**즈샤시주선**은 [[remaxili_station|레마일리역]]에서 [[aroce_rube_station|아로체루베역]]을 잇는 [[buszsha_region|서경권]] 전철 노선이다. 
+**즈샤시주선**은 [[remaxili_station|레마일리역]]에서 [[aroce_rube_station|아로체루베역]]을 잇는 [[xigoshazsha_region|서경권]] 전철 노선이다. 
 
 # 건설 목적
 ---

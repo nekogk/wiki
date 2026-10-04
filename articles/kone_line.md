@@ -1,2 +1,0 @@
-{{sluqecu_metro}}
-
