@@ -15,7 +15,7 @@
 > **輝世圖地**
 > 세상을 밝히고 대지를 설계하라
 
-연호 '輝図'는 [[ectenic_divine_empire|대연신국]]의 [[sluqecu_metropolis|서경]]천도계획의 슬로건 '輝世圖地'에서 유래한다.
+연호 '輝図'는 [[ectenic_divine_empire|대연신국]]의 [[sluqecu_metropolis|동경]]천도계획의 슬로건 '輝世圖地'에서 유래한다.
 
 # 시대적 특징
 ---
