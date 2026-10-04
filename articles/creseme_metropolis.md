@@ -1,8 +1,8 @@
 {{coroji_metropolis}}
 
-| | ![[creseme_metropolis_white.png\|64]] | <big>츠레세메시</big><br>南海京 \| Creseme Metropolis | < |
-| :-: | -: | - | :-: |
-| 주 | < | < | [[hayane_state\|하야네주]] |
+|     | ![[creseme_metropolis_white.png\|64]] | <big>츠레세메시</big><br>南海京 \| Creseme Metropolis |             <             |
+| :-: | ------------------------------------: | --------------------------------------------- | :-----------------------: |
+|  주  |                                     < | <                                             | [[sememeye_state\|세메메예주]] |
 
 # 개요
 ---

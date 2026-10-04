@@ -15,7 +15,7 @@
 | [[lesayu_line\|레사유선]] | 하타레체투3가 6-51 | < |
 | [[hatarechetu_line\|하타레체투선]] | 하타레체투3가 8-18 | < |
 | 운영기관 | < | < |
-| [[shamojesa_line\|샤모제사선]] | [[dechi_railroad_agency\|데치주 철도청]] | < |
+| [[shamojesa_line\|샤모제사선]] | [[hayane_railroad_agency\|하야네주 철도청]] | < |
 | [[zshaseme_line\|즈샤세메선]] | ^ | < |
 | [[tobarye_line\|토바례선]] | [[sluqecu_metropolis\|슬루케추시]] | < |
 | [[lesayu_line\|레사유선]] | ^ | < |
