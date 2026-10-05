@@ -22,7 +22,7 @@
 
 # 개요
 ---
-[[ruk_county|루크현]]의 [[shizomacho_station|시조마초역]]과 [[sluqecu_metropolis|슬루케추시]]의 [[eshuwhi_station|에슈위역]]을 연결하는 노선. 노선명 츠레레루베는 남쪽과 북쪽을 뜻하며 이름처럼 슬루케추시의 남북을 관통한다.
+[[sluqecu_metropolis|슬루케추시]]의 [[shizomacho_station|시조마초역]]과 [[ruk_county|루크현]]의 [[eshuwhi_station|에슈위역]]을 연결하는 노선. 노선명 츠레레루베는 남쪽과 북쪽을 뜻하며 이름처럼 슬루케추시의 남북을 관통한다.
 
 # 건설 목적
 ---
