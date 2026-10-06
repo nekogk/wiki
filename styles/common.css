@@ -144,7 +144,7 @@ a:focus-visible {
 .site-search-input {
   width: 100%;
   height: 2rem;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   background: var(--glass);
   border: 1px solid var(--line);
   border-radius: 1rem;
@@ -183,7 +183,7 @@ a:focus-visible {
   display: block;
   line-height: 2rem;
   height: 2rem;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   border-radius: 1rem;
   color: var(--text-strong);
   text-decoration: none;
@@ -209,7 +209,8 @@ a:focus-visible {
 
 .site-search-empty {
   height: 2rem;
-  padding: 0 1rem;
+  line-height: 2rem;
+  padding: 0 0.5rem;
   color: var(--muted);
 }
 
