@@ -82,7 +82,7 @@
   --mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
 
   color-scheme: dark;
-  scrollbar-color: #303030 var(--bg);
+  scrollbar-color: #222222 #00000000;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -110,7 +110,7 @@ body {
   margin: 0 auto;
   padding: 2rem;
   background: var(--panel);
-  scrollbar-color: #303030 var(--panel);
+  scrollbar-color: #333333 #00000000;
   font-family: var(--sans-font);
 }
 
@@ -124,14 +124,6 @@ a:focus-visible {
   outline: 2px solid var(--beige);
   outline-offset: 3px;
 }
-
-::-webkit-scrollbar { width: 0.5rem; height: 0.5rem; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: #303030; border-radius: 0.5rem; }
-::-webkit-scrollbar-thumb:hover { background: #404040; }
-
-body { scrollbar-color: #303030 var(--panel); }
-body *::-webkit-scrollbar-track { background: var(--panel); }
 
 .site-header {
   height: 2rem;
@@ -182,6 +174,7 @@ body *::-webkit-scrollbar-track { background: var(--panel); }
   background: var(--glass);
   border: 1px solid var(--line);
   border-radius: 1.5rem;
+  scrollbar-color: #444444 #00000000;
 }
 
 .site-search-list[hidden] { display: none; }
@@ -242,6 +235,7 @@ footer {
 }
 
 @media (max-width: 65rem) {
-  body { background: var(--panel); }
+  body, html { background: var(--panel); }
   .container { padding: 3vw; }
+  :root { scrollbar-color: #333333 #00000000; }
 }
