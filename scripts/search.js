@@ -135,7 +135,7 @@ export function initSearch(header) {
       : '<li class="site-search-empty">검색 결과가 없습니다</li>';
     list.hidden = false;
     input.setAttribute('aria-expanded', 'true');
-    setActive(results.length ? 0 : -1);
+    setActive(-1);   // 처음엔 아무것도 강조하지 않음 (Enter는 첫 결과로 이동)
   }
 
   input.addEventListener('input', update);
@@ -148,7 +148,8 @@ export function initSearch(header) {
       e.preventDefault();
       if (list.hidden) { update(); return; }
       const d = e.key === 'ArrowDown' ? 1 : -1;
-      setActive((active + d + results.length) % results.length);
+      const n = results.length;
+      setActive(active < 0 ? (d > 0 ? 0 : n - 1) : (active + d + n) % n);
     } else if (e.key === 'Enter') {
       e.preventDefault();
       const target = results[active] ?? results[0];
@@ -167,6 +168,10 @@ export function initSearch(header) {
       const i = [...list.children].indexOf(li);
       if (i !== active) setActive(i);
     }
+  });
+  // 마우스가 목록 밖으로 나가면 강조 해제
+  list.addEventListener('pointerleave', e => {
+    if (e.pointerType === 'mouse') setActive(-1);
   });
 
   // 검색창 바깥을 누르면 닫음
