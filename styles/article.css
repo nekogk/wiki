@@ -1,8 +1,9 @@
 @import url('./common.css');
 
 summary:focus-visible {
-  outline: 2px solid var(--beige);
-  outline-offset: 3px;
+  outline: none;
+  border-color: var(--beige); 
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 #content { display: block; }

@@ -121,8 +121,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a:focus-visible {
-  outline: 2px solid var(--beige);
-  outline-offset: 3px;
+  outline: none;
+  border-color: var(--beige); 
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .site-header {
@@ -180,10 +181,12 @@ a:focus-visible {
 .site-search-list[hidden] { display: none; }
 
 .site-search-item a {
+  outline: none;
   display: block;
   line-height: 2rem;
   height: 2rem;
   padding: 0 0.75rem;
+  border: 1px solid #00000000;
   border-radius: 1rem;
   color: var(--text-strong);
   text-decoration: none;
@@ -194,7 +197,7 @@ a:focus-visible {
 }
 
 .site-search-item[aria-selected="true"] a { background: var(--glass-hover); }
-.site-search-item a:focus-visible { outline: 2px solid var(--beige); outline-offset: -2px; }
+.site-search-item a:focus-visible { border-color: var(--beige);}
 
 .site-search-item mark {
   background: none;
