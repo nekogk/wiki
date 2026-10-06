@@ -133,7 +133,89 @@ a:focus-visible {
 body { scrollbar-color: #303030 var(--panel); }
 body *::-webkit-scrollbar-track { background: var(--panel); }
 
-.site-header { height: 2rem; }
+.site-header {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-logo { flex-shrink: 0; }
+
+/* ── 헤더 검색창 ── */
+.site-search {
+  position: relative;
+  width: 15rem;
+}
+
+.site-search-input {
+  width: 100%;
+  height: 2rem;
+  padding: 0 1rem;
+  background: var(--glass);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  color: var(--text-strong);
+  font: inherit;
+  font-family: var(--sans-font);
+  outline: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.site-search-input::placeholder { color: var(--muted); }
+.site-search-input:hover { background: var(--glass-hover); }
+.site-search-input:focus { border-color: var(--beige); }
+.site-search-input::-webkit-search-cancel-button { display: none; }
+
+.site-search-list {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  z-index: 100;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--glass);
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+}
+
+.site-search-list[hidden] { display: none; }
+
+.site-search-item a {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  color: var(--text-strong);
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.site-search-item[aria-selected="true"] a { background: var(--glass-hover); }
+.site-search-item a:focus-visible { outline: 2px solid var(--beige); outline-offset: -2px; }
+
+.site-search-item mark {
+  background: none;
+  color: var(--beige);
+  font-weight: 700;
+}
+
+.site-search-kind {
+  margin-right: 0.5rem;
+  color: var(--muted);
+}
+
+.site-search-empty {
+  padding: 0.5rem 1rem;
+  color: var(--muted);
+}
 
 .site-logo {
   font-family: var(--sans-font);
