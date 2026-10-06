@@ -1,11 +1,5 @@
 @import url('./common.css');
 
-summary:focus-visible {
-  outline: none;
-  border-color: var(--beige); 
-  transition: background 0.2s ease, border-color 0.2s ease;
-}
-
 #content { display: block; }
 
 .article-header { margin-bottom: 1.5rem; }
@@ -24,12 +18,14 @@ summary:focus-visible {
 
 .article-meta a {
   color: inherit;
+  text-decoration: 0;
+}
+
+.article-meta a:hover {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 }
-
-.article-meta a:hover { text-decoration-thickness: 2px; }
 
 .article-body h2,
 .article-body h3,
@@ -63,12 +59,14 @@ summary:focus-visible {
 
 .article-body a {
   color: var(--pink);
+  text-decoration: 0;
+}
+
+.article-body a:hover {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 }
-
-.article-body a:hover { text-decoration-thickness: 2px; }
 
 .wikilink-unresolved { color: var(--muted); }
 

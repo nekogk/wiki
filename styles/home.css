@@ -34,7 +34,8 @@
   border-radius: 1.5rem;
   color: var(--text-strong);
   text-decoration: none;
-  transition: background 0.2s ease;
+  transition: background 0.2s, outline 0.2s ease;
+  outline: 2px solid transparent;
 }
 
 .post-card:hover { background: var(--glass-hover); }

@@ -77,14 +77,12 @@
   --coral: #ed7457;
   --pink: #f3a6c0;
 
-  --clear: #00000000
-;
   --sans-font: 'sansRm','sansSc', 'sansKr', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
   --heading-font: 'headSc', 'headKr', var(--sans-font);
   --mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
 
   color-scheme: dark;
-  scrollbar-color: var(--panel) var(--clear);
+  scrollbar-color: var(--panel) transparent;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -112,7 +110,7 @@ body {
   margin: 0 auto;
   padding: 2rem;
   background: var(--panel);
-  scrollbar-color: var(--glass) var(--clear);
+  scrollbar-color: var(--glass) transparent;
   font-family: var(--sans-font);
 }
 
@@ -122,10 +120,15 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--beige);
 }
 
+a {
+  transition: outline 0.2s ease;
+  outline: 1px solid transparent;
+  border-radius: 0.2em;
+}
+
 a:focus-visible {
-  outline: none;
-  border-color: var(--beige); 
-  transition: background 0.2s ease, border-color 0.2s ease;
+  outline: 1px solid var(--beige);
+  outline-offset: 1px;
 }
 
 .site-header {
@@ -135,8 +138,6 @@ a:focus-visible {
   justify-content: space-between;
   gap: 1rem;
 }
-
-.site-logo { flex-shrink: 0; }
 
 /* ── 헤더 검색창 ── */
 .site-search {
@@ -177,7 +178,7 @@ a:focus-visible {
   background: var(--glass);
   border: 1px solid var(--line);
   border-radius: 1rem;
-  scrollbar-color: #444444 var(--clear);
+  scrollbar-color: var(--glass-hover) transparent;
 }
 
 .site-search-list[hidden] { display: none; }
@@ -188,7 +189,7 @@ a:focus-visible {
   line-height: 2rem;
   height: 2rem;
   padding: 0 0.75rem;
-  border: 1px solid var(--clear);
+  border: 1px solid transparent;
   border-radius: 1rem;
   color: var(--text-strong);
   text-decoration: none;
@@ -216,13 +217,15 @@ a:focus-visible {
 
 .site-logo {
   font-family: var(--sans-font);
-  display: inline-flex;
-  align-items: center;
+  display: inline-flex; 
   gap: 0.5rem;
   color: var(--text-strong);
   text-decoration: none;
+  line-height: 2rem;
   font-weight: 700;
   font-size: 1.3rem;
+  padding-right: 0.5rem;
+  border-radius: 0.8rem;
 }
 
 .site-logo img {
@@ -241,5 +244,5 @@ footer {
 @media (max-width: 65rem) {
   body, html { background: var(--panel); }
   .container { padding: 3vw; }
-  :root { scrollbar-color: var(--glass) var(--clear); }
+  :root { scrollbar-color: var(--glass) transparent; }
 }
