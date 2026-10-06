@@ -130,7 +130,7 @@ export function initSearch(header) {
     list.innerHTML = results.length
       ? results.map((r, i) => `
         <li id="site-search-opt-${i}" class="site-search-item" role="option" aria-selected="false">
-          <a href="${r.url}">${label ? `<span class="site-search-kind">${escapeHtml(label)}</span>` : ''}${highlight(r.title, term)}</a>
+          <a href="${r.url}">${label ? `<span class="site-search-item">${escapeHtml(label)}</span>` : ''}${highlight(r.title, term)}</a>
         </li>`).join('')
       : '<li class="site-search-empty">검색 결과가 없습니다</li>';
     list.hidden = false;
