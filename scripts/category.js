@@ -41,7 +41,7 @@ async function main() {
       .sort((a, b) => collator.compare(a.title, b.title));
 
     if (!members.length) {
-      listEl.innerHTML = `<h1 class="page-title">${escapeHtml(name)}</h1><p class="list-message">이 분류에는 아직 문서가 없습니다</p>`;
+      listEl.innerHTML = `<h1 class="page-title">분류:${escapeHtml(name)}</h1><p class="list-message">이 분류에는 아직 문서가 없습니다</p>`;
       return;
     }
 
@@ -58,7 +58,7 @@ async function main() {
       groups.set(OTHER, rest);
     }
 
-    listEl.innerHTML = `<h1 class="page-title">${escapeHtml(name)}</h1>` + [...groups].map(([label, list]) => `
+    listEl.innerHTML = `<h1 class="page-title">분류:${escapeHtml(name)}</h1>` + [...groups].map(([label, list]) => `
       <section class="post-section">
         <h2 class="section-label">${escapeHtml(label)}</h2>
         ${cardsHtml(list, otherCategory)}

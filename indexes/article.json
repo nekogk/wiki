@@ -89,5 +89,6 @@
   "rimi_era": { "title": "리미 시대", "category": [ "era" ]},
   "shoje_era": { "title": "쇼제 시대", "category": [ "era" ]},
   "whuda_era": { "title": "우다 시대", "category": [ "era" ]},
-  "seyareji": { "title": "세야레지" }
+  "seyareji": { "title": "세야레지" },
+  "coroji": { "title": "삼록권" }
 }

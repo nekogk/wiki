@@ -437,7 +437,7 @@ async function main() {
 
     const bySlug = new Map(Object.entries(meta).map(([k, v]) => [slugOf(k), v]));
     const info = isTemplate
-      ? (tplMeta[slug] ? { title: tplMeta[slug].title ?? slug } : null)
+      ? (tplMeta[slug] ? { title: `틀:${tplMeta[slug].title ?? slug}` } : null)
       : bySlug.get(slug);
     const header = info
       ? `<header class="article-header">
