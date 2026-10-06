@@ -209,13 +209,6 @@ a:focus-visible {
   font-weight: 700;
 }
 
-.site-search-empty {
-  height: 2rem;
-  line-height: 2rem;
-  padding: 0 0.75rem;
-  color: var(--muted);
-}
-
 .site-logo {
   font-family: var(--heading-font);
   display: inline-flex;
