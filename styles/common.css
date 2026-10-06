@@ -77,12 +77,14 @@
   --coral: #ed7457;
   --pink: #f3a6c0;
 
+  --clear: #00000000
+;
   --sans-font: 'sansRm','sansSc', 'sansKr', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
   --heading-font: 'headSc', 'headKr', var(--sans-font);
   --mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
 
   color-scheme: dark;
-  scrollbar-color: #222222 #00000000;
+  scrollbar-color: var(--panel) var(--clear);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -110,7 +112,7 @@ body {
   margin: 0 auto;
   padding: 2rem;
   background: var(--panel);
-  scrollbar-color: #333333 #00000000;
+  scrollbar-color: var(--glass) var(--clear);
   font-family: var(--sans-font);
 }
 
@@ -175,7 +177,7 @@ a:focus-visible {
   background: var(--glass);
   border: 1px solid var(--line);
   border-radius: 1rem;
-  scrollbar-color: #444444 #00000000;
+  scrollbar-color: #444444 var(--clear);
 }
 
 .site-search-list[hidden] { display: none; }
@@ -186,7 +188,7 @@ a:focus-visible {
   line-height: 2rem;
   height: 2rem;
   padding: 0 0.75rem;
-  border: 1px solid #00000000;
+  border: 1px solid var(--clear);
   border-radius: 1rem;
   color: var(--text-strong);
   text-decoration: none;
@@ -239,5 +241,5 @@ footer {
 @media (max-width: 65rem) {
   body, html { background: var(--panel); }
   .container { padding: 3vw; }
-  :root { scrollbar-color: #333333 #00000000; }
+  :root { scrollbar-color: var(--glass) var(--clear); }
 }
