@@ -130,7 +130,7 @@ export function initSearch(header) {
     list.innerHTML = results.length
       ? results.map((r, i) => `
         <li id="site-search-opt-${i}" class="site-search-item" role="option" aria-selected="false">
-          <a href="${r.url}">${label ? `<span class="site-search-item">${escapeHtml(label)}</span>` : ''}${highlight(r.title, term)}</a>
+          <a href="${r.url}">${label ? `<span class="site-search-kind">${escapeHtml(label)}</span>` : ''}${highlight(r.title, term)}</a>
         </li>`).join('')
       : '<li class="site-search-empty">검색 결과가 없습니다</li>';
     list.hidden = false;
@@ -159,8 +159,9 @@ export function initSearch(header) {
     }
   });
 
-  // 결과 위에 마우스를 올리면 선택 표시 이동
-  list.addEventListener('mousemove', e => {
+  // 결과 위에 마우스를 올리면 선택 표시 이동 (터치에서는 하지 않음: iOS에서 첫 탭이 hover로 먹히는 걸 막음)
+  list.addEventListener('pointermove', e => {
+    if (e.pointerType !== 'mouse') return;
     const li = e.target.closest('.site-search-item');
     if (li) {
       const i = [...list.children].indexOf(li);
@@ -168,9 +169,14 @@ export function initSearch(header) {
     }
   });
 
-  // 검색창 바깥을 누르거나 포커스가 빠지면 닫음
+  // 검색창 바깥을 누르면 닫음
   document.addEventListener('pointerdown', e => { if (!box.contains(e.target)) close(); });
-  box.addEventListener('focusout', e => { if (!box.contains(e.relatedTarget)) close(); });
+  // Tab 등으로 포커스가 다른 요소로 넘어갈 때만 닫음.
+  // relatedTarget이 없으면(iOS에서 링크를 탭하거나 키보드를 내린 경우) 닫지 않음:
+  // 여기서 닫아 버리면 click이 오기 전에 목록이 사라져 링크로 이동하지 못함
+  box.addEventListener('focusout', e => {
+    if (e.relatedTarget && !box.contains(e.relatedTarget)) close();
+  });
 
   // '/' 키로 검색창에 바로 포커스
   document.addEventListener('keydown', e => {
