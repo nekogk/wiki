@@ -173,7 +173,7 @@ a:focus-visible {
   list-style: none;
   background: var(--glass);
   border: 1px solid var(--line);
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   scrollbar-color: #444444 #00000000;
 }
 
@@ -181,8 +181,10 @@ a:focus-visible {
 
 .site-search-item a {
   display: block;
-  padding: 0.5rem 1rem;
-  border-radius: 1.5rem;
+  line-height: 2rem;
+  height: 2rem;
+  padding: 0 1rem;
+  border-radius: 1rem;
   color: var(--text-strong);
   text-decoration: none;
   white-space: nowrap;
@@ -206,7 +208,8 @@ a:focus-visible {
 }
 
 .site-search-empty {
-  padding: 0.5rem 1rem;
+  height: 2rem;
+  padding: 0 1rem;
   color: var(--muted);
 }
 
