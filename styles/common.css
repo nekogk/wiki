@@ -136,7 +136,6 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
 }
 
 /* ── 헤더 검색창 ── */
@@ -217,7 +216,8 @@ a:focus-visible {
 
 .site-logo {
   font-family: var(--sans-font);
-  display: inline-flex; 
+  display: inline-flex;
+  white-space: nowrap;
   gap: 0.5rem;
   color: var(--text-strong);
   text-decoration: none;
