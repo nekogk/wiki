@@ -1,6 +1,6 @@
 import { initSearch } from '/scripts/search.js';
 
-const SITE_NAME = '圖孃維基';
+const SITE_NAME = '다냐위키';
 const COPYRIGHT = '© 2026 Raeyon Kim. All rights reserved.';
 
 function headerHtml() {
