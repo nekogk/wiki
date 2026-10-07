@@ -5,11 +5,13 @@ import katex from 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.mjs';
 export const WIKI_DIR = '/w/';
 export const MD_DIR = '/articles/';
 export const TEMPLATE_MD_DIR = '/articles/templates/';
-export const ASSET_DIR = '/articles/assets/';
+export const ASSET_DIR = '/articles/files/';
 export const ARTICLE_INDEX = '/indexes/article.json';
 export const CATEGORY_INDEX = '/indexes/category.json';
 export const TEMPLATE_DIR = '/t/';
 export const TEMPLATE_INDEX = '/indexes/templete.json';
+export const FILE_PAGE_DIR = '/f/';
+export const FILE_INDEX = '/indexes/file.json';
 const KATEX_CSS = 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css';
 const MAP_URL = 'https://sluqecu.dacordia.com/';
 
@@ -173,7 +175,7 @@ function mapIframe(lat, lng, zoom = '0', opt) {
   return `<iframe class="map-embed" src="${src}"${styleAttr(sizeStyle(opt))} loading="lazy" title="Map (${lat}, ${lng})"></iframe>`;
 }
 
-// 에셋 이름 → URL. 절대 경로·외부 URL은 그대로, 나머지는 /articles/assets/ 아래로
+// 에셋 이름 → URL. 절대 경로·외부 URL은 그대로, 나머지는 /articles/files/ 아래로
 function assetUrl(src) {
   if (/^([a-z][a-z0-9+.-]*:|\/|#)/i.test(src)) return src;
   return `${ASSET_DIR}${encodePath(decodeURIComponent(src))}`;
@@ -363,6 +365,18 @@ function wrapTables(root) {
   }
 }
 
+// 표 밖의 이미지를 .img-scroll로 감쌈: 컨테이너보다 넓으면 표처럼 가로 스크롤
+// (표 안의 이미지는 .table-wrap이 스크롤을 맡고, 정렬은 칸의 정렬을 따름)
+function wrapImages(root) {
+  for (const img of root.querySelectorAll('img')) {
+    if (img.closest('table, .img-scroll, .file-view')) continue;
+    const wrap = document.createElement('span');
+    wrap.className = 'img-scroll';
+    img.replaceWith(wrap);
+    wrap.append(img);
+  }
+}
+
 // 표준 마크다운 이미지의 'alt|크기' 처리, 상대 경로 .md 링크를 위키 주소로 변환
 export function fixRelativePaths(root) {
   for (const img of root.querySelectorAll('img[src]')) {
@@ -430,6 +444,26 @@ function categoryLine(value, catDirs) {
   return `<p class="article-meta">분류: ${items.join(', ')}</p>`;
 }
 
+// 파일 페이지(/f/슬러그/): 파일 인덱스에서 제목과 파일 이름을 찾아 파일을 그대로 보여 줌
+async function renderFilePage(root, slug) {
+  const res = await fetch(FILE_INDEX);
+  if (!res.ok) throw new Error(`파일 목록을 불러오지 못했습니다 (${res.status})`);
+  const info = (await res.json())[slug];
+  if (!info) throw new Error(`${slug} 파일을 찾을 수 없습니다`);
+
+  const name = String(info.file ?? slug);
+  const title = `파일:${info.title ?? slug}`;
+  const url = assetUrl(name);
+  const view = IMAGE_EXT.test(name)
+    ? `<a href="${url}"><img src="${url}" alt="${escapeHtml(title)}"></a>`
+    : `<a href="${url}">${escapeHtml(name)}</a>`;
+
+  root.innerHTML = `<header class="article-header">
+        <h1>${escapeHtml(title)}</h1>
+      </header>
+      <div class="article-body file-view">${view}</div>`;
+}
+
 // 문서 페이지: 주소의 슬러그로 .md를 불러와 렌더
 async function main() {
   const root = document.getElementById('content');
@@ -441,6 +475,16 @@ async function main() {
   const slug = decodeURIComponent(slugOf(location.pathname) ?? '');
   // /t/ 아래는 틀 페이지: 제목은 틀 인덱스에서 가져오고 분류는 표시하지 않음
   const isTemplate = location.pathname.startsWith(TEMPLATE_DIR);
+  // /f/ 아래는 파일 페이지: .md 없이 파일만 보여 줌
+  if (location.pathname.startsWith(FILE_PAGE_DIR)) {
+    try {
+      await renderFilePage(root, slug);
+    } catch (err) {
+      root.innerHTML = `<p class="load-error">파일을 불러오지 못했습니다. ${escapeHtml(err.message)}</p>`;
+      console.error(err);
+    }
+    return;
+  }
   // 인덱스 JSON은 실패해도 빈 객체로 대체해서 본문은 보여 줌
   const getJson = url => fetch(url).then(r => (r.ok ? r.json() : {})).catch(() => ({}));
 
@@ -477,6 +521,7 @@ async function main() {
     buildCallouts(root);
     addHeadingIds(root.querySelector('.article-body'));
     wrapTables(root);
+    wrapImages(root.querySelector('.article-body'));
 
     if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
   } catch (err) {

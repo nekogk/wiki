@@ -84,8 +84,23 @@
 .article-body img {
   border: 0;
   height: auto;
+  max-width: none;
   vertical-align: middle;
 }
+
+/* 표 밖의 이미지: 왼쪽 정렬, 컨테이너보다 넓으면 가로 스크롤 */
+.article-body .img-scroll {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  vertical-align: middle;
+}
+
+.article-body .img-scroll > img { display: block; }
+
+.article-body p:has(> .img-scroll),
+.article-body .callout-body:has(> .img-scroll) { text-align: left; }
 
 .article-body .map-embed {
   border: 0;
@@ -187,4 +202,19 @@ summary.callout-title::marker { color: var(--muted); }
   .article-header h1 { font-size: 2rem; }
   .article-body h2 { font-size: 1.7rem; }
   .article-body h3 { font-size: 1.5rem; }
+}
+
+/* 파일 페이지 (/f/) */
+.file-view {
+  margin: 0 0 1rem;
+  overflow-x: auto;
+  text-align: left;
+}
+
+.file-view img {
+  display: block;
+  max-height: 40rem;
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }

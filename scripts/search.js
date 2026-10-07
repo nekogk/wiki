@@ -2,6 +2,7 @@
 //   기본       → article.json (문서, /w/)
 //   '분류:' …  → category.json (분류, /c/)
 //   '틀:' …    → templete.json (틀, /t/)
+//   '파일:' …  → file.json (파일, /f/)
 // layout.js가 머리글을 만든 뒤 initSearch(header)로 검색창을 붙임
 
 const collator = new Intl.Collator('ko');
@@ -11,6 +12,7 @@ const KINDS = {
   article:  { prefix: '',      index: '/indexes/article.json',  dir: '/w/' },
   category: { prefix: '분류:', index: '/indexes/category.json', dir: '/c/' },
   template: { prefix: '틀:',   index: '/indexes/templete.json', dir: '/t/' },
+  file:     { prefix: '파일:', index: '/indexes/file.json',     dir: '/f/' },
 };
 
 // HTML 특수문자 이스케이프 (article.js를 다시 import하지 않으려고 따로 둠)
@@ -42,7 +44,7 @@ function loadIndex(kind) {
 // 입력값 → { kind, term }
 function parseQuery(raw) {
   const q = raw.trim();
-  for (const kind of ['category', 'template']) {
+  for (const kind of ['category', 'template', 'file']) {
     const { prefix } = KINDS[kind];
     if (q.startsWith(prefix)) return { kind, term: q.slice(prefix.length).trim() };
   }

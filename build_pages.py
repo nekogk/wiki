@@ -1,18 +1,3 @@
-#!/usr/bin/env python3
-"""indexes/*.json 을 읽어서 c/, t/, w/ 아래에 폴더와 index.html 을 자동 생성한다.
-
-사용법 (wiki/ 폴더 안에서):
-    python build_pages.py             # 없는 페이지만 새로 만든다 (기존 파일은 건드리지 않음)
-    python build_pages.py --update    # 제목이 바뀐 기존 페이지도 다시 쓴다
-                                      # (c/ t/ 에 '분류:' '틀:' 접두어가 붙은 뒤 처음 한 번은 이걸로 갱신)
-    python build_pages.py --dry-run   # 실제로 쓰지 않고 무엇을 할지만 보여준다
-
-인덱스 -> 출력 폴더
-    indexes/category.json -> c/<slug>/index.html   (분류 목록 페이지)
-    indexes/templete.json -> t/<slug>/index.html   (틀 페이지)
-    indexes/article.json  -> w/<slug>/index.html   (문서 페이지)
-"""
-
 import argparse
 import json
 import re
