@@ -1,6 +1,6 @@
 ![[sluqecu_metro]]
 
-| | ![[hoker_line.png\|64]] | <big>호커선</big><br>空港鉄道 \| Hoker Line |
+| | ![[hoker_line_icon.png\|64]] | <big>호커선</big><br>空港鉄道 \| Hoker Line |
 | :---: | -: | :--- |
 | 노선 정보 | < | < |
 | 노선 분류 | < | 도시철도 |

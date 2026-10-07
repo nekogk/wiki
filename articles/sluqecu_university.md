@@ -1,7 +1,7 @@
 
 | <big>슬루케추대학교</big><br>囯立緑山大斈 \| National Sluqecu University | < |
 | :-: | - |
-| ![[sluqecu_university.png\|240]] | < |
+| ![[sluqecu_university_logo.png\|240]] | < |
 | 소재지 | [[sluqecu_metropolis\|슬루케추시]] [[recadesae_ward\|레차데사에구]] |
 | 학부생 수 | 약 16,000명 |
 | 대학원생 수 | 약 10,000명 |

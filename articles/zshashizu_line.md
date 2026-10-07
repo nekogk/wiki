@@ -1,6 +1,6 @@
 ![[[sluqecu_metro]]
 
-| | ![[zshashizu_line.png\|64]] | <big>즈샤시주선</big><br>京心鉄道 \| Zshashizu Line |
+| | ![[zshashizu_line_icon.png\|64]] | <big>즈샤시주선</big><br>京心鉄道 \| Zshashizu Line |
 | :---: | --: | :-- |
 | 노선 정보 | < | < |
 | 노선 분류 | < | 도시철도 |

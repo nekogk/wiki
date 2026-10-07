@@ -1,4 +1,4 @@
-| | ![[sluqecu_metropolis_white.png\|64]] | < | < | [[sluqecu_metropolis\|슬루케추시]]<br><big>구읍</big> | < | < |
+| | ![[sluqecu_metropolis_emblem_white.png\|64]] | < | < | [[sluqecu_metropolis\|슬루케추시]]<br><big>구읍</big> | < | < |
 | :---: | ---: | :--: | :--: | :--- | :-: | :--: |
 | [[ghashido_ward\|가시도구]] | < | [[shishiceso_ward\|시시체소구]] | [[lesawez_ward\|레사웨즈구]] | < | [[miseme_ward\|미세메구]] | [[jeseceso_ward\|제세체소구]] |
 | [[righeju_ward\|리게주구]] | < | [[sasgri_ward\|사스그리구]] | [[shitobu_ward\|시토부구]] | < | [[merehanya_ward\|메레하냐구]] | [[rereas_ward\|레레아스구]] |

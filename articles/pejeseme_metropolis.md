@@ -1,6 +1,6 @@
 ![[coroji_metropolis]]
 
-| | ![[pejeseme_metropolis_white.png\|64]] | <big>페제세메시</big><br>内海京 \| Pejeseme Metropolis | < |
+| | ![[pejeseme_metropolis_emblem_white.png\|64]] | <big>페제세메시</big><br>内海京 \| Pejeseme Metropolis | < |
 | :-: | -: | :- | :-: |
 | 주 | < | < | [[xisepelu_state\|이세펠루주]] |
 

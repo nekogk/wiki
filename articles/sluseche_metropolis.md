@@ -1,7 +1,7 @@
 ![[coroji_metropolis]]
 ![[sluseche_ward]]
 
-| | ![[sluseche_metropolis_white.png\|64]] | <big>슬루세체시</big><br>緑泉京 \| Sluseche Metropolis | < |
+| | ![[sluseche_metropolis_emblem_white.png\|64]] | <big>슬루세체시</big><br>緑泉京 \| Sluseche Metropolis | < |
 | :--: | -: | - | :-: |
 | 시청 소재지 | < | < | [[nyega_ward\|녜가구]] 조리체카 1가 13-24 |
 | 주 | < | < | [[kamile_state\|카밀레주]] |
@@ -16,7 +16,7 @@
 # 상징
 ---
 
-| ![[sluseche_metropolis_flag.png\|160]] | ![[sluseche_metropolis_white.png\|160]] |
+| ![[sluseche_metropolis_flag.png\|160]] | ![[sluseche_metropolis_emblem_white.png\|160]] |
 | :-: | :-: |
 | 깃발 | 휘장 |
 

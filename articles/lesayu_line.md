@@ -1,6 +1,6 @@
 ![[sluqecu_metro]]
 
-| | ![[lesayu_line.png\|64]] | <big>레사유선</big><br>三元鉄道 \| Lesayu Line |
+| | ![[lesayu_line_icon.png\|64]] | <big>레사유선</big><br>三元鉄道 \| Lesayu Line |
 | :-: | -: | :- |
 | 노선 정보 | < | < |
 | 노선 분류 | < | 도시철도 |

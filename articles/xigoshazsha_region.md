@@ -12,7 +12,7 @@
 
 | 동경권의 [[prefecture\|경시현]] | < | < | < | < |
 | :--: | :---: | :-: | :-: | :---: |
-| ![[sluqecu_metropolis.png\|32]]<br>[[sluqecu_metropolis\|슬루케추시]] | [[rubesefu_city\|루베세푸시]] | [[hanyaris_city\|하냐리스시]] | [[haritome_city\|하리토메시]] | [[smijiseda_city\|스미지세다시]] |
+| ![[sluqecu_metropolis_emblem.png\|32]]<br>[[sluqecu_metropolis\|슬루케추시]] | [[rubesefu_city\|루베세푸시]] | [[hanyaris_city\|하냐리스시]] | [[haritome_city\|하리토메시]] | [[smijiseda_city\|스미지세다시]] |
 | [[whishes_city\|위셰스시]] | [[remaxili_county\|레마일리현]] | [[ruk_county\|루크현]] | ? | ? |
 
 [[sluqecu_metropolis|슬루케추시]]를 중심으로 한 도시권. 

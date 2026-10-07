@@ -1,6 +1,6 @@
 ![[sluqecu_metro]]
 
-| | ![[tobarye_line.png\|64]] | <big>토바례선</big><br>大脉鉄道 \| Tobarye Line |
+| | ![[tobarye_line_icon.png\|64]] | <big>토바례선</big><br>大脉鉄道 \| Tobarye Line |
 | :---: | ---: | - |
 | 노선 정보 | < | < |
 | 노선 분류 | < | 도시철도 |
