@@ -37,7 +37,7 @@
 ---
 [[hayane_state|하야네주]] 중심에 위치하여 동해를 접하고 있는 항구도시이다. 
 
-동해를 접하는 [[remasesha_ward|레마세샤구]]와 [[sezomure_ward|세조무레구]] 대부분은 [[ectene_river|연강]]에 의한 퇴적지이다. 현재도 자연과 인간에 의해 개간이 이어지고 있는데, 부도심인 레마세샤 지역이 해안과 접하고 있다 보니 간척에 적극적인 편.
+동해를 접하는 [[remasesha_ward|레마세샤구]]와 [[sezomuri_ward|세조무리구]] 대부분은 [[ectene_river|연강]]에 의한 퇴적지이다. 현재도 자연과 인간에 의해 개간이 이어지고 있는데, 부도심인 레마세샤 지역이 해안과 접하고 있다 보니 간척에 적극적인 편.
 
 서쪽의 [[dabasha_ward|다바샤구]]와 [[haritome_city|하리토메시]]가 접하는 지역에 존재하는 [[whopuwhili_mountain|워푸윌리산]]을 제외하면 도시 내에 산이 존재하지 않는다. 광역도시권 전체에도 산이 적은 축에 속하는 도시이다.
 
@@ -48,7 +48,7 @@
 | :-: | --- |
 | 도심부 | [[ghashido_ward\|가시도구]], [[shishiceso_ward\|시시체소구]], [[lesawez_ward\|레사웨즈구]], [[miseme_ward\|미세메구]] |
 | 중부 | [[jeseceso_ward\|제세체소구]], [[righeju_ward\|리게주구]], [[sasgri_ward\|사스그리구]], [[shitobu_ward\|시토부구]] |
-| 동부 | [[merehanya_ward\|메레하냐구]], [[rereas_ward\|레레아스구]], [[remasesha_ward\|레마세샤구]], [[sezomure_ward\|세조무레구]] |
+| 동부 | [[merehanya_ward\|메레하냐구]], [[rireas_ward\|리레아스구]], [[remasesha_ward\|레마세샤구]], [[sezomuri_ward\|세조무리구]] |
 | 동남부 | [[asrinyu_ward\|아스리뉴구]], [[yujaseme_ward\|유자세메구]], [[kozewhora_ward\|코제워라구]], [[serksoshi_ward\|서코시구]] |
 | 남부 | [[whohercache_ward\|워허차체구]], [[pijizu_ward\|피지주구]], [[resexwa_ward\|레세와구]] |
 | 서부 | [[dabasha_ward\|다바샤구]], [[recadesae_ward\|레차데사에구]], [[refabyuxiko_ward\|레파뷰이코구]] |
@@ -68,7 +68,7 @@
 
 ## 철도
 ---
-![[sluqecu_metro}}
+![[sluqecu_metro]]
 
 [[leghu|레구]] 전체에서 가장 복잡한 철도망을 가지고 있다. 11개의 일반철도 노선, 12개의 도시철도 노선, 26개의 경전철 노선을 합쳐서 49개의 전철 노선이 도시권을 누빈다.
 

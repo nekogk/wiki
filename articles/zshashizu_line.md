@@ -1,4 +1,4 @@
-![[[sluqecu_metro]]
+![[sluqecu_metro]]
 
 | | ![[zshashizu_line_icon.png\|64]] | <big>즈샤시주선</big><br>京心鉄道 \| Zshashizu Line |
 | :---: | --: | :-- |

@@ -26,7 +26,7 @@
 
 | | < | < | < |
 | :-: | :-: | :-: | :- |
-| 1 | ![[tobarye_line_icon.png\|16]] [[tobarye_line\|토바례선]] | 완행 | [[ejibica_station\|에지비차]], [[sarekoje_station\|사레코제]], [[rebeyo_station\|레베요]] 방면 |
+| 1 | ![[tobarye_line_icon.png\|16]] [[tobarye_line\|토바례선]] | 완행 | [[ejibica_station\|에지비차]], [[sarikoje_station\|사리코제]], [[rebeyo_station\|레베요]] 방면 |
 | 2 | ^ | 급행 | [[rebeyo_station\|레베요]] 방면 |
 | 3 | ^ | 급행 | [[risheco_station\|리셰초]], [[qecude_station\|케추데]] 방면 |
-| 4 | ^ | 완행 | [[ryudamuko_station\|류다무코]], [[mitareju_zoritulye_station\|미타레주조리툴례]], [[risheco_station\|리셰초]] 방면 |
+| 4 | ^ | 완행 | [[ryudamuko_station\|류다무코]], [[matariju_zoritulye_station\|미타리주조리툴례]], [[risheco_station\|리셰초]] 방면 |
