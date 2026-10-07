@@ -18,7 +18,7 @@
 | 궤간 | < | 1435mm |
 | 선로구성 | < | 복복선 <sub>(코주푸 ~ 레세와)</sub><br>복선 <sub>(초타리뉴 ~ 코주푸, 레세와 ~ 리시주저)</sub> |
 | 통행방향 | < | 우측통행 |
-| 개통 연혁 | < | [[rimi_era\|리미]] 40년 [[sluqecu_station\|슬루케추]] ↔ [[s'habe_station\|스하베]]<br>[[shoje_era\|쇼제]] 3년 [[cfasagher_station\|츠파사거]] ↔ [[sluqecu_station\|슬루케추]]<br>[[shoje_era\|쇼제]] 5년 [[richiseca_station\|]] ↔ [[cfasagher_station\|츠파사거]]<br>[[shoje_era\|쇼제]] 13년 [[qechiceyu_station\|케치체유]] ↔ [[richiseca_station\|]]<br>[[shoje_era\|쇼제]] 25년 [[s'habe_station\|스하베]] ↔ [[rishizujer_station\|리시주저]]<br>[[whuda_era\|우다]] 12년 [[cotarinyu_station\|초타리뉴]] ↔ [[qechiceyu_station\|케치체유]] |
+| 개통 연혁 | < | [[rimi_era\|리미]] 40년 [[sluqecu_station\|슬루케추]] ↔ [[s'habe_station\|스하베]]<br>[[shoje_era\|쇼제]] 3년 [[cfasagher_station\|츠파사거]] ↔ [[sluqecu_station\|슬루케추]]<br>[[shoje_era\|쇼제]] 5년 [[richiseca_station\|리치세차]] ↔ [[cfasagher_station\|츠파사거]]<br>[[shoje_era\|쇼제]] 13년 [[qechiceyu_station\|케치체유]] ↔ [[richiseca_station\|리치세차]]<br>[[shoje_era\|쇼제]] 25년 [[s'habe_station\|스하베]] ↔ [[rishizujer_station\|리시주저]]<br>[[whuda_era\|우다]] 12년 [[cotarinyu_station\|초타리뉴]] ↔ [[qechiceyu_station\|케치체유]] |
 
 # 개요
 ---
