@@ -1,11 +1,14 @@
 {
   "coroji_metropolis": { "title": "삼록권 6경" },
   "goddess": { "title": "현허 3여신" },
-  "lesayu_station": { "title": "레사유선의 역 목록" },
   "sluqecu_metro": { "title": "서경권 전철 노선" },
   "sluqecu_ward": { "title": "슬루케추시의 구읍" },
   "sluseche_ward": { "title": "슬루세체시의 구읍" },
   "tobarye_station": { "title": "토바례선의 역 목록" },
   "zshashizu_station": { "title": "즈샤시주선의 역 목록" },
+  "lesayu_station": { "title": "레사유선의 역 목록" },
+  "hoker_station": { "title": "호커선의 역 목록" },
+  "bigosefu_station": { "title": "비고세푸선의 역 목록" },
+  "crererube_station": { "title": "츠레레루베선의 역 목록" },
   "seya_system": { "title": "세야계" }
 }
