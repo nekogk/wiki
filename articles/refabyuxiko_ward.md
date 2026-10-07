@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>레파뷰이코구</big><br>仮得門区 \| Refabyuxiko Ward | < |
 | :-: | :---: |

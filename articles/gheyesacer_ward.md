@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>게예사처구</big><br>香振区 \| Gheyesacer Ward | < |
 | :-: | :---: |

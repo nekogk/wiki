@@ -1,4 +1,4 @@
-{{sluqecu_metro}}
+![[sluqecu_metro]]
 
 | | ![[tobarye_line.png\|64]] | <big>토바례선</big><br>大脉鉄道 \| Tobarye Line |
 | :---: | ---: | - |
@@ -35,7 +35,7 @@
 
 # 역 목록
 ---
-{{tobarye_station}}
+![[tobarye_station]]
 
 # 환승역
 ---

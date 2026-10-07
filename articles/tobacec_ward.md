@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>토바체츠구</big><br>大手区 \| Tobacec Ward | < |
 | :-: | :---: |

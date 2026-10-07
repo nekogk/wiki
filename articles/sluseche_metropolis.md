@@ -1,5 +1,5 @@
-{{coroji_metropolis}}
-{{sluseche_ward}}
+![[coroji_metropolis]]
+![[sluseche_ward]]
 
 | | ![[sluseche_metropolis_white.png\|64]] | <big>슬루세체시</big><br>緑泉京 \| Sluseche Metropolis | < |
 | :--: | -: | - | :-: |

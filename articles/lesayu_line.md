@@ -1,4 +1,4 @@
-{{sluqecu_metro}}
+![[sluqecu_metro]]
 
 | | ![[lesayu_line.png\|64]] | <big>레사유선</big><br>三元鉄道 \| Lesayu Line |
 | :-: | -: | :- |
@@ -32,7 +32,7 @@
 
 # 역 목록
 ---
-{{lesayu_station}}
+![[lesayu_station]]
 
 # 환승역
 ---

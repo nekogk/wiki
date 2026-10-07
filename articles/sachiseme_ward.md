@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>사치세메구</big><br>計海区 \| Sachiseme Ward | < |
 | :---: | :---: |

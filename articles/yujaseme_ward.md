@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>유자세메구</big><br>区 \| Yujaseme Ward | < |
 | :-: | :---: |

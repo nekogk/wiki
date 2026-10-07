@@ -1,4 +1,4 @@
-{{coroji_metropolis}}
+![[coroji_metropolis]]
 
 | | ![[pejeseme_metropolis_white.png\|64]] | <big>페제세메시</big><br>内海京 \| Pejeseme Metropolis | < |
 | :-: | -: | :- | :-: |

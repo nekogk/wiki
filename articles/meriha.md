@@ -1,4 +1,4 @@
-{{goddess}}
+![[goddess]]
 
 | <big>메리하</big><br>卯冬 \| Meriha | < |
 | :-: | - |

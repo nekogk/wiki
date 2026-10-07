@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>코제워라구</big><br>界燃区 \| Kozewhora Ward | < |
 | :---: | :---: |

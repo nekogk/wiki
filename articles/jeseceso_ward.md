@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>제세체소구</big><br>雨道区 \| Jeseceso Ward | < |
 | :--: | :---: |

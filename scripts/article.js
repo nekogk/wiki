@@ -4,6 +4,8 @@ import katex from 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.mjs';
 // ── 경로·URL 상수 ──
 export const WIKI_DIR = '/w/';
 export const MD_DIR = '/articles/';
+export const TEMPLATE_MD_DIR = '/articles/templates/';
+export const ASSET_DIR = '/articles/assets/';
 export const ARTICLE_INDEX = '/indexes/article.json';
 export const CATEGORY_INDEX = '/indexes/category.json';
 export const TEMPLATE_DIR = '/t/';
@@ -31,7 +33,8 @@ const BLOCK_P_RE = new RegExp(`<p>((?:\\s*${BLOCK_OPEN}\\d+${BLOCK_CLOSE})+)\\s*
 
 // ── 문법 정규식 ──
 const FRONTMATTER = /^\uFEFF?---\r?\n[\s\S]*?\r?\n---\r?\n?/;
-const TEMPLATE_LINE = /^[ \t]*\{\{\s*([^{}\n]+?)\s*\}\}[ \t]*$/gm;
+const EMBED = /!\[\[([^\]]+)\]\]/g;
+const FILE_EXT = /\.[a-z][a-z0-9]{0,4}$/i;   // 확장자가 있으면 에셋, 없으면 틀
 const IMAGE_EXT = /\.(png|jpe?g|gif|webp|svg|avif|bmp)$/i;
 const MAP_EMBED = /!\[\[map:\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*(?:,\s*(-?[\d.]+)\s*)?(?:\\?\|\s*([^\]]*?)\s*)?\]\]/g;
 
@@ -68,6 +71,18 @@ export function toCategories(value) {
 // 문서 맨 앞의 YAML 머리말(--- … ---) 제거
 export function stripFrontmatter(src) {
   return src.replace(FRONTMATTER, '');
+}
+
+// ![[…]] 안쪽 → 틀 이름. 확장자가 있거나(에셋) 지도면 null
+function templateName(inner) {
+  const name = inner.split(/\\?\|/)[0].trim();
+  if (!name || FILE_EXT.test(name) || /^map:/i.test(name)) return null;
+  return name;
+}
+
+// 원문에서 ![[틀]] 호출을 모두 제거 (미리보기용)
+export function stripTemplates(src) {
+  return src.replace(EMBED, (m, inner) => (templateName(inner) ? '' : m));
 }
 
 // KaTeX 스타일시트를 <head>에 한 번만 추가
@@ -158,10 +173,10 @@ function mapIframe(lat, lng, zoom = '0', opt) {
   return `<iframe class="map-embed" src="${src}"${styleAttr(sizeStyle(opt))} loading="lazy" title="Map (${lat}, ${lng})"></iframe>`;
 }
 
-// 이미지 이름 → URL. 절대 경로·외부 URL은 그대로, 나머지는 /assets/ 아래로
+// 에셋 이름 → URL. 절대 경로·외부 URL은 그대로, 나머지는 /articles/assets/ 아래로
 function assetUrl(src) {
   if (/^([a-z][a-z0-9+.-]*:|\/|#)/i.test(src)) return src;
-  return `/assets/${encodePath(decodeURIComponent(src))}`;
+  return `${ASSET_DIR}${encodePath(decodeURIComponent(src))}`;
 }
 
 // 위키 전용 문법(주석·틀·수식·지도·이미지·링크·형광펜)을 HTML/자리표시자로 바꿈
@@ -173,16 +188,6 @@ function transformText(text, ctx) {
 
   // %%주석%% 제거
   text = text.replace(/%%[\s\S]*?%%/g, '');
-
-  // 한 줄 전체가 {{틀}} → 틀 블록 자리표시자
-  text = text.replace(TEMPLATE_LINE, (_, name) => {
-    const html = templates?.get(name);
-    if (html) {
-      blocks.push(html);
-      return BLOCK_OPEN + (blocks.length - 1) + BLOCK_CLOSE;
-    }
-    return keep(`<span class="wikilink-unresolved">틀 없음: ${escapeHtml(name)}</span>`);
-  });
 
   // 인라인 코드 보호
   text = text.replace(/(`+)([\s\S]*?[^`])\1(?!`)/g, m => {
@@ -205,8 +210,9 @@ function transformText(text, ctx) {
   // 지도 임베드
   text = text.replace(MAP_EMBED, (_, lat, lng, zoom, opt) => keep(mapIframe(lat, lng, zoom, opt)));
 
-  // ![[이미지|크기 또는 alt]] / ![[문서|라벨]]
-  text = text.replace(/!\[\[([^\]]+)\]\]/g, (_, inner) => {
+  // ![[파일.확장자|크기 또는 alt]] → 에셋 (이미지는 <img>, 그 밖의 파일은 링크)
+  // ![[틀]] → 틀 블록 자리표시자
+  text = text.replace(EMBED, (_, inner) => {
     const [target, opt] = inner.split(/\\?\|/);
     const name = target.trim();
     if (IMAGE_EXT.test(name)) {
@@ -214,8 +220,16 @@ function transformText(text, ctx) {
       const alt = opt && !style ? opt.trim() : '';
       return keep(`<img src="${assetUrl(name)}" alt="${escapeHtml(alt)}"${styleAttr(style)} loading="lazy">`);
     }
-    const label = escapeHtml(opt ? opt.trim() : name);
-    return keep(wikiLink(name, label, ctx, label));
+    if (FILE_EXT.test(name)) {
+      const label = escapeHtml(opt ? opt.trim() : name.split('/').pop());
+      return keep(`<a href="${assetUrl(name)}">${label}</a>`);
+    }
+    const html = templates?.get(name);
+    if (html) {
+      blocks.push(html);
+      return BLOCK_OPEN + (blocks.length - 1) + BLOCK_CLOSE;
+    }
+    return keep(`<span class="wikilink-unresolved">틀 없음: ${escapeHtml(name)}</span>`);
   });
 
   // [[문서#제목|라벨]]
@@ -377,7 +391,7 @@ export function renderMarkdown(src, docs = null, templates = null, selfSlug = nu
 // 틀 문서 하나를 불러와 HTML로 렌더 (실패하면 null → '틀 없음' 표시)
 async function loadTemplate(name, docs, selfSlug) {
   try {
-    const res = await fetch(`${MD_DIR}${encodeURIComponent(name)}.md`);
+    const res = await fetch(`${TEMPLATE_MD_DIR}${encodeURIComponent(name)}.md`);
     if (!res.ok) throw new Error(`${res.status}`);
     const html = renderMarkdown(await res.text(), docs, null, selfSlug);
     return `<div class="article-body wiki-template" data-template="${escapeHtml(name)}">${html}</div>`;
@@ -387,12 +401,13 @@ async function loadTemplate(name, docs, selfSlug) {
   }
 }
 
-// 본문(코드 펜스 밖)에 쓰인 {{틀}} 이름을 모아 모두 병렬로 불러옴
+// 본문(코드 펜스·인라인 코드 밖)에 쓰인 ![[틀]] 이름을 모아 모두 병렬로 불러옴
 async function loadTemplateMap(src, docs, selfSlug) {
   const names = new Set();
   mapOutsideFences(stripFrontmatter(src), block => {
-    for (const m of block.matchAll(TEMPLATE_LINE)) {
-      const name = m[1].trim();
+    const plain = block.replace(/%%[\s\S]*?%%/g, '').replace(/(`+)([\s\S]*?[^`])\1(?!`)/g, '');
+    for (const m of plain.matchAll(EMBED)) {
+      const name = templateName(m[1]);
       if (name) names.add(name);
     }
     return block;
@@ -401,14 +416,17 @@ async function loadTemplateMap(src, docs, selfSlug) {
   return new Map(entries);
 }
 
-// 문서 제목 아래에 붙는 '분류: …' 줄
+// 문서 제목 아래에 붙는 '분류: …' 줄 (표시 이름 가나다순)
+const collator = new Intl.Collator('ko');
 function categoryLine(value, catDirs) {
   const slugs = toCategories(value);
   if (!slugs.length) return '';
-  const items = slugs.map(slug => {
-    const name = catDirs[slug]?.title;
-    return name ? `<a href="/c/${encodeURIComponent(slug)}/">${escapeHtml(name)}</a>` : escapeHtml(slug);
-  });
+  const items = slugs
+    .map(slug => ({ slug, name: catDirs[slug]?.title }))
+    .sort((a, b) => collator.compare(a.name ?? a.slug, b.name ?? b.slug))
+    .map(({ slug, name }) => (name
+      ? `<a href="/c/${encodeURIComponent(slug)}/">${escapeHtml(name)}</a>`
+      : escapeHtml(slug)));
   return `<p class="article-meta">분류: ${items.join(', ')}</p>`;
 }
 
@@ -428,7 +446,7 @@ async function main() {
 
   try {
     const [mdRes, meta, catDirs, tplMeta] = await Promise.all([
-      fetch(`${MD_DIR}${encodeURIComponent(slug)}.md`),
+      fetch(`${isTemplate ? TEMPLATE_MD_DIR : MD_DIR}${encodeURIComponent(slug)}.md`),
       getJson(ARTICLE_INDEX),
       getJson(CATEGORY_INDEX),
       isTemplate ? getJson(TEMPLATE_INDEX) : {},

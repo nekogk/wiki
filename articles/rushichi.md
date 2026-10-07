@@ -1,4 +1,4 @@
-{{goddess}}
+![[goddess]]
 
 | <big>루시치</big><br>㒱七 \| Rushichi | < |
 | :-: | - |

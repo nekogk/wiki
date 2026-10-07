@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>사스그리구</big><br>司㦮区 \| Sasgri Ward | < |
 | :---: | :---: |

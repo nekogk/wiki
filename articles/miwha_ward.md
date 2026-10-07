@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>미와구</big><br>㒱華区 \| Miwha Ward | < |
 | :---: | :---: |

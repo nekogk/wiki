@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>세시세푸구</big><br>浅浦区 \| Seshisefu Ward | < |
 | :---: | :---: |

@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>가시도구</big><br>虚陽区 \| Ghashido Ward | < |
 | :-: | :---: |

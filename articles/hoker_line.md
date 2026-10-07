@@ -1,4 +1,4 @@
-{{sluqecu_metro}}
+![[sluqecu_metro]]
 
 | | ![[hoker_line.png\|64]] | <big>호커선</big><br>空港鉄道 \| Hoker Line |
 | :---: | -: | :--- |
@@ -32,7 +32,7 @@
 
 # 역 목록
 ---
-{{hoker_station}}
+![[hoker_station]]
 
 # 환승역
 ---

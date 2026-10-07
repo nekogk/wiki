@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>워허차체구</big><br>秋疑区 \| Whohercache Ward | < |
 | :--: | :---: |

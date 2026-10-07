@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>레사웨즈구</big><br>三日区 \| Lesawez Ward | < |
 | :-: | :---: |

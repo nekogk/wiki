@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>토제시타구</big><br>乗怠区 \| Tozeshita Ward | < |
 | :---: | :---: |

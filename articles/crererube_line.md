@@ -1,4 +1,4 @@
-{{sluqecu_metro}}
+![[sluqecu_metro]]
 
 | | ![[crererube_line.png\|64]] | 츠레레루베선<br>南北鉄道 \| Crererube Line |
 | :---: | --: | :- |
@@ -32,7 +32,7 @@
 
 # 역 목록
 ---
-{{crererube_station}}
+![[crererube_station]]
 
 # 환승역
 ---

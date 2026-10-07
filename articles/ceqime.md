@@ -1,4 +1,4 @@
-{{goddess}}
+![[goddess]]
 
 | <big>체키메</big><br>華海 \| Ceqime | < |
 | :-: | - |

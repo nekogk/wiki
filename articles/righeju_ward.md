@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>리게주구</big><br>旧津区 \| Righeju Ward | < |
 | :---: | :---: |

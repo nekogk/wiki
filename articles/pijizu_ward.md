@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>피지주구</big><br>福畴区 \| Pijizu Ward | < |
 | :--: | :---: |

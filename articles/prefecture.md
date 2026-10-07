@@ -7,7 +7,7 @@
 
 ## 경(京)
 ---
-{{coroji_metropolis}}
+![[coroji_metropolis]]
 
 [[coroji|삼록권]]의 6대 대도시에 부여된 특수행정구역으로, 영어로는 Metropolis라고 번역한다.
 

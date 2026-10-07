@@ -1,4 +1,4 @@
-{{sluqecu_metro}}
+![[sluqecu_metro]]
 
 | | ![[bigosefu_line.png\|64]] | <big>비고세푸선</big><br>江浦鉄道 \| Bigosefu Line |
 | :---: | -: | :-- |
@@ -34,7 +34,7 @@
 
 # 역 목록
 ---
-{{bigosefu_station}}
+![[bigosefu_station]]
 
 # 환승역
 ---

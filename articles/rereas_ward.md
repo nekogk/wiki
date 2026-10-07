@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>레레아스구</big><br>听知区 \| Rereas Ward | < |
 | :---: | :---: |

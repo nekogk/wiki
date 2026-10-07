@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>메주치사구</big><br>卯場区 \| Mezuchisa Ward | < |
 | :---: | :---: |

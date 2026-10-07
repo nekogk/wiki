@@ -1,6 +1,6 @@
-{{coroji_metropolis}}
+![[coroji_metropolis]]
 
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | | ![[sluqecu_metropolis_white.png\|64]] | <big>슬루케추시</big><br>緑山京 \| Sluqecu Metropolis | < |
 | :---: | ---: | --- | :--: |
@@ -68,7 +68,7 @@
 
 ## 철도
 ---
-{{sluqecu_metro}}
+![[sluqecu_metro}}
 
 [[leghu|레구]] 전체에서 가장 복잡한 철도망을 가지고 있다. 11개의 일반철도 노선, 12개의 도시철도 노선, 26개의 경전철 노선을 합쳐서 49개의 전철 노선이 도시권을 누빈다.
 

@@ -1,4 +1,4 @@
-{{sluqecu_metro}}
+![[[sluqecu_metro]]
 
 | | ![[zshashizu_line.png\|64]] | <big>즈샤시주선</big><br>京心鉄道 \| Zshashizu Line |
 | :---: | --: | :-- |
@@ -33,7 +33,7 @@
 
 # 역 목록
 ---
-{{zshashizu_station}}
+![[zshashizu_station]]
 
 # 환승역
 ---

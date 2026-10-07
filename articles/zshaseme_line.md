@@ -1,2 +1,2 @@
-{{sluqecu_metro}}
+![[sluqecu_metro]]
 

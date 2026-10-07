@@ -1,4 +1,4 @@
-{{coroji_metropolis}}
+![[coroji_metropolis]]
 
 | | ![[rechefacu_metropolis_white.png\|64]] | <big>레체파추시</big><br>地月京 \| Rechefacu Metropolis | < |
 | :-: | -: | :- | :-: |

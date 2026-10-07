@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>메레하냐구</big><br>寒滩区 \| Merehanya Ward | < |
 | :---: | :---: |

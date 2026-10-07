@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>미세메구</big><br>栄海区 \| Miseme Ward | < |
 | :--: | :---: |

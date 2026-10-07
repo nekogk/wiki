@@ -1,4 +1,4 @@
-{{coroji_metropolis}}
+![[coroji_metropolis]]
 
 | | ![[rushisewhu_metropolis_white.png\|64]] | <big>루시세우시</big><br>㒱湖京 \| Rushisewhu Metropolis | < |
 | :-: | ---: | :-- | :---: |

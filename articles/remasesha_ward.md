@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>레마세샤구</big><br>満港区 \| Remasesha Ward | < |
 | :---: | :---: |

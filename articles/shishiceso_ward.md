@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>시시체소구</big><br>神道区 \| Shishiceso Ward | < |
 | :-: | :---: |

@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>레세와구</big><br>仕湾区 \| Resexwa Ward | < |
 | :---: | :---: |

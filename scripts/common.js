@@ -1,5 +1,5 @@
 import {
-  renderMarkdown, fixRelativePaths, ensureKatexCss, escapeHtml, slugOf, toCategories, stripFrontmatter,
+  renderMarkdown, fixRelativePaths, ensureKatexCss, escapeHtml, slugOf, toCategories, stripFrontmatter, stripTemplates,
   WIKI_DIR, MD_DIR, ARTICLE_INDEX, CATEGORY_INDEX,
 } from '/scripts/article.js';
 
@@ -9,7 +9,6 @@ export { escapeHtml, CATEGORY_INDEX };
 // ── 미리보기 관련 상수 ──
 const OVERVIEW = /^#{1,6}[ \t]+(?:\d+\.[ \t]*)?개요[ \t]*$/m;   // '개요' 제목
 const NEXT_HEADING = /^#{1,6}[ \t]/m;                              // 다음 제목
-const TEMPLATE_LINE = /^[ \t]*\{\{[^{}\n]*\}\}[ \t]*\r?$/gm;       // 한 줄짜리 {{틀}}
 const ICON_MAX_REM = 1.5;                                          // 미리보기에 남길 아이콘 최대 높이
 
 // 문서 페이지 주소, 원본 .md 주소
@@ -37,9 +36,9 @@ export async function loadDocs() {
   });
 }
 
-// 미리보기용 원문: 머리말·틀 줄을 빼고, '개요' 절이 있으면 그 절만 남김
+// 미리보기용 원문: 머리말·![[틀]]을 빼고, '개요' 절이 있으면 그 절만 남김
 function previewSource(src) {
-  let body = stripFrontmatter(src).replace(TEMPLATE_LINE, '');
+  let body = stripTemplates(stripFrontmatter(src));
   const m = OVERVIEW.exec(body);
   if (m) {
     body = body.slice(m.index + m[0].length);

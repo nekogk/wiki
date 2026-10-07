@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>다바샤구</big><br>分東区 \| Dabasha Ward | < |
 | :---: | :---: |

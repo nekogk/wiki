@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>서코시구</big><br>舞名区 \| Serkoshi Ward | < |
 | :-: | :---: |

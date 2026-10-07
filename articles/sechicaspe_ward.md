@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>세치차스페구</big><br>済座区 \| Sechicaspe Ward | < |
 | :--: | :---: |

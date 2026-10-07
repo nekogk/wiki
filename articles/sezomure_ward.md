@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>세조무레구</big><br>潮見区 \| Sezomure Ward | < |
 | :--: | :---: |

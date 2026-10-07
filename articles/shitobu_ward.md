@@ -1,4 +1,4 @@
-{{sluqecu_ward}}
+![[sluqecu_ward]]
 
 | <big>시토부구</big><br>海斗棒区 \| Shitobu Ward | < |
 | :-: | :---: |
