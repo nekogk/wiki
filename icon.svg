@@ -17,7 +17,7 @@
       }
     </style>
   </defs>
-  <rect class="cls-2" x=".0573" y="-.2675" width="200" height="200" rx="80" ry="80"/>
+  <rect class="cls-2" x=".06" y="-.27" width="200" height="200" rx="80" ry="80"/>
   <circle class="cls-3" cx="100" cy="100" r="60"/>
   <line class="cls-3" x1="40" y1="75" x2="160" y2="75"/>
   <line class="cls-3" x1="40" y1="125" x2="160" y2="125"/>
