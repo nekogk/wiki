@@ -1,3 +1,4 @@
+![[seya_system]]
 
 | <big>파추</big><br>月 \| Facu | < |
 | :-: | :- |
