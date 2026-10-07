@@ -32,7 +32,7 @@ CATEGORY_HTML = """<!doctype html>
 </html>
 """
 
-# 문서(w/)·틀(t/) 페이지 템플릿: 본문형 페이지
+# 문서(w/)·틀(t/)·파일(f/) 페이지 템플릿: 본문형 페이지
 ARTICLE_HTML = """<!doctype html>
 <html lang="ko">
 <head>
@@ -56,10 +56,11 @@ ARTICLE_HTML = """<!doctype html>
 """
 
 # (인덱스 파일, 출력 폴더, 템플릿, 제목 접두어)
-# 접두어는 <title>, og:title 에 붙는다 (예: 분류:인물, 틀:삼록권 6경)
+# 접두어는 <title>, og:title 에 붙는다 (예: 분류:인물, 틀:삼록권 6경, 파일:리스루시)
 TARGETS = [
     ("category.json", "c", CATEGORY_HTML, "분류:"),
     ("templete.json", "t", ARTICLE_HTML, "틀:"),
+    ("file.json", "f", ARTICLE_HTML, "파일:"),
     ("article.json", "w", ARTICLE_HTML, ""),
 ]
 
@@ -94,7 +95,7 @@ def read_existing(path: Path) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="indexes/*.json 으로 c/ t/ w/ 페이지 생성")
+    parser = argparse.ArgumentParser(description="indexes/*.json 으로 c/ t/ f/ w/ 페이지 생성")
     parser.add_argument("--update", action="store_true", help="내용이 달라진 기존 페이지도 덮어쓴다")
     parser.add_argument("--dry-run", action="store_true", help="파일을 쓰지 않고 결과만 출력한다")
     args = parser.parse_args()
