@@ -43,7 +43,7 @@
 .article-body ul,
 .article-body ol,
 .article-body pre,
-.article-body .table-wrap { margin: 0 0 1.5rem; }
+.article-body .table-wrap { margin: 0 0 1rem; }
 
 .article-body ul,
 .article-body ol { padding-left: 1.5em; }
@@ -114,7 +114,7 @@
 }
 
 .article-body blockquote {
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
   padding: 0 1rem 0;
   border-left: 2px solid var(--pink);
   color: var(--text);
@@ -172,7 +172,7 @@
 
 .callout {
   --c: var(--beige);
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
   padding: 0.5rem 1rem;
   background: var(--glass);
   border: 1px solid var(--line);
@@ -212,7 +212,7 @@ summary.callout-title::marker { color: var(--muted); }
 
 .load-error { color: var(--muted); }
 
-@media (max-width: 60rem) {
+@media (max-width: 50rem) {
   .article-header h1 { font-size: 2rem; }
   .article-body h2 { font-size: 1.7rem; }
   .article-body h3 { font-size: 1.5rem; }

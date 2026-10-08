@@ -105,10 +105,10 @@ body {
 }
 
 .container {
-  max-width: 60rem;
+  max-width: 50rem;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 2.5rem;
+  padding: 1.5rem;
   background: var(--panel);
   scrollbar-color: var(--glass) transparent;
   font-family: var(--sans-font);
@@ -119,6 +119,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   color: var(--beige);
 }
+
+p { margin: 0; }
 
 a {
   transition: outline 0.2s ease;
@@ -236,8 +238,8 @@ footer {
   font-family: var(--sans-font);
 }
 
-@media (max-width: 60rem) {
+@media (max-width: 50rem) {
   body, html { background: var(--panel); }
-  .container { padding: 4vw; }
+  .container { padding: 3vw; }
   :root { scrollbar-color: var(--glass) transparent; }
 }

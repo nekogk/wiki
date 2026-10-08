@@ -26,7 +26,7 @@
 }
 
 .post-card {
-  max-width: 27rem;
+  max-width: 23rem;
   display: block;
   padding: 0.5rem 1rem;
   background: var(--glass);
@@ -80,7 +80,7 @@
   color: var(--muted);
 }
 
-@media (max-width: 60rem) {
+@media (max-width: 50rem) {
   .page-title { font-size: 2rem; }
   .post-title { font-size: 1.5rem; }
 }
