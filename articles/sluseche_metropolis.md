@@ -16,7 +16,7 @@
 # 상징
 ---
 
-| ![[sluseche_metropolis_flag.png\|226.24x160]] | ![[sluseche_metropolis_emblem_white.png\|160]] |
+| ![[sluseche_metropolis_flag.png\|226x160]] | ![[sluseche_metropolis_emblem_white.png\|160]] |
 | :-: | :-: |
 | 깃발 | 휘장 |
 
