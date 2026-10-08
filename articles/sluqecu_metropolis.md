@@ -1,5 +1,4 @@
 ![[coroji_metropolis]]
-
 ![[sluqecu_ward]]
 
 | | ![[sluqecu_metropolis_emblem_white.png\|64]] | <big>슬루케추시</big><br>緑山京 \| Sluqecu Metropolis | < |
@@ -21,7 +20,7 @@
 # 상징
 ---
 
-| ![[sluqecu_metropolis_flag.png\|226.24x160]] | ![[sluqecu_metropolis_emblem_white.png\|160]] |
+| ![[sluqecu_metropolis_flag.png\|226x160]] | ![[sluqecu_metropolis_emblem_white.png\|160]] |
 | :-: | :-: |
 | 깃발 | 휘장 |
 
