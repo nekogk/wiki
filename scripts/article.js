@@ -163,7 +163,7 @@ function sizeStyle(opt) {
   const rem = n => `${Number((n / 16).toFixed(4))}rem`;
   return m[2]
     ? `width: ${rem(m[1])}; aspect-ratio: ${m[1]} / ${m[2]};`
-    : `max-height: ${rem(m[1])}; height: auto;`;
+    : `width: ${rem(m[1])}; height: auto;`;
 }
 
 // CSS 문자열 → ' style="…"' 속성 (없으면 빈 문자열)
