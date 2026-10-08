@@ -46,19 +46,19 @@
 # 현존 행선지
 ---
 - 상행
- [[qecude_station|케추데급행]] - [[rebeyo_station|레베요]]에서 출발하는 급행 계통으로, [[risheco_station|리셰초]] 이북 구간에서는 각역정차로 전환된다.
- [[risheco_station|리셰초행]] - [[ejibica_station|에지비차]]에서 출발하는 보통열차이다.
- [[risheco_station|리셰초급행]] - [[rebeyo_station|레베요]]에서 출발하는 급행열차이다.
- [[risheco_station|리셰초쾌속]] - [[risheco_station|리셰초]]까지 전 구간을 통과 운행하는 최상위 등급 열차이다.
- [[matariju_zoritulye_station|미타리주조리툴례행]] - [[matariju_zoritulye_station|미타리주조리툴례]]에서 회차하는 보통 열차이다.
- [[ryudamuko_station|류다무코행]] - 대개 [[rebeyo_station|레베요]]를 기점으로 가지지만, 통근시간대에는 [[ejibica_station|에지비차]]를 기점으로 가지는 열차 또한 투입된다.
+    - [[qecude_station|케추데급행]] - [[rebeyo_station|레베요]]에서 출발하는 급행 계통으로, [[risheco_station|리셰초]] 이북 구간에서는 각역정차로 전환된다.
+    - [[risheco_station|리셰초행]] - [[ejibica_station|에지비차]]에서 출발하는 보통열차이다.
+    - [[risheco_station|리셰초급행]] - [[rebeyo_station|레베요]]에서 출발하는 급행열차이다.
+    - [[risheco_station|리셰초쾌속]] - [[risheco_station|리셰초]]까지 전 구간을 통과 운행하는 최상위 등급 열차이다.
+    - [[matariju_zoritulye_station|미타리주조리툴례행]] - [[matariju_zoritulye_station|미타리주조리툴례]]에서 회차하는 보통 열차이다.
+    - [[ryudamuko_station|류다무코행]] - 대개 [[rebeyo_station|레베요]]를 기점으로 가지지만, 통근시간대에는 [[ejibica_station|에지비차]]를 기점으로 가지는 열차 또한 투입된다.
 
 - 하행
- [[rebeyo_station|레베요행]] - [[ryudamuko_station|류다무코]]에서 출발하여 [[rebeyo_station|레베요]]까지 전 구간을 각역정차하는 보통 열차이다. 복복선 구간인 [[ejibica_station|에지비차]] 구간에서는 완행선을 이용한다.
- [[rebeyo_station|레베요급행]] - [[qecude_station|케추데]] 또는 [[risheco_station|리셰초]]에서 출발하는 급행 열차이다.
- [[rebeyo_station|레베요쾌속]] - [[risheco_station|리셰초]]에서 출발하여 [[rebeyo_station|레베요]]까지 전 구간을 통과 운행하는 최상위 등급 열차이다. 교외 복선 구간에서도 주요 환승역에만 정차하며, 대피역에서 급행과 보통을 추월한다.
- [[sarikoje_station|사리코제행]] - 저녁 러시아워가 끝난 뒤와 막차 시간대에 운행된다.
- [[ejibica_station|에지비차행]] - 대부분은 [[risheco_station|리셰초]]발 보통열차이지만, 통근시간에는 [[ryudamuko_station|류다무코]]에서 출발하여 [[ejibica_station|에지비차]]까지 도심 구간만 운행하는 열차가 추가로 투입된다.
+    - [[rebeyo_station|레베요행]] - [[ryudamuko_station|류다무코]]에서 출발하여 [[rebeyo_station|레베요]]까지 전 구간을 각역정차하는 보통 열차이다. 복복선 구간인 [[ejibica_station|에지비차]] 구간에서는 완행선을 이용한다.
+    - [[rebeyo_station|레베요급행]] - [[qecude_station|케추데]] 또는 [[risheco_station|리셰초]]에서 출발하는 급행 열차이다.
+    - [[rebeyo_station|레베요쾌속]] - [[risheco_station|리셰초]]에서 출발하여 [[rebeyo_station|레베요]]까지 전 구간을 통과 운행하는 최상위 등급 열차이다. 교외 복선 구간에서도 주요 환승역에만 정차하며, 대피역에서 급행과 보통을 추월한다.
+    - [[sarikoje_station|사리코제행]] - 저녁 러시아워가 끝난 뒤와 막차 시간대에 운행된다.
+    - [[ejibica_station|에지비차행]] - 대부분은 [[risheco_station|리셰초]]발 보통열차이지만, 통근시간에는 [[ryudamuko_station|류다무코]]에서 출발하여 [[ejibica_station|에지비차]]까지 도심 구간만 운행하는 열차가 추가로 투입된다.
 
 # 여담
 ---

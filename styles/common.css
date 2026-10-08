@@ -108,7 +108,7 @@ body {
   max-width: 50rem;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 2rem;
   background: var(--panel);
   scrollbar-color: var(--glass) transparent;
   font-family: var(--sans-font);
@@ -232,7 +232,7 @@ a:focus-visible {
 }
 
 footer {
-  margin: 1.5rem 0 0;
+  margin: 2rem 0 0;
   text-align: center;
   color: var(--muted);
   font-family: var(--sans-font);
@@ -240,6 +240,6 @@ footer {
 
 @media (max-width: 50rem) {
   body, html { background: var(--panel); }
-  .container { padding: 3vw; }
+  .container { padding: 4vw; }
   :root { scrollbar-color: var(--glass) transparent; }
 }

@@ -2,12 +2,12 @@
 
 #content { display: block; }
 
-.article-header { margin-bottom: 1.5rem; }
+.article-header { margin-bottom: 2rem; }
 
 .article-header h1 {
   font-size: 2.5rem;
   line-height: 3rem;
-  margin: 1.5rem 0 0.5rem;
+  margin: 2rem 0 0;
 }
 
 .article-meta {
@@ -31,7 +31,7 @@
 .article-body h3,
 .article-body h4,
 .article-body h5,
-.article-body h6 { margin: 1.5rem 0 0.5rem; }
+.article-body h6 { margin: 2rem 0 0.5rem; }
 
 .article-body h2 { font-size: 2rem; line-height: 2.5rem; }
 .article-body h3 { font-size: 1.6rem; line-height: 2.1rem; }
@@ -46,14 +46,15 @@
 .article-body .table-wrap { margin: 0 0 1rem; }
 
 .article-body ul,
-.article-body ol { padding-left: 1.5em; }
+.article-body ol { padding-left: 1rem; }
 
-.article-body li { margin: 0.25em 0; }
+.article-body li,
+.article-body li p,
+.article-body li ul,
+.article-body li ol { margin: 0 0 0.2rem ; }
 
 .article-body p,
 .article-body li { text-align: justify; }
-.article-body li > ul,
-.article-body li > ol { margin: 0.25em 0 0; }
 
 .article-body li::marker { color: var(--muted); }
 
@@ -163,7 +164,7 @@
 
 .article-body .math-display {
   display: block;
-  margin: 1.5rem 0 1.5rem;
+  margin: 1rem 0 1rem;
   overflow-x: auto;
   overflow-y: hidden;
 }
