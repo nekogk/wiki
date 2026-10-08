@@ -144,7 +144,7 @@ a:focus-visible {
 .site-search {
   position: relative;
   width: 15rem;
-  max-width: 40vw;
+  max-width: 50vw;
 }
 
 .site-search-input {
