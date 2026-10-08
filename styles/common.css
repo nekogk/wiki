@@ -105,10 +105,10 @@ body {
 }
 
 .container {
-  max-width: 55rem;
+  max-width: 60rem;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2.5rem;
   background: var(--panel);
   scrollbar-color: var(--glass) transparent;
   font-family: var(--sans-font);
@@ -236,7 +236,7 @@ footer {
   font-family: var(--sans-font);
 }
 
-@media (max-width: 55rem) {
+@media (max-width: 60rem) {
   body, html { background: var(--panel); }
   .container { padding: 4vw; }
   :root { scrollbar-color: var(--glass) transparent; }
