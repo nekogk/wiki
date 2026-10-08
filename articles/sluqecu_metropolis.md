@@ -21,7 +21,7 @@
 # 상징
 ---
 
-| ![[sluqecu_metropolis_flag.png\|160]] | ![[sluqecu_metropolis_emblem_white.png\|160]] |
+| ![[sluqecu_metropolis_flag.png\|226.24x160]] | ![[sluqecu_metropolis_emblem_white.png\|160]] |
 | :-: | :-: |
 | 깃발 | 휘장 |
 
