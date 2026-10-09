@@ -145,7 +145,6 @@
   margin: 0;
 }
 
-.article-body table > :first-child > tr:first-child > :is(th, td) { padding-top: 0; }
 .article-body td[rowspan],
 .article-body th[rowspan] { vertical-align: middle; }
 
