@@ -73,12 +73,12 @@
 
 .article-body strong {
   font-weight: 700;
-  color: var(--text-strong);
+  color: var(--text);
 }
 
 .article-body mark {
   background: rgba(234, 191, 140, 0.3);
-  color: var(--text-strong);
+  color: var(--text);
   padding: 0 0.15em;
 }
 
@@ -160,7 +160,7 @@
 
 .article-body th {
   font-weight: 600;
-  color: var(--text-strong);
+  color: var(--text);
 }
 
 .article-body .math-display {

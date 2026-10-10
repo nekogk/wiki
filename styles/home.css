@@ -32,7 +32,7 @@
   background: var(--glass);
   border: 1px solid var(--line);
   border-radius: 1.5rem;
-  color: var(--text-strong);
+  color: var(--text);
   text-decoration: none;
   transition: background 0.2s, outline 0.2s ease;
   outline: 2px solid transparent;
