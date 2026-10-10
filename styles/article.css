@@ -138,7 +138,7 @@
 }
 
 .table-wrap { overflow-x: auto; }
-hr + .table-wrap table { margin : 0.5rem 0 0; }
+.table-wrap:has(> table:first-child) { margin-top: 1rem; }
 
 .article-body table {
   border-collapse: collapse;
