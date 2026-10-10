@@ -54,7 +54,7 @@
   "yezzori_line": { "title": "예즈조리선", "category": [ "sluqecu_metro" ]},
   "zshaseme_line": { "title": "즈샤세메선", "category": [ "sluqecu_metro" ]},
   "stellar_romanization": { "title": "성라식 로마자 표기법" },
-  "coroji_romanization": { "title": "삼록언어청 공시 로마자 표기법" },
+  "coroji_romanization": { "title": "삼록언어청 로마자 표기법" },
   "sluqecu_university": { "title": "슬루케추대학교", "category": [ "divine_university" ]},
   "rujikade": { "title": "육경대", "category": [ "divine_university" ]},
   "common_essay_exam": { "title": "과별공통논술" },
