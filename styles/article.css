@@ -138,11 +138,13 @@
 }
 
 .table-wrap { overflow-x: auto; }
+hr + .table-wrap table { margin : 0.5rem 0 0; }
 
 .article-body table {
   border-collapse: collapse;
   width: auto; 
   margin: 0;
+  border-top: 1px solid var(--line);
 }
 
 .article-body td[rowspan],

@@ -52,6 +52,18 @@ md.core.ruler.push('shift_headings', state => {
   }
 });
 
+// 헤더 행의 모든 칸이 비어 있으면 <thead>(와 <th>)를 아예 만들지 않음
+md.core.ruler.push('drop_empty_table_head', state => {
+  const t = state.tokens;
+  for (let i = 0; i < t.length; i++) {
+    if (t[i].type !== 'thead_open') continue;
+    let end = i;
+    while (t[end].type !== 'thead_close') end++;
+    const empty = t.slice(i, end).every(x => x.type !== 'inline' || !x.content.trim());
+    if (empty) t.splice(i, end - i + 1);
+  }
+});
+
 // ── 공용 유틸 (common.js에서도 가져다 씀) ──
 
 // HTML 특수문자 이스케이프
