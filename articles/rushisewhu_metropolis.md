@@ -1,6 +1,6 @@
 ![[coroji_metropolis]]
 
-| | ![[rushisewhu_metropolis_white.png\|64]] | <big>루시세우시</big><br>㒱湖京 \| Rushisewhu Metropolis | < |
+| | ![[rushisewhu_metropolis_emblem_white.png\|64]] | <big>루시세우시</big><br>㒱湖京 \| Rushisewhu Metropolis | < |
 | :-: | ---: | :-- | :---: |
 | 주 | < | < | [[dechi_state\|데치주]] |
 
