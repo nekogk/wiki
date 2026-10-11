@@ -16,8 +16,8 @@
 # 상징
 ---
 
-| ![[sluseche_metropolis_flag.png\|226x160]] | ![[sluseche_metropolis_emblem_white.png\|160]] |
-| :-: | :-: |
+| ![[sluseche_metropolis_flag.png\|226]] | ![[sluseche_metropolis_emblem_white.png\|160]] |
+| :---: | :--: |
 | 깃발 | 휘장 |
 
 슬루세체를 둘러싼 산과 강, 그리고 중심의 [[shicaxiko_island|시차이코섬]]을 상징한다. 상징색은 초록색 <sub>(#71BE6A)</sub>이다.

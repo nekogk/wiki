@@ -20,8 +20,8 @@
 # 상징
 ---
 
-| ![[sluqecu_metropolis_flag.png\|226x160]] | ![[sluqecu_metropolis_emblem_white.png\|160]] |
-| :-: | :-: |
+| ![[sluqecu_metropolis_flag.png\|226]] | ![[sluqecu_metropolis_emblem_white.png\|160]] |
+| :--: | :-: |
 | 깃발 | 휘장 |
 
 [[rushikowa|루시코와]]의 상징인 달과 정보화된 현대적 도시를 상징한다. 깃발에 쓰이는 주 색은 연두색 <sub>(#89B55C)</sub>이다.
