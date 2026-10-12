@@ -26,7 +26,7 @@
 }
 
 .post-card {
-  max-width: min(22.5rem, calc(50vw - 2.5rem));
+  max-width: 21.5rem;
   display: block;
   padding: 0.5rem 1rem;
   background: var(--glass);
@@ -83,7 +83,7 @@
   color: var(--muted);
 }
 
-@media (max-width: 37.49rem) {
+@media (max-width: 47.99rem) {
   .page-title { font-size: 2rem; line-height: 2.5rem; }
   .post-head { --head-line: 2rem; }
   .post-title { font-size: 1.5rem; line-height: var(--head-line); }

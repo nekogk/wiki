@@ -104,7 +104,7 @@ body {
 }
 
 .container {
-  max-width: 50rem;
+  max-width: 48rem;
   min-height: 100vh;
   margin: 0 auto;
   padding: 2rem;
@@ -236,12 +236,9 @@ footer {
   font-family: var(--sans-font);
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 47.99rem) {
   body, html { background: var(--panel); }
   :root { scrollbar-color: var(--glass) transparent; }
-}
-
-@media (max-width: 37.49rem) {
   .page-title { font-size: 2rem; line-height: 2.5rem; }
   .post-title { font-size: 1.5rem; line-height: 2rem; }
   .container { padding: 1rem ;}
