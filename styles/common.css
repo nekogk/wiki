@@ -142,7 +142,7 @@ a:focus-visible {
 /* ── 헤더 검색창 ── */
 .site-search {
   position: relative;
-  width: 15rem;
+  width: 12rem;
 }
 
 .site-search-input {
@@ -274,8 +274,6 @@ footer {
   }
 
   .site-side-search { flex: none; }
-
-  .site-side .site-search { width: 12rem; }
 
   .site-search-list {
     position: relative;
