@@ -143,6 +143,7 @@ a:focus-visible {
 .site-search {
   position: relative;
   width: 15rem;
+  max-width: 46vw;
 }
 
 .site-search-input {
@@ -238,11 +239,11 @@ footer {
 
 @media (max-width: 50rem) {
   body, html { background: var(--panel); }
-  .container { padding: 4vw; }
   :root { scrollbar-color: var(--glass) transparent; }
-  .site-search { width: 30vw; }
 }
 
-@media (max-width: 40rem) {
-  .site-search { width: 46vw; }
+@media (max-width: 37.5rem) {
+  .page-title { font-size: 2rem; line-height: 2.5rem; }
+  .post-title { font-size: 1.5rem; line-height: 2rem; }
+  .container { padding: 1rem ;}
 }

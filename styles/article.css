@@ -213,7 +213,7 @@ summary.callout-title::marker { color: var(--muted); }
 
 .load-error { color: var(--muted); }
 
-@media (max-width: 50rem) {
+@media (max-width: 37.5rem) {
   .article-header h1 { font-size: 2rem; line-height: 2.5rem; }
   .article-body h2 { font-size: 1.67rem; line-height: 2.17rem; }
   .article-body h3 { font-size: 1.5rem; line-height: 2rem; }
