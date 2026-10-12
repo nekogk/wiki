@@ -169,7 +169,6 @@ function wikiLink(target, label, ctx, fallback) {
   return href !== null ? `<a href="${href}">${label}</a>` : fallback;
 }
 
-// 크기 옵션 '64' / '400x160' → CSS 문자열 (px를 rem으로 환산), 형식이 아니면 null
 function sizeStyle(opt) {
   const m = (opt ?? '').trim().match(/^(\d+)(?:x(\d+))?$/);
   if (!m) return null;
@@ -370,7 +369,7 @@ function addHeadingIds(root) {
 
 // 본문 h2–h6에 1. 1.1. 1.2. … 번호를 붙임 (틀 안의 제목은 제외)
 // 가장 높은 단계가 1. 2. 3. …, 단계를 건너뛰면(h2 다음 바로 h4) 한 단계 아래로만 취급
-// id는 번호(1, 2.4)로 바꾸고, 제목으로 만든 원래 id는 data-slug에 남겨서 [[문서#제목]] 링크가 계속 동작하게 함
+// id는 번호로 바꾸고, 제목으로 만든 원래 id는 data-slug에 남겨서 [[문서#제목]] 링크가 계속 동작하게 함
 // 목차(layout.js)는 data-num, data-title을 읽어서 같은 번호를 씀
 function numberHeadings(root) {
   const heads = [...root.querySelectorAll('h2, h3, h4, h5, h6')].filter(h => !h.closest('.wiki-template'));
