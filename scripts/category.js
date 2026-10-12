@@ -58,7 +58,8 @@ async function main() {
       groups.set(OTHER, rest);
     }
 
-    listEl.innerHTML = `<h1 class="page-title">분류:${escapeHtml(name)}</h1>` + [...groups].map(([label, list]) => `
+    listEl.innerHTML = `<h1 class="page-title">분류:${escapeHtml(name)}</h1>`
+      + `<p class="page-intro">${escapeHtml(name)} 분류에 속하는 문서가 ${members.length}개 있습니다.</p>` + [...groups].map(([label, list]) => `
       <section class="post-section">
         <h2 class="section-label">${escapeHtml(label)}</h2>
         ${cardsHtml(list, otherCategory)}

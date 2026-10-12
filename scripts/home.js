@@ -1,9 +1,10 @@
 import { loadDocs, loadJson, cardsHtml, fillPreviews, CATEGORY_INDEX } from '/scripts/common.js';
+import { SITE_NAME } from '/scripts/layout.js';
 
 const RANDOM_COUNT = 1024;
 const listEl = document.getElementById('post-list');
 const collator = new Intl.Collator('ko');
-const PAGE_TITLE = '<h1 class="page-title">대문</h1>';
+const PAGE_TITLE = `<h1 class="page-title">대문</h1><p class="page-intro">${SITE_NAME}에 오신 것을 환영합니다!</p>`;
 
 // 배열에서 무작위로 n개 뽑음 (앞쪽 n칸만 섞는 부분 피셔-예이츠, 원본은 그대로)
 function sample(arr, n) {

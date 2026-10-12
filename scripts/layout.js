@@ -1,6 +1,6 @@
 import { initSearch } from '/scripts/search.js';
 
-const SITE_NAME = '다냐위키';
+export const SITE_NAME = '다냐위키';
 const COPYRIGHT = '© 2026 Raeyon Kim. All rights reserved.';
 
 // 이 너비 이상이면 컨테이너 오른쪽에 사이드바(검색창·목차)를 띄움
