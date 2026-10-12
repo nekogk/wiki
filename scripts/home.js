@@ -1,7 +1,8 @@
-import { loadDocs, loadJson, cardsHtml, fillPreviews, pickOne, CATEGORY_INDEX } from '/scripts/common.js';
+import { loadDocs, loadJson, cardsHtml, fillPreviews, CATEGORY_INDEX } from '/scripts/common.js';
 
 const RANDOM_COUNT = 1024;
 const listEl = document.getElementById('post-list');
+const collator = new Intl.Collator('ko');
 
 // 배열에서 무작위로 n개 뽑음 (앞쪽 n칸만 섞는 부분 피셔-예이츠, 원본은 그대로)
 function sample(arr, n) {
@@ -23,11 +24,12 @@ async function main() {
       return;
     }
 
-    // 카드 옆에는 문서의 분류 중 하나를 무작위로 표시
+    // 카드 옆에는 문서의 분류 중 하나를 표시: 이름이 짧은 것 우선, 글자 수가 같으면 가나다순
     const side = d => {
-      if (!d.categories.length) return '';
-      const c = pickOne(d.categories);
-      return cats[c]?.title ?? c;
+      const names = d.categories.map(c => cats[c]?.title ?? c);
+      if (!names.length) return '';
+      names.sort((a, b) => Array.from(a).length - Array.from(b).length || collator.compare(a, b));
+      return names[0];
     };
 
     listEl.innerHTML = `

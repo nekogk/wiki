@@ -42,14 +42,17 @@
 
 .post-head {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
+  height: 2.25rem;
+  overflow-y: clip;
 }
 
 .post-title {
   margin: 0;
   font-size: 1.75rem;
-  line-height: 2.25rem; 
+  line-height: 2.25rem;
 }
 
 .post-category {
@@ -82,8 +85,10 @@
 
 @media (max-width: 37.5rem) {
   .page-title { font-size: 2rem; line-height: 2.5rem; }
-  .post-title { font-size: 1.5rem; line-height: 2rem; }
+  .post-head { --head-line: 2rem; }
+  .post-title { font-size: 1.5rem; line-height: var(--head-line); }
   .post-card { max-width: calc(100vw - 2rem);}
+  .post-head { height: 2rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
