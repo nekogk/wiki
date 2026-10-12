@@ -83,7 +83,7 @@
   color: var(--muted);
 }
 
-@media (max-width: 37.5rem) {
+@media (max-width: 37.49rem) {
   .page-title { font-size: 2rem; line-height: 2.5rem; }
   .post-head { --head-line: 2rem; }
   .post-title { font-size: 1.5rem; line-height: var(--head-line); }

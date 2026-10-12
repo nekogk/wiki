@@ -241,7 +241,7 @@ footer {
   :root { scrollbar-color: var(--glass) transparent; }
 }
 
-@media (max-width: 37.5rem) {
+@media (max-width: 37.49rem) {
   .page-title { font-size: 2rem; line-height: 2.5rem; }
   .post-title { font-size: 1.5rem; line-height: 2rem; }
   .container { padding: 1rem ;}
