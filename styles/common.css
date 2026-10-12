@@ -142,7 +142,7 @@ a:focus-visible {
 /* ── 헤더 검색창 ── */
 .site-search {
   position: relative;
-  width: 12rem;
+  width: 15rem;
 }
 
 .site-search-input {
@@ -240,4 +240,9 @@ footer {
   body, html { background: var(--panel); }
   .container { padding: 4vw; }
   :root { scrollbar-color: var(--glass) transparent; }
+  .site-search { width: 30vw; }
+}
+
+@media (max-width: 40rem) {
+  .site-search { width: 46vw; }
 }

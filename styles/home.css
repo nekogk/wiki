@@ -87,7 +87,7 @@
 }
 
 @media (max-width: 40rem) {
-  .post-card { max-width: 30rem;}
+  .post-card { max-width: 92vw;}
 }
 
 @media (prefers-reduced-motion: reduce) {
