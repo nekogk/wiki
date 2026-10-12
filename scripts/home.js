@@ -3,6 +3,7 @@ import { loadDocs, loadJson, cardsHtml, fillPreviews, CATEGORY_INDEX } from '/sc
 const RANDOM_COUNT = 1024;
 const listEl = document.getElementById('post-list');
 const collator = new Intl.Collator('ko');
+const PAGE_TITLE = '<h1 class="page-title">대문</h1>';
 
 // 배열에서 무작위로 n개 뽑음 (앞쪽 n칸만 섞는 부분 피셔-예이츠, 원본은 그대로)
 function sample(arr, n) {
@@ -20,7 +21,7 @@ async function main() {
   try {
     const [docs, cats] = await Promise.all([loadDocs(), loadJson(CATEGORY_INDEX)]);
     if (!docs.length) {
-      listEl.innerHTML = '<p class="list-message">아직 올라온 글이 없습니다</p>';
+      listEl.innerHTML = PAGE_TITLE + '<p class="list-message">아직 올라온 글이 없습니다</p>';
       return;
     }
 
@@ -32,14 +33,14 @@ async function main() {
       return names[0];
     };
 
-    listEl.innerHTML = `
+    listEl.innerHTML = PAGE_TITLE + `
       <section class="post-section">
         <h2 class="section-label">랜덤 글</h2>
         ${cardsHtml(sample(docs, RANDOM_COUNT), side)}
       </section>`;
     fillPreviews(listEl, docs);
   } catch (err) {
-    listEl.innerHTML = '<p class="list-message">글 목록을 불러오지 못했습니다</p>';
+    listEl.innerHTML = PAGE_TITLE + '<p class="list-message">글 목록을 불러오지 못했습니다</p>';
     console.error(err);
   }
 }
