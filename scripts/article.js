@@ -370,7 +370,7 @@ function addHeadingIds(root) {
 
 // 본문 h2–h6에 1. 1.1. 1.2. … 번호를 붙임 (틀 안의 제목은 제외)
 // 가장 높은 단계가 1. 2. 3. …, 단계를 건너뛰면(h2 다음 바로 h4) 한 단계 아래로만 취급
-// id는 번호 없는 제목으로 이미 정해졌으므로 [[문서#제목]] 링크는 그대로 동작함
+// id는 번호(1, 2.4)로 바꾸고, 제목으로 만든 원래 id는 data-slug에 남겨서 [[문서#제목]] 링크가 계속 동작하게 함
 // 목차(layout.js)는 data-num, data-title을 읽어서 같은 번호를 씀
 function numberHeadings(root) {
   const heads = [...root.querySelectorAll('h2, h3, h4, h5, h6')].filter(h => !h.closest('.wiki-template'));
@@ -384,6 +384,8 @@ function numberHeadings(root) {
     counters[depth] = (counters[depth] ?? 0) + 1;
     const num = counters.join('.') + '.';
     h.dataset.num = num;
+    h.dataset.slug = h.id;
+    h.id = num.slice(0, -1);   // 주소는 #1, #2.4 (끝의 점 없이)
     h.dataset.depth = depth;
     h.dataset.title = h.textContent.trim();
     const span = document.createElement('span');
@@ -391,6 +393,32 @@ function numberHeadings(root) {
     span.textContent = num;
     h.prepend(span, ' ');
   }
+}
+
+// 주소의 #… 로 제목 찾기: #1, #2.4 같은 번호, 또는 예전 방식의 #제목 (data-slug)
+function headingFromHash(root, hash) {
+  let key;
+  try { key = decodeURIComponent(hash.replace(/^#/, '')); } catch { return null; }
+  if (!key) return null;
+  return document.getElementById(key) ?? root.querySelector(`[data-slug="${CSS.escape(key)}"]`);
+}
+
+// 본문 안의 #제목 링크([[#제목]] 등)를 #번호로 바꿈
+function fixHeadingLinks(root) {
+  for (const a of root.querySelectorAll('a[href^="#"]')) {
+    const h = headingFromHash(root, a.getAttribute('href'));
+    if (h?.dataset.num) a.setAttribute('href', `#${h.id}`);
+  }
+}
+
+// 주소의 제목으로 이동하고, #제목으로 들어왔으면 주소를 #번호로 바꿔 둠
+// 다른 문서의 [[문서#제목]] 링크로 들어온 경우도 여기서 처리됨
+function scrollToHash(root) {
+  if (!location.hash) return;
+  const h = headingFromHash(root, location.hash);
+  if (!h) return;
+  if (h.dataset.num && location.hash !== `#${h.id}`) history.replaceState(null, '', `#${h.id}`);
+  h.scrollIntoView();
 }
 
 // 가로 스크롤을 위해 표를 .table-wrap으로 감쌈
@@ -563,7 +591,10 @@ async function main() {
     wrapImages(root.querySelector('.article-body'));
     setToc(root.querySelector('.article-body'));
 
-    if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
+    const articleBody = root.querySelector('.article-body');
+    fixHeadingLinks(articleBody);
+    scrollToHash(articleBody);
+    addEventListener('hashchange', () => scrollToHash(articleBody));
   } catch (err) {
     root.innerHTML = `<p class="load-error">글을 불러오지 못했습니다. ${escapeHtml(err.message)}</p>`;
     console.error(err);
