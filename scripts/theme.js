@@ -1,12 +1,12 @@
 // ── 테마 ──
 // <head>에서 일반 스크립트로 불러서, 화면이 그려지기 전에 <html data-theme="light|dark">를 정함
-// 64rem 미만: 항상 시스템 설정 / 64rem 이상: 사이드바 버튼으로 시스템·라이트·다크 선택 (localStorage에 저장)
+// 버튼(사이드바, 64rem 이상에서만 보임)으로 시스템·라이트·다크 선택 → localStorage에 저장
+// 고른 값은 화면 너비와 상관없이 유지됨. 한 번도 안 골랐으면 시스템 설정
 (() => {
   const KEY = 'theme';
   const CHOICES = ['system', 'light', 'dark'];
   const root = document.documentElement;
   const systemDark = matchMedia('(prefers-color-scheme: dark)');
-  const WIDE = matchMedia('(min-width: 64rem)');
 
   let choice = 'system';
   try {
@@ -16,8 +16,7 @@
 
   // 실제로 적용할 테마
   function effective() {
-    const c = WIDE.matches ? choice : 'system';
-    return c === 'system' ? (systemDark.matches ? 'dark' : 'light') : c;
+    return choice === 'system' ? (systemDark.matches ? 'dark' : 'light') : choice;
   }
 
   // ── 라이트 모드에서 ..._white.png → ....png ──
@@ -92,7 +91,6 @@
   });
 
   systemDark.addEventListener('change', apply);
-  WIDE.addEventListener('change', apply);
 
   // 다른 탭에서 바꾸면 따라감
   addEventListener('storage', e => {
