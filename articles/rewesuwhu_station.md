@@ -1,7 +1,7 @@
 
 | <big>레웨수우역</big><br>偉風駅 \| Rewesuwhu Station | < | < |
 | :--: | :-: | :---: |
-| <small>[[qecude_station\|케추데]] 방면</small><br>[[sluqecu_station\|슬루케추]]<br>← 0.8 km | ![[tobarye_line_icon.png\|32]]<br><small>[[tobarye_line\|토바례선]]</small><br><small>(SQ0154)</small> | <small>[[rebeyo_station\|레베요]] 방면</small><br>[[cesezema_station\|체세제마]]<br>0.8 km → |
+| <small>[[qecude_station\|케추데]] 방면</small><br>[[sluqecu_station\|슬루케추]]<br>← 0.8 km | ![[tobarye_line_icon.png\|32]]<br><small>[[tobarye_line\|토바례선]]</small><br><small>(SQ0154)</small> | <small>[[rebeyo_station\|레베요]] 방면</small><br>[[cesezema_station\|체세제마]]<br>0.7 km → |
 | ![[map:19451,35613,-1\|400x160]] | < | < |
 | 주소 | < | < |
 | [[sluqecu_metropolis\|슬루케추시]] [[shishiceso_ward\|시시체소구]] | < | < |
@@ -29,4 +29,4 @@
 | 1 | ![[tobarye_line_icon.png\|16]] [[tobarye_line\|토바례선]] | 완행 | [[ejibica_station\|에지비차]], [[sarikoje_station\|사리코제]], [[rebeyo_station\|레베요]] 방면 |
 | 2 | ^ | 급행 | [[rebeyo_station\|레베요]] 방면 |
 | 3 | ^ | 급행 | [[risheco_station\|리셰초]], [[qecude_station\|케추데]] 방면 |
-| 4 | ^ | 완행 | [[ryudamuko_station\|류다무코]], [[matariju_zoritulye_station\|미타리주조리툴례]], [[risheco_station\|리셰초]] 방면 |
+| 4 | ^ | 완행 | [[ryudamuko_station\|류다무코]], [[mitariju_zoritulye_station\|미타리주조리툴례]], [[risheco_station\|리셰초]] 방면 |
