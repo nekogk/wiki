@@ -68,6 +68,7 @@
   --panel: #222222;
   --glass: #333333;
   --glass-hover: #444444;
+  --glass-active: #eabf8c33;
   --line: #555555;
   --muted: #999999;
   --text: #ffffff;
@@ -90,13 +91,14 @@
   --panel: #f8f8f8;
   --glass: #ffffff;
   --glass-hover: #dddddd;
+  --glass-active: #b68d5b33;
   --line: #cccccc;
   --muted: #777777;
   --text: #111111;
-  --green: #3d9a48;
-  --beige: #b8814a;
-  --coral: #d4553a;
-  --pink: #cf5e86;
+  --green: #61c26c;
+  --beige: #b68d5b;
+  --coral: #ed7457;
+  --pink: #c287e0;
 
   color-scheme: light;
 }
@@ -281,7 +283,7 @@ footer {
 .theme-btn:focus { border-color: var(--beige); }
 
 .theme-btn.active {
-  background: rgba(234, 191, 140, 0.3);
+  background: var(--glass-active);
   border-color: var(--beige);
   color: var(--text);
 }
