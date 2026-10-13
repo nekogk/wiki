@@ -50,7 +50,7 @@
     - [[risheco_station|리셰초행]] - [[ejibica_station|에지비차]]에서 출발하는 보통열차이다.
     - [[risheco_station|리셰초급행]] - [[rebeyo_station|레베요]]에서 출발하는 급행열차이다.
     - [[risheco_station|리셰초쾌속]] - [[risheco_station|리셰초]]까지 전 구간을 통과 운행하는 최상위 등급 열차이다.
-    - [[matariju_zoritulye_station|미타리주조리툴례행]] - [[matariju_zoritulye_station|미타리주조리툴례]]에서 회차하는 보통 열차이다.
+    - [[mitariju_zoritulye_station|미타리주조리툴례행]] - [[mitariju_zoritulye_station|미타리주조리툴례]]에서 회차하는 보통 열차이다.
     - [[ryudamuko_station|류다무코행]] - 대개 [[rebeyo_station|레베요]]를 기점으로 가지지만, 통근시간대에는 [[ejibica_station|에지비차]]를 기점으로 가지는 열차 또한 투입된다.
 
 - 하행
