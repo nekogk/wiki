@@ -51,14 +51,11 @@
     }
   }).observe(root, { childList: true, subtree: true, attributes: true, attributeFilter: ['src'] });
 
-  // ── 지도 임베드: 주소의 theme 파라미터를 바꿔서 다시 불러옴 ──
-  function reloadMaps(theme) {
+  // ── 지도 임베드: 새로고침 없이 테마 전달 ──
+  function postMaps(theme) {
     for (const f of document.querySelectorAll('iframe.map-embed')) {
       try {
-        const url = new URL(f.src);
-        if (url.searchParams.get('theme') === theme) continue;
-        url.searchParams.set('theme', theme);
-        f.src = url.href;
+        f.contentWindow?.postMessage({ theme }, new URL(f.src).origin);
       } catch {}
     }
   }
@@ -77,7 +74,7 @@
     if (root.dataset.theme !== theme) {
       root.dataset.theme = theme;
       swapAll(root);
-      reloadMaps(theme);
+      postMaps(theme);
     }
     syncButtons();
   }
