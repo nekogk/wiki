@@ -7,6 +7,7 @@
   "rushichi": { "title": "루시치",  "category": [ "character" ]},
   "rushikowa": { "title": "루시코와", "category": [ "leghu_nation" ]},
   "cdifgian": { "title": "슈디프기안", "category": [ "leghu_nation" ]},
+  "ectenic_divine_empire": { "title": "대연신국" },
   "rushisewhu_metropolis": { "title": "루시세우시",  "category": [ "coroji_metropolis", "ectenium_city", "prefecture", "capital_city" ]},
   "pejeseme_metropolis": { "title": "페제세메시",  "category": [ "coroji_metropolis", "ectenium_city", "prefecture" ]},
   "rechefacu_metropolis": { "title": "레체파추시",  "category": [ "coroji_metropolis", "prefecture", "capital_city" ]},
