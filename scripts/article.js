@@ -183,7 +183,8 @@ const styleAttr = style => (style ? ` style="${style}"` : '');
 
 // ![[map:위도,경도,줌|크기]] → 지도 iframe
 function mapIframe(lat, lng, zoom = '0', opt) {
-  const src = `${MAP_URL}?at=${lat},${lng}&z=${zoom}&embed=1`;
+  const theme = document.documentElement.dataset.theme === 'light' ? 'light' : 'dark';
+  const src = `${MAP_URL}?at=${lat},${lng}&z=${zoom}&embed=1&theme=${theme}`;
   return `<iframe class="map-embed" src="${src}"${styleAttr(sizeStyle(opt))} loading="lazy" title="Map (${lat}, ${lng})"></iframe>`;
 }
 

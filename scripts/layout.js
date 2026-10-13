@@ -29,6 +29,11 @@ function sideHtml() {
   <aside class="site-side">
     <div class="site-side-inner">
       <div class="site-side-search"></div>
+      <div class="site-theme" role="group" aria-label="테마">
+        <button type="button" class="theme-btn" data-theme-choice="system">시스템</button>
+        <button type="button" class="theme-btn" data-theme-choice="light">라이트</button>
+        <button type="button" class="theme-btn" data-theme-choice="dark">다크</button>
+      </div>
       <nav class="site-toc" aria-label="목차" hidden></nav>
     </div>
   </aside>`;
@@ -109,6 +114,7 @@ function initLayout() {
   const side = document.querySelector('.site-side');
   const slot = side.querySelector('.site-side-search');
 
+  window.wikiTheme?.sync();
   placeSearch(header, slot);
   WIDE.addEventListener('change', () => placeSearch(header, slot));
   renderToc();

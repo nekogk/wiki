@@ -20,6 +20,7 @@ CATEGORY_HTML = """<!doctype html>
   <meta property="og:description" content="{description}">
   <meta property="og:type" content="website">
   <link rel="icon" href="/icon.svg">
+  <script src="/scripts/theme.js"></script>
   <link rel="stylesheet" href="/styles/home.css">
   <script type="module" src="/scripts/layout.js"></script>
   <script type="module" src="/scripts/category.js"></script>
@@ -43,6 +44,7 @@ ARTICLE_HTML = """<!doctype html>
   <meta property="og:description" content="{description}">
   <meta property="og:type" content="article">
   <link rel="icon" href="/icon.svg">
+  <script src="/scripts/theme.js"></script>
   <link rel="stylesheet" href="/styles/article.css">
   <script type="module" src="/scripts/layout.js"></script>
   <script type="module" src="/scripts/article.js"></script>

@@ -82,6 +82,23 @@
 
   color-scheme: dark;
   scrollbar-color: var(--panel) transparent;
+  transition: background 0.2s ease, scrollbar-color 0.2s ease;
+}
+
+:root[data-theme="light"] {
+  --bg: #eeeeee;
+  --panel: #f8f8f8;
+  --glass: #ffffff;
+  --glass-hover: #dddddd;
+  --line: #cccccc;
+  --muted: #777777;
+  --text: #111111;
+  --green: #3d9a48;
+  --beige: #b8814a;
+  --coral: #d4553a;
+  --pink: #cf5e86;
+
+  color-scheme: light;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -101,6 +118,7 @@ body {
   line-height: 1.5rem;
   word-break: normal;
   overflow-wrap: anywhere;
+  transition: background 0.2s ease;
 }
 
 .container {
@@ -111,6 +129,7 @@ body {
   background: var(--panel);
   scrollbar-color: var(--glass) transparent;
   font-family: var(--sans-font);
+  transition: background 0.2s ease, scrollbar-color 0.2s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -170,7 +189,7 @@ a:focus-visible {
   right: 0;
   z-index: 100;
   width: 100%;
-  max-height: calc(50vh - 5rem);
+  max-height: calc(50vh - 5.5rem);
   overflow-y: auto;
   margin: 0;
   padding: 0;
@@ -236,6 +255,37 @@ footer {
   font-family: var(--sans-font);
 }
 
+/* ── 테마 버튼 (사이드바 안이라 64rem 이상에서만 보임) ── */
+.theme-btn {
+  width: 4rem;
+  height: 2rem;
+  text-align: center;
+  white-space: nowrap;
+  font-family: var(--sans-font);
+  font-size: 1rem;
+  background: var(--glass);
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  outline: 0;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-btn:hover {
+  background: var(--glass-hover);
+}
+
+.theme-btn:focus { border-color: var(--beige); }
+
+.theme-btn.active {
+  background: rgba(234, 191, 140, 0.3);
+  border-color: var(--beige);
+  color: var(--text);
+}
+
 /* ── 사이드바 (64rem 이상에서만 표시) ── */
 .site-side {
   display: none; 
@@ -263,6 +313,7 @@ footer {
     padding-left: 0;
     width: 16rem;
     background: var(--panel);
+    transition: background 0.2s ease;
   }
 
   .site-side-inner {
@@ -275,6 +326,12 @@ footer {
   }
 
   .site-side-search { flex: none; }
+
+  .site-theme {
+    flex: none;
+    display: flex;
+    gap: 1rem;
+  }
 
   .site-search-list {
     position: relative;
@@ -289,6 +346,7 @@ footer {
     border-radius: 1rem;
     scrollbar-color: var(--glass-hover) transparent;
     font-family: var(--sans-font);
+    transition: background 0.2s ease, border-color 0.2s ease, scrollbar-color 0.2s ease;
   }
 
   .site-toc[hidden] { display: none; }

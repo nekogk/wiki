@@ -112,6 +112,7 @@
   border: 0;
   border-top: 1px solid var(--line);
   margin: 0 0 0.5rem;
+  transition: border-color 0.2s ease;
 }
 
 .article-body blockquote {
@@ -145,6 +146,7 @@
   width: auto; 
   margin: 0;
   border-top: 1px solid var(--line);
+  transition: border-color 0.2s ease;
 }
 
 .article-body td[rowspan],
@@ -156,6 +158,7 @@
   padding: 0.5rem 0.5rem;
   border-bottom: 1px solid var(--line);
   text-align: left;
+  transition: border-color 0.2s ease;
 }
 
 .article-body th {
@@ -179,6 +182,7 @@
   background: var(--glass);
   border: 1px solid var(--line);
   border-radius: 1.5rem;
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .callout-tip, .callout-hint, .callout-important, .callout-success, .callout-check, .callout-done,

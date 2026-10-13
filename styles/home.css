@@ -20,6 +20,7 @@
   line-height: 2.5rem;
   font-variant-numeric: tabular-nums;
   border-bottom: 1px solid var(--line);
+  transition: border-color 0.2s ease;
 }
 
 .post-cards {
@@ -41,7 +42,7 @@
   border-radius: 1.5rem;
   color: var(--text);
   text-decoration: none;
-  transition: background 0.2s, outline 0.2s ease;
+  transition: background 0.2s, border-color 0.2s ease, outline 0.2s ease;
   outline: 2px solid transparent;
 }
 
