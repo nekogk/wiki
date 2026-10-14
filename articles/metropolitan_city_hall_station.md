@@ -20,3 +20,9 @@
 # 개요
 ---
 **시청역**은 [[sluqecu_metropolis|슬루케추시]] 지하철의 첫 환승역으로, [[tobarye_line|토바례선]], [[zshashizu_line|즈샤시주선]], [[hatarechetu_line|하타레체투선]]이 교차하는 슬루케추의 중심역 중 하나이다.
+
+# 역 정보
+---
+| ![[metropolitan_city_hall_station_map.png|480]] |
+| :-: |
+| 역 안내도 |

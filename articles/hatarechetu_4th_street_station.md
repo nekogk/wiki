@@ -17,3 +17,9 @@
 # 개요
 ---
 **하타레체투4가역**은 [[sluqecu_metropolis|슬루케추시]] 지하철 [[zshashizu_line|즈샤시주선]]과 [[crererube_line|츠레레루베선]]의 환승역이다.
+
+# 역 정보
+---
+| ![[hatarechetu_4th_street_station_map.png|480]] |
+| :-: |
+| 역 안내도 |
