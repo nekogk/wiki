@@ -1,6 +1,6 @@
 | | ![[sluqecu_metropolis_emblem_white.png\|64]] | < | < | [[sluqecu_metropolis\|슬루케추시]]<br><big>구읍</big> | < | < |
 | :---: | ---: | :--: | :--: | :--- | :-: | :--: |
-| [[ghashido_ward\|가시도구]] | < | [[shishiceso_ward\|시시체소구]] | [[lesawez_ward\|레사웨즈구]] | < | [[miseme_ward\|미세메구]] | [[jeseceso_ward\|제세체소구]] |
+| ![[ghashido_ward_emblem.png\|32]]<br>[[ghashido_ward\|가시도구]] | < | ![[shishiceso_ward_emblem.png\|32]]<br>[[shishiceso_ward\|시시체소구]] | [[lesawez_ward\|레사웨즈구]] | < | [[miseme_ward\|미세메구]] | [[jeseceso_ward\|제세체소구]] |
 | [[righeju_ward\|리게주구]] | < | [[sasgri_ward\|사스그리구]] | [[shitobu_ward\|시토부구]] | < | [[merehanya_ward\|메레하냐구]] | [[rireas_ward\|리레아스구]] |
 | [[remasesha_ward\|레마세샤구]] | < | [[sezomuri_ward\|세조무리구]] | [[asrinyu_ward\|아스리뉴구]] | < | [[yujaseme_ward\|유자세메구]] | [[kozewhora_ward\|코제워라구]] |
 | [[serksoshi_ward\|서코시구]] | < | [[whohercache_ward\|워허차체구]] | [[pijizu_ward\|피지주구]] | < | [[resexwa_ward\|레세와구]] | [[dabasha_ward\|다바샤구]] |
