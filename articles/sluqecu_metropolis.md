@@ -1,7 +1,7 @@
 ![[coroji_metropolis]]
 ![[sluqecu_ward]]
 
-| | ![[sluqecu_metropolis_emblem_white.png\|64]] | <big>슬루케추시</big><br>緑山京 \| Sluqecu Metropolis | < |
+| | ![[sluqecu_metropolis_emblem_white.png\|48]] | <big>슬루케추시</big><br>緑山京 \| Sluqecu Metropolis | < |
 | :---: | ---: | --- | :--: |
 | ![[map:28608,37632,-5\|400x160]] | < | < | < |
 | 시청 소재지 | < | < | [[shishiceso_ward\|시시체소구]] 하타레체투 3가 1-13 |

@@ -1,6 +1,6 @@
 ![[sluqecu_ward]]
 
-| | ![[ghashido_ward_emblem_white.png\|64]] |<big>가시도구</big><br>虚陽区 \| Ghashido Ward | < |
+| | ![[ghashido_ward_emblem_white.png\|48]] |<big>가시도구</big><br>虚陽区 \| Ghashido Ward | < |
 | :-: | ---: | :-- | :---: |
 | ![[map:22596,33908,-2\|400x160]] | < | < | < |
 | 구청 소재지 | < | < | 율레스가 1-2 |
