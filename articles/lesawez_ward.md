@@ -1,11 +1,11 @@
 ![[sluqecu_ward]]
 
-| | ![[lesawez_ward_emblem_white.png\|48]] | <big>레사웨즈구</big><br>三日区 \| Lesawez Ward | < |
-| :-: | ---: | :-- | :---: |
-| ![[map:23874,39460,-2\|400x160]] | < | < | < |
-| 구청 소재지 | < | < | 레사샤가 2-9 |
-| 경시현 | < | < | [[sluqecu_metropolis\|슬루케추시]] |
-| 지역번호 | < | < | 011-03 |
+| <table><tbody><tr><td>![[lesawez_ward_emblem_white.png\|64]]</td><td><big>**레사웨즈구**</big><br>三日区<br>Lesawez Ward</td></tr></tbody></table> | < |
+| :---: | :--: |
+| ![[map:23874,39460,-2\|400x160]] | < |
+| 구청 소재지 | 레사샤가 2-9 |
+| 경시현 | [[sluqecu_metropolis\|슬루케추시]] |
+| 지역번호 | 011-03 |
 
 # 개요
 ---

@@ -7,19 +7,19 @@
 | <small>외선순환</small><br>[[state_capitol_station\|주청사]]<br>← 0.8 km | ![[lesayu_line_icon.png\|32]]<br><small>[[lesayu_line\|레사유선]]</small><br><small>(SQ0352)</small> | <small>내선순환</small><br>[[hatarechetu_park_station\|하타레체투공원]]<br>0.6 km → |
 | <small>[[dabasha_station\|다바샤]] 방면</small><br>[[metropolitan_city_hall_station\|시청]]<br>← 0.5 km | ![[hatarechetu_line_icon.png\|32]]<br><small>[[hatarechetu_line\|하타레체투선]]</small><br><small>(HR50)</small> | <small>[[remari_station\|레마리]] 방면</small><br>[[shishiceso_station\|시시체소]]<br>0.7 km → |
 | ![[map:21176,36603,-1\|400x160]] | < | < |
-| 주소 | < | < |
+| **주소** | < | < |
 | [[sluqecu_metropolis\|슬루케추시]] [[shishiceso_ward\|시시체소구]] | < | < |
 | [[shamojesa_line\|샤모제사선]] | 하타레체투4가 1-21 | < |
 | [[zshaseme_line\|즈샤세메선]] | ^ | < |
 | [[tobarye_line\|토바례선]] | 하타레체투3가 5-43 | < |
 | [[lesayu_line\|레사유선]] | 하타레체투3가 5-51 | < |
 | [[hatarechetu_line\|하타레체투선]] | 하타레체투3가 2-18 | < |
-| 운영기관 | < | < |
+| **운영기관** | < | < |
 | [[shamojesa_line\|샤모제사선]] | [[hayane_railroad_agency\|하야네주 철도청]] | < |
 | [[zshaseme_line\|즈샤세메선]] | ^ | < |
 | [[tobarye_line\|토바례선]] | [[sluqecu_metropolis\|슬루케추시]] | < |
 | [[lesayu_line\|레사유선]] | ^ | < |
-| 개업일 | < | < |
+| **개업일** | < | < |
 | [[tobarye_line\|토바례선]] | [[rimi_era\|리미]] 9년 입추 3일 | < |
 # 개요
 ---

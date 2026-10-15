@@ -1,8 +1,8 @@
 ![[coroji_metropolis]]
 
-| | ![[creseme_metropolis_emblem_white.png\|48]] | <big>츠레세메시</big><br>南海京 \| Creseme Metropolis | < |
-| :-: | ---: | --- | :--: |
-| 주 | < | < | [[sememeye_state\|세메메예주]] |
+| <table><tbody><tr><td>![[creseme_metropolis_emblem_white.png\|64]]</td><td><big>**츠레세메시**</big><br>南海京<br>Creseme Metropolis</td></tr></tbody></table> | < |
+| :---: | :--: |
+| **주** | [[sememeye_state\|세메메예주]] |
 
 # 개요
 ---

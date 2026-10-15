@@ -1,15 +1,15 @@
 ![[coroji_metropolis]]
 ![[sluqecu_ward]]
 
-| | ![[sluqecu_metropolis_emblem_white.png\|48]] | <big>슬루케추시</big><br>緑山京 \| Sluqecu Metropolis | < |
-| :---: | ---: | --- | :--: |
-| ![[map:28608,37632,-5\|400x160]] | < | < | < |
-| 시청 소재지 | < | < | [[shishiceso_ward\|시시체소구]] 하타레체투 3가 1-13 |
-| 주 | < | < | [[hayane_state\|하야네주]] |
-| 하위 행정구역 | < | < | 30구 |
-| 면적 | < | < | 702km<sup>2</sup> |
-| 인구 | < | < | 890만명 |
-| 지역번호 | < | < | 011 |
+| <table><tbody><tr><td>![[sluqecu_metropolis_emblem_white.png\|64]]</td><td><big>**슬루케추시**</big><br>緑山京<br>Sluqecu Metropolis</td></tr></tbody></table> | < |
+| :---: | :--: |
+| ![[map:28608,37632,-5\|400x160]] | < |
+| **시청 소재지** | [[shishiceso_ward\|시시체소구]] 하타레체투 3가 1-13 |
+| **주** | [[hayane_state\|하야네주]] |
+| **하위 행정구역** | 30구 |
+| **면적** | 702km<sup>2</sup> |
+| **인구** | 890만명 |
+| **지역번호** |  011 |
 
 # 개요
 ---
@@ -22,7 +22,7 @@
 
 | ![[sluqecu_metropolis_flag.png\|226]] | ![[sluqecu_metropolis_emblem_white.png\|160]] |
 | :--: | :-: |
-| 깃발 | 휘장 |
+| **깃발** | **휘장** |
 
 [[rushikowa|루시코와]]의 상징인 달과 정보화된 현대적 도시를 상징한다. 깃발에 쓰이는 주 색은 연두색 <sub>(#89B55C)</sub>이다.
 

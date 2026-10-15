@@ -5,14 +5,14 @@
 | <small>[[qecude_station\|케추데]] 방면</small><br>[[cesezema_station\|체세제마]]<br>← 0.8 km | ![[tobarye_line_icon.png\|32]]<br><small>[[tobarye_line\|토바례선]]</small><br><small>(SQ0156)</small> | <small>[[rebeyo_station\|레베요]] 방면</small><br>[[rihajico_station\|리하지초]]<br>0.7 km → |
 | <small>[[lano_park_station\|라노공원]] 방면</small><br>[[cesezema_xigosha_station\|체세제마이고샤]]<br>← 0.8 km | ![[nijere_line_icon.png\|32]]<br><small>[[nijere_line\|니제레선]]</small><br><small>(NJ62)</small> | <small>시종착</small> |
 | ![[map:18297,34707,-1\|400x160]] | < | < |
-| 주소 | < | < |
+| **주소** | < | < |
 | [[sluqecu_metropolis\|슬루케추시]] [[pijizu_ward\|피지주구]] | < | < |
 | [[tobarye_line\|토바례선]] | 루제워2가 7-22 | < |
 | [[nijere_line\|니제레선]] | 루제워2가 7-28 | < |
-| 운영기관 | < | < |
+| **운영기관** | < | < |
 | [[rubesesha_line\|츠레레세샤선]] | [[hayane_railroad_agency\|하야네주 철도청]] | < |
 | [[tobarye_line\|토바례선]] | [[sluqecu_metropolis\|슬루케추시]] | < |
-| 개업일 | < | < |
+| **개업일** | < | < |
 | [[tobarye_line\|토바례선]] | [[rimi_era\|리미]] 9년 입추 3일 | < |
 
 # 개요

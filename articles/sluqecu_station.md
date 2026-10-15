@@ -7,20 +7,20 @@
 | <small>[[cotarinyu_station\|초타리뉴]] 방면</small><br>[[rushizori_square_station\|루시조리광장]]<br>← 0.8 km | ![[hoker_line_icon.png\|32]]<br><small>[[hoker_line\|호커선]]</small><br><small>(SQ0456)</small> | <small>[[rishizujer_station\|리시주저]] 방면</small><br>[[dawhecache_crere_station\|다웨차체츠레레]]<br>0.7 km → |
 | <small>[[shizomacho_station\|시조마초]] 방면</small><br>[[hatarechetu_park_station\|하타레체투공원]]<br>← 1.2 km | ![[crererube_line_icon.png\|32]]<br><small>[[crererube_line\|츠레레루베선]]</small><br><small>(SQ0664)</small> | <small>[[eshuwhi_station\|에슈위]] 방면</small><br>[[qecxyani_station\|케츠야니]]<br>1.4 km → |
 | ![[map:20050,36095,-1\|400x160]] | < | < |
-| 주소 | < | < |
+| **주소** | < | < |
 | [[sluqecu_metropolis\|슬루케추시]] [[shishiceso_ward\|시시체소구]] | < | < |
 | [[shamojesa_line\|샤모제사선]] | 케츠야니가 3-1 | < |
 | [[zshaseme_line\|즈샤세메선]] | ^ | < |
 | [[tobarye_line\|토바례선]] | 케츠야니가 3-12 | < |
 | [[hoker_line\|호커선]] | 케츠야니가 3-19 | < |
 | [[crererube_line\|츠레레루베선]] | 케츠야니가 3-21 | < |
-| 운영기관 | < | < |
+| **운영기관** | < | < |
 | [[shamojesa_line\|샤모제사선]] | [[hayane_railroad_agency\|하야네주 철도청]] | < |
 | [[zshaseme_line\|즈샤세메선]] | ^ | < |
 | [[tobarye_line\|토바례선]] | [[sluqecu_metropolis\|슬루케추시]] | < |
 | [[hoker_line\|호커선]] | ^ | < |
 | [[crererube_line\|츠레레루베선]] | ^ | < |
-| 개업일 | < | < |
+| **개업일** | < | < |
 | [[tobarye_line\|토바례선]] | [[rimi_era\|리미]] 9년 입추 3일 | < |
 
 # 개요

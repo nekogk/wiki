@@ -3,12 +3,12 @@
 | :-: | :-: | :--: |
 | <small>[[qecude_station\|케추데]] 방면</small><br>[[rewesuwhu_station\|레웨수우]]<br>← 0.7 km | ![[tobarye_line_icon.png\|32]]<br><small>[[tobarye_line\|토바례선]]</small><br><small>(SQ0155)</small> | <small>[[rebeyo_station\|레베요]] 방면</small><br>[[ejibica_station\|에지비차]]<br>0.8 km → |
 | ![[map:18856,35141,-1\|400x160]] | < | < |
-| 주소 | < | < |
+| **주소** | < | < |
 | [[sluqecu_metropolis\|슬루케추시]] [[pijizu_ward\|피지주구]] | < | < |
 | [[tobarye_line\|토바례선]] | 루제워1가 7-16 | < |
-| 운영기관 | < | < |
+| **운영기관** | < | < |
 | [[tobarye_line\|토바례선]] | [[sluqecu_metropolis\|슬루케추시]] | < |
-| 개업일 | < | < |
+| **개업일** | < | < |
 | [[tobarye_line\|토바례선]] | [[rimi_era\|리미]] 9년 입추 3일 | < |
 
 # 개요

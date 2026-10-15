@@ -3,8 +3,8 @@
 | <big>워허차체구</big><br>秋疑区 \| Whohercache Ward | < |
 | :--: | :---: |
 | ![[map:18240,31105,-2\|400x160]] | < |
-| 경시현 | [[sluqecu_metropolis\|슬루케추시]] |
-| 지역번호 | 011-17 |
+| **경시현** | [[sluqecu_metropolis\|슬루케추시]] |
+| **지역번호** | 011-17 |
 # 개요
 ---
 [[sluqecu_metropolis|슬루케추시]] 남부에 위치한 구.

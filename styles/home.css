@@ -3,7 +3,6 @@
 .page-title {
   margin: 2rem 0 0;
   font-size: 2.5rem;
-  line-height: 3rem;
 }
 
 .page-intro {
@@ -17,7 +16,6 @@
   font-family: var(--heading-font);
   color: var(--beige);
   font-size: 2rem;
-  line-height: 2.5rem;
   font-variant-numeric: tabular-nums;
   border-bottom: 1px solid var(--line);
   transition: border-color 0.2s ease;
@@ -60,7 +58,6 @@
 .post-title {
   margin: 0;
   font-size: 1.75rem;
-  line-height: 2.25rem;
 }
 
 .post-category {
@@ -92,9 +89,9 @@
 }
 
 @media (max-width: 47.99rem) {
-  .page-title { font-size: 2rem; line-height: 2.5rem; }
-  .section-label { font-size: 1.67rem; line-height: 2.17rem; }
-  .post-title { font-size: 1.5rem; line-height: 2rem; }
+  .page-title { font-size: 2rem; }
+  .section-label { font-size: 1.67rem; }
+  .post-title { font-size: 1.5rem; }
   .post-card { max-width: calc(100vw - 2rem);}
   .post-head { height: 2rem; }
 }

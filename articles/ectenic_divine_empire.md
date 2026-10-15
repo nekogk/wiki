@@ -1,18 +1,18 @@
 
 | <big>대연신국</big><br>大延神國 \| Ectenic Divine Empire | < | < |
 | :--: | :- | :---: |
-| 성립 이전 | < | 삼국분할 이후 |
+| **성립 이전** | < | **삼국분할 이후** |
 | 전국 시대 | < | [[rushikowa|루시코와]] |
 | ^ | < | [[ectenium|연본국]] |
 | ^ | < | [[rechefacu_republic|레체파추공화국]] |
-| 지리 | < | < |
-| 수도 | [[sluqecu_metropolis\|동경부]] | < |
-| 부수도 | [[rushisewhu_metropolis\|서경부]] | < |
-| 정치 | < | < |
-| 정치 체제 | 신권 군주정<br>→ 입헌군주정<br>→ 민주정 | < |
-| 기타 | < | < |
-| 통화 | [[gri\|그리]] | |
-| 현재 영토 | ![[rushikowa_flag.png|27]] [[rushikowa\|루시코와]]<br>[[ectenium\|연본국]]<br>[[rechefacu_republic\|레체파추공화국]] | < |
+| **지리** | < | < |
+| **수도** | [[sluqecu_metropolis\|동경부]] | < |
+| **부수도** | [[rushisewhu_metropolis\|서경부]] | < |
+| **정치** | < | < |
+| **정치 체제** | 신권 군주정<br>→ 입헌군주정<br>→ 민주정 | < |
+| **기타** | < | < |
+| **통화** | [[gri\|그리]] | |
+| **현재 영토** | ![[rushikowa_flag.png|27]] [[rushikowa\|루시코와]]<br>[[ectenium\|연본국]]<br>[[rechefacu_republic\|레체파추공화국]] | < |
 
 # 개요
 ---
