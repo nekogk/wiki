@@ -160,11 +160,6 @@
   transition: border-color 0.2s ease;
 }
 
-.article-body th {
-  font-weight: 700;
-  color: var(--text);
-}
-
 .article-body th .table-wrap { margin: 0; font-weight:400; }
 .article-body th table { border: 0; margin: auto; }
 .article-body th th,
