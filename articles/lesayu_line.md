@@ -8,7 +8,7 @@
 | **기점** | [[rizaseca_station\|리자세차역]] |
 | **종점** | [[rizaseca_station\|리자세차역]] |
 | **역 수** | 58개 |
-| **상징색** | 노란색 <sub>(#F3BA4B)</sub> |
+| **상징색** | 노란색 <smallll>(#F3BA4B)</small> |
 | **노선번호** | 3호선 |
 | **개통일** | [[rimi_era\|리미]] 31년 입춘 4일 |
 | **소유자** | [[sluqecu_metropolis\|슬루케추시]] |

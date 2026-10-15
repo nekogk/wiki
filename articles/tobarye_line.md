@@ -8,7 +8,7 @@
 | **기점** | [[qecude_station\|케추데역]] |
 | **종점** | [[rebeyo_station\|레베요역]] |
 | **역 수** | 98개 |
-| **상징색** | 초록색 <sub>(#376440)</sub> |
+| **상징색** | 초록색 <small>(#376440)</small> |
 | **노선번호** | 1호선 |
 | **개통일** | [[rimi_era\|리미]] 9년 입추 3일 |
 | **소유자** | [[sluqecu_metropolis\|슬루케추시]] |
@@ -16,14 +16,14 @@
 | **노선 제원** | < |
 | **노선연장** | 120.3km |
 | **궤간** | 1435mm |
-| **선로구성** | 복복선 <sub>(류다무코 ~ 에지비차)</sub><br>복선 <sub>(케추데 ~ 류다무코 에지비차 ~ 레베요)</sub> |
+| **선로구성** | 복복선 <small>(류다무코 ~ 에지비차)</small><br>복선 <small>(케추데 ~ 류다무코 에지비차 ~ 레베요)</small> |
 | **통행방향** | 우측통행 |
 | **개통 연혁** | [[rimi_era\|리미]] 9년 [[nijere_station\|니제레]] ↔ [[ejibica_station\|에지비차]]<br>[[rimi_era\|리미]] 9년 [[righeju_station\|리게주]] ↔ [[nijere_station\|니제레]]<br>[[rimi_era\|리미]] 11년 [[mezuchisa_station\|메주치사]] ↔ [[righeju_station\|리게주]]<br>[[rimi_era\|리미]] 27년 [[ejibica_station\|에지비차]] ↔ [[smijiseda_station\|스미지세다]]<br>[[rimi_era\|리미]] 44년 [[smijiseda_station\|스미지세다]] ↔ [[sarikoje_station\|사리코제]]<br>[[shoje_era\|쇼제]] 7년 [[sarikoje_station\|사리코제]] ↔ [[futecoda_station\|푸테초다]]<br>[[shoje_era\|쇼제]] 10년 [[risheco_station\|리셰초]] ↔ [[mezuchisa_station\|메주치사]]<br>[[shoje_era\|쇼제]] 12년 [[futecoda_station\|푸테초다]] ↔ [[rebeyo_station\|레베요]]<br>[[whuda_era\|우다]] 2년 [[qecude_station\|케추데]] ↔ [[risheco_station\|리셰초]] |
 
 
 # 개요
 ---
-[[rimi_era|리미]] 9년 입추 3일 개통한 동경권 전철의 한 노선으로, 세계 최초의 지하철도이다. 노선색은 초록색 <sub>(#376440)</sub>이며, 노선명인 토바례는 큰 혈맥이라는 의미를 가진다.
+[[rimi_era|리미]] 9년 입추 3일 개통한 동경권 전철의 한 노선으로, 세계 최초의 지하철도이다. 노선색은 초록색 <small>(#376440)</small>이며, 노선명인 토바례는 큰 혈맥이라는 의미를 가진다.
 
 [[qecude_station|케추데역]]에서 [[sluqecu_metropolis|슬루케추]]를 지나 [[rebeyo_station|레베요역]]을 잇는 슬루케추 광역권의 주요 노선이다.
 
