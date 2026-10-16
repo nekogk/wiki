@@ -6,6 +6,7 @@
 | **경시현** | [[sluqecu_metropolis\|슬루케추시]] |
 | **하위 행정구역** | 16가 |
 | **지역번호** | 011-25 |
+
 # 개요
 ---
 [[sluqecu_metropolis|슬루케추시]] 서북부에 위치한 구로, 동쪽으로 접하는 [[jeseceso_ward|제세체소구]]와 함께 라노 도심권을 이룬다. 남쪽으로는 [[recadesae_ward|레차데사에구]], 서쪽으로는 [[dabasha_ward|다바샤구]]와 [[sechicaspe_ward|세치차스페구]], [[mezuchisa_ward|메주치사구]]와 접하고 있다.
