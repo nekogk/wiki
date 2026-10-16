@@ -18,8 +18,45 @@
 ---
 **하타레체투4가역**은 [[sluqecu_metropolis|슬루케추시]] 지하철 [[zshashizu_line|즈샤시주선]]과 [[crererube_line|츠레레루베선]]의 환승역이다.
 
+
 # 역 정보
 ---
-| ![[hatarechetu_4th_street_station_map.png|480]] |
-| :-: |
-| 역 안내도 |
+## 역사
+---
+
+## 환승
+---
+- 즈샤시주선 완행 ↔ 즈샤시주선 급행: 같은 방향이라면 하차한 승강장의 반대편에서 탑승할 수 있다.
+- 즈샤시주선 ↔ 츠레레루베선: 지하 2층 대합실을 통해서만 환승할 수 있다.
+
+# 승강장
+---
+## 즈샤시주선
+---
+
+| | | | | | | | |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| ↑ [[metropolitan_city_hall_station\|시청]] | < | < | < | < | < | < | < |
+| \| | 1 | 2 | \| | \| | 3 | 4 | \| |
+| ↓ [[shishiceso_ward_office_station\|시시체소구청]] | < | < | < | < | < | < | < |
+
+| | | | |
+| :-: | :-: | :-: | :- |
+| 1 | ![[zshashizu_line_icon.png\|16]] [[zshashizu_line\|즈샤시주선]] | 완행 | [[jizmya_station\|지즈먀]], [[lato_station\|라토]], [[remaxili_station\|레마일리]] 방면 |
+| 2 | ^ | 급행 | [[remaxili_station\|레마일리]] 방면 |
+| 3 | ^ | 급행 | [[rubezujer_station\|루베주저]] 방면 |
+| 4 | ^ | 완행 | [[rekobus_station\|레코부스]], [[rubezujer_station\|루베주저]] 방면 |
+
+## 츠레레루베선
+---
+
+| | | | |
+| :-: | :-: | :-: | :-: |
+| ↑ [[central_bank_station\|중앙은행]] | < | < | < |
+| \| | 1 | 2 | \| |
+| ↓ [[hatarechetu_park_station\|하타레체투공원]] | < | < | < 
+
+| | | |
+| :-: | :-: | :- |
+| 1 | ![[crererube_line_icon.png\|16]] [[crererube_line\|츠레레루베선]] | [[whohercache_station\|워허차체]], [[bipejoda_station\|비페조다]], [[eshuwhi_station\|에슈위]] 방면 |
+| 2 | ^ | [[shizomacho_station\|시조마초]] 방면 |
