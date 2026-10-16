@@ -1,6 +1,6 @@
 ![[sluqecu_ward]]
 
-| <big>세조무리구</big><br>潮見区 \| Sezomuri Ward | < |
+| <table><tbody><tr><td>![[sezomuri_ward_emblem.png\|64]]</td><td><big>**세조무리구**</big><br>潮見区<br>Sezomuri Ward</td></tr></tbody></table> | < |
 | :-: | :--: |
 | ![[map:26525,46588,-2\|400x160]] | < |
 | **경시현** | [[sluqecu_metropolis\|슬루케추시]] |
