@@ -1,6 +1,6 @@
 ![[sluqecu_ward]]
 
-| <table><tbody><tr><td>![[righeju_ward_emblem_white.png\|64]]</td><td><big>**리게주구**</big><br>旧津区<br>Righeju Ward</td></tr></tbody></table> | < |
+| <table><tbody><tr><td>![[righeju_ward_emblem.png\|64]]</td><td><big>**리게주구**</big><br>旧津区<br>Righeju Ward</td></tr></tbody></table> | < |
 | :---: | :---: |
 | ![[map:28328,37585,-2\|400x160]] | < |
 | **구청 소재지** | 리게주 4가 11-21 |

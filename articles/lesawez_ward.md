@@ -1,6 +1,6 @@
 ![[sluqecu_ward]]
 
-| <table><tbody><tr><td>![[lesawez_ward_emblem_white.png\|64]]</td><td><big>**레사웨즈구**</big><br>三日区<br>Lesawez Ward</td></tr></tbody></table> | < |
+| <table><tbody><tr><td>![[lesawez_ward_emblem.png\|64]]</td><td><big>**레사웨즈구**</big><br>三日区<br>Lesawez Ward</td></tr></tbody></table> | < |
 | :---: | :--: |
 | ![[map:23874,39460,-2\|400x160]] | < |
 | 구청 소재지 | 레사샤가 2-9 |

@@ -1,6 +1,6 @@
 ![[sluqecu_ward]]
 
-| <table><tbody><tr><td>![[shishiceso_ward_emblem_white.png\|64]]</td><td><big>**시시체소구**</big><br>神道区<br>Shishiceso Ward</td></tr></tbody></table> | < |
+| <table><tbody><tr><td>![[shishiceso_ward_emblem.png\|64]]</td><td><big>**시시체소구**</big><br>神道区<br>Shishiceso Ward</td></tr></tbody></table> | < |
 | :---: | :--: |
 | ![[map:22267,36596,-2\|400x160]] | < |
 | **구청 소재지** | 유헤즈 3가 1-21 |

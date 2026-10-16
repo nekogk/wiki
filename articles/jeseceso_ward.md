@@ -1,6 +1,6 @@
 ![[sluqecu_ward]]
 
-| <table><tbody><tr><td>![[jeseceso_ward_emblem_white.png\|64]]</td><td><big>**제세체소구**</big><br>雨道区<br>Jeseceso Ward</td></tr></tbody></table> | < |
+| <table><tbody><tr><td>![[jeseceso_ward_emblem.png\|64]]</td><td><big>**제세체소구**</big><br>雨道区<br>Jeseceso Ward</td></tr></tbody></table> | < |
 | :--: | :---: |
 | ![[map:29909,33134,-2\|400x160]] | < |
 | **구청 소재지** | 소지주2가 3-19 |

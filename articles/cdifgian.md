@@ -1,7 +1,7 @@
 
 | <big>슈디프기안</big><br>Çdifgian | < | < |
 | :-: | :- | :-: |
-| ![[cdifgian/flag.png\|160]] | < | ![[cdifgian/emblem_white.png\|160]] |
+| ![[cdifgian_flag.png\|160]] | < | ![[cdifgian_emblem.png\|160]] |
 | **국기** | < | **국장** |
 | **지리** | < | < |
 | **수도** | [[stiapjip\|스티압지프]] | < |

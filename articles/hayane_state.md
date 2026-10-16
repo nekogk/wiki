@@ -1,5 +1,5 @@
 
-| <table><tbody><tr><td>![[hayane_state_emblem_white.png\|64]]</td><td><big>**하야네주**</big><br>荒与児州<br>Hayane State</td></tr></tbody></table> | < |
+| <table><tbody><tr><td>![[hayane_state_emblem.png\|64]]</td><td><big>**하야네주**</big><br>荒与児州<br>Hayane State</td></tr></tbody></table> | < |
 | :---: | :--: |
 | **국가** | ![[rushikowa_flag.png\|27]] [[rushikowa\|루시코와]] |
 

@@ -1,5 +1,5 @@
 
-| <table><tbody><tr><td>![[riris_city_emblem_white.png\|64]]</td><td><big>**리리스시**</big><br>旧雲市<br>Riris City</td></tr></tbody></table> | < |
+| <table><tbody><tr><td>![[riris_city_emblem.png\|64]]</td><td><big>**리리스시**</big><br>旧雲市<br>Riris City</td></tr></tbody></table> | < |
 | :---: | :--: |
 | **주** | [[hayane_state\|하야네주]] |
 | **하위 행정구역** |  9구 |

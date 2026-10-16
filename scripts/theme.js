@@ -19,37 +19,6 @@
     return choice === 'system' ? (systemDark.matches ? 'dark' : 'light') : choice;
   }
 
-  // ── 라이트 모드에서 ..._white.png → ....png ──
-  // data-orig-src: 원래 주소, data-theme-src: 테마에 맞춰 넣은 주소
-  // 다른 코드가 src를 바꾸면 (theme-src와 달라지면) 그 주소를 새 원본으로 봄
-  const WHITE = /_white\.png(?=$|[?#])/i;
-
-  function swapImg(img) {
-    const cur = img.getAttribute('src');
-    if (!cur) return;
-    if (img.dataset.themeSrc !== cur) delete img.dataset.origSrc;
-    const orig = img.dataset.origSrc ?? cur;
-    if (!WHITE.test(orig)) return;
-    const want = root.dataset.theme === 'light' ? orig.replace(WHITE, '.png') : orig;
-    img.dataset.origSrc = orig;
-    img.dataset.themeSrc = want;
-    if (cur !== want) img.setAttribute('src', want);
-  }
-
-  function swapAll(node) {
-    if (node.nodeType !== Node.ELEMENT_NODE) return;
-    if (node.tagName === 'IMG') swapImg(node);
-    else node.querySelectorAll('img').forEach(swapImg);
-  }
-
-  // 나중에 그려지는 본문·미리보기 이미지도 잡음
-  new MutationObserver(records => {
-    for (const r of records) {
-      if (r.type === 'attributes') swapImg(r.target);
-      else r.addedNodes.forEach(swapAll);
-    }
-  }).observe(root, { childList: true, subtree: true, attributes: true, attributeFilter: ['src'] });
-
   // ── 지도 임베드: 새로고침 없이 테마 전달 ──
   function postMaps(theme) {
     for (const f of document.querySelectorAll('iframe.map-embed')) {
@@ -72,7 +41,6 @@
     const theme = effective();
     if (root.dataset.theme !== theme) {
       root.dataset.theme = theme;
-      swapAll(root);
       postMaps(theme);
     }
     syncButtons();

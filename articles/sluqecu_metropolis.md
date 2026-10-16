@@ -1,7 +1,7 @@
 ![[coroji_metropolis]]
 ![[sluqecu_ward]]
 
-| <table><tbody><tr><td>![[sluqecu_metropolis_emblem_white.png\|64]]</td><td><big>**슬루케추시**</big><br>緑山京<br>Sluqecu Metropolis</td></tr></tbody></table> | < |
+| <table><tbody><tr><td>![[sluqecu_metropolis_emblem.png\|64]]</td><td><big>**슬루케추시**</big><br>緑山京<br>Sluqecu Metropolis</td></tr></tbody></table> | < |
 | :---: | :--: |
 | ![[map:28608,37632,-5\|400x160]] | < |
 | **시청 소재지** | [[shishiceso_ward\|시시체소구]] 하타레체투 3가 1-13 |
@@ -20,7 +20,7 @@
 # 상징
 ---
 
-| ![[sluqecu_metropolis_flag.png\|226]] | ![[sluqecu_metropolis_emblem_white.png\|160]] |
+| ![[sluqecu_metropolis_flag.png\|226]] | ![[sluqecu_metropolis_emblem.png\|160]] |
 | :--: | :-: |
 | **깃발** | **휘장** |
 
