@@ -18,7 +18,7 @@
 | **궤간** | 1435mm |
 | **선로구성** | 복복선 <small>(지즈먀 ~ 레코부스)</small><br>복선 <small>(레마일리 ~ 지즈먀, 레코부스 ~ 루베주저)</small> |
 | **통행방향** | 우측통행 |
-| **개통 연혁** | [[rimi_era\|리미]] 26년 [[lesawez_station\|레사웨즈]] ↔ [[jizmya_station\|지즈먀]]<br>[[rimi_era\|리미]] 34년 [[rekobus_station\|레코부스]] ↔ [[lesawez_station\|레사웨즈]]<br>[[shoje_era\|쇼제]] 원년 [[jizmya_station\|지즈먀]] ↔ [[lato_station\|라토]]<br>[[shoje_era\|쇼제]] 5년 [[lato_station\|라토]] ↔ [[rishecoju_station\|리셰초주]]<br>[[shoje_era\|쇼제]] 15년 [[rubezujer_station\|루베주저]] ↔ [[rekobus_station\|레코부스]]<br>[[whuda_era\|우다]] 12년 [[rishecoju_station\|리셰초주]] ↔ [[remaxili_station\|레마일리]] |
+| **개통 연혁** | [[rimi_era\|리미]] 26년 [[lesawez_station\|레사웨즈]] ↔ [[jizmya_station\|지즈먀]]<br>[[rimi_era\|리미]] 34년 [[rekobus_station\|레코부스]] ↔ [[lesawez_station\|레사웨즈]]<br>[[shoje_era\|쇼제]] 원년 [[jizmya_station\|지즈먀]] ↔ [[lato_station\|라토]]<br>[[shoje_era\|쇼제]] 5년 [[lato_station\|라토]] ↔ [[rishecoju_station\|리셰초주]]<br>[[shoje_era\|쇼제]] 15년 [[rubezujer_station\|루베주저]] ↔ [[rekobus_station\|레코부스]]<br>[[whida_era\|위다]] 12년 [[rishecoju_station\|리셰초주]] ↔ [[remaxili_station\|레마일리]] |
 
 
 # 개요

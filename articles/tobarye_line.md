@@ -18,7 +18,7 @@
 | **궤간** | 1435mm |
 | **선로구성** | 복복선 <small>(류다무코 ~ 에지비차)</small><br>복선 <small>(케추데 ~ 류다무코 에지비차 ~ 레베요)</small> |
 | **통행방향** | 우측통행 |
-| **개통 연혁** | [[rimi_era\|리미]] 9년 [[nijere_station\|니제레]] ↔ [[ejibica_station\|에지비차]]<br>[[rimi_era\|리미]] 9년 [[righeju_station\|리게주]] ↔ [[nijere_station\|니제레]]<br>[[rimi_era\|리미]] 11년 [[mezuchisa_station\|메주치사]] ↔ [[righeju_station\|리게주]]<br>[[rimi_era\|리미]] 27년 [[ejibica_station\|에지비차]] ↔ [[smijiseda_station\|스미지세다]]<br>[[rimi_era\|리미]] 44년 [[smijiseda_station\|스미지세다]] ↔ [[sarikoje_station\|사리코제]]<br>[[shoje_era\|쇼제]] 7년 [[sarikoje_station\|사리코제]] ↔ [[futecoda_station\|푸테초다]]<br>[[shoje_era\|쇼제]] 10년 [[risheco_station\|리셰초]] ↔ [[mezuchisa_station\|메주치사]]<br>[[shoje_era\|쇼제]] 12년 [[futecoda_station\|푸테초다]] ↔ [[rebeyo_station\|레베요]]<br>[[whuda_era\|우다]] 2년 [[qecude_station\|케추데]] ↔ [[risheco_station\|리셰초]] |
+| **개통 연혁** | [[rimi_era\|리미]] 9년 [[nijere_station\|니제레]] ↔ [[ejibica_station\|에지비차]]<br>[[rimi_era\|리미]] 9년 [[righeju_station\|리게주]] ↔ [[nijere_station\|니제레]]<br>[[rimi_era\|리미]] 11년 [[mezuchisa_station\|메주치사]] ↔ [[righeju_station\|리게주]]<br>[[rimi_era\|리미]] 27년 [[ejibica_station\|에지비차]] ↔ [[smijiseda_station\|스미지세다]]<br>[[rimi_era\|리미]] 44년 [[smijiseda_station\|스미지세다]] ↔ [[sarikoje_station\|사리코제]]<br>[[shoje_era\|쇼제]] 7년 [[sarikoje_station\|사리코제]] ↔ [[futecoda_station\|푸테초다]]<br>[[shoje_era\|쇼제]] 10년 [[risheco_station\|리셰초]] ↔ [[mezuchisa_station\|메주치사]]<br>[[shoje_era\|쇼제]] 12년 [[futecoda_station\|푸테초다]] ↔ [[rebeyo_station\|레베요]]<br>[[whida_era\|위다]] 2년 [[qecude_station\|케추데]] ↔ [[risheco_station\|리셰초]] |
 
 
 # 개요
