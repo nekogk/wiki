@@ -1,6 +1,6 @@
 ![[sluqecu_ward]]
 
-| <big>미와구</big><br>㒱華区 \| Miwha Ward | < |
+| <table><tbody><tr><td>![[miwha_ward_emblem.png\|64]]</td><td><big>**미와구**</big><br>㒱華区<br>Miwha Ward</td></tr></tbody></table> | < |
 | :---: | :---: |
 | ![[map:38467,58725,-2\|400x160]] | < |
 | **경시현** | [[sluqecu_metropolis\|슬루케추시]] |
