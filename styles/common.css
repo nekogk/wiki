@@ -398,4 +398,5 @@ footer {
   body, html { background: var(--panel); }
   .container { padding: 1rem ;}
   .site-search { width: calc(50vw - 1rem); }
+  .site-search-list { max-height: calc(50vh - 4.5rem); }
 }
