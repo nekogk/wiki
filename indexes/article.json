@@ -92,5 +92,6 @@
   "shoje_era": { "title": "쇼제 시대", "category": [ "era" ]},
   "whida_era": { "title": "위다 시대", "category": [ "era" ]},
   "seyareji": { "title": "세야레지" },
+  "cesogshu": { "title": "체소그슈" },
   "coroji": { "title": "삼록권" }
 }
