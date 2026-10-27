@@ -11,4 +11,4 @@
 | [[sachiseme_line\|사치세메선]] | [[whohercache_line\|워허차체선]] | [[baxyaeru_line\|바야에루선]] | [[sechicaspe_line\|세치차스페선]] | [[rexajerche_line\|레아저체선]] | [[mutu_tram\|무투트램]] |
 | [[whishes_line\|위셰스선]] | [[rurikaxi_line\|루리카이선]] |  [[smijiseda_line\|스미지세다선]] |  [[wezwhori_line\|웨즈워리선]] | [[bipejoda_line\|비페조다선]] |  [[haritome_line\|하리토메선]] |
 |  [[whopuwhili_line\|워푸윌리선]] | [[yuwhigo_line\|유위고선]] | [[hanyaris_line\|하냐리스선]] | [[jesajig_line\|제사지그선]] | [[rubesefu_line\|루베세푸선]] | [[aroce_line\|아로체선]] |
-| [[miquwhona_line\|미쿠워나선]] | [[remaxili_line\|레마일리선]] | | | | |
+| [[miqisuwho_line\|미키수워선]] | [[remaxili_line\|레마일리선]] | | | | |

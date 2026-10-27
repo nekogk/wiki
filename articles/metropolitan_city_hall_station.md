@@ -52,7 +52,7 @@
 | ^ | ^ | 쾌속 | [[rebeyo_station\|레베요]] 방면 |
 | 3 | ^ | 급행 | [[risheco_station\|리셰초]], [[qecude_station\|케추데]] 방면 |
 | ^ | ^ | 쾌속 | [[risheco_station\|리셰초]] 방면 |
-| 4 | ^ | 완행 | [[ryudamuko_station\|류다무코]], [[mitariju_zoritulye_station\|미타리주조리툴례]], [[risheco_station\|리셰초]] 방면 |
+| 4 | ^ | 완행 | [[reyumuko_station\|레유무코]], [[mitariju_zoritulye_station\|미타리주조리툴례]], [[risheco_station\|리셰초]] 방면 |
 
 ## 즈샤시주선
 ---
