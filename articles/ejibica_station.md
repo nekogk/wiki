@@ -10,7 +10,7 @@
 | [[tobarye_line\|토바례선]] | 루제워2가 7-22 | < |
 | [[nijere_line\|니제레선]] | 루제워2가 7-28 | < |
 | **운영기관** | < | < |
-| [[rubesesha_line\|츠레레세샤선]] | [[hayane_railroad_agency\|하야네주 철도청]] | < |
+| [[creresesha_line\|츠레레세샤선]] | [[hayane_railroad_agency\|하야네주 철도청]] | < |
 | [[tobarye_line\|토바례선]] | [[sluqecu_metropolis\|슬루케추시]] | < |
 | **개업일** | < | < |
 | [[tobarye_line\|토바례선]] | [[rimi_era\|리미]] 9년 입추 3일 | < |
