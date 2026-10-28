@@ -17,7 +17,7 @@
 | **노선 제원** | < |
 | **노선연장** | 본선: 68.8km <br>라토지선: 2.4km <br>도합: 71.2km |
 | **궤간** | 1435mm |
-| **선로구성** | 복복선 <small>(레차데사에 ~ 코일리세즈)</small><br>복선 <small>(다지차체 ~ 레차데사에, 코일리세즈 ~ 베게세메)</small><br>단선 <small>(로쇼스푸 ~ 라토)</small> |
+| **선로구성** | 복복선 <small>(레시사에 ~ 코일리세즈)</small><br>복선 <small>(다지차체 ~ 레시사에, 코일리세즈 ~ 베게세메)</small><br>단선 <small>(로쇼스푸 ~ 라토)</small> |
 | **통행방향** | 우측통행 |
 | **개통 연혁** | [[rimi_era\|리미]] 41년 [[birisebu_station\|비리세부]] ↔ [[isteba_station\|이스테바]]<br>[[rimi_era\|리미]] 41년 [[isteba_station\|이스테바]] ↔ [[koxilisez_station\|코일리세즈]] [[lesayu_line\|레사유선]]에서 이관<br>[[shoje_era\|쇼제]] 6년 [[lano_station\|라노]] ↔ [[birisebu_station\|비리세부]]<br>[[shoje_era\|쇼제]] 8년 [[lato_station\|라토]] ↔ [[lano_station\|라노]]<br>[[shoje_era\|쇼제]] 16년 [[koxilisez_station\|코일리세즈]] ↔ [[begheseme_station\|베게세메]]<br>[[whida_era\|위다]] 11년 [[dajicache_station\|다지차체]] ↔ [[loshosfu_station\|로쇼스푸]] |
 

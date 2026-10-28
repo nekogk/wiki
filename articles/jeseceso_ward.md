@@ -10,4 +10,4 @@
 
 # 개요
 ---
-[[sluqecu_metropolis|슬루케추시]] 중부에 위치한 구로, 동쪽으로는 [[righeju_ward|리게주구]], 서쪽으로는 [[tozeshita_ward|토제시타구]], 남쪽으로는 [[sasgri_ward|사스그리구]], [[recadesae_ward|레차데사에구]]와 접해 있다. 북쪽으로는 [[ectene_river|연강]]과 닿아 있다.
+[[sluqecu_metropolis|슬루케추시]] 중부에 위치한 구로, 동쪽으로는 [[righeju_ward|리게주구]], 서쪽으로는 [[tozeshita_ward|토제시타구]], 남쪽으로는 [[sasgri_ward|사스그리구]], [[leshisae_ward|레시사에구]]와 접해 있다. 북쪽으로는 [[ectene_river|연강]]과 닿아 있다.
