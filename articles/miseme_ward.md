@@ -9,7 +9,7 @@
 
 # 개요
 ---
-**미세메구**는 [[sluqecu_metropolis|슬루케추시]] 도심부에 위치한 구이다. 서쪽으로는 [[shishiceso_ward|시시체소구]]와 [[pijizu_ward|피지주구]], 남쪽으로는 [[resexwa_ward|레세와구]], 동쪽으로는 [[kojewhora_ward|코제워라구]], 북쪽으로는 [[lesawez_ward|레사웨즈구]]와 접하고 있다.
+**미세메구**는 [[sluqecu_metropolis|슬루케추시]] 도심부에 위치한 구이다. 서쪽으로는 [[shishices_ward|시시체스구]]와 [[pijizu_ward|피지주구]], 남쪽으로는 [[resexwa_ward|레세와구]], 동쪽으로는 [[kojewhora_ward|코제워라구]], 북쪽으로는 [[lesawez_ward|레사웨즈구]]와 접하고 있다.
 
 # 역사
 ---

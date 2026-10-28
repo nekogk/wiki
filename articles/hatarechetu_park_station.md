@@ -5,7 +5,7 @@
 | <small>[[shizomacho_station\|시조마초]] 방면</small><br>[[hatarechetu_4th_street_station\|하타레체투4가]]<br>← 0.6 km | ![[crererube_line_icon.png\|32]]<br><small>[[crererube_line\|츠레레루베선]]</small><br><small>(SQ0663)</small> | <small>[[eshuwhi_station\|에슈위]] 방면</small><br>[[sluqecu_station\|슬루케추]]<br>1.2 km → |
 | ![[map:21259,36084,-1\|400x160]] | < | < |
 | **주소** | < | < |
-| [[sluqecu_metropolis\|슬루케추시]] [[shishiceso_ward\|시시체소구]] | < | < |
+| [[sluqecu_metropolis\|슬루케추시]] [[shishices_ward\|시시체스구]] | < | < |
 | [[lesayu_line\|레사유선]] | 하타레체투4가 1-41 | < |
 | [[crererube_line\|츠레레루베선]] | 하타레체투4가 1-52 | < |
 | **운영기관** | < | < |

@@ -4,7 +4,7 @@
 | <small>[[qecude_station\|케추데]] 방면</small><br>[[sluqecu_station\|슬루케추]]<br>← 0.8 km | ![[tobarye_line_icon.png\|32]]<br><small>[[tobarye_line\|토바례선]]</small><br><small>(SQ0154)</small> | <small>[[rebeyo_station\|레베요]] 방면</small><br>[[cesezema_station\|체세제마]]<br>0.7 km → |
 | ![[map:19451,35613,-1\|400x160]] | < | < |
 | **주소** | < | < |
-| [[sluqecu_metropolis\|슬루케추시]] [[shishiceso_ward\|시시체소구]] | < | < |
+| [[sluqecu_metropolis\|슬루케추시]] [[shishices_ward\|시시체스구]] | < | < |
 | [[tobarye_line\|토바례선]] | 레웨수우가 2-16 | < |
 | **운영기관** | < | < |
 | [[tobarye_line\|토바례선]] | [[sluqecu_metropolis\|슬루케추시]] | < |
@@ -13,7 +13,7 @@
 
 # 개요
 ---
-**레웨수우역**은 [[sluqecu_metropolis|슬루케추시]] 지하철 [[tobarye_line|토바례선]]의 정차역으로, [[shishiceso_ward|시시체소구]]에 위치한다. 환승은 불가하지만, [[zshaseme_line|즈샤세메선]] [[sluqecu_station|슬루케추역]]과의 거리가 상당히 가깝다.
+**레웨수우역**은 [[sluqecu_metropolis|슬루케추시]] 지하철 [[tobarye_line|토바례선]]의 정차역으로, [[shishices_ward|시시체스구]]에 위치한다. 환승은 불가하지만, [[zshaseme_line|즈샤세메선]] [[sluqecu_station|슬루케추역]]과의 거리가 상당히 가깝다.
 
 # 승강장
 ---

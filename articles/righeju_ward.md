@@ -11,4 +11,4 @@
 
 # 개요
 ---
-**리게주구**는 [[sluqecu_metropolis|슬루케추시]] 중부의 구로, 동쪽으로는 [[sebucheqa_stream|세부체카천]]을 건너 [[lesawez_ward|레사웨즈구]]를, 남쪽으로는 [[shitobu_ward|시토부구]]를, 서쪽으로는 [[jeseceso_ward|제세체소구]]를 접하며, 북쪽으로는 [[ectene_river|연강]]과 닿아 있다. 
+**리게주구**는 [[sluqecu_metropolis|슬루케추시]] 중부의 구로, 동쪽으로는 [[sebucheqa_stream|세부체카천]]을 건너 [[lesawez_ward|레사웨즈구]]를, 남쪽으로는 [[shitobu_ward|시토부구]]를, 서쪽으로는 [[jesehacaso_ward|제세하차소구]]를 접하며, 북쪽으로는 [[ectene_river|연강]]과 닿아 있다. 

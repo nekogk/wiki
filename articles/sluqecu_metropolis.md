@@ -4,12 +4,12 @@
 | <table><tbody><tr><td>![[sluqecu_metropolis_emblem.png\|64]]</td><td><big>**슬루케추시**</big><br>緑山京<br>Sluqecu Metropolis</td></tr></tbody></table> | < |
 | :---: | :--: |
 | ![[map:28608,37632,-5\|400x160]] | < |
-| **시청 소재지** | [[shishiceso_ward\|시시체소구]] 하타레체투 3가 1-13 |
+| **시청 소재지** | [[shishices_ward\|시시체스구]] 하타레체투 3가 1-13 |
 | **주** | [[hayane_state\|하야네주]] |
 | **하위 행정구역** | 30구 |
 | **면적** | 702km<sup>2</sup> |
 | **인구** | 890만명 |
-| **지역번호** |  011 |
+| **지역번호** | 011 |
 
 # 개요
 ---
@@ -45,8 +45,8 @@
 
 | 슬루케추시의 지역 구분 | < |
 | :-: | --- |
-| 도심부 | [[ghashido_ward\|가시도구]], [[shishiceso_ward\|시시체소구]], [[lesawez_ward\|레사웨즈구]], [[miseme_ward\|미세메구]] |
-| 중부 | [[jeseceso_ward\|제세체소구]], [[righeju_ward\|리게주구]], [[sasgri_ward\|사스그리구]], [[shitobu_ward\|시토부구]] |
+| 도심부 | [[ghashido_ward\|가시도구]], [[shishices_ward\|시시체스구]], [[lesawez_ward\|레사웨즈구]], [[miseme_ward\|미세메구]] |
+| 중부 | [[jesehacaso_ward\|제세하차소구]], [[righeju_ward\|리게주구]], [[sasgri_ward\|사스그리구]], [[shitobu_ward\|시토부구]] |
 | 동부 | [[merehanya_ward\|메레하냐구]], [[rireas_ward\|리레아스구]], [[remasesha_ward\|레마세샤구]], [[sezomuri_ward\|세조무리구]] |
 | 동남부 | [[asrinyu_ward\|아스리뉴구]], [[yujaseme_ward\|유자세메구]], [[kozewhora_ward\|코제워라구]], [[serksoshi_ward\|서코시구]] |
 | 남부 | [[whohercache_ward\|워허차체구]], [[pijizu_ward\|피지주구]], [[resexwa_ward\|레세와구]] |
@@ -55,7 +55,7 @@
 | 북부 | [[gheyesacer_ward\|게예사처구]], [[seshisefu_ward\|세시세푸구]], [[sachiseme_ward\|사치세메구]], [[tobacec_ward\|토바체츠구]] |
 | 동북부 | [[miwha_ward\|미와구]] |
 
-3핵도시 구조로 도심은 **[[shishiceso_ward|시시체소구]]**, 부도심은 [[jeseceso_ward|제세체소구]]와 [[remasesha_ward|레마세샤구]]이다. 보통 이 세 지역을 하타레체투, 라노, 레마세샤라고 부른다.
+3핵도시 구조로 도심은 **[[shishices_ward|시시체스구]]**, 부도심은 [[jesehacaso_ward|제세하차소구]]와 [[remasesha_ward|레마세샤구]]이다. 보통 이 세 지역을 하타레체투, 라노, 레마세샤라고 부른다.
 
 ## 인구
 ---
