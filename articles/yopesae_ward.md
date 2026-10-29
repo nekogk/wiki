@@ -1,6 +1,6 @@
 ![[sluqecu_ward]]
 
-| <big>레시사에구</big><br>竜岩区 \| Leshisae Ward | < |
+| <big>요페사에구</big><br>竜岩区 \| Yopesae Ward | < |
 | :--: | :---: |
 | ![[map:27424,28997,-2\|400x160]] | < |
 | **경시현** | [[sluqecu_metropolis\|슬루케추시]] |
@@ -10,4 +10,4 @@
 
 # 개요
 ---
-**레시사에구**는 [[sluqecu_metropolis|슬루케추시]] 서부에 위치한 구이다.
+**요페사에구**는 [[sluqecu_metropolis|슬루케추시]] 서부에 위치한 구이다.

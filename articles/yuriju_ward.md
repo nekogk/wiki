@@ -1,0 +1,14 @@
+![[sluqecu_ward]]
+
+| <table><tbody><tr><td>![[yuriju_ward_emblem.png\|64]]</td><td><big>**유리주구**</big><br>旧津区<br>Yuriju Ward</td></tr></tbody></table> | < |
+| :---: | :---: |
+| ![[map:28328,37585,-2\|400x160]] | < |
+| **구청 소재지** | 유리주 4가 11-21 |
+| **경시현** | [[sluqecu_metropolis\|슬루케추시]] |
+| **하위 행정구역** | 11가 |
+| **지역번호** | 011-06 |
+
+
+# 개요
+---
+**유리주구**는 [[sluqecu_metropolis|슬루케추시]] 중부의 구로, 동쪽으로는 [[sebucheqa_stream|세부체카천]]을 건너 [[lesawez_ward|레사웨즈구]]를, 남쪽으로는 [[shitobu_ward|시토부구]]를, 서쪽으로는 [[jeseceso_ward|제세체소구]]를 접하며, 북쪽으로는 [[ectene_river|연강]]과 닿아 있다. 

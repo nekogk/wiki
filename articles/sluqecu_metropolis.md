@@ -45,17 +45,17 @@
 
 | 슬루케추시의 지역 구분 | < |
 | :-: | --- |
-| 도심부 | [[ghashido_ward\|가시도구]], [[shishices_ward\|시시체스구]], [[lesawez_ward\|레사웨즈구]], [[miseme_ward\|미세메구]] |
-| 중부 | [[jesehacaso_ward\|제세하차소구]], [[righeju_ward\|리게주구]], [[sasgri_ward\|사스그리구]], [[shitobu_ward\|시토부구]] |
+| 도심부 | [[zbaedo_ward\|즈바에도구]], [[shishices_ward\|시시체스구]], [[lesawez_ward\|레사웨즈구]], [[miseme_ward\|미세메구]] |
+| 중부 | [[jeseceso_ward\|제세체소구]], [[yuriju_ward\|유리주구]], [[resjize_ward\|레스지제구]], [[shitobu_ward\|시토부구]] |
 | 동부 | [[merehanya_ward\|메레하냐구]], [[rireas_ward\|리레아스구]], [[remasesha_ward\|레마세샤구]], [[sezomuri_ward\|세조무리구]] |
-| 동남부 | [[asrinyu_ward\|아스리뉴구]], [[yujaseme_ward\|유자세메구]], [[kozewhora_ward\|코제워라구]], [[serksoshi_ward\|서코시구]] |
+| 동남부 | [[asrinyu_ward\|아스리뉴구]], [[yujaseme_ward\|유자세메구]], [[kozewhora_ward\|코제워라구]], [[serkoshi_ward\|서코시구]] |
 | 남부 | [[whohercache_ward\|워허차체구]], [[pijizu_ward\|피지주구]], [[resexwa_ward\|레세와구]] |
-| 서부 | [[dabasha_ward\|다바샤구]], [[leshisae_ward\|레시사에구]], [[refabyuxiko_ward\|레파뷰이코구]] |
+| 서부 | [[dabasha_ward\|다바샤구]], [[yopesae_ward\|요페사에구]], [[refabyuxiko_ward\|레파뷰이코구]] |
 | 서북부 | [[mezuchisa_ward\|메주치사구]], [[sechicaspe_ward\|세치차스페구]], [[tozeshita_ward\|토제시타구]] |
 | 북부 | [[gheyesacer_ward\|게예사처구]], [[seshisefu_ward\|세시세푸구]], [[sachiseme_ward\|사치세메구]], [[tobacec_ward\|토바체츠구]] |
 | 동북부 | [[miwha_ward\|미와구]] |
 
-3핵도시 구조로 도심은 **[[shishices_ward|시시체스구]]**, 부도심은 [[jesehacaso_ward|제세하차소구]]와 [[remasesha_ward|레마세샤구]]이다. 보통 이 세 지역을 하타레체투, 라노, 레마세샤라고 부른다.
+3핵도시 구조로 도심은 **[[shishices_ward|시시체스구]]**, 부도심은 [[jeseceso_ward|제세체소구]]와 [[remasesha_ward|레마세샤구]]이다. 보통 이 세 지역을 하타레체투, 라노, 레마세샤라고 부른다.
 
 ## 인구
 ---

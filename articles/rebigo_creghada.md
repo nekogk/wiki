@@ -3,7 +3,7 @@
 | :--: | -- |
 | ![[rebigo_creghada/profile.png\|320]] | < |
 | **출생** | [[whida_era\|위다]] 3년 대한 6일 |
-| ^ | [[riris_city\|리리스시]] |
+| ^ | [[yuriris_city\|유리리스시]] |
 | **거주지** | [[lyuxiqecu_city\|류이케추시]] |
 | **국적** | ![[rushikowa_flag.png\|27]] [[rushikowa\|루시코와]] |
 | **학력** | [[sluseche_university\|슬루세체대학교]] <small>(화학 / 학사)</small> |

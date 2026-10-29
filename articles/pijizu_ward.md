@@ -12,4 +12,4 @@
 ---
 [[sluqecu_metropolis|슬루케추시]] 남부에 위치한 구. 과거에는 남구로도 불렸다.
 
-남쪽으로는 [[smijiseda_city|스미지세다시]]와 닿아 있는 슬루케추시의 최남단이며, 동쪽으로는 [[resexwa_ward|레세와구]], 북쪽으로는 [[shishices_ward|시시체스구]]와 [[ghashido_ward|가시도구]], 서쪽으로는 [[whohercache_ward|워허차체구]]와 접하고 있다.
+남쪽으로는 [[smijiseda_city|스미지세다시]]와 닿아 있는 슬루케추시의 최남단이며, 동쪽으로는 [[resexwa_ward|레세와구]], 북쪽으로는 [[shishices_ward|시시체스구]]와 [[zbaedo_ward|즈바에도구]], 서쪽으로는 [[whohercache_ward|워허차체구]]와 접하고 있다.

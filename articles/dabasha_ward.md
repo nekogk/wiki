@@ -8,7 +8,7 @@
 
 # 개요
 ---
-[[sluqecu_metropolis|슬루케추시]] 서부에 위치한 구로, 서쪽으로 [[haritome_city|하리토메시]] [[urexa_ward|우레아구]], 남쪽으로 [[haritome_city|하리토메시]] [[whojerche_ward|워저체구]]와 접하는 슬루케추의 서쪽 끝이다. 동쪽으로는 [[leshisae_ward|레시사에구]], 북쪽으로는 [[sechicaspe_ward|세치차스페구]]와 접해 있다.
+[[sluqecu_metropolis|슬루케추시]] 서부에 위치한 구로, 서쪽으로 [[haritome_city|하리토메시]] [[urexa_ward|우레아구]], 남쪽으로 [[haritome_city|하리토메시]] [[whojerche_ward|워저체구]]와 접하는 슬루케추의 서쪽 끝이다. 동쪽으로는 [[yopesae_ward|요페사에구]], 북쪽으로는 [[sechicaspe_ward|세치차스페구]]와 접해 있다.
 
 # 특징
 ---

@@ -1,6 +1,6 @@
 ![[sluqecu_ward]]
 
-| <big>사스그리구</big><br>司㦮区 \| Sasgri Ward | < |
+| <big>레스지제구</big><br>司㦮区 \| Resjize Ward | < |
 | :---: | :---: |
 | ![[map:26452,33373,-2\|400x160]] | < |
 | **경시현** | [[sluqecu_metropolis\|슬루케추시]] |
@@ -8,4 +8,4 @@
 
 # 개요
 ---
-**사스그리구**는 [[sluqecu_metropolis|슬루케추시]] 중부에 위치한 구이다.
+**레스지제구**는 [[sluqecu_metropolis|슬루케추시]] 중부에 위치한 구이다.

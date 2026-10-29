@@ -2,7 +2,7 @@
 | <big>슬루케추대학교</big><br>囯立緑山大斈 \| National Sluqecu University | < |
 | :-: | - |
 | ![[sluqecu_university_logo.png\|240]] | < |
-| **소재지** | [[sluqecu_metropolis\|슬루케추시]] [[leshisae_ward\|레시사에구]] |
+| **소재지** | [[sluqecu_metropolis\|슬루케추시]] [[yopesae_ward\|요페사에구]] |
 | **학부생 수** | 약 16,000명 |
 | **대학원생 수** | 약 10,000명 |
 | **교수진 수** | 약 2,000명 |
@@ -11,7 +11,7 @@
 
 # 개요
 ---
-[[sluqecu_metropolis|슬루케추시]] [[leshisae_ward|레시사에구]]의 대학으로, [[divine_university|신국대학]] 중에서도 [[sluseche_university|슬루세체대학교]]와 함께 TOP 2를 달리는 대학이다. 사회과학계열이 우세한 학교이며, 슬루세체대학교에 밀리는 자연계열을 제외하면 사실상 TOP 1의 대학교.
+[[sluqecu_metropolis|슬루케추시]] [[yopesae_ward|요페사에구]]의 대학으로, [[divine_university|신국대학]] 중에서도 [[sluseche_university|슬루세체대학교]]와 함께 TOP 2를 달리는 대학이다. 사회과학계열이 우세한 학교이며, 슬루세체대학교에 밀리는 자연계열을 제외하면 사실상 TOP 1의 대학교.
 
 # 역사
 ---
