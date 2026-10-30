@@ -120,7 +120,14 @@ body {
   font-size: 1rem;
   word-break: normal;
   overflow-wrap: anywhere;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   transition: background 0.2s ease;
+}
+
+::selection {
+  background: var(--glass-active);
+  color: var(--text);
 }
 
 .container {
@@ -129,28 +136,31 @@ body {
   margin: 0 auto;
   padding: 2rem;
   background: var(--panel);
+  box-shadow: -1px 0 0 var(--line), 1px 0 0 var(--line);
   scrollbar-color: var(--line) transparent;
   font-family: var(--sans-font);
-  transition: background 0.2s ease, scrollbar-color 0.2s ease;
+  transition: background 0.2s ease, box-shadow 0.2s ease, scrollbar-color 0.2s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   font-weight: normal;
-  color: var(--beige);
+  color: var(--text);
+  letter-spacing: -0.01em;
+  transition: color 0.15s ease;
 }
 
 p { margin: 0; }
 
 a {
-  transition: outline 0.2s ease;
+  transition: outline-color 0.15s ease, color 0.15s ease;
   outline: 1px solid transparent;
-  border-radius: 0.2em;
+  border-radius: 0;
 }
 
 a:focus-visible {
   outline: 1px solid var(--beige);
-  outline-offset: 1px;
+  outline-offset: 2px;
 }
 
 .site-header {
@@ -160,7 +170,6 @@ a:focus-visible {
   justify-content: space-between;
 }
 
-/* ── 헤더 검색창 ── */
 .site-search {
   position: relative;
   width: 14rem;
@@ -170,19 +179,22 @@ a:focus-visible {
   width: 100%;
   height: 2rem;
   padding: 0 0.75rem;
-  background: var(--glass);
+  background: var(--bg);
   border: 1px solid var(--line);
-  border-radius: 1rem;
+  border-radius: 0;
   color: var(--text);
   font: inherit;
   font-family: var(--sans-font);
   outline: none;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .site-search-input::placeholder { color: var(--muted); }
-.site-search-input:hover { background: var(--glass-hover); }
-.site-search-input:focus { border-color: var(--beige); }
+.site-search-input:hover { border-color: var(--muted); }
+.site-search-input:focus {
+  border-color: var(--beige);
+  box-shadow: 0 0 0 1px var(--beige);
+}
 .site-search-input::-webkit-search-cancel-button { display: none; }
 
 .site-search-list {
@@ -198,11 +210,14 @@ a:focus-visible {
   list-style: none;
   background: var(--glass);
   border: 1px solid var(--line);
-  border-radius: 1rem;
+  border-top-color: var(--beige);
+  border-radius: 0;
   scrollbar-color: var(--line) transparent;
 }
 
 .site-search-list[hidden] { display: none; }
+
+.site-search-item + .site-search-item a { box-shadow: inset 0 1px 0 var(--line); }
 
 .site-search-item a {
   outline: none;
@@ -211,12 +226,17 @@ a:focus-visible {
   height: calc(2rem - 2px);
   padding: 0 0.75rem;
   border: 1px solid transparent;
-  border-radius: 1rem;
+  border-radius: 0;
   color: var(--text);
   text-decoration: none;
   white-space: nowrap;
   touch-action: manipulation;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition: background 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease, color 0.12s ease;
+}
+
+.site-search-kind {
+  flex: none;
+  color: var(--muted);
 }
 
 .site-search-title {
@@ -224,8 +244,18 @@ a:focus-visible {
   text-overflow: ellipsis;
 }
 
-.site-search-item[aria-selected="true"] a { background: var(--glass-hover); }
-.site-search-item a:focus-visible { border-color: var(--beige);}
+.site-search-item a:hover,
+.site-search-item[aria-selected="true"] a {
+  background: var(--glass-hover);
+  box-shadow: inset 2px 0 0 var(--beige);
+  color: var(--beige);
+}
+
+.site-search-item a:focus-visible { border-color: var(--beige); }
+.site-search-item + .site-search-item a:hover,
+.site-search-item + .site-search-item[aria-selected="true"] a {
+  box-shadow: inset 2px 0 0 var(--beige), inset 0 1px 0 var(--line);
+}
 
 .site-search-item mark {
   background: none;
@@ -243,9 +273,12 @@ a:focus-visible {
   line-height: 2rem;
   font-weight: 400;
   font-size: 1.5rem;
+  letter-spacing: 0.02em;
   padding-right: 0.5rem;
-  border-radius: 0.8rem;
+  border-radius: 0;
 }
+
+.site-logo:hover { color: var(--beige); }
 
 .site-logo img {
   width: 2rem;
@@ -255,12 +288,16 @@ a:focus-visible {
 
 footer {
   margin: 2rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
   text-align: center;
   color: var(--muted);
   font-family: var(--sans-font);
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  transition: border-color 0.2s ease;
 }
 
-/* ── 테마 버튼 (사이드바 안이라 64rem 이상에서만 보임) ── */
 .theme-btn {
   width: 4rem;
   height: 2rem;
@@ -268,30 +305,31 @@ footer {
   white-space: nowrap;
   font-family: var(--sans-font);
   font-size: 1rem;
-  background: var(--glass);
-  backdrop-filter: blur(12px) saturate(160%);
-  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  background: transparent;
   border: 1px solid var(--line);
-  border-radius: 1rem;
+  border-radius: 0;
   outline: 0;
-  color: var(--text);
+  color: var(--muted);
   cursor: pointer;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .theme-btn:hover {
   background: var(--glass-hover);
-}
-
-.theme-btn:focus { border-color: var(--beige); }
-
-.theme-btn.active {
-  background: var(--glass-active);
-  border-color: var(--beige);
   color: var(--text);
 }
 
-/* ── 사이드바 (64rem 이상에서만 표시) ── */
+.theme-btn:focus-visible { border-color: var(--beige); }
+
+.theme-btn.active {
+  background: var(--glass-active);
+  border-color: var(--line);
+  box-shadow: inset 0 -2px 0 var(--beige);
+  color: var(--beige);
+}
+
+.theme-btn.active:focus-visible { border-color: var(--beige); }
+
 .site-side {
   display: none; 
   font-family: var(--sans-font);
@@ -309,6 +347,7 @@ footer {
     flex: 0 0 48rem;
     min-width: 0;
     margin: 0;
+    box-shadow: -1px 0 0 var(--line);
   }
 
   .site-side {
@@ -318,7 +357,8 @@ footer {
     padding-left: 0;
     width: 16rem;
     background: var(--panel);
-    transition: background 0.2s ease;
+    box-shadow: 1px 0 0 var(--line);
+    transition: background 0.2s ease, box-shadow 0.2s ease;
   }
 
   .site-side-inner {
@@ -346,9 +386,10 @@ footer {
   .site-toc {
     min-height: 0;
     overflow-y: auto;
-    background: var(--glass);
+    background: transparent;
     border: 1px solid var(--line);
-    border-radius: 1rem;
+    border-top-color: var(--beige);
+    border-radius: 0;
     scrollbar-color: var(--line) transparent;
     font-family: var(--sans-font);
     transition: background 0.2s ease, border-color 0.2s ease, scrollbar-color 0.2s ease;
@@ -369,19 +410,21 @@ footer {
     height: calc(2rem - 2px);
     padding: 0 0.75rem 0 calc(0.75rem + var(--depth, 0) * 0.75rem);
     border: 1px solid transparent;
-    border-radius: 1rem;
+    border-radius: 0;
     color: var(--text);
     text-decoration: none;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     touch-action: manipulation;
-    transition: background 0.2s ease, border-color 0.2s ease;
+    transition: background 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease, color 0.12s ease;
   }
 
   .site-toc-num {
     flex: none;
     margin-right: 0.25em;
+    color: var(--beige);
+    font-variant-numeric: tabular-nums;
   }
 
   .site-toc-text {
@@ -390,13 +433,17 @@ footer {
     text-overflow: ellipsis;
   }
 
-  .site-toc-item a:hover { background: var(--glass-hover); }
+  .site-toc-item a:hover {
+    background: var(--glass-hover);
+    box-shadow: inset 2px 0 0 var(--beige);
+    color: var(--beige);
+  }
   .site-toc-item a:focus-visible { border-color: var(--beige); }
 }
 
 @media (max-width: 47.99rem) {
   body, html { background: var(--panel); }
-  .container { padding: 1rem ;}
+  .container { padding: 1rem ; box-shadow: none; }
   .site-search { width: calc(50vw - 1rem); }
   .site-search-list { max-height: calc(50vh - 4.5rem); }
 }

@@ -2,28 +2,38 @@
 
 #content { display: block; }
 
-.article-header { margin-bottom: 2rem; }
+.article-header {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+  border-image: linear-gradient(90deg, var(--beige), var(--line) 40%, var(--line) 70%, transparent) 1;
+}
 
 .article-header h1 {
   font-size: 2.5rem;
   margin: 2rem 0 0;
+  letter-spacing: -0.02em;
 }
 
 .article-meta {
   margin: 0.25rem 0 0;
   font-family: var(--sans-font);
   color: var(--muted);
+  letter-spacing: 0.02em;
 }
 
 .article-meta a {
-  color: inherit;
-  text-decoration: 0;
+  color: var(--text);
+  text-decoration: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25em;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease, outline-color 0.15s ease;
 }
 
 .article-meta a:hover {
+  color: var(--beige);
   text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
+  text-decoration-color: var(--beige);
 }
 
 .article-body h2,
@@ -37,6 +47,12 @@
 .article-body h4 { font-size: 1.5rem; }
 .article-body h5 { font-size: 1.25rem; }
 .article-body h6 { font-size: 1rem; }
+
+.article-body .heading-num {
+  color: var(--beige);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+}
 
 .article-body p,
 .article-body ul,
@@ -56,19 +72,27 @@
 .article-body li { text-align: justify; }
 
 .article-body li::marker { color: var(--muted); }
+.article-body ol > li::marker { color: var(--beige); font-variant-numeric: tabular-nums; }
 
 .article-body a {
   color: var(--pink);
-  text-decoration: 0;
+  text-decoration: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25em;
+  transition: text-decoration-color 0.15s ease, outline-color 0.15s ease;
 }
 
 .article-body a:hover {
   text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.25em;
+  text-decoration-color: var(--pink);
 }
 
-.wikilink-unresolved { color: var(--coral); }
+.article-body a:has(> img):hover,
+.article-body a:has(> .img-scroll):hover { text-decoration: none; }
+
+.wikilink-unresolved {
+  color: var(--coral);
+}
 
 .article-body strong {
   font-weight: 700;
@@ -76,7 +100,8 @@
 }
 
 .article-body mark {
-  background: rgba(234, 191, 140, 0.3);
+  background: var(--glass-active);
+  box-shadow: inset 0 -1px 0 var(--beige);
   color: var(--text);
   padding: 0 0.15em;
 }
@@ -88,7 +113,6 @@
   vertical-align: middle;
 }
 
-/* 표 밖의 이미지: 왼쪽 정렬, 컨테이너보다 넓으면 가로 스크롤 */
 .article-body .img-scroll {
   display: inline-block;
   max-width: 100%;
@@ -104,20 +128,21 @@
 
 .article-body .map-embed {
   border: 0;
+  outline: 1px solid var(--line);
   vertical-align: middle;
 }
 
 .article-body hr {
   border: 0;
-  border-top: 1px solid var(--line);
+  height: 1px;
+  background: linear-gradient(90deg, var(--beige), var(--line) 40%, var(--line) 70%, transparent);
   margin: 0 0 0.5rem;
-  transition: border-color 0.2s ease;
 }
 
 .article-body blockquote {
   margin: 0 0 1rem;
   padding: 0 1rem 0;
-  border-left: 1px solid var(--pink);
+  border-left: 2px solid var(--pink);
   color: var(--text);
 }
 
@@ -125,15 +150,21 @@
 .article-body code {
   font-family: var(--mono);
   background: var(--glass);
+  box-shadow: 0 0 0 1px var(--line);
+  padding: 0 0.25em;
 }
 
 .article-body pre {
   background: var(--bg);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--beige);
+  padding: 0.75rem 1rem;
   overflow-x: auto;
 }
 
 .article-body pre code {
   background: none;
+  box-shadow: none;
   padding: 0;
 }
 
@@ -144,7 +175,7 @@
   border-collapse: collapse;
   width: auto; 
   margin: 0;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--beige);
   transition: border-color 0.2s ease;
 }
 
@@ -180,7 +211,8 @@
   padding: 0.5rem 1rem;
   background: var(--glass);
   border: 1px solid var(--line);
-  border-radius: 1.5rem;
+  border-radius: 0;
+  box-shadow: inset 3px 0 0 var(--c);
   transition: background 0.2s ease, border-color 0.2s ease;
 }
 
@@ -193,6 +225,7 @@
 .callout-title {
   font-weight: 700;
   color: var(--c);
+  letter-spacing: 0.02em;
 }
 
 .file-view {
@@ -201,12 +234,18 @@
   text-align: left;
 }
 
+.file-view a { text-decoration: none; }
+
 .file-view img {
   display: block;
   max-width: 100%;
   height: auto;
   width: auto;
+  border: 1px solid var(--line);
+  transition: border-color 0.15s ease;
 }
+
+.file-view a:hover img { border-color: var(--beige); }
 
 summary.callout-title { cursor: pointer; }
 summary.callout-title::marker { color: var(--muted); }
@@ -214,7 +253,11 @@ summary.callout-title::marker { color: var(--muted); }
 .callout-body { margin-top: 0.4em; }
 .callout-body > :last-child { margin-bottom: 0; }
 
-.load-error { color: var(--muted); }
+.load-error {
+  color: var(--muted);
+  padding-left: 0.75rem;
+  box-shadow: inset 2px 0 0 var(--coral);
+}
 
 @media (max-width: 47.99rem) {
   .article-header h1 { font-size: 2rem; }
