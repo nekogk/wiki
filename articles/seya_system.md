@@ -22,10 +22,10 @@
 | <big>세야계 행성 목록</big> | < | < | < |
 | :--: | :---: | :---: | :--: |
 | 사진 | 명칭 | 위성 수 | 비고 |
-| ![[ryapyes.png\|160]] | [[ryapyes\|랴폐스(暁星)]] | 위성 없음 | 내행성<br>지구형 행성 |
+| ![[ryajis.png\|160]] | [[ryajis\|랴지스(暁星)]] | 위성 없음 | 내행성<br>지구형 행성 |
 | ![[leghu.png\|160]] | [[leghu\|레구(地球)]] | 1 | 생명체 존재<br>지구형 행성 |
-| ![[dawhopyes.png\|160]] | [[dawhopyes\|다워폐스(赤星)]] | 3 | 외행성<br>지구형 행성 |
-| ![[gheyobapyes.png\|160]] | [[gheyobapyes\|게요바폐스(黄星)]] | | 외행성<br>목성형 행성<br>고리 있음 |
+| ![[dawhojis.png\|160]] | [[dawhojis\|다워지스(赤星)]] | 3 | 외행성<br>지구형 행성 |
+| ![[gheyobajis.png\|160]] | [[gheyobajis\|게요바지스(黄星)]] | | 외행성<br>목성형 행성<br>고리 있음 |
 | ![[buwase.png\|160]] | [[buwase\|부와세(氷王星)]] | | 외행성<br>얼음 행성<br>고리 있음 |
 | ![[kapajise.png\|160]] | [[kapajise\|카파지세(古柏星)]] | | 외행성<br>얼음 행성 |
 | ![[xeryerse.png\|160]] | [[xeryerse\|어여세(矮神星)]] | | 외행성<br>얼음 행성 |
