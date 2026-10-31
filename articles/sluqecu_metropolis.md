@@ -51,7 +51,7 @@
 | 동남부 | [[asrinyu_ward\|아스리뉴구]], [[yujaseme_ward\|유자세메구]], [[kozewhora_ward\|코제워라구]], [[serkoshi_ward\|서코시구]] |
 | 남부 | [[whohercache_ward\|워허차체구]], [[pijizu_ward\|피지주구]], [[resexwa_ward\|레세와구]] |
 | 서부 | [[dabasha_ward\|다바샤구]], [[yopesae_ward\|요페사에구]], [[refabyuxiko_ward\|레파뷰이코구]] |
-| 서북부 | [[mezuchisa_ward\|메주치사구]], [[sechicaspe_ward\|세치차스페구]], [[tozeshita_ward\|토제시타구]] |
+| 서북부 | [[zorizuchisa_ward\|조리주치사구]], [[sechicaspe_ward\|세치차스페구]], [[tozeshita_ward\|토제시타구]] |
 | 북부 | [[gheyesacer_ward\|게예사처구]], [[seshisefu_ward\|세시세푸구]], [[sachiseme_ward\|사치세메구]], [[tobacec_ward\|토바체츠구]] |
 | 동북부 | [[miwha_ward\|미와구]] |
 
