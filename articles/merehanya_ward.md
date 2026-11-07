@@ -1,6 +1,6 @@
 ![[sluqecu_ward]]
 
-| <big>메레하냐구</big><br>寒滩区 \| Merehanya Ward | < |
+| <big>메레하냐구</big><br>寒灘区 \| Merehanya Ward | < |
 | :---: | :---: |
 | ![[map:34671,47164,-2\|400x160]] | < |
 | **경시현** | [[sluqecu_metropolis\|슬루케추시]] |

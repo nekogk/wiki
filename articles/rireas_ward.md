@@ -1,6 +1,6 @@
 ![[sluqecu_ward]]
 
-| <big>리레아스구</big><br>听知区 \| Rireas Ward | < |
+| <big>리레아스구</big><br>聴知区 \| Rireas Ward | < |
 | :-: | :-: |
 | ![[map:31091,42333,-2\|400x160]] | < |
 | **경시현** | [[sluqecu_metropolis\|슬루케추시]] |

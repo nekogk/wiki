@@ -1,6 +1,6 @@
 ![[sluqecu_ward]]
 
-| <table><tbody><tr><td>![[zbaedo_ward_emblem.png\|64]]</td><td><big>**즈바에도구**</big><br>虚陽区<br>Zbaedo Ward</td></tr></tbody></table> | < |
+| <table><tbody><tr><td>![[zbaedo_ward_emblem.png\|64]]</td><td><big>**즈바에도구**</big><br>虚氜区<br>Zbaedo Ward</td></tr></tbody></table> | < |
 | :---: | :--: |
 | ![[map:22596,33908,-2\|400x160]] | < |
 | 구청 소재지 | 율레스가 1-2 |
