@@ -1,8 +1,8 @@
 
 | <big>슬루케추역</big><br>緑山駅 \| Sluqecu Station | < | < |
 | :-: | :-: | :-: |
-| <small>외선순환</small><br>[[hatarechetu_station\|하타레체투]]<br>← 1.4 km | ![[shamojesa_line_icon.png\|32]]<br><small>[[shamojesa_line\|샤모제사선]]</small><br><small>(DC1201)</small> | <small>내선순환</small><br>[[cherema_station\|체레마]]<br>2.6 km → |
-| <small>? 방면</small><br>[[hatarechetu_station\|하타레체투]]<br>← 1.5 km | ![[zshaseme_line_icon.png\|32]]<br><small>[[zshaseme_line\|즈샤세메선]]</small><br><small>(DC2050)</small> | <small>? 방면</small><br>[[rujewho_station\|루제워]]<br>2.3 km → |
+| <small>외선순환</small><br>[[hatarechetu_station\|하타레체투]]<br>← 1.4 km | ![[shamojesa_line_icon.png\|32]]<br><small>[[shamojesa_line\|샤모제사선]]</small><br><small>(HY1201)</small> | <small>내선순환</small><br>[[cherema_station\|체레마]]<br>2.6 km → |
+| <small>? 방면</small><br>[[hatarechetu_station\|하타레체투]]<br>← 1.5 km | ![[zshaseme_line_icon.png\|32]]<br><small>[[zshaseme_line\|즈샤세메선]]</small><br><small>(HY2050)</small> | <small>? 방면</small><br>[[rujewho_station\|루제워]]<br>2.3 km → |
 | <small>[[qecude_station\|케추데]] 방면</small><br>[[gyru_palace_station\|현림궁]]<br>← 0.6 km | ![[tobarye_line_icon.png\|32]]<br><small>[[tobarye_line\|토바례선]]</small><br><small>(SQ0153)</small> | <small>[[rebeyo_station\|레베요]] 방면</small><br>[[rewesuwhu_station\|레웨수우]]<br>0.8 km → |
 | <small>[[cotarinyu_station\|초타리뉴]] 방면</small><br>[[rushizori_square_station\|루시조리광장]]<br>← 0.8 km | ![[hoker_line_icon.png\|32]]<br><small>[[hoker_line\|호커선]]</small><br><small>(SQ0456)</small> | <small>[[rishizujer_station\|리시주저]] 방면</small><br>[[dawhecache_station\|다웨차체]]<br>0.7 km → |
 | <small>[[shizomacho_station\|시조마초]] 방면</small><br>[[hatarechetu_park_station\|하타레체투공원]]<br>← 1.2 km | ![[crererube_line_icon.png\|32]]<br><small>[[crererube_line\|츠레레루베선]]</small><br><small>(SQ0664)</small> | <small>[[eshuwhi_station\|에슈위]] 방면</small><br>[[qecxyani_station\|케츠야니]]<br>1.4 km → |

@@ -1,6 +1,6 @@
 # 개요
 ---
-**삼록권**(三緑圏)은 [[ectenic_divine_empire|대연신국]]에서 분할된 [[rushikowa|루시코와]], [[ectenium|연본국]], [[rechefacu_republic|레체파추공화국]]을 통틀어 이르는 말이다. [[ropona|로포나]]를 언어로 사용하고, [[chazoru|제동론]]을 중심 사상으로 삼는다는 등 여러 특징을 공유한다.
+**삼록권**(三緑圈)은 [[ectenic_divine_empire|대연신국]]에서 분할된 [[rushikowa|루시코와]], [[ectenium|연본국]], [[rechefacu_republic|레체파추공화국]]을 통틀어 이르는 말이다. [[ropona|로포나]]를 언어로 사용하고, [[chazoru|제동론]]을 중심 사상으로 삼는다는 등 여러 특징을 공유한다.
 
 # 특징
 ---
