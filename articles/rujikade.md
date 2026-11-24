@@ -1,10 +1,8 @@
 
 # 개요
----
 [[divine_university|신국대학]] 중에서도 [[coroji|삼록권]]의 6개 수도에 위치하는 대학을 일컫는 말이다. 이 여섯 개의 대학은 대부분의 분야에서 삼록권 최대 양질의 교육을 제공한다.
 
 # 비교
----
 
 | 구분 | [[sluqecu_university\|슬루케추대학교]] | [[sluseche_university\|슬루세체대학교]] | [[creseme_university\|츠레세메대학교]] | [[rushisewhu_university\|루시세우대학교]] | [[pejeseme_university\|페제세메대학교]] | [[rechefacu_university\|레체파추대학교]] |
 | :--: | :--: | :---: | :--: | :--: | :--: | :-: |

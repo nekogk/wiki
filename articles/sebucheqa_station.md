@@ -12,5 +12,4 @@
 | [[tobarye_line\|토바례선]] | [[rimi_era\|리미]] 9년 입추 3일 | < |
 
 # 개요
----
 [[sluqecu_metropolis|슬루케추시]] [[shishices_ward|시시체스구]]에 위치한 [[tobarye_line|토바례선]]의 정차역.

@@ -6,5 +6,4 @@
 | **경시현** | [[sluqecu_metropolis\|슬루케추시]] |
 | **지역번호** | 011-29 |
 # 개요
----
 [[sluqecu_metropolis|슬루케추시]] 북부에 위치한 구.

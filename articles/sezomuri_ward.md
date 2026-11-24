@@ -7,5 +7,4 @@
 | **지역번호** | 011-12 |
 
 # 개요
----
 [[sluqecu_metropolis|슬루케추시]] 동부에 위치한 구로, 북쪽으로 [[remasesha_ward|레마세샤구]], [[rireas_ward|리레아스구]]와 접한다. 동해를 끼고 있으며, 남쪽은 [[ectene_river|연강]]과 접해 있다.

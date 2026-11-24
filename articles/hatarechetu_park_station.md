@@ -13,5 +13,4 @@
 | [[crererube_line\|츠레레루베선]] | ^ | < |
 
 # 개요
----
 **하타레체투공원역**은 [[hatarechetu_park|하타레체투공원]] 중심에 존재하는 [[sluqecu_metropolis|슬루케추시]]의 지하철역이다.

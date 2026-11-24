@@ -21,21 +21,15 @@
 | **개통 연혁** | [[rimi_era\|리미]] 40년 [[sluqecu_station\|슬루케추]] ↔ [[s'habe_station\|스하베]]<br>[[shoje_era\|쇼제]] 3년 [[cfasagher_station\|츠파사거]] ↔ [[sluqecu_station\|슬루케추]]<br>[[shoje_era\|쇼제]] 5년 [[richiseca_station\|리치세차]] ↔ [[cfasagher_station\|츠파사거]]<br>[[shoje_era\|쇼제]] 13년 [[qechiceyu_station\|케치체유]] ↔ [[richiseca_station\|리치세차]]<br>[[shoje_era\|쇼제]] 25년 [[s'habe_station\|스하베]] ↔ [[rishizujer_station\|리시주저]]<br>[[whida_era\|위다]] 12년 [[cotarinyu_station\|초타리뉴]] ↔ [[qechiceyu_station\|케치체유]] |
 
 # 개요
----
 **호커선**은 [[rimi_era|리미]] 40년 소한 18일 개통한 [[xigoshazsha_region|동경권]] 전철 노선이자 [[sluqecu_metropolis|슬루케추시]] 지하철 노선의 하나로, 상징색은 파란색 <small>(#309AD6)</small>, 노선번호는 4호선이다. 이름 호커는 공항을 뜻하는데, 이는 호커선이 [[rerisa_airport|레리사공항]]을 지나기 때문이다. [[rerisa_airport_station|레리사공항역]]은 [[shoje_era|쇼제]] 25년이 되어서야 개통했지만, 호커선이 계획 당시부터 레레사 국제공항 계획과 함께 계획되었기 때문에 이러한 이름이 붙었다.
 
 # 건설 목적
----
 
 # 역사
----
 
 # 역 목록
----
 ![[hoker_station]]
 
 # 환승역
----
 
 # 여담
----

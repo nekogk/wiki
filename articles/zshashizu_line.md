@@ -22,21 +22,15 @@
 
 
 # 개요
----
 **즈샤시주선**은 [[rubezujer_station|루베주저역]]에서 [[remaxili_station|레마일리역]]을 잇는 [[xigoshazsha_region|동경권]] 전철 노선이다. 
 
 # 건설 목적
----
 
 # 역사
----
 
 # 역 목록
----
 ![[zshashizu_station]]
 
 # 환승역
----
 
 # 여담
----

@@ -21,21 +21,15 @@
 | **개통 연혁** | [[rimi_era\|리미]] 31년 [[koxilisez_station\|코일리세즈]] ↔ [[jizmya_station\|지즈먀]]<br>[[rimi_era\|리미]] 31년 [[jizmya_station\|지즈먀]] ↔ [[tozeshita_station\|토제시타]]<br>[[rimi_era\|리미]] 35년 [[remasesha_station\|레마세샤]] ↔ [[isteba_station\|이스테바]]<br>[[rimi_era\|리미]] 37년 [[tozeshita_station\|토제시타]] ↔ [[remasesha_station\|레마세샤]]<br>[[rimi_era\|리미]] 41년 [[koxilisez_station\|코일리세즈]] ↔ [[isteba_station\|이스테바]] [[bigosefu_line\|비고세푸선]]으로 이관 |
 
 # 개요
----
 [[rimi_era|리미]] 31년에 첫 개통하여 [[rimi_era|리미]] 37년 완성된 [[sluqecu_metropolis|슬루케추시]] 지하철의 순환선으로, 그 크기는 서울 지하철 2호선이나 오에도선에 비해 큰 크기이다. 슬루케추시의 지하철 중 수송량이 매우 많은 편에 속하며, 전구간이 복복선화되어있다.
 
 # 건설 목적
----
 
 # 역사
----
 
 # 역 목록
----
 ![[lesayu_station]]
 
 # 환승역
----
 
 # 여담
----

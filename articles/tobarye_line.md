@@ -22,29 +22,22 @@
 
 
 # 개요
----
 [[rimi_era|리미]] 9년 입추 3일 개통한 동경권 전철의 한 노선으로, 세계 최초의 지하철도이다. 노선색은 초록색 <small>(#376440)</small>이며, 노선명인 토바례는 큰 혈맥이라는 의미를 가진다.
 
 [[qecude_station|케추데역]]에서 [[sluqecu_metropolis|슬루케추]]를 지나 [[rebeyo_station|레베요역]]을 잇는 슬루케추 광역권의 주요 노선이다.
 
 # 건설 목적
----
 
 # 역사
----
 
 # 역 목록
----
 ![[tobarye_station]]
 
 # 환승역
----
 
 # 소재지
----
 
 # 현존 행선지
----
 - 상행
   - [[qecude_station|케추데급행]] - [[rebeyo_station|레베요]]에서 출발하는 급행 계통으로, [[yurisheco_station|유리셰초]] 이북 구간에서는 각역정차로 전환된다.
   - [[yurisheco_station|유리셰초행]] - [[ejibica_station|에지비차]]에서 출발하는 보통열차이다.
@@ -61,4 +54,3 @@
   - [[ejibica_station|에지비차행]] - 대부분은 [[yurisheco_station|유리셰초]]발 보통열차이지만, 통근시간에는 [[ryudamuko_station|류다무코]]에서 출발하여 [[ejibica_station|에지비차]]까지 도심 구간만 운행하는 열차가 추가로 투입된다.
 
 # 여담
----
