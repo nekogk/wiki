@@ -274,11 +274,9 @@ a:focus-visible {
   width: 2rem;
   height: 2rem;
   display: block;
-  border-radius: 50%;
+  border-radius: 40%;
   transition: border-radius 0.2s ease;
 }
-
-.site-logo:hover img { border-radius: 33%; }
 
 footer {
   margin: 2rem 0 0;
