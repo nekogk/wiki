@@ -1,6 +1,6 @@
 ![[sluqecu_metro]]
 
-| <table><tbody><tr><td>![[crererube_line_icon.png\|48]]</td><td><big>**츠레레루베선**</big><br>南北鉄道<br>Crererube Line</td></tr></tbody></table> | < |
+| <table><tbody><tr><td>![[crererube_line_icon.png\|48]]</td><td><big>**츠레레루베선**</big><br>南北線<br>Crererube Line</td></tr></tbody></table> | < |
 | :---: | - |
 | **노선 정보** | < |
 | **노선 분류** | 도시철도 |

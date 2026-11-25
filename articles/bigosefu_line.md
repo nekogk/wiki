@@ -1,6 +1,6 @@
 ![[sluqecu_metro]]
 
-| <table><tbody><tr><td>![[bigosefu_line_icon.png\|48]]</td><td><big>**비고세푸선**</big><br>江浦鉄道<br>Bigosefu Line</td></tr></tbody></table> | < |
+| <table><tbody><tr><td>![[bigosefu_line_icon.png\|48]]</td><td><big>**비고세푸선**</big><br>江浦線<br>Bigosefu Line</td></tr></tbody></table> | < |
 | :---: | - |
 | **노선 정보** | < |
 | **노선 분류** | 도시철도 |
