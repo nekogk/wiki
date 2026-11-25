@@ -126,7 +126,6 @@
 
 .article-body .map-embed {
   border: 0;
-  border-radius: var(--radius-l);
   vertical-align: middle;
 }
 
