@@ -5,9 +5,9 @@
 | **노선 정보** | < |
 | **노선 분류** | 도시철도 |
 | **차량 분류** | 대형 중전철 |
-| **기점** | [[dajicache_station\|다지차체역]] (본선)<br>[[lato_station\|라토역]] (라토지선) |
+| **기점** | [[biremu_station\|비레무역]] (본선)<br>[[lato_station\|라토역]] (라토지선) |
 | **종점** | [[begheseme_station\|베게세메역]] (본선)<br>[[roshosfu_station\|로쇼스푸역]] (라토지선) |
-| **역 수** | 66개 |
+| **역 수** | 72개 |
 | **구성 노선** | 본선<br>라토지선 |
 | **상징색** | 분홍색 <smallll>(#EF8AA4)</small> |
 | **노선번호** | 5호선 |
@@ -22,7 +22,7 @@
 | **개통 연혁** | [[rimi_era\|리미]] 41년 [[birisebu_station\|비리세부]] ↔ [[isteba_station\|이스테바]]<br>[[rimi_era\|리미]] 41년 [[isteba_station\|이스테바]] ↔ [[koxilisez_station\|코일리세즈]] [[lesayu_line\|레사유선]]에서 이관<br>[[shoje_era\|쇼제]] 6년 [[lano_station\|라노]] ↔ [[birisebu_station\|비리세부]]<br>[[shoje_era\|쇼제]] 8년 [[lato_station\|라토]] ↔ [[lano_station\|라노]]<br>[[shoje_era\|쇼제]] 16년 [[koxilisez_station\|코일리세즈]] ↔ [[begheseme_station\|베게세메]]<br>[[whida_era\|위다]] 11년 [[dajicache_station\|다지차체]] ↔ [[roshosfu_station\|로쇼스푸]] |
 
 # 개요
-**비고세푸선** 또는 [[sluqecu_metropolis|슬루케추시]] 도시철도 5호선은 [[xigoshazsha_region|동경권]] 전철의 한 노선으로 [[dajicache_station|다지차체역]]에서 [[begheseme_station|베게세메역]]을 잇는 본선과 [[lato_station|라토역]]에서 [[roshosfu_station|로쇼스푸역]]을 잇는 라토지선으로 구성되어 있다.
+**비고세푸선** 또는 [[sluqecu_metropolis|슬루케추시]] 도시철도 5호선은 [[xigoshazsha_region|동경권]] 전철의 한 노선으로 [[biremu_station|비레무역]]에서 [[begheseme_station|베게세메역]]을 잇는 본선과 [[lato_station|라토역]]에서 [[roshosfu_station|로쇼스푸역]]을 잇는 라토지선으로 구성되어 있다.
 
 
 # 건설 목적

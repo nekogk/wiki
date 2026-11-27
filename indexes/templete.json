@@ -10,5 +10,13 @@
   "hoker_station": { "title": "호커선의 역 목록" },
   "bigosefu_station": { "title": "비고세푸선의 역 목록" },
   "crererube_station": { "title": "츠레레루베선의 역 목록" },
+  "rushimis_station": { "title": "루시미스선의 역 목록" },
+  "jiriqe_station": { "title": "지리케선의 역 목록" },
+  "xigoshabus_station": { "title": "이고샤부스선의 역 목록" },
+  "cezsefu_station": { "title": "체즈세푸선의 역 목록" },
+  "xyaghesocer_station": { "title": "야게소처선의 역 목록" },
+  "baresexwa_station": { "title": "바레세와선의 역 목록" },
+  "xyazereda_station": { "title": "야제레다선의 역 목록" },
+  "sanyaqesa_station": { "title": "사냐케사선의 역 목록" },
   "seya_system": { "title": "세야계" }
 }

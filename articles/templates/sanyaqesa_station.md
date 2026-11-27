@@ -1,0 +1,4 @@
+| ![[sanyaqesa_line_icon.png\|16]] [[sanyaqesa_line\|사냐케사선]]의 역 목록 | < |
+| :-: | :--: |
+| [[mitariju_city\|미타리주시]] | 1432 - 1433 - 1434 - 1435 - 1436 > |
+| [[sluqecu_metropolis\|슬루케추시]] | > 1437 - 1438 - ![[zshaseme_line_icon.png\|16]] ![[zshashizu_line_icon.png\|16]] [[seshisefu_station\|세시세푸]] - 1440 - [[shisha_station\|시샤]] - ![[mutu_tram_icon.png\|16]] [[cechisu_station\|체치수]] - ![[sachiseme_line_icon.png\|16]] 1443 -<br>![[crererube_line_icon.png\|16]] [[shizomacho_station\|시조마초]] - 1445 - 1446 - 1447 - [[saririter_station\|사리리터]] - ![[lesayu_line_icon.png\|16]] [[tobacec_station\|토바체츠]] - ![[xyazereda_line_icon.png\|16]] [[historical_park_station\|역사공원]] -<br>1451 - 1452 - ![[cezsefu_line_icon.png\|16]] [[haxi_station\|하이]] - ![[bigosefu_line_icon.png\|16]] [[centex_station\|센텍스]] - ![[tobarye_line_icon.png\|16]] [[kawacheqa_station\|카와체카]] |
